@@ -1,0 +1,22 @@
+[
+  {
+    "Categoryid": 1,
+    "name": "IT",
+    "description": "Informatikai szolgáltatások: weblapok, alkalmazások készítése, tervezése, karbantartása, üzemeltetése"
+  },
+  {
+    "Categoryid": 2,
+    "name": "Szépség ápolás",
+    "description": "Fodrászat, kozmetika, masszázs"
+  },
+  {
+    "Categoryid": 3,
+    "name": "Építőipar",
+    "description": ""
+  },
+  {
+    "Categoryid": 4,
+    "name": "Oktatás",
+    "description": ""
+  }
+]
