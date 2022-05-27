@@ -1,5 +1,6 @@
 'use strict'
 // this is to modifiy json files
+// node .\backend\db\data-manager.js
 
 const colors = {
   error: '\x1b[31m',  // red
@@ -32,6 +33,7 @@ const sortByProp = (list, prop) => {
 
   return list
 }
+
 
 // starter
 (async () => {
