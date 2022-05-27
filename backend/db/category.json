@@ -1,22 +1,47 @@
 [
   {
-    "Categoryid": 1,
-    "name": "IT",
-    "description": "Informatikai szolgáltatások: weblapok, alkalmazások készítése, tervezése, karbantartása, üzemeltetése"
+    "categoryId": 1,
+    "name": "Informatika",
+    "description": "Weblap, Alkalmazás készítés, Tervezés, Karbantartás, Üzemeltetés, Telepítés, PC Hardware"
   },
   {
-    "Categoryid": 2,
-    "name": "Szépség ápolás",
-    "description": "Fodrászat, kozmetika, masszázs"
-  },
-  {
-    "Categoryid": 3,
+    "categoryId": 2,
     "name": "Építőipar",
-    "description": ""
+    "description": "Ács, Kőműves, Tervező, Asztalos, Felújítás, Gépészet, Villamosság, Lakatos, Villanyszerelő, Víz-gáz-fűtés szerelő, Festő, Burkoló, Kertépítés"
   },
   {
-    "Categoryid": 4,
+    "categoryId": 3,
+    "name": "Háztartás / kert",
+    "description": "Takarítás, Gondozás, Bevásárlás, Fűnyírás, Kertrendezés, Karbantartás"
+  },
+  {
+    "categoryId": 4,
+    "name": "Jármű",
+    "description": "Autószerelő, Kerékpár javítás, Gumiszerelés, Karosszéria javítás, Autó üvegezés, Autó villamosság"
+  },
+  {
+    "categoryId": 5,
+    "name": "Egészség",
+    "description": "Orvos, Gyógytorna, Masszázs, Yoga, Lelki-egészség"
+  },
+  {
+    "categoryId": 6,
+    "name": "Szépségápolás",
+    "description": "Fodrászat, kozmetika, Manikűr, Műkörömépítés"
+  },
+  {
+    "categoryId": 7,
+    "name": "Tanácsadás",
+    "description": "Jog, Pénzügy, Könyvelés, Coaching, Életvezetés, Utazás"
+  },
+  {
+    "categoryId": 8,
     "name": "Oktatás",
-    "description": ""
+    "description": "Matematika, Fizika, Angol, Német, Magyar, Érettségi felkészítő, Felvételi felkészítő, Tanfolyamok"
+  },
+  {
+    "categoryId": 9,
+    "name": "1000 Apró",
+    "description": "Kulcsmásoló, Cipész, Üvegezés, Képkeretezés, Szakács, Cukrász, Bútorasztalos"
   }
 ]
