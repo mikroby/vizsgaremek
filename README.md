@@ -28,7 +28,7 @@ A fejléc szerkezete:
 
 **3. User Story:**
 
-> _A szerepkörök elkülönítésére gombok jelenjenek meg._
+> _A szerepkörökhöz tartozó használat egyértelműen különüljön el._
 
 **Elfogadási kritérium:**
 
