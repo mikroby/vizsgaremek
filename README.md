@@ -3,8 +3,9 @@
 
 ---------------------------------------------------------
 ## 1. Főoldal
-#### ( minden szerepkör számára )
 ---------------------------------------------------------
+#### ( minden szerepkör számára )
+
 **1. User Story:**
 
 > _Üdvözlő képernyő, amely egyszerű módon bemutatja az oldal alapvető célját._
@@ -37,8 +38,9 @@ A fejléc szerkezete:
 
 ---------------------------------------------------------
 ## 2. Kereső oldal
-#### ( megrendelők számára )
 ---------------------------------------------------------
+#### ( megrendelők számára )
+
 **1. User Story:**
 
 > _Megrendelők számára a szakma-kategóriák megjelenítése ikonokkal, az eligazodás megkönnyítésére._
@@ -50,8 +52,9 @@ A fejléc szerkezete:
 
 ---------------------------------------------------------
 ## 3. Kereső-listázó aloldal(ak)
-#### ( megrendelők számára )
 ---------------------------------------------------------
+#### ( megrendelők számára )
+
 **1. User Story:**
 
 > _A kiválasztott kategórián belül lista jelenik meg a felhasználó részére._
@@ -119,8 +122,9 @@ A fejléc szerkezete:
 
 ---------------------------------------------------------
 ## 4. Beléptető oldal
-#### ( szakemberek és az adminisztrátor számára )
 ---------------------------------------------------------
+#### ( szakemberek és az adminisztrátor számára )
+
 **1. User Story:**
 
 > _A beléptetés külön oldalon jelenik meg._
@@ -134,8 +138,9 @@ A fejléc szerkezete:
 
 ---------------------------------------------------------
 ## 5. Regisztrációs oldal
-#### ( szakemberek számára )
 ---------------------------------------------------------
+#### ( szakemberek számára )
+
 **1. User Story:**
 
 > _A regisztráció külön oldalon jelenik meg, a szükséges adatok megadásával. A regisztrációtól való elállás legyen lehetséges._
@@ -151,8 +156,9 @@ A fejléc szerkezete:
 
 ---------------------------------------------------------
 ## 6. Admin oldal
-#### ( adminisztrátor számára )
 ---------------------------------------------------------
+#### ( adminisztrátor számára )
+
 **1. User Story:**
 
 > _Az adminisztrátor külön áttekintő oldalon listából választhat, hogy az adatbázis mely elemeit (entitásait) kívánja aloldalakon listázni, szerkeszteni._
@@ -166,8 +172,9 @@ A fejléc szerkezete:
 
 ---------------------------------------------------------
 ## 7. Admin aloldalak
-#### ( adminisztrátor számára )
 ---------------------------------------------------------
+#### ( adminisztrátor számára )
+
 **1. User Story:**
 
 > _Az adminisztrátor a kiválasztott entitások részletes adatait listában szerkesztheti._
