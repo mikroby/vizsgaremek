@@ -1,5 +1,5 @@
 ## MESTEREMBER Applikáció - Szakember kereső adatbázis
-
+------------------------------------------
 
 ## 1. Főoldal
 
@@ -10,7 +10,6 @@
 > _Üdvözlő képernyő, amely egyszerű módon bemutatja az oldal alapvető célját._
 
 **Elfogadási kritérium:**
-
 
 + Reszponzív megjelenéssel, néhány kép és nagyobb felirat, amely leírja az oldal célját: lakossági szakember kereső adatbázis.
 
