@@ -178,12 +178,13 @@ A fejléc szerkezete:
 
 **1. User Story:**
 
-> _Az adminisztrátor a kiválasztott entitások részletes adatait listában szerkesztheti._
+> _Az adminisztrátor a kiválasztott entitások részletes adatait listában szerkesztheti, törölheti._
 
 **Elfogadási kritérium:**
 
 + "Új létrehozás" gomb jelenik meg, melyre kattintva aloldalon megjelenő űrlapon megadhatók az adatok.
-+ A kiválasztott entitás listája megjelenik. A lista jellege megegyezik a 3. Kereső-listázó aloldalnál megadottakkal, kiegészülve szerkesztő és törlő gombbal (egy-egy ikon megjelenésével).
++ A kiválasztott entitás listája megjelenik. A lista jellege megegyezik a 3. Kereső-listázó aloldalnál megadottakkal, kiegészülve "szerkesztő" és "törlő" gombbal (egy-egy ikon megjelenésével).
 + A "szerkesztés" gombra kattintva aloldalon megjelenő űrlapon módosíthatók az adatok.
 + Validáció után az adatbázisban átvezetésre kerülnek az új adatok.
++ Törlés csak megerősítő kérdés után történjen.
 
