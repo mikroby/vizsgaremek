@@ -9,11 +9,11 @@
 
 **1. User Story:**
 
-> _Üdvözlő képernyő, amely egyszerű módon bemutatja az oldal alapvető célját._
+> _Üdvözlő képernyő, amely egyszerű módon bemutatja az oldal alapvető célját: platform biztosítása lakossági megrendelők és szakemberek közti kapcsolat létrejöttéhez._
 
 **Elfogadási kritérium:**
 
-+ Reszponzív megjelenéssel, néhány kép és nagyobb felirat, amely leírja az oldal célját: lakossági szakember kereső adatbázis.
++ Reszponzív megjelenéssel, néhány kép és nagyobb felirat, amely leírja az oldal célját: szakember kereső adatbázis lakossági megrendelők számára.
 
 **2. User Story:**
 
@@ -106,7 +106,7 @@ A fejléc szerkezete:
 
 **7. User Story:**
 
-> _A felhasználó a kiválasztott sorra kattintva megkapja a szakember részletes adatait, elérhetőségét._
+> _A felhasználó a kiválasztott sorra kattintva megkapja a szakember részletes adatait, elérhetőségét felkeresés, további egyeztetés céljából._
 
 **Elfogadási kritérium:**
 
