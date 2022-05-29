@@ -2,46 +2,149 @@
   {
     "categoryId": 1,
     "name": "Informatika",
-    "description": "Weblap, Alkalmazás készítés, Tervezés, Karbantartás, Üzemeltetés, Telepítés, PC Hardware"
+    "description": [
+      "Weblap készítés / tervezés",
+      "Alkalmazás készítés / tervezés",
+      "Karbantartás",
+      "Üzemeltetés",
+      "Telepítés",
+      "PC Hardware",
+      "Adatmentés"
+    ]
   },
   {
     "categoryId": 2,
     "name": "Építőipar",
-    "description": "Ács, Kőműves, Tervező, Asztalos, Felújítás, Gépészet, Villamosság, Lakatos, Villanyszerelő, Víz-gáz-fűtés szerelő, Festő, Burkoló, Kertépítés"
+    "description": [
+      "Ács / Tetőfedő",
+      "Kőműves",
+      "Építészmérnök Tervező",
+      "Tartószerkezet Tervező",
+      "Asztalos",
+      "Felújítás",
+      "Épületgépész Mérnök",
+      "Épületvillamossági Mérnök",
+      "Felelős műszaki vezető",
+      "Műszaki ellenőr",
+      "Lakatos",
+      "Villanyszerelő",
+      "Víz-gáz-fűtés szerelő",
+      "Festő",
+      "Gipszkartonozó",
+      "Burkoló",
+      "Kertépítés"
+    ]
   },
   {
     "categoryId": 3,
     "name": "Háztartás / kert",
-    "description": "Takarítás, Gondozás, Bevásárlás, Fűnyírás, Kertrendezés, Karbantartás"
+    "description": [
+      "Takarítás",
+      "Idősgondozás",
+      "Gyermekfelügyelet",
+      "Bevásárlás",
+      "Kertrendezés",
+      "Javítás-karbantartás",
+      "Háziállat felügyelet"
+    ]
   },
   {
     "categoryId": 4,
     "name": "Jármű",
-    "description": "Autószerelő, Kerékpár javítás, Gumiszerelés, Karosszéria javítás, Autó üvegezés, Autó villamosság"
+    "description": [
+      "Autószerelő",
+      "Kerékpár javítás",
+      "Gumiszerelés",
+      "Karosszéria javítás",
+      "Autó üvegezés",
+      "Autó villamosság"
+    ]
   },
   {
     "categoryId": 5,
     "name": "Egészség",
-    "description": "Orvos, Gyógytorna, Masszázs, Yoga, Lelki-egészség"
+    "description": [
+      "Általános orvos",
+      "Fogorvos",
+      "Gyermekorvos",
+      "Bőrgyógyász",
+      "Gyógytornász",
+      "Masszőr",
+      "Yoga-oktató",
+      "Pszichológus"
+    ]
   },
   {
     "categoryId": 6,
     "name": "Szépségápolás",
-    "description": "Fodrászat, kozmetika, Manikűr, Műkörömépítés"
+    "description": [
+      "Fodrász",
+      "Kozmetikus",
+      "Manikűrös",
+      "Pedikűrös",
+      "Műkörömépítő"
+    ]
   },
   {
     "categoryId": 7,
     "name": "Tanácsadás",
-    "description": "Jog, Pénzügy, Könyvelés, Coaching, Életvezetés, Utazás"
+    "description": [
+      "Ügyvéd",
+      "Pénzügyi tanácsadó",
+      "Könyvelő",
+      "Coach",
+      "Életvezetési tanácsadó",
+      "Mentor"
+    ]
   },
   {
     "categoryId": 8,
     "name": "Oktatás",
-    "description": "Matematika, Fizika, Angol, Német, Magyar, Érettségi felkészítő, Felvételi felkészítő, Tanfolyamok"
+    "description": [
+      "Matematika",
+      "Fizika",
+      "Angol",
+      "Német",
+      "Francia",
+      "Spanyol",
+      "Olasz",
+      "Magyar",
+      "Rajz",
+      "Kémia",
+      "Földrajz",
+      "Biológia",
+      "Érettségi-felkészítés",
+      "Felvételi-felkészítés"
+    ]
   },
   {
     "categoryId": 9,
     "name": "1000 Apró",
-    "description": "Kulcsmásoló, Cipész, Üvegezés, Képkeretezés, Szakács, Cukrász, Bútorasztalos"
+    "description": [
+      "Kulcsmásoló",
+      "Cipész",
+      "Üveges",
+      "Képkeretező",
+      "Szakács",
+      "Cukrász",
+      "Bútorasztalos",
+      "Mobiltelefon javítás",
+      "Elektronikai műszerész"
+    ]
+  },
+  {
+    "categoryId": 10,
+    "name": "Szórakoztatás / rendezvény",
+    "description": [
+      "Bűvész",
+      "Zenész",
+      "Táncos",
+      "Stand-up",
+      "Bohóc",
+      "Télapó",
+      "Bábelőadás",
+      "Kézműves foglalkozás",
+      "Arcfestés"
+    ]
   }
 ]

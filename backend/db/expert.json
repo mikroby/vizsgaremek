@@ -3,8 +3,12 @@
     "id": 1,
     "first_name": "Vania",
     "last_name": "Tythacott",
-    "job": "Budget/Accounting Analyst",
-    "categoryId": 1,
+    "job": [
+      "Budget/Accounting Analyst"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5566,
     "age": 27,
     "gender": "Female",
@@ -14,14 +18,18 @@
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 2,
     "first_name": "Myrta",
     "last_name": "Cundict",
-    "job": "Health Coach",
-    "categoryId": 1,
+    "job": [
+      "Coach"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9407,
     "age": 18,
     "gender": "Female",
@@ -31,14 +39,18 @@
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "9:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 3,
     "first_name": "Elonore",
     "last_name": "Hiland",
-    "job": "Nuclear Power Engineer",
-    "categoryId": 1,
+    "job": [
+      "Nuclear Power Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4126,
     "age": 18,
     "gender": "Female",
@@ -48,14 +60,18 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "6:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 4,
     "first_name": "Bianca",
     "last_name": "Kristufek",
-    "job": "Analog Circuit Design manager",
-    "categoryId": 1,
+    "job": [
+      "Analog Circuit Design manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9904,
     "age": 46,
     "gender": "Female",
@@ -65,14 +81,18 @@
     "workDays": [],
     "availableFrom": "11:15",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 5,
     "first_name": "Dex",
     "last_name": "Barnhart",
-    "job": "Graphic Designer",
-    "categoryId": 1,
+    "job": [
+      "Graphic Designer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4222,
     "age": 66,
     "gender": "Male",
@@ -82,14 +102,18 @@
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "10:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 6,
     "first_name": "Hazel",
     "last_name": "Sarrell",
-    "job": "Statistician",
-    "categoryId": 1,
+    "job": [
+      "Statistician"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8505,
     "age": 31,
     "gender": "Male",
@@ -99,14 +123,18 @@
     "workDays": [],
     "availableFrom": "6:45",
     "availableTill": "6:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 7,
     "first_name": "Luke",
     "last_name": "Ellph",
-    "job": "Occupational Therapist",
-    "categoryId": 1,
+    "job": [
+      "Occupational Therapist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7313,
     "age": 55,
     "gender": "Male",
@@ -116,14 +144,18 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "6:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 8,
     "first_name": "Stearne",
     "last_name": "Iacovo",
-    "job": "Programmer",
-    "categoryId": 1,
+    "job": [
+      "Programmer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7326,
     "age": 19,
     "gender": "Male",
@@ -133,14 +165,18 @@
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 9,
     "first_name": "Siward",
     "last_name": "Bartul",
-    "job": "Electrical Engineer",
-    "categoryId": 1,
+    "job": [
+      "Electrical Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4972,
     "age": 32,
     "gender": "Male",
@@ -150,14 +186,18 @@
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "8:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 10,
     "first_name": "Hieronymus",
     "last_name": "Kenner",
-    "job": "Mechanical Systems Engineer",
-    "categoryId": 1,
+    "job": [
+      "Mechanical Systems Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3927,
     "age": 38,
     "gender": "Male",
@@ -167,14 +207,18 @@
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "11:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 11,
     "first_name": "Silvanus",
     "last_name": "McReidy",
-    "job": "Recruiting Manager",
-    "categoryId": 1,
+    "job": [
+      "Recruiting Manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5929,
     "age": 48,
     "gender": "Male",
@@ -184,14 +228,18 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "8:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 12,
     "first_name": "Buddie",
     "last_name": "Blincowe",
-    "job": "Help Desk Technician",
-    "categoryId": 1,
+    "job": [
+      "Help Desk Technician"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2594,
     "age": 63,
     "gender": "Male",
@@ -201,14 +249,18 @@
     "workDays": [],
     "availableFrom": "8:15",
     "availableTill": "6:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 13,
     "first_name": "Charles",
     "last_name": "Griffen",
-    "job": "Quality Control Specialist",
-    "categoryId": 1,
+    "job": [
+      "Quality Control Specialist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3307,
     "age": 70,
     "gender": "Male",
@@ -218,14 +270,18 @@
     "workDays": [],
     "availableFrom": "7:30",
     "availableTill": "8:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 14,
     "first_name": "Jillane",
     "last_name": "Jerdon",
-    "job": "Structural Analysis Engineer",
-    "categoryId": 1,
+    "job": [
+      "Structural Analysis Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9036,
     "age": 67,
     "gender": "Female",
@@ -235,14 +291,18 @@
     "workDays": [],
     "availableFrom": "9:00",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 15,
     "first_name": "Isak",
     "last_name": "Huband",
-    "job": "Marketing Assistant",
-    "categoryId": 1,
+    "job": [
+      "Marketing Assistant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5216,
     "age": 32,
     "gender": "Male",
@@ -252,14 +312,18 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 16,
     "first_name": "Opaline",
     "last_name": "Chable",
-    "job": "Administrative Officer",
-    "categoryId": 1,
+    "job": [
+      "Administrative Officer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9716,
     "age": 59,
     "gender": "Female",
@@ -269,14 +333,18 @@
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "11:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 17,
     "first_name": "Becka",
     "last_name": "Salway",
-    "job": "Electrical Engineer",
-    "categoryId": 1,
+    "job": [
+      "Electrical Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8869,
     "age": 72,
     "gender": "Female",
@@ -286,14 +354,18 @@
     "workDays": [],
     "availableFrom": "6:15",
     "availableTill": "11:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 18,
     "first_name": "Dyna",
     "last_name": "Duinkerk",
-    "job": "Biostatistician",
-    "categoryId": 1,
+    "job": [
+      "Biostatistician"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2866,
     "age": 74,
     "gender": "Female",
@@ -303,14 +375,18 @@
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "7:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 19,
     "first_name": "Scotti",
     "last_name": "Fishe",
-    "job": "Junior Executive",
-    "categoryId": 1,
+    "job": [
+      "Junior Executive"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5402,
     "age": 44,
     "gender": "Male",
@@ -320,14 +396,18 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "11:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 20,
     "first_name": "Almira",
     "last_name": "Vlasin",
-    "job": "Graphic Designer",
-    "categoryId": 1,
+    "job": [
+      "Graphic Designer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5929,
     "age": 54,
     "gender": "Female",
@@ -337,14 +417,18 @@
     "workDays": [],
     "availableFrom": "7:30",
     "availableTill": "8:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 21,
     "first_name": "Leonelle",
     "last_name": "Oleshunin",
-    "job": "Software Consultant",
-    "categoryId": 1,
+    "job": [
+      "Software Consultant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4887,
     "age": 67,
     "gender": "Female",
@@ -354,14 +438,18 @@
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 22,
     "first_name": "Hamlen",
     "last_name": "Viveash",
-    "job": "Structural Engineer",
-    "categoryId": 1,
+    "job": [
+      "Structural Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3310,
     "age": 70,
     "gender": "Male",
@@ -371,14 +459,18 @@
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "11:46",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 23,
     "first_name": "Robinet",
     "last_name": "Vick",
-    "job": "Physical Therapy Assistant",
-    "categoryId": 1,
+    "job": [
+      "Physical Therapy Assistant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8076,
     "age": 65,
     "gender": "Female",
@@ -388,14 +480,18 @@
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "11:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 24,
     "first_name": "Swen",
     "last_name": "Dundon",
-    "job": "GIS Technical Architect",
-    "categoryId": 1,
+    "job": [
+      "GIS Technical Architect"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9813,
     "age": 55,
     "gender": "Male",
@@ -405,14 +501,18 @@
     "workDays": [],
     "availableFrom": "10:06",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 25,
     "first_name": "Clementine",
     "last_name": "Seneschal",
-    "job": "Quality Engineer",
-    "categoryId": 1,
+    "job": [
+      "Quality Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6955,
     "age": 38,
     "gender": "Female",
@@ -422,14 +522,18 @@
     "workDays": [],
     "availableFrom": "8:24",
     "availableTill": "6:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 26,
     "first_name": "Lexie",
     "last_name": "Kerrigan",
-    "job": "Help Desk Technician",
-    "categoryId": 1,
+    "job": [
+      "Help Desk Technician"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7024,
     "age": 41,
     "gender": "Female",
@@ -439,14 +543,18 @@
     "workDays": [],
     "availableFrom": "8:00",
     "availableTill": "7:57",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 27,
     "first_name": "Clo",
     "last_name": "Gaiter",
-    "job": "Programmer",
-    "categoryId": 1,
+    "job": [
+      "Programmer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7546,
     "age": 41,
     "gender": "Female",
@@ -456,14 +564,18 @@
     "workDays": [],
     "availableFrom": "11:53",
     "availableTill": "10:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 28,
     "first_name": "Sol",
     "last_name": "Preuvost",
-    "job": "Design Engineer",
-    "categoryId": 1,
+    "job": [
+      "Design Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4923,
     "age": 29,
     "gender": "Male",
@@ -473,14 +585,18 @@
     "workDays": [],
     "availableFrom": "8:00",
     "availableTill": "6:48",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 29,
     "first_name": "Bernarr",
     "last_name": "Franzonetti",
-    "job": "Financial Analyst",
-    "categoryId": 1,
+    "job": [
+      "Financial Analyst"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4898,
     "age": 23,
     "gender": "Male",
@@ -490,14 +606,18 @@
     "workDays": [],
     "availableFrom": "9:24",
     "availableTill": "6:16",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 30,
     "first_name": "Reiko",
     "last_name": "Whight",
-    "job": "Assistant Media Planner",
-    "categoryId": 1,
+    "job": [
+      "Assistant Media Planner"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2181,
     "age": 50,
     "gender": "Female",
@@ -507,14 +627,18 @@
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "6:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 31,
     "first_name": "Karlen",
     "last_name": "MacAskill",
-    "job": "Librarian",
-    "categoryId": 1,
+    "job": [
+      "Librarian"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7046,
     "age": 27,
     "gender": "Female",
@@ -524,14 +648,18 @@
     "workDays": [],
     "availableFrom": "10:31",
     "availableTill": "7:03",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 32,
     "first_name": "Robbi",
     "last_name": "Balfre",
-    "job": "Chief Design Engineer",
-    "categoryId": 1,
+    "job": [
+      "Chief Design Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4409,
     "age": 54,
     "gender": "Female",
@@ -541,14 +669,18 @@
     "workDays": [],
     "availableFrom": "6:01",
     "availableTill": "10:08",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 33,
     "first_name": "Ted",
     "last_name": "Matanin",
-    "job": "Software Engineer",
-    "categoryId": 1,
+    "job": [
+      "Software Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7513,
     "age": 73,
     "gender": "Male",
@@ -558,14 +690,18 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "10:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 34,
     "first_name": "Marisa",
     "last_name": "Brandsma",
-    "job": "Marketing Assistant",
-    "categoryId": 1,
+    "job": [
+      "Marketing Assistant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3822,
     "age": 70,
     "gender": "Female",
@@ -575,14 +711,18 @@
     "workDays": [],
     "availableFrom": "9:22",
     "availableTill": "11:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 35,
     "first_name": "Siward",
     "last_name": "Toler",
-    "job": "Executive Secretary",
-    "categoryId": 1,
+    "job": [
+      "Executive Secretary"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4860,
     "age": 62,
     "gender": "Male",
@@ -592,14 +732,18 @@
     "workDays": [],
     "availableFrom": "7:24",
     "availableTill": "6:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 36,
     "first_name": "Bessie",
     "last_name": "Caffin",
-    "job": "Senior Sales Associate",
-    "categoryId": 1,
+    "job": [
+      "Senior Sales Associate"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4703,
     "age": 51,
     "gender": "Female",
@@ -609,14 +753,18 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "10:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 37,
     "first_name": "Raimund",
     "last_name": "Becks",
-    "job": "Clinical Specialist",
-    "categoryId": 1,
+    "job": [
+      "Clinical Specialist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6203,
     "age": 44,
     "gender": "Male",
@@ -626,14 +774,18 @@
     "workDays": [],
     "availableFrom": "10:45",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 38,
     "first_name": "Clare",
     "last_name": "Latehouse",
-    "job": "Human Resources Assistant",
-    "categoryId": 1,
+    "job": [
+      "Human Resources Assistant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6036,
     "age": 59,
     "gender": "Female",
@@ -643,14 +795,18 @@
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "9:02",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 39,
     "first_name": "Kristos",
     "last_name": "Pollitt",
-    "job": "Safety Technician",
-    "categoryId": 1,
+    "job": [
+      "Safety Technician"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7783,
     "age": 47,
     "gender": "Male",
@@ -660,14 +816,18 @@
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 40,
     "first_name": "Annelise",
     "last_name": "Aingel",
-    "job": "Associate Professor",
-    "categoryId": 1,
+    "job": [
+      "Associate Professor"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5451,
     "age": 31,
     "gender": "Female",
@@ -677,14 +837,18 @@
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "8:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 41,
     "first_name": "Catharine",
     "last_name": "Sichardt",
-    "job": "Media Manager",
-    "categoryId": 1,
+    "job": [
+      "Media Manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3096,
     "age": 19,
     "gender": "Female",
@@ -694,14 +858,18 @@
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 42,
     "first_name": "Ardath",
     "last_name": "Mordecai",
-    "job": "Web Developer",
-    "categoryId": 1,
+    "job": [
+      "Web Developer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5612,
     "age": 45,
     "gender": "Female",
@@ -711,14 +879,18 @@
     "workDays": [],
     "availableFrom": "11:45",
     "availableTill": "10:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 43,
     "first_name": "Morgun",
     "last_name": "Gimber",
-    "job": "Safety Technician",
-    "categoryId": 1,
+    "job": [
+      "Safety Technician"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7948,
     "age": 22,
     "gender": "Male",
@@ -728,14 +900,18 @@
     "workDays": [],
     "availableFrom": "6:42",
     "availableTill": "7:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 44,
     "first_name": "Fredericka",
     "last_name": "Allberry",
-    "job": "Associate Professor",
-    "categoryId": 1,
+    "job": [
+      "Associate Professor"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7696,
     "age": 48,
     "gender": "Female",
@@ -745,14 +921,18 @@
     "workDays": [],
     "availableFrom": "11:16",
     "availableTill": "9:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 45,
     "first_name": "Valery",
     "last_name": "Brinkley",
-    "job": "Help Desk Operator",
-    "categoryId": 1,
+    "job": [
+      "Help Desk Operator"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8632,
     "age": 33,
     "gender": "Female",
@@ -762,14 +942,18 @@
     "workDays": [],
     "availableFrom": "9:00",
     "availableTill": "7:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 46,
     "first_name": "Corby",
     "last_name": "Cornillot",
-    "job": "Accountant",
-    "categoryId": 1,
+    "job": [
+      "Accountant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9140,
     "age": 21,
     "gender": "Male",
@@ -779,14 +963,18 @@
     "workDays": [],
     "availableFrom": "11:16",
     "availableTill": "7:22",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 47,
     "first_name": "Arv",
     "last_name": "Cavolini",
-    "job": "Compensation Analyst",
-    "categoryId": 1,
+    "job": [
+      "Compensation Analyst"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8497,
     "age": 63,
     "gender": "Male",
@@ -796,14 +984,18 @@
     "workDays": [],
     "availableFrom": "11:53",
     "availableTill": "11:42",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 48,
     "first_name": "Aida",
     "last_name": "Grigson",
-    "job": "Senior Editor",
-    "categoryId": 1,
+    "job": [
+      "Senior Editor"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2652,
     "age": 19,
     "gender": "Female",
@@ -813,14 +1005,18 @@
     "workDays": [],
     "availableFrom": "9:54",
     "availableTill": "11:51",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 49,
     "first_name": "Tudor",
     "last_name": "Gamwell",
-    "job": "Developer",
-    "categoryId": 1,
+    "job": [
+      "Developer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8264,
     "age": 36,
     "gender": "Male",
@@ -830,14 +1026,18 @@
     "workDays": [],
     "availableFrom": "6:57",
     "availableTill": "10:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 50,
     "first_name": "Chryste",
     "last_name": "Sherrock",
-    "job": "Developer",
-    "categoryId": 1,
+    "job": [
+      "Developer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2423,
     "age": 73,
     "gender": "Female",
@@ -847,14 +1047,18 @@
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "8:06",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 51,
     "first_name": "Maurine",
     "last_name": "Embleton",
-    "job": "Software Engineer",
-    "categoryId": 1,
+    "job": [
+      "Software Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3611,
     "age": 51,
     "gender": "Female",
@@ -864,14 +1068,18 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "11:42",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 52,
     "first_name": "Mollie",
     "last_name": "Praill",
-    "job": "Database Administrator",
-    "categoryId": 1,
+    "job": [
+      "Database Administrator"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9605,
     "age": 51,
     "gender": "Female",
@@ -881,14 +1089,18 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 53,
     "first_name": "Lonee",
     "last_name": "Andrews",
-    "job": "Analog Circuit Design manager",
-    "categoryId": 1,
+    "job": [
+      "Analog Circuit Design manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3645,
     "age": 53,
     "gender": "Female",
@@ -898,14 +1110,18 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "9:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 54,
     "first_name": "Brennen",
     "last_name": "Stanex",
-    "job": "Account Coordinator",
-    "categoryId": 1,
+    "job": [
+      "Account Coordinator"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2649,
     "age": 35,
     "gender": "Male",
@@ -915,14 +1131,18 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "7:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 55,
     "first_name": "Abigael",
     "last_name": "Kerfut",
-    "job": "Social Worker",
-    "categoryId": 1,
+    "job": [
+      "Social Worker"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5189,
     "age": 70,
     "gender": "Female",
@@ -932,14 +1152,18 @@
     "workDays": [],
     "availableFrom": "9:45",
     "availableTill": "8:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 56,
     "first_name": "Lane",
     "last_name": "Booth",
-    "job": "Senior Quality Engineer",
-    "categoryId": 1,
+    "job": [
+      "Senior Quality Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8962,
     "age": 39,
     "gender": "Male",
@@ -949,14 +1173,18 @@
     "workDays": [],
     "availableFrom": "6:50",
     "availableTill": "8:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 57,
     "first_name": "Junette",
     "last_name": "Macourek",
-    "job": "Account Coordinator",
-    "categoryId": 1,
+    "job": [
+      "Account Coordinator"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6617,
     "age": 39,
     "gender": "Female",
@@ -966,14 +1194,18 @@
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "11:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 58,
     "first_name": "Rosamond",
     "last_name": "Dalgliesh",
-    "job": "Internal Auditor",
-    "categoryId": 1,
+    "job": [
+      "Internal Auditor"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4423,
     "age": 55,
     "gender": "Female",
@@ -983,14 +1215,18 @@
     "workDays": [],
     "availableFrom": "8:15",
     "availableTill": "9:51",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 59,
     "first_name": "Farlay",
     "last_name": "Busain",
-    "job": "Chemical Engineer",
-    "categoryId": 1,
+    "job": [
+      "Chemical Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5445,
     "age": 59,
     "gender": "Male",
@@ -1000,14 +1236,18 @@
     "workDays": [],
     "availableFrom": "7:30",
     "availableTill": "9:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 60,
     "first_name": "Cassie",
     "last_name": "Bonifazio",
-    "job": "Software Consultant",
-    "categoryId": 1,
+    "job": [
+      "Software Consultant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5888,
     "age": 66,
     "gender": "Female",
@@ -1017,14 +1257,18 @@
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "8:53",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 61,
     "first_name": "Torin",
     "last_name": "Kondrat",
-    "job": "Assistant Professor",
-    "categoryId": 1,
+    "job": [
+      "Assistant Professor"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8287,
     "age": 24,
     "gender": "Male",
@@ -1034,14 +1278,18 @@
     "workDays": [],
     "availableFrom": "7:01",
     "availableTill": "9:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 62,
     "first_name": "Brok",
     "last_name": "Heild",
-    "job": "Senior Quality Engineer",
-    "categoryId": 1,
+    "job": [
+      "Senior Quality Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8568,
     "age": 39,
     "gender": "Male",
@@ -1051,14 +1299,18 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "11:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 63,
     "first_name": "Georgianne",
     "last_name": "Wilkenson",
-    "job": "Compensation Analyst",
-    "categoryId": 1,
+    "job": [
+      "Compensation Analyst"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7454,
     "age": 40,
     "gender": "Female",
@@ -1068,14 +1320,18 @@
     "workDays": [],
     "availableFrom": "8:51",
     "availableTill": "9:42",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 64,
     "first_name": "Adair",
     "last_name": "Flowitt",
-    "job": "Data Coordinator",
-    "categoryId": 1,
+    "job": [
+      "Data Coordinator"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3372,
     "age": 28,
     "gender": "Male",
@@ -1085,14 +1341,18 @@
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "6:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 65,
     "first_name": "Nathanial",
     "last_name": "Lensch",
-    "job": "Data Coordinator",
-    "categoryId": 1,
+    "job": [
+      "Data Coordinator"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6030,
     "age": 46,
     "gender": "Male",
@@ -1102,14 +1362,18 @@
     "workDays": [],
     "availableFrom": "8:41",
     "availableTill": "11:54",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 66,
     "first_name": "Crosby",
     "last_name": "Yanez",
-    "job": "Professor",
-    "categoryId": 1,
+    "job": [
+      "Professor"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4060,
     "age": 36,
     "gender": "Male",
@@ -1119,14 +1383,18 @@
     "workDays": [],
     "availableFrom": "6:48",
     "availableTill": "8:46",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 67,
     "first_name": "Barbette",
     "last_name": "Kiddey",
-    "job": "Electrical Engineer",
-    "categoryId": 1,
+    "job": [
+      "Electrical Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3474,
     "age": 60,
     "gender": "Female",
@@ -1136,14 +1404,18 @@
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "10:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 68,
     "first_name": "Rana",
     "last_name": "Shutler",
-    "job": "Technical Writer",
-    "categoryId": 1,
+    "job": [
+      "Technical Writer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6423,
     "age": 22,
     "gender": "Female",
@@ -1153,14 +1425,18 @@
     "workDays": [],
     "availableFrom": "6:31",
     "availableTill": "7:48",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 69,
     "first_name": "Gauthier",
     "last_name": "Foote",
-    "job": "Programmer",
-    "categoryId": 1,
+    "job": [
+      "Programmer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 3350,
     "age": 24,
     "gender": "Male",
@@ -1170,14 +1446,18 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "8:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 70,
     "first_name": "Hollyanne",
     "last_name": "Allchorn",
-    "job": "Senior Developer",
-    "categoryId": 1,
+    "job": [
+      "Senior Developer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6109,
     "age": 58,
     "gender": "Female",
@@ -1187,14 +1467,18 @@
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "8:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 71,
     "first_name": "Dicky",
     "last_name": "Mc Gee",
-    "job": "Structural Analysis Engineer",
-    "categoryId": 1,
+    "job": [
+      "Structural Analysis Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6941,
     "age": 48,
     "gender": "Male",
@@ -1204,14 +1488,18 @@
     "workDays": [],
     "availableFrom": "7:49",
     "availableTill": "11:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 72,
     "first_name": "Bat",
     "last_name": "Tripcony",
-    "job": "Senior Editor",
-    "categoryId": 1,
+    "job": [
+      "Senior Editor"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4799,
     "age": 68,
     "gender": "Male",
@@ -1221,14 +1509,18 @@
     "workDays": [],
     "availableFrom": "8:15",
     "availableTill": "7:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 73,
     "first_name": "Tades",
     "last_name": "Northedge",
-    "job": "GIS Technical Architect",
-    "categoryId": 1,
+    "job": [
+      "GIS Technical Architect"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2978,
     "age": 28,
     "gender": "Male",
@@ -1238,14 +1530,18 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 74,
     "first_name": "Gianna",
     "last_name": "Reddick",
-    "job": "Senior Sales Associate",
-    "categoryId": 1,
+    "job": [
+      "Senior Sales Associate"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9901,
     "age": 36,
     "gender": "Female",
@@ -1255,14 +1551,18 @@
     "workDays": [],
     "availableFrom": "11:45",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 75,
     "first_name": "Alica",
     "last_name": "Petrol",
-    "job": "Sales Representative",
-    "categoryId": 1,
+    "job": [
+      "Sales Representative"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7160,
     "age": 26,
     "gender": "Female",
@@ -1272,14 +1572,18 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 76,
     "first_name": "Micheil",
     "last_name": "Oldershaw",
-    "job": "Teacher",
-    "categoryId": 1,
+    "job": [
+      "Teacher"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8362,
     "age": 24,
     "gender": "Male",
@@ -1289,14 +1593,18 @@
     "workDays": [],
     "availableFrom": "8:00",
     "availableTill": "11:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 77,
     "first_name": "Elaina",
     "last_name": "Bantock",
-    "job": "Design Engineer",
-    "categoryId": 1,
+    "job": [
+      "Design Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9243,
     "age": 56,
     "gender": "Female",
@@ -1306,14 +1614,18 @@
     "workDays": [],
     "availableFrom": "7:15",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 78,
     "first_name": "Alric",
     "last_name": "Scorthorne",
-    "job": "VP Product Management",
-    "categoryId": 1,
+    "job": [
+      "VP Product Management"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9230,
     "age": 69,
     "gender": "Male",
@@ -1323,14 +1635,18 @@
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "11:53",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 79,
     "first_name": "Lorene",
     "last_name": "Element",
-    "job": "Mechanical Systems Engineer",
-    "categoryId": 1,
+    "job": [
+      "Mechanical Systems Engineer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7144,
     "age": 40,
     "gender": "Female",
@@ -1340,14 +1656,18 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "6:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 80,
     "first_name": "Junia",
     "last_name": "Brunotti",
-    "job": "Dental Hygienist",
-    "categoryId": 1,
+    "job": [
+      "Dental Hygienist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9387,
     "age": 29,
     "gender": "Female",
@@ -1357,14 +1677,18 @@
     "workDays": [],
     "availableFrom": "10:03",
     "availableTill": "9:48",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 81,
     "first_name": "Charis",
     "last_name": "Pomroy",
-    "job": "Food Chemist",
-    "categoryId": 1,
+    "job": [
+      "Food Chemist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8189,
     "age": 47,
     "gender": "Female",
@@ -1374,14 +1698,18 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "10:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 82,
     "first_name": "Kliment",
     "last_name": "Lacroix",
-    "job": "Graphic Designer",
-    "categoryId": 1,
+    "job": [
+      "Graphic Designer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2616,
     "age": 24,
     "gender": "Male",
@@ -1391,14 +1719,18 @@
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 83,
     "first_name": "Kaylil",
     "last_name": "Hanna",
-    "job": "Analog Circuit Design manager",
-    "categoryId": 1,
+    "job": [
+      "Analog Circuit Design manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7336,
     "age": 42,
     "gender": "Female",
@@ -1408,14 +1740,18 @@
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "8:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 84,
     "first_name": "Pauletta",
     "last_name": "Banasiak",
-    "job": "Developer",
-    "categoryId": 1,
+    "job": [
+      "Developer"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 5624,
     "age": 58,
     "gender": "Female",
@@ -1425,14 +1761,18 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "10:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 85,
     "first_name": "Myrah",
     "last_name": "Elvin",
-    "job": "Marketing Manager",
-    "categoryId": 1,
+    "job": [
+      "Marketing Manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2280,
     "age": 26,
     "gender": "Female",
@@ -1442,14 +1782,18 @@
     "workDays": [],
     "availableFrom": "9:51",
     "availableTill": "10:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 86,
     "first_name": "Ailina",
     "last_name": "Berrick",
-    "job": "Tax Accountant",
-    "categoryId": 1,
+    "job": [
+      "Tax Accountant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 6310,
     "age": 44,
     "gender": "Female",
@@ -1459,14 +1803,18 @@
     "workDays": [],
     "availableFrom": "10:53",
     "availableTill": "9:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 87,
     "first_name": "Sheila-kathryn",
     "last_name": "Dumbellow",
-    "job": "Assistant Manager",
-    "categoryId": 1,
+    "job": [
+      "Assistant Manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8143,
     "age": 56,
     "gender": "Female",
@@ -1476,14 +1824,18 @@
     "workDays": [],
     "availableFrom": "10:54",
     "availableTill": "10:18",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 88,
     "first_name": "Carla",
     "last_name": "Stead",
-    "job": "Human Resources Manager",
-    "categoryId": 1,
+    "job": [
+      "Human Resources Manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 9666,
     "age": 43,
     "gender": "Female",
@@ -1493,14 +1845,18 @@
     "workDays": [],
     "availableFrom": "7:42",
     "availableTill": "9:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 89,
     "first_name": "Helge",
     "last_name": "Daintith",
-    "job": "Cost Accountant",
-    "categoryId": 1,
+    "job": [
+      "Cost Accountant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2212,
     "age": 43,
     "gender": "Female",
@@ -1510,14 +1866,18 @@
     "workDays": [],
     "availableFrom": "7:15",
     "availableTill": "10:46",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 90,
     "first_name": "Ashla",
     "last_name": "Giblett",
-    "job": "Dental Hygienist",
-    "categoryId": 1,
+    "job": [
+      "Dental Hygienist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2965,
     "age": 20,
     "gender": "Female",
@@ -1527,14 +1887,18 @@
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "9:48",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 91,
     "first_name": "Dasha",
     "last_name": "Cheetham",
-    "job": "Project Manager",
-    "categoryId": 1,
+    "job": [
+      "Project Manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8558,
     "age": 52,
     "gender": "Female",
@@ -1544,14 +1908,18 @@
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "7:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 92,
     "first_name": "Savina",
     "last_name": "Wrightam",
-    "job": "Nurse",
-    "categoryId": 1,
+    "job": [
+      "Nurse"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4239,
     "age": 30,
     "gender": "Female",
@@ -1561,14 +1929,18 @@
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "7:00",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 93,
     "first_name": "Todd",
     "last_name": "Tatters",
-    "job": "Social Worker",
-    "categoryId": 1,
+    "job": [
+      "Social Worker"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 1598,
     "age": 47,
     "gender": "Male",
@@ -1578,14 +1950,18 @@
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "10:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 94,
     "first_name": "Gloria",
     "last_name": "Pitcock",
-    "job": "Business Systems Development Analyst",
-    "categoryId": 1,
+    "job": [
+      "Business Systems Development Analyst"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 1839,
     "age": 46,
     "gender": "Female",
@@ -1595,14 +1971,18 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "9:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 95,
     "first_name": "Clair",
     "last_name": "Glantz",
-    "job": "Help Desk Operator",
-    "categoryId": 1,
+    "job": [
+      "Help Desk Operator"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2987,
     "age": 18,
     "gender": "Male",
@@ -1612,14 +1992,18 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "6:45",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 96,
     "first_name": "Eugen",
     "last_name": "MacIan",
-    "job": "Legal Assistant",
-    "categoryId": 1,
+    "job": [
+      "Legal Assistant"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 7701,
     "age": 26,
     "gender": "Male",
@@ -1629,14 +2013,18 @@
     "workDays": [],
     "availableFrom": "6:45",
     "availableTill": "8:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 97,
     "first_name": "Mirilla",
     "last_name": "Fransemai",
-    "job": "Assistant Manager",
-    "categoryId": 1,
+    "job": [
+      "Assistant Manager"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8314,
     "age": 44,
     "gender": "Female",
@@ -1646,14 +2034,18 @@
     "workDays": [],
     "availableFrom": "9:15",
     "availableTill": "9:30",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 98,
     "first_name": "Loy",
     "last_name": "Whannel",
-    "job": "Geologist",
-    "categoryId": 1,
+    "job": [
+      "Geologist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 8878,
     "age": 36,
     "gender": "Male",
@@ -1663,14 +2055,18 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "11:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 99,
     "first_name": "Darlleen",
     "last_name": "Regglar",
-    "job": "Staff Scientist",
-    "categoryId": 1,
+    "job": [
+      "Staff Scientist"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 2762,
     "age": 34,
     "gender": "Female",
@@ -1680,14 +2076,18 @@
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "10:15",
-    "rating": 5.4
+    "rating": 5.0
   },
   {
     "id": 100,
     "first_name": "Deane",
     "last_name": "Godsmark",
-    "job": "Desktop Support Technician",
-    "categoryId": 1,
+    "job": [
+      "Desktop Support Technician"
+    ],
+    "categoryId": [
+      1
+    ],
     "price": 4077,
     "age": 26,
     "gender": "Female",
@@ -1697,6 +2097,6 @@
     "workDays": [],
     "availableFrom": "6:00",
     "availableTill": "8:45",
-    "rating": 5.4
+    "rating": 5.0
   }
 ]
