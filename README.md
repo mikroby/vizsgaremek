@@ -1,6 +1,6 @@
 ## MESTEREMBER Applikáció - Szakember kereső adatbázis
 ----
-## USER STORY
+## USER STORIES
 
 ## 1. Főoldal
 
