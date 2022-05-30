@@ -17,18 +17,18 @@
 
 **2. User Story:**
 
-> _Felül mindvégig legyen látható egy fejléc-sáv, az oldal főcímével az aktuális dátum és idő megjelenítésével viszonyítási pontként._
+> _Felül mindvégig látható egy fejléc-sáv, az oldal főcímével az aktuális dátum és idő megjelenítésével viszonyítási pontként._
 
 **Elfogadási kritérium:**
 
 A fejléc szerkezete:
-+ a főcím megjelenítése középen, egyben "Home" link-ként navigáljon minden esetben erre a főoldalra!
++ a főcím megjelenítése középen, egyben "Home" link-ként minden esetben erre a főoldalra navigál.
 + bal szélen az aktuális dátum és időpont, mely folyamatosan frissül
 + jobb szélen az adminisztrátor ikonja, mely kattintható.
 
 **3. User Story:**
 
-> _A szerepkörökhöz tartozó használat egyértelműen különüljön el._
+> _A szerepkörökhöz tartozó használat egyértelműen elkülönül._
 
 **Elfogadási kritérium:**
 
@@ -86,7 +86,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Beviteli mező legördülő menü formájában, ahol több mezőt kiválasztva a lista megfelelő fejlécei jelennek meg. Ilyenkor a szűkítés csak a megjelenített mezők alapján legyen lehetséges!
++ Beviteli mező legördülő menü formájában, ahol több mezőt kiválasztva a lista megfelelő fejlécei jelennek meg. Ilyenkor a szűkítés csak a megjelenített mezők alapján lehetséges.
 
 **5. User Story:**
 
@@ -94,7 +94,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Lapozó ikonok alul, illetve külön beviteli mezőben legyen megadható az egy lapon megjelenő sorok száma is.
++ Lapozó ikonok alul, illetve külön beviteli mezőben megadható az egy lapon megjelenő sorok száma is.
 
 **6. User Story:**
 
@@ -102,7 +102,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Az oszlopok sorrendje "drag & drop" technikával átrendezhető legyen.
++ Az oszlopok sorrendje "drag & drop" technikával átrendezhető.
 
 **7. User Story:**
 
@@ -110,7 +110,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ A sorok kattinthatóak legyenek, külön ablakban (vagy kártyán) megjelenik a kiválasztott szakember összes publikus adata, ha van, a feltöltött kép is.
++ A sorok kattinthatóak, külön ablakban (vagy kártyán) megjelenik a kiválasztott szakember összes publikus adata, ha van, a feltöltött kép is.
 
 **8. User Story:**
 
@@ -144,7 +144,7 @@ A fejléc szerkezete:
 
 **1. User Story:**
 
-> _A regisztráció külön oldalon jelenik meg, a szükséges adatok megadásával. A regisztrációtól való elállás legyen lehetséges._
+> _A regisztráció külön oldalon jelenik meg, a szükséges adatok megadásával. A regisztrációtól való elállás lehetséges._
 
 **Elfogadási kritérium:**
 
@@ -186,5 +186,4 @@ A fejléc szerkezete:
 + A kiválasztott entitás listája megjelenik. A lista jellege megegyezik a 3. Kereső-listázó aloldalnál megadottakkal, kiegészülve "szerkesztő" és "törlő" gombbal (egy-egy ikon megjelenésével).
 + A "szerkesztés" gombra kattintva aloldalon megjelenő űrlapon módosíthatók az adatok.
 + Validáció után az adatbázisban átvezetésre kerülnek az új adatok.
-+ Törlés csak megerősítő kérdés után történjen.
-
++ Törlés csak a megerősítő kérdés elfogadása után történik meg.
