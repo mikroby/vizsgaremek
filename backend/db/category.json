@@ -3,61 +3,65 @@
     "categoryId": 1,
     "name": "Informatika",
     "description": [
-      "Weblap készítés / tervezés",
-      "Alkalmazás készítés / tervezés",
+      "Adatmentés",
+      "Alkalmazás készítés és tervezés",
       "Karbantartás",
-      "Üzemeltetés",
+      "PC hardware",
+      "Rendszer optimalizálás",
       "Telepítés",
-      "PC Hardware",
-      "Adatmentés"
+      "Üzemeltetés",
+      "Weblap készítés és tervezés"
     ]
   },
   {
     "categoryId": 2,
     "name": "Építőipar",
     "description": [
-      "Ács / Tetőfedő",
-      "Kőműves",
-      "Építészmérnök Tervező",
-      "Tartószerkezet Tervező",
+      "Ács és tetőfedő",
       "Asztalos",
-      "Felújítás",
-      "Épületgépész Mérnök",
-      "Épületvillamossági Mérnök",
-      "Felelős műszaki vezető",
-      "Műszaki ellenőr",
-      "Lakatos",
-      "Villanyszerelő",
-      "Víz-gáz-fűtés szerelő",
-      "Festő",
-      "Gipszkartonozó",
       "Burkoló",
-      "Kertépítés"
+      "Építészmérnök",
+      "Épületgépész mérnök",
+      "Épületvillamossági mérnök",
+      "Felelős műszaki vezető",
+      "Felújítás",
+      "Festő",
+      "Geodéta",
+      "Gipszkartonozó",
+      "Kertépítés",
+      "Költségvetés készítő",
+      "Kőműves",
+      "Lakatos",
+      "Műszaki ellenőr",
+      "Projekt-menedzser",
+      "Tartószerkezet tervező",
+      "Villanyszerelő",
+      "Víz-gáz-fűtés szerelő"
     ]
   },
   {
     "categoryId": 3,
     "name": "Háztartás / kert",
     "description": [
-      "Takarítás",
-      "Idősgondozás",
-      "Gyermekfelügyelet",
       "Bevásárlás",
-      "Kertrendezés",
+      "Gyermekfelügyelet",
+      "Háziállat felügyelet",
+      "Idősgondozás",
       "Javítás-karbantartás",
-      "Háziállat felügyelet"
+      "Kertrendezés",
+      "Takarítás"
     ]
   },
   {
     "categoryId": 4,
     "name": "Jármű",
     "description": [
+      "Autó üvegezés",
+      "Autó villamosság",
       "Autószerelő",
-      "Kerékpár javítás",
       "Gumiszerelés",
       "Karosszéria javítás",
-      "Autó üvegezés",
-      "Autó villamosság"
+      "Kerékpár javítás"
     ]
   },
   {
@@ -65,13 +69,13 @@
     "name": "Egészség",
     "description": [
       "Általános orvos",
+      "Bőrgyógyász",
       "Fogorvos",
       "Gyermekorvos",
-      "Bőrgyógyász",
       "Gyógytornász",
       "Masszőr",
-      "Yoga-oktató",
-      "Pszichológus"
+      "Pszichológus",
+      "Yoga-oktató"
     ]
   },
   {
@@ -81,70 +85,76 @@
       "Fodrász",
       "Kozmetikus",
       "Manikűrös",
-      "Pedikűrös",
-      "Műkörömépítő"
+      "Műkörömépítő",
+      "Pedikűrös"
     ]
   },
   {
     "categoryId": 7,
     "name": "Tanácsadás",
     "description": [
-      "Ügyvéd",
-      "Pénzügyi tanácsadó",
-      "Könyvelő",
       "Coach",
       "Életvezetési tanácsadó",
-      "Mentor"
+      "Könyvelő",
+      "Pénzügyi tanácsadó",
+      "Személyi edző",
+      "Ügyvéd"
     ]
   },
   {
     "categoryId": 8,
     "name": "Oktatás",
     "description": [
-      "Matematika",
-      "Fizika",
       "Angol",
-      "Német",
-      "Francia",
-      "Spanyol",
-      "Olasz",
-      "Magyar",
-      "Rajz",
-      "Kémia",
-      "Földrajz",
       "Biológia",
+      "Dob oktatás",
+      "Ének / hangképzés",
       "Érettségi-felkészítés",
-      "Felvételi-felkészítés"
+      "Felvételi-felkészítés",
+      "Fizika",
+      "Földrajz",
+      "Francia",
+      "Gitár tanítás",
+      "Kémia",
+      "Magyar",
+      "Matematika",
+      "Német",
+      "Olasz",
+      "Rajz",
+      "Spanyol",
+      "Színjátszás",
+      "Társastánc oktatás",
+      "Zongora tanár"
     ]
   },
   {
     "categoryId": 9,
     "name": "1000 Apró",
     "description": [
-      "Kulcsmásoló",
-      "Cipész",
-      "Üveges",
-      "Képkeretező",
-      "Szakács",
-      "Cukrász",
       "Bútorasztalos",
+      "Cipész",
+      "Cukrász",
+      "Elektronikai műszerész",
+      "Képkeretező",
+      "Kulcsmásoló",
       "Mobiltelefon javítás",
-      "Elektronikai műszerész"
+      "Szakács",
+      "Üveges"
     ]
   },
   {
     "categoryId": 10,
     "name": "Szórakoztatás / rendezvény",
     "description": [
-      "Bűvész",
-      "Zenész",
-      "Táncos",
-      "Stand-up",
-      "Bohóc",
-      "Télapó",
+      "Arcfestés",
       "Bábelőadás",
+      "Bohóc",
+      "Bűvész",
       "Kézműves foglalkozás",
-      "Arcfestés"
+      "Stand-up",
+      "Táncos",
+      "Télapó",
+      "Zenész"
     ]
   }
 ]

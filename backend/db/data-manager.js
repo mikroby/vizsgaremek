@@ -1,5 +1,5 @@
 'use strict'
-// this is to modifiy json files
+// this helper is to modifiy json files
 // node .\backend\db\data-manager.js
 
 const colors = {
@@ -31,11 +31,15 @@ const sortByProp = (list, prop) => {
     log('error', 'sortByProp: given property is not valid!')
     return list
   }
-  const propType = typeof list[0][prop]
-  if (propType === 'number') list.sort((a, b) => a[prop] - b[prop])
-  if (propType === 'string') list.sort((a, b) => a[prop].localeCompare(b[prop]))
+
+  const value = list[0][prop]
+
+  if (Array.isArray(value)) list.forEach(item => item[prop].sort((a, b) => a.localeCompare(b)))
+  if (typeof value === 'number') list.sort((a, b) => a[prop] - b[prop])
+  if (typeof value === 'string') list.sort((a, b) => a[prop].localeCompare(b[prop]))
 
   log('normal', 'sortByProp finished.')
+
   return list
 }
 
