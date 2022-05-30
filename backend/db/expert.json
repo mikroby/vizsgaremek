@@ -18,7 +18,7 @@
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 2,
@@ -39,7 +39,7 @@
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "9:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 3,
@@ -55,12 +55,12 @@
     "age": 18,
     "gender": "Female",
     "email": "ehiland2@twitter.com",
-    "phone": "+36-20-183-2501",
+    "phone": "+36-70-183-2501",
     "password": "AhBeRDdm",
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "6:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 4,
@@ -76,12 +76,12 @@
     "age": 46,
     "gender": "Female",
     "email": "bkristufek3@ask.com",
-    "phone": "+36-20-262-3033",
+    "phone": "+36-70-262-3033",
     "password": "TW7cNQylY",
     "workDays": [],
     "availableFrom": "11:15",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 5,
@@ -97,12 +97,12 @@
     "age": 66,
     "gender": "Male",
     "email": "dbarnhart4@lulu.com",
-    "phone": "+36-20-755-8051",
+    "phone": "+36-30-755-8051",
     "password": "6pAOeQbG",
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "10:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 6,
@@ -118,12 +118,12 @@
     "age": 31,
     "gender": "Male",
     "email": "hsarrell5@github.io",
-    "phone": "+36-20-712-5306",
+    "phone": "+36-70-712-5306",
     "password": "BdKScv",
     "workDays": [],
     "availableFrom": "6:45",
     "availableTill": "6:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 7,
@@ -139,12 +139,12 @@
     "age": 55,
     "gender": "Male",
     "email": "lellph6@constantcontact.com",
-    "phone": "+36-20-401-7565",
+    "phone": "+36-70-401-7565",
     "password": "t33WeQe",
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "6:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 8,
@@ -165,7 +165,7 @@
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 9,
@@ -181,12 +181,12 @@
     "age": 32,
     "gender": "Male",
     "email": "sbartul8@huffingtonpost.com",
-    "phone": "+36-20-454-8655",
+    "phone": "+36-30-454-8655",
     "password": "rv0bY6kuD",
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "8:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 10,
@@ -202,12 +202,12 @@
     "age": 38,
     "gender": "Male",
     "email": "hkenner9@abc.net.au",
-    "phone": "+36-20-790-4825",
+    "phone": "+36-30-790-4825",
     "password": "cJXCa0GegH",
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "11:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 11,
@@ -228,7 +228,7 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "8:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 12,
@@ -249,7 +249,7 @@
     "workDays": [],
     "availableFrom": "8:15",
     "availableTill": "6:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 13,
@@ -265,12 +265,12 @@
     "age": 70,
     "gender": "Male",
     "email": "cgriffenc@sogou.com",
-    "phone": "+36-20-726-0110",
+    "phone": "+36-70-726-0110",
     "password": "VDfhC7ex6A",
     "workDays": [],
     "availableFrom": "7:30",
     "availableTill": "8:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 14,
@@ -286,12 +286,12 @@
     "age": 67,
     "gender": "Female",
     "email": "jjerdond@abc.net.au",
-    "phone": "+36-20-111-0340",
+    "phone": "+36-30-111-0340",
     "password": "9qk1r6RZcY2",
     "workDays": [],
     "availableFrom": "9:00",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 15,
@@ -307,12 +307,12 @@
     "age": 32,
     "gender": "Male",
     "email": "ihubande@com.com",
-    "phone": "+36-20-853-1190",
+    "phone": "+36-70-853-1190",
     "password": "dwTWpN5qhdC",
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 16,
@@ -328,12 +328,12 @@
     "age": 59,
     "gender": "Female",
     "email": "ochablef@t-online.de",
-    "phone": "+36-20-999-7916",
+    "phone": "+36-70-999-7916",
     "password": "b6Ww9HZS3n",
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "11:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 17,
@@ -349,12 +349,12 @@
     "age": 72,
     "gender": "Female",
     "email": "bsalwayg@phoca.cz",
-    "phone": "+36-20-208-4388",
+    "phone": "+36-30-208-4388",
     "password": "bIu6iV9XyLH",
     "workDays": [],
     "availableFrom": "6:15",
     "availableTill": "11:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 18,
@@ -370,12 +370,12 @@
     "age": 74,
     "gender": "Female",
     "email": "dduinkerkh@squidoo.com",
-    "phone": "+36-20-977-8490",
+    "phone": "+36-30-977-8490",
     "password": "X5sXjUWjN",
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "7:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 19,
@@ -391,12 +391,12 @@
     "age": 44,
     "gender": "Male",
     "email": "sfishei@ibm.com",
-    "phone": "+36-20-181-1570",
+    "phone": "+36-70-181-1570",
     "password": "IiPHurwMLC",
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "11:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 20,
@@ -412,12 +412,12 @@
     "age": 54,
     "gender": "Female",
     "email": "avlasinj@cbc.ca",
-    "phone": "+36-20-535-3246",
+    "phone": "+36-70-535-3246",
     "password": "OHwSqOUcf",
     "workDays": [],
     "availableFrom": "7:30",
     "availableTill": "8:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 21,
@@ -433,12 +433,12 @@
     "age": 67,
     "gender": "Female",
     "email": "loleshunink@ifeng.com",
-    "phone": "+36-20-413-6099",
+    "phone": "+36-30-413-6099",
     "password": "kuMGLFK",
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 22,
@@ -454,12 +454,12 @@
     "age": 70,
     "gender": "Male",
     "email": "hviveashl@ibm.com",
-    "phone": "+36-20-494-7831",
+    "phone": "+36-70-494-7831",
     "password": "2xXqPK",
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "11:46",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 23,
@@ -475,12 +475,12 @@
     "age": 65,
     "gender": "Female",
     "email": "rvickm@dion.ne.jp",
-    "phone": "+36-20-276-1955",
+    "phone": "+36-30-276-1955",
     "password": "9u8wm9HsGVuJ",
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "11:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 24,
@@ -496,12 +496,12 @@
     "age": 55,
     "gender": "Male",
     "email": "sdundonn@nymag.com",
-    "phone": "+36-20-404-7022",
+    "phone": "+36-70-404-7022",
     "password": "gWnTUgS",
     "workDays": [],
     "availableFrom": "10:06",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 25,
@@ -517,12 +517,12 @@
     "age": 38,
     "gender": "Female",
     "email": "cseneschalo@rakuten.co.jp",
-    "phone": "+36-20-288-4918",
+    "phone": "+36-30-288-4918",
     "password": "PpjY547Whdi",
     "workDays": [],
     "availableFrom": "8:24",
     "availableTill": "6:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 26,
@@ -538,12 +538,12 @@
     "age": 41,
     "gender": "Female",
     "email": "lkerriganp@wp.com",
-    "phone": "+36-20-273-7192",
+    "phone": "+36-30-273-7192",
     "password": "griD62Xl9O",
     "workDays": [],
     "availableFrom": "8:00",
     "availableTill": "7:57",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 27,
@@ -559,12 +559,12 @@
     "age": 41,
     "gender": "Female",
     "email": "cgaiterq@storify.com",
-    "phone": "+36-20-803-9230",
+    "phone": "+36-30-803-9230",
     "password": "2v2ecN3Vl5O",
     "workDays": [],
     "availableFrom": "11:53",
     "availableTill": "10:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 28,
@@ -585,7 +585,7 @@
     "workDays": [],
     "availableFrom": "8:00",
     "availableTill": "6:48",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 29,
@@ -606,7 +606,7 @@
     "workDays": [],
     "availableFrom": "9:24",
     "availableTill": "6:16",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 30,
@@ -622,12 +622,12 @@
     "age": 50,
     "gender": "Female",
     "email": "rwhightt@cnet.com",
-    "phone": "+36-20-653-6687",
+    "phone": "+36-30-653-6687",
     "password": "DkjCE4nd",
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "6:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 31,
@@ -648,7 +648,7 @@
     "workDays": [],
     "availableFrom": "10:31",
     "availableTill": "7:03",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 32,
@@ -664,12 +664,12 @@
     "age": 54,
     "gender": "Female",
     "email": "rbalfrev@umn.edu",
-    "phone": "+36-20-403-3506",
+    "phone": "+36-70-403-3506",
     "password": "xR2GfbJKvTOM",
     "workDays": [],
     "availableFrom": "6:01",
     "availableTill": "10:08",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 33,
@@ -685,12 +685,12 @@
     "age": 73,
     "gender": "Male",
     "email": "tmataninw@delicious.com",
-    "phone": "+36-20-781-8273",
+    "phone": "+36-30-781-8273",
     "password": "kS2g8TBa",
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "10:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 34,
@@ -706,12 +706,12 @@
     "age": 70,
     "gender": "Female",
     "email": "mbrandsmax@last.fm",
-    "phone": "+36-20-461-8087",
+    "phone": "+36-30-461-8087",
     "password": "Nm6BWNqCv0",
     "workDays": [],
     "availableFrom": "9:22",
     "availableTill": "11:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 35,
@@ -732,7 +732,7 @@
     "workDays": [],
     "availableFrom": "7:24",
     "availableTill": "6:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 36,
@@ -753,7 +753,7 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "10:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 37,
@@ -774,7 +774,7 @@
     "workDays": [],
     "availableFrom": "10:45",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 38,
@@ -790,12 +790,12 @@
     "age": 59,
     "gender": "Female",
     "email": "clatehouse11@stanford.edu",
-    "phone": "+36-20-205-1841",
+    "phone": "+36-30-205-1841",
     "password": "N0EBzRUALvi",
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "9:02",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 39,
@@ -811,12 +811,12 @@
     "age": 47,
     "gender": "Male",
     "email": "kpollitt12@webeden.co.uk",
-    "phone": "+36-20-854-4529",
+    "phone": "+36-70-854-4529",
     "password": "Ar6vgUyC",
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 40,
@@ -837,7 +837,7 @@
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "8:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 41,
@@ -853,12 +853,12 @@
     "age": 19,
     "gender": "Female",
     "email": "csichardt14@goodreads.com",
-    "phone": "+36-20-662-0057",
+    "phone": "+36-70-662-0057",
     "password": "f9CelOX",
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 42,
@@ -874,12 +874,12 @@
     "age": 45,
     "gender": "Female",
     "email": "amordecai15@ihg.com",
-    "phone": "+36-20-886-7560",
+    "phone": "+36-70-886-7560",
     "password": "Umn4IizY",
     "workDays": [],
     "availableFrom": "11:45",
     "availableTill": "10:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 43,
@@ -900,7 +900,7 @@
     "workDays": [],
     "availableFrom": "6:42",
     "availableTill": "7:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 44,
@@ -921,7 +921,7 @@
     "workDays": [],
     "availableFrom": "11:16",
     "availableTill": "9:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 45,
@@ -942,7 +942,7 @@
     "workDays": [],
     "availableFrom": "9:00",
     "availableTill": "7:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 46,
@@ -958,12 +958,12 @@
     "age": 21,
     "gender": "Male",
     "email": "ccornillot19@prweb.com",
-    "phone": "+36-20-345-4304",
+    "phone": "+36-70-345-4304",
     "password": "2yBwZTMzC2",
     "workDays": [],
     "availableFrom": "11:16",
     "availableTill": "7:22",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 47,
@@ -984,7 +984,7 @@
     "workDays": [],
     "availableFrom": "11:53",
     "availableTill": "11:42",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 48,
@@ -1000,12 +1000,12 @@
     "age": 19,
     "gender": "Female",
     "email": "agrigson1b@shareasale.com",
-    "phone": "+36-20-523-4577",
+    "phone": "+36-30-523-4577",
     "password": "8WOJA7jwwmjd",
     "workDays": [],
     "availableFrom": "9:54",
     "availableTill": "11:51",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 49,
@@ -1021,12 +1021,12 @@
     "age": 36,
     "gender": "Male",
     "email": "tgamwell1c@nih.gov",
-    "phone": "+36-20-757-2974",
+    "phone": "+36-30-757-2974",
     "password": "fwYxsVRBj",
     "workDays": [],
     "availableFrom": "6:57",
     "availableTill": "10:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 50,
@@ -1042,12 +1042,12 @@
     "age": 73,
     "gender": "Female",
     "email": "csherrock1d@amazon.co.jp",
-    "phone": "+36-20-279-9831",
+    "phone": "+36-30-279-9831",
     "password": "pYdtWEe5QNZ",
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "8:06",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 51,
@@ -1068,7 +1068,7 @@
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "11:42",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 52,
@@ -1089,7 +1089,7 @@
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 53,
@@ -1110,7 +1110,7 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "9:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 54,
@@ -1126,12 +1126,12 @@
     "age": 35,
     "gender": "Male",
     "email": "bstanex1h@pen.io",
-    "phone": "+36-20-895-4046",
+    "phone": "+36-30-895-4046",
     "password": "D7Wly0A",
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "7:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 55,
@@ -1152,7 +1152,7 @@
     "workDays": [],
     "availableFrom": "9:45",
     "availableTill": "8:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 56,
@@ -1168,12 +1168,12 @@
     "age": 39,
     "gender": "Male",
     "email": "lbooth1j@washington.edu",
-    "phone": "+36-20-523-8895",
+    "phone": "+36-30-523-8895",
     "password": "8ksiwLpbz50",
     "workDays": [],
     "availableFrom": "6:50",
     "availableTill": "8:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 57,
@@ -1189,12 +1189,12 @@
     "age": 39,
     "gender": "Female",
     "email": "jmacourek1k@baidu.com",
-    "phone": "+36-20-106-5992",
+    "phone": "+36-30-106-5992",
     "password": "QnOQ1nxDX8",
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "11:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 58,
@@ -1210,12 +1210,12 @@
     "age": 55,
     "gender": "Female",
     "email": "rdalgliesh1l@seesaa.net",
-    "phone": "+36-20-941-8018",
+    "phone": "+36-30-941-8018",
     "password": "7glXeT",
     "workDays": [],
     "availableFrom": "8:15",
     "availableTill": "9:51",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 59,
@@ -1231,12 +1231,12 @@
     "age": 59,
     "gender": "Male",
     "email": "fbusain1m@ucoz.com",
-    "phone": "+36-20-985-1279",
+    "phone": "+36-70-985-1279",
     "password": "AW2euJRmae",
     "workDays": [],
     "availableFrom": "7:30",
     "availableTill": "9:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 60,
@@ -1252,12 +1252,12 @@
     "age": 66,
     "gender": "Female",
     "email": "cbonifazio1n@whitehouse.gov",
-    "phone": "+36-20-877-9514",
+    "phone": "+36-30-877-9514",
     "password": "nzt9r1Yr",
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "8:53",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 61,
@@ -1273,12 +1273,12 @@
     "age": 24,
     "gender": "Male",
     "email": "tkondrat1o@creativecommons.org",
-    "phone": "+36-20-243-8389",
+    "phone": "+36-30-243-8389",
     "password": "oBhnIGPEd",
     "workDays": [],
     "availableFrom": "7:01",
     "availableTill": "9:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 62,
@@ -1294,12 +1294,12 @@
     "age": 39,
     "gender": "Male",
     "email": "bheild1p@slate.com",
-    "phone": "+36-20-972-5699",
+    "phone": "+36-70-972-5699",
     "password": "vaSMmm7",
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "11:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 63,
@@ -1315,12 +1315,12 @@
     "age": 40,
     "gender": "Female",
     "email": "gwilkenson1q@angelfire.com",
-    "phone": "+36-20-664-8343",
+    "phone": "+36-30-664-8343",
     "password": "7MTkmYT",
     "workDays": [],
     "availableFrom": "8:51",
     "availableTill": "9:42",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 64,
@@ -1336,12 +1336,12 @@
     "age": 28,
     "gender": "Male",
     "email": "aflowitt1r@feedburner.com",
-    "phone": "+36-20-619-0822",
+    "phone": "+36-30-619-0822",
     "password": "kqpIVOS",
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "6:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 65,
@@ -1357,12 +1357,12 @@
     "age": 46,
     "gender": "Male",
     "email": "nlensch1s@163.com",
-    "phone": "+36-20-548-5898",
+    "phone": "+36-30-548-5898",
     "password": "BAFPoBs",
     "workDays": [],
     "availableFrom": "8:41",
     "availableTill": "11:54",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 66,
@@ -1378,12 +1378,12 @@
     "age": 36,
     "gender": "Male",
     "email": "cyanez1t@state.tx.us",
-    "phone": "+36-20-197-5431",
+    "phone": "+36-30-197-5431",
     "password": "WOwAs9iDXM",
     "workDays": [],
     "availableFrom": "6:48",
     "availableTill": "8:46",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 67,
@@ -1399,12 +1399,12 @@
     "age": 60,
     "gender": "Female",
     "email": "bkiddey1u@upenn.edu",
-    "phone": "+36-20-339-8278",
+    "phone": "+36-30-339-8278",
     "password": "l94n8H",
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "10:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 68,
@@ -1420,12 +1420,12 @@
     "age": 22,
     "gender": "Female",
     "email": "rshutler1v@wikipedia.org",
-    "phone": "+36-20-657-2838",
+    "phone": "+36-70-657-2838",
     "password": "TlgvDXlp",
     "workDays": [],
     "availableFrom": "6:31",
     "availableTill": "7:48",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 69,
@@ -1446,7 +1446,7 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "8:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 70,
@@ -1462,12 +1462,12 @@
     "age": 58,
     "gender": "Female",
     "email": "hallchorn1x@reference.com",
-    "phone": "+36-20-475-1662",
+    "phone": "+36-30-475-1662",
     "password": "JDTKJNOLrevA",
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "8:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 71,
@@ -1483,12 +1483,12 @@
     "age": 48,
     "gender": "Male",
     "email": "dmcgee1y@bbc.co.uk",
-    "phone": "+36-20-616-1204",
+    "phone": "+36-70-616-1204",
     "password": "YvPPRicQ",
     "workDays": [],
     "availableFrom": "7:49",
     "availableTill": "11:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 72,
@@ -1504,12 +1504,12 @@
     "age": 68,
     "gender": "Male",
     "email": "btripcony1z@fema.gov",
-    "phone": "+36-20-497-3210",
+    "phone": "+36-30-497-3210",
     "password": "ElqOW6C81lS",
     "workDays": [],
     "availableFrom": "8:15",
     "availableTill": "7:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 73,
@@ -1525,12 +1525,12 @@
     "age": 28,
     "gender": "Male",
     "email": "tnorthedge20@g.co",
-    "phone": "+36-20-263-7019",
+    "phone": "+36-70-263-7019",
     "password": "Fhj120GM8ZmU",
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 74,
@@ -1546,12 +1546,12 @@
     "age": 36,
     "gender": "Female",
     "email": "greddick21@nytimes.com",
-    "phone": "+36-20-160-7225",
+    "phone": "+36-30-160-7225",
     "password": "6PwOC0Fzz8iu",
     "workDays": [],
     "availableFrom": "11:45",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 75,
@@ -1567,12 +1567,12 @@
     "age": 26,
     "gender": "Female",
     "email": "apetrol22@hp.com",
-    "phone": "+36-20-975-6230",
+    "phone": "+36-70-975-6230",
     "password": "oJpDQP",
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 76,
@@ -1588,12 +1588,12 @@
     "age": 24,
     "gender": "Male",
     "email": "moldershaw23@squidoo.com",
-    "phone": "+36-20-842-8775",
+    "phone": "+36-70-842-8775",
     "password": "KmKp2ZJ",
     "workDays": [],
     "availableFrom": "8:00",
     "availableTill": "11:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 77,
@@ -1609,12 +1609,12 @@
     "age": 56,
     "gender": "Female",
     "email": "ebantock24@netlog.com",
-    "phone": "+36-20-585-1980",
+    "phone": "+36-30-585-1980",
     "password": "8W9OqO",
     "workDays": [],
     "availableFrom": "7:15",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 78,
@@ -1630,12 +1630,12 @@
     "age": 69,
     "gender": "Male",
     "email": "ascorthorne25@bbc.co.uk",
-    "phone": "+36-20-787-0828",
+    "phone": "+36-30-787-0828",
     "password": "ZwGGMY",
     "workDays": [],
     "availableFrom": "10:30",
     "availableTill": "11:53",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 79,
@@ -1651,12 +1651,12 @@
     "age": 40,
     "gender": "Female",
     "email": "lelement26@flavors.me",
-    "phone": "+36-20-809-9093",
+    "phone": "+36-70-809-9093",
     "password": "hkA6Olcy",
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "6:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 80,
@@ -1672,12 +1672,12 @@
     "age": 29,
     "gender": "Female",
     "email": "jbrunotti27@baidu.com",
-    "phone": "+36-20-717-1721",
+    "phone": "+36-30-717-1721",
     "password": "GFqHl6",
     "workDays": [],
     "availableFrom": "10:03",
     "availableTill": "9:48",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 81,
@@ -1693,12 +1693,12 @@
     "age": 47,
     "gender": "Female",
     "email": "cpomroy28@vkontakte.ru",
-    "phone": "+36-20-730-2459",
+    "phone": "+36-30-730-2459",
     "password": "sHpgHFULQKYa",
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "10:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 82,
@@ -1714,12 +1714,12 @@
     "age": 24,
     "gender": "Male",
     "email": "klacroix29@cbsnews.com",
-    "phone": "+36-20-689-7688",
+    "phone": "+36-30-689-7688",
     "password": "RaQtvKVC70p",
     "workDays": [],
     "availableFrom": "10:00",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 83,
@@ -1735,12 +1735,12 @@
     "age": 42,
     "gender": "Female",
     "email": "khanna2a@google.ca",
-    "phone": "+36-20-658-9417",
+    "phone": "+36-30-658-9417",
     "password": "v9mhqeAT6",
     "workDays": [],
     "availableFrom": "11:00",
     "availableTill": "8:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 84,
@@ -1761,7 +1761,7 @@
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "10:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 85,
@@ -1782,7 +1782,7 @@
     "workDays": [],
     "availableFrom": "9:51",
     "availableTill": "10:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 86,
@@ -1798,12 +1798,12 @@
     "age": 44,
     "gender": "Female",
     "email": "aberrick2d@statcounter.com",
-    "phone": "+36-20-342-5961",
+    "phone": "+36-30-342-5961",
     "password": "SM326twK",
     "workDays": [],
     "availableFrom": "10:53",
     "availableTill": "9:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 87,
@@ -1819,12 +1819,12 @@
     "age": 56,
     "gender": "Female",
     "email": "sdumbellow2e@techcrunch.com",
-    "phone": "+36-20-307-1388",
+    "phone": "+36-70-307-1388",
     "password": "yeSjL04",
     "workDays": [],
     "availableFrom": "10:54",
     "availableTill": "10:18",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 88,
@@ -1840,12 +1840,12 @@
     "age": 43,
     "gender": "Female",
     "email": "cstead2f@istockphoto.com",
-    "phone": "+36-20-339-1284",
+    "phone": "+36-30-339-1284",
     "password": "awGfIofiAQxt",
     "workDays": [],
     "availableFrom": "7:42",
     "availableTill": "9:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 89,
@@ -1861,12 +1861,12 @@
     "age": 43,
     "gender": "Female",
     "email": "hdaintith2g@stumbleupon.com",
-    "phone": "+36-20-970-0880",
+    "phone": "+36-30-970-0880",
     "password": "vW0Seb5K",
     "workDays": [],
     "availableFrom": "7:15",
     "availableTill": "10:46",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 90,
@@ -1887,7 +1887,7 @@
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "9:48",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 91,
@@ -1903,12 +1903,12 @@
     "age": 52,
     "gender": "Female",
     "email": "dcheetham2i@nydailynews.com",
-    "phone": "+36-20-661-1103",
+    "phone": "+36-30-661-1103",
     "password": "nsAfKxvvMRE",
     "workDays": [],
     "availableFrom": "8:30",
     "availableTill": "7:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 92,
@@ -1924,12 +1924,12 @@
     "age": 30,
     "gender": "Female",
     "email": "swrightam2j@gmpg.org",
-    "phone": "+36-20-609-2284",
+    "phone": "+36-70-609-2284",
     "password": "YOtZoZwFkEpS",
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "7:00",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 93,
@@ -1945,12 +1945,12 @@
     "age": 47,
     "gender": "Male",
     "email": "ttatters2k@webeden.co.uk",
-    "phone": "+36-20-151-4322",
+    "phone": "+36-30-151-4322",
     "password": "DV3oRvX",
     "workDays": [],
     "availableFrom": "10:15",
     "availableTill": "10:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 94,
@@ -1966,12 +1966,12 @@
     "age": 46,
     "gender": "Female",
     "email": "gpitcock2l@bizjournals.com",
-    "phone": "+36-20-903-5664",
+    "phone": "+36-30-903-5664",
     "password": "HRzSSeOH1J",
     "workDays": [],
     "availableFrom": "7:00",
     "availableTill": "9:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 95,
@@ -1987,12 +1987,12 @@
     "age": 18,
     "gender": "Male",
     "email": "cglantz2m@gravatar.com",
-    "phone": "+36-20-833-7428",
+    "phone": "+36-70-833-7428",
     "password": "nJ71zeIQhar",
     "workDays": [],
     "availableFrom": "9:30",
     "availableTill": "6:45",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 96,
@@ -2008,12 +2008,12 @@
     "age": 26,
     "gender": "Male",
     "email": "emacian2n@cdbaby.com",
-    "phone": "+36-20-968-0904",
+    "phone": "+36-70-968-0904",
     "password": "YafIVIm",
     "workDays": [],
     "availableFrom": "6:45",
     "availableTill": "8:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 97,
@@ -2029,12 +2029,12 @@
     "age": 44,
     "gender": "Female",
     "email": "mfransemai2o@fema.gov",
-    "phone": "+36-20-224-9953",
+    "phone": "+36-30-224-9953",
     "password": "TBGktY5XK9",
     "workDays": [],
     "availableFrom": "9:15",
     "availableTill": "9:30",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 98,
@@ -2050,12 +2050,12 @@
     "age": 36,
     "gender": "Male",
     "email": "lwhannel2p@storify.com",
-    "phone": "+36-20-648-5602",
+    "phone": "+36-30-648-5602",
     "password": "0smBT1",
     "workDays": [],
     "availableFrom": "11:30",
     "availableTill": "11:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 99,
@@ -2076,7 +2076,7 @@
     "workDays": [],
     "availableFrom": "6:30",
     "availableTill": "10:15",
-    "rating": 5.0
+    "rating": 5
   },
   {
     "id": 100,
@@ -2092,11 +2092,11 @@
     "age": 26,
     "gender": "Female",
     "email": "dgodsmark2r@bbc.co.uk",
-    "phone": "+36-20-313-9050",
+    "phone": "+36-30-313-9050",
     "password": "aiQvD5",
     "workDays": [],
     "availableFrom": "6:00",
     "availableTill": "8:45",
-    "rating": 5.0
+    "rating": 5
   }
 ]

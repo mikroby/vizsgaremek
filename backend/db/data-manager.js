@@ -13,17 +13,17 @@ const log = (method, message = '') => {
   console.log(colors[method], message, colors.reset);
 }
 
-const fsp = require('fs').promises
+const { readFile, writeFile } = require('fs').promises
 const { join } = require('path')
 
 const loadData = async (filePath) => {
-  const rawJson = await fsp.readFile(filePath, 'utf8')
+  const rawJson = await readFile(filePath, 'utf8')
   return JSON.parse(rawJson)
 }
 
 const storeData = async (list = [], filePath) => {
   const rawJson = JSON.stringify(list)
-  await fsp.writeFile(filePath, rawJson, 'utf8')
+  await writeFile(filePath, rawJson, 'utf8')
 }
 
 const sortByProp = (list, prop) => {
@@ -43,17 +43,28 @@ const sortByProp = (list, prop) => {
   return list
 }
 
+const randomizePhone = (list, provider) => list.map(item => {
+  const phone = item.phone
+  item.phone = phone.replace('20', provider[Math.trunc(Math.random() * provider.length)])
+  return item
+}
+);
+
+
+
 
 // starter
 (async () => {
   // file to be modified:
-  const fileName = 'category.json'
+  // const fileName = 'category.json'
+  const fileName = 'expert.json'
 
   const filePath = join(__dirname, fileName)
   const list = await loadData(filePath)
 
   // mods:
-  const moddedList = sortByProp(list, 'categoryId')
+  // const moddedList = sortByProp(list, 'categoryId')
+  const moddedList = randomizePhone(list, [20, 30, 70])
 
   await storeData(moddedList, filePath)
   log('normal', 'app terminated.')
