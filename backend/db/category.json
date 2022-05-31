@@ -44,6 +44,7 @@
     "name": "Háztartás / kert",
     "description": [
       "Bevásárlás",
+      "Fakivágás",
       "Gyermekfelügyelet",
       "Háziállat felügyelet",
       "Idősgondozás",
@@ -131,14 +132,19 @@
     "categoryId": 9,
     "name": "1000 Apró",
     "description": [
+      "Árufuvarozás",
       "Bútorasztalos",
       "Cipész",
       "Cukrász",
       "Elektronikai műszerész",
+      "Grafikus",
       "Képkeretező",
+      "Költöztetés",
       "Kulcsmásoló",
       "Mobiltelefon javítás",
+      "Rovar és kártevő irtás",
       "Szakács",
+      "Személyszállítás",
       "Üveges"
     ]
   },

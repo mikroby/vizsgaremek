@@ -1,5 +1,7 @@
 'use strict'
 // this helper is to modifiy json files
+// comment out unnecessary operations!
+// to run copy to CLI:
 // node .\backend\db\data-manager.js
 
 const colors = {
@@ -44,27 +46,56 @@ const sortByProp = (list, prop) => {
 }
 
 const randomizePhone = (list, provider) => list.map(item => {
-  const phone = item.phone
+  const { phone } = item
   item.phone = phone.replace('20', provider[Math.trunc(Math.random() * provider.length)])
   return item
 }
 );
 
+const normalizeAvailability = (list) =>
+  list.map(object => {
+    let { availableFrom, availableTill } = object
+    if (Number(availableFrom.replace(':', '')) > Number(availableTill.replace(':', ''))) {
+      [availableFrom, availableTill] = [availableTill, availableFrom]
+    }
 
+    const newObject = { ...object, availableFrom, availableTill }
+    return newObject
+  });
+
+const normalizeWorkHours = (list) =>
+  list.map(object => {
+    const time = object.availableFrom.split(':')
+    const availableTill = `${Number(time[0]) + 8}:${time[1]}`
+    const newObject = { ...object, availableTill }
+    return newObject
+  });
+
+const roundPrice = (list) =>
+  list.map(object => {
+    const price = Math.round(object.price / 100) * 100
+    const newObject = { ...object, price }
+    return newObject
+  });
 
 
 // starter
 (async () => {
-  // file to be modified:
-  // const fileName = 'category.json'
-  const fileName = 'expert.json'
+  // files to be modified:
+  const fileName = 'category.json'
+  // const fileName = 'expert.json'
 
   const filePath = join(__dirname, fileName)
   const list = await loadData(filePath)
 
-  // mods:
+  // mods done:
   // const moddedList = sortByProp(list, 'categoryId')
-  const moddedList = randomizePhone(list, [20, 30, 70])
+  const moddedList = sortByProp(list, 'description')
+  // const moddedList = randomizePhone(list, [20, 30, 70])
+  // const moddedList = normalizeAvailability(list)
+  // const moddedList = normalizeWorkHours(list)
+  // const moddedList = roundPrice(list)
+  
 
   await storeData(moddedList, filePath)
   log('normal', 'app terminated.')
