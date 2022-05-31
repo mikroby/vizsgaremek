@@ -36,7 +36,7 @@ const sortByProp = (list, prop) => {
 
   const value = list[0][prop]
 
-  if (Array.isArray(value)) list.forEach(item => item[prop].sort((a, b) => a.localeCompare(b)))
+  if (Array.isArray(value)) list.forEach(item => item[prop].sort((a, b) => String(a).localeCompare(String(b))))
   if (typeof value === 'number') list.sort((a, b) => a[prop] - b[prop])
   if (typeof value === 'string') list.sort((a, b) => a[prop].localeCompare(b[prop]))
 
@@ -78,24 +78,49 @@ const roundPrice = (list) =>
     return newObject
   });
 
+const randomizeCategory = (list, maxValue) =>
+  list.map(object => {
+    const categoryId = Math.trunc(Math.random() * maxValue) + 1
+    object.categoryId = [categoryId]
+    return object
+  });
+
+const randomizeDays = (list) =>
+  list.map(object => {
+    const usual = Math.round(Math.random() * 6)
+    for (let i = 0; i <= usual; i++) {
+      const day = Math.round(Math.random() * 6)
+      if (!object.workDays.includes(day)) {
+        object.workDays.push(day)
+      }
+    }
+
+    // object.workDays=[]
+
+    return object
+  });
+
 
 // starter
 (async () => {
   // files to be modified:
-  const fileName = 'category.json'
-  // const fileName = 'expert.json'
+  // const fileName = 'category.json'
+  const fileName = 'expert.json'
 
   const filePath = join(__dirname, fileName)
   const list = await loadData(filePath)
 
   // mods done:
   // const moddedList = sortByProp(list, 'categoryId')
-  const moddedList = sortByProp(list, 'description')
+  // const moddedList = sortByProp(list, 'job')
+  const moddedList = sortByProp(list, 'workDays')
   // const moddedList = randomizePhone(list, [20, 30, 70])
   // const moddedList = normalizeAvailability(list)
   // const moddedList = normalizeWorkHours(list)
   // const moddedList = roundPrice(list)
-  
+  // const moddedList = randomizeCategory(list, 10)
+  // const moddedList = randomizeDays(list)
+
 
   await storeData(moddedList, filePath)
   log('normal', 'app terminated.')

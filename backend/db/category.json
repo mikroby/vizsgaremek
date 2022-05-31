@@ -2,7 +2,7 @@
   {
     "categoryId": 1,
     "name": "Informatika",
-    "description": [
+    "job": [
       "Adatmentés",
       "Alkalmazás készítés és tervezés",
       "Karbantartás",
@@ -16,7 +16,7 @@
   {
     "categoryId": 2,
     "name": "Építőipar",
-    "description": [
+    "job": [
       "Ács és tetőfedő",
       "Asztalos",
       "Burkoló",
@@ -42,7 +42,7 @@
   {
     "categoryId": 3,
     "name": "Háztartás / kert",
-    "description": [
+    "job": [
       "Bevásárlás",
       "Fakivágás",
       "Gyermekfelügyelet",
@@ -56,7 +56,7 @@
   {
     "categoryId": 4,
     "name": "Jármű",
-    "description": [
+    "job": [
       "Autó üvegezés",
       "Autó villamosság",
       "Autószerelő",
@@ -68,7 +68,7 @@
   {
     "categoryId": 5,
     "name": "Egészség",
-    "description": [
+    "job": [
       "Általános orvos",
       "Bőrgyógyász",
       "Fogorvos",
@@ -82,7 +82,7 @@
   {
     "categoryId": 6,
     "name": "Szépségápolás",
-    "description": [
+    "job": [
       "Fodrász",
       "Kozmetikus",
       "Manikűrös",
@@ -93,7 +93,7 @@
   {
     "categoryId": 7,
     "name": "Tanácsadás",
-    "description": [
+    "job": [
       "Coach",
       "Életvezetési tanácsadó",
       "Könyvelő",
@@ -105,7 +105,7 @@
   {
     "categoryId": 8,
     "name": "Oktatás",
-    "description": [
+    "job": [
       "Angol",
       "Biológia",
       "Dob oktatás",
@@ -131,7 +131,7 @@
   {
     "categoryId": 9,
     "name": "1000 Apró",
-    "description": [
+    "job": [
       "Árufuvarozás",
       "Bútorasztalos",
       "Cipész",
@@ -151,7 +151,7 @@
   {
     "categoryId": 10,
     "name": "Szórakoztatás / rendezvény",
-    "description": [
+    "job": [
       "Arcfestés",
       "Bábelőadás",
       "Bohóc",
