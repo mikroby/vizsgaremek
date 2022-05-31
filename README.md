@@ -48,7 +48,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Középre igazított raszterhálóban megjelennek az adatbázis kategóriái ikonokkal, amelyek a megfelelő kereső-listázó aloldalra navigálják a felhasználót.
++ Középre igazított raszterhálóban megjelennek az adatbázis kategóriái ikonokkal, amelyekre kattintva a kategória szerinti kereső-listázó aloldalra navigálják a felhasználót.
 
 
 ---------------------------------------------------------
@@ -58,11 +58,11 @@ A fejléc szerkezete:
 
 **1. User Story:**
 
-> _A kiválasztott kategórián belül lista jelenik meg a felhasználó részére._
+> _A kiválasztott kategórián belül lista jelenik meg a felhasználó részére, böngészés céljából._
 
 **Elfogadási kritérium:**
 
-+ Reszponzív lista megjelenítése a kategóriához tartozó szakemberek adatbázisban tárolt publikus adataival. Az adatok jellegének megnevezése fejléccel történik.
++ Reszponzív lista megjelenítése a kategóriához tartozó szakemberek adatbázisban tárolt publikus adataival.
 
 **2. User Story:**
 
@@ -162,13 +162,20 @@ A fejléc szerkezete:
 
 **1. User Story:**
 
-> _Az adminisztrátor külön áttekintő oldalon listából választhat, hogy az adatbázis mely elemeit (entitásait) kívánja aloldalakon listázni, szerkeszteni._
+> _Az adminisztrátor külön listából választhat, hogy az adatbázis mely elemeit (entitásait) kívánja listázni._
 
 **Elfogadási kritérium:**
 
-+ Felül a fejléc alatt megjelennek az adatbázist alkotó entitások, amelyre kattintva a megfelelő aloldalra navigál.
-+ Infografikával megjelennek áttekintő kimutatások az adatbázisról.
++ Az adatbázist alkotó entitások Dashboard oldalsávként jelennek meg felsorolva, amelyre kattintva a megfelelő lista jelenik meg.
 + Kilépés gomb jelenik meg. Kattintva a főoldalra navigál, megszűnik az adminisztrátori autentikáció.
+
+**2. User Story:**
+
+> _Az adminisztrátor áttekintő-összegző adatokat kap az adatbázist alkotó elemekről._
+
+**Elfogadási kritérium:**
+
++ Infografikával áttekintő kimutatások jelennek meg az adatbázisról.
 
 
 ---------------------------------------------------------
@@ -178,12 +185,36 @@ A fejléc szerkezete:
 
 **1. User Story:**
 
-> _Az adminisztrátor a kiválasztott entitások részletes adatait listában szerkesztheti, törölheti._
+> _Az adminisztrátor számára a kiválasztott entitások részletes adatai jelennek meg lista formában._
+
+**Elfogadási kritérium:**
+
++ A kiválasztott entitás listája megjelenik. A lista jellege megegyezik a 3. Kereső-listázó aloldalnál megadottakkal, kiegészülve "szerkesztő" és "törlő" gombbal (egy-egy ikon megjelenésével).
+
+**2. User Story:**
+
+> _Az adminisztrátor a lista soraiban megjelenő adatokat gombnyomásra szerkesztheti._
+
+**Elfogadási kritérium:**
+
++ A "szerkesztés" gombra kattintva aloldalon megjelenő űrlapon módosíthatók az adatok.
++ Validáció után az adatbázisban átvezetésre kerülnek az új adatok.
++ Az űrlap bezáródik és a korábbi lista jelenik meg a frissített adatokkal.
+
+**3. User Story:**
+
+> _Az adminisztrátor a lista sorait gombnyomásra törölheti._
+
+**Elfogadási kritérium:**
+
++ Törlés csak a megerősítő kérdés elfogadása után történik meg.
+
+**4. User Story:**
+
+> _Az adminisztrátor a listához új sort adhat hozzá._
 
 **Elfogadási kritérium:**
 
 + "Új létrehozás" gomb jelenik meg, melyre kattintva aloldalon megjelenő űrlapon megadhatók az adatok.
-+ A kiválasztott entitás listája megjelenik. A lista jellege megegyezik a 3. Kereső-listázó aloldalnál megadottakkal, kiegészülve "szerkesztő" és "törlő" gombbal (egy-egy ikon megjelenésével).
-+ A "szerkesztés" gombra kattintva aloldalon megjelenő űrlapon módosíthatók az adatok.
 + Validáció után az adatbázisban átvezetésre kerülnek az új adatok.
-+ Törlés csak a megerősítő kérdés elfogadása után történik meg.
++ Az űrlap bezáródik és a korábbi lista jelenik meg a frissített adatokkal.
