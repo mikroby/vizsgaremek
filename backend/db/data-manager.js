@@ -1,7 +1,5 @@
 'use strict'
 // this helper is to modifiy json files
-// comment out unnecessary operations!
-// to run copy to CLI:
 // node .\backend\db\data-manager.js
 
 const colors = {
@@ -11,19 +9,21 @@ const colors = {
   reset: '\x1b[0m'    // default
 }
 
-const log = (method, message = '') => {
+const logger = (method, message = '') => {
   console.log(colors[method], message, colors.reset);
 }
 
 const { readFile, writeFile } = require('fs').promises
 const { join } = require('path')
 
-const loadData = async (filePath) => {
+const loadData = async (fileName) => {
+  const filePath = join(__dirname, fileName)
   const rawJson = await readFile(filePath, 'utf8')
   return JSON.parse(rawJson)
 }
 
-const storeData = async (list = [], filePath) => {
+const storeData = async (list = [], fileName) => {
+  const filePath = join(__dirname, fileName)
   const rawJson = JSON.stringify(list)
   await writeFile(filePath, rawJson, 'utf8')
 }
@@ -40,7 +40,7 @@ const sortByProp = (list, prop) => {
   if (typeof value === 'number') list.sort((a, b) => a[prop] - b[prop])
   if (typeof value === 'string') list.sort((a, b) => a[prop].localeCompare(b[prop]))
 
-  log('normal', 'sortByProp finished.')
+  logger('normal', 'sortByProp finished.')
 
   return list
 }
@@ -100,20 +100,26 @@ const randomizeDays = (list) =>
     return object
   });
 
+const randomizeJob = (category, expert) =>
+  expert.map(object => {
+    const jobList = category.find(cat => cat.categoryId === object.categoryId[0]).job
+    const randomJob = Math.trunc(Math.random() * jobList.length)
+    object.job = [randomJob]
+    return object
+  });
+
 
 // starter
 (async () => {
-  // files to be modified:
+  // simple mods:
   // const fileName = 'category.json'
-  const fileName = 'expert.json'
+  // const fileName = 'expert.json'
 
-  const filePath = join(__dirname, fileName)
-  const list = await loadData(filePath)
+  // const list = await loadData(fileName)
 
-  // mods done:
   // const moddedList = sortByProp(list, 'categoryId')
   // const moddedList = sortByProp(list, 'job')
-  const moddedList = sortByProp(list, 'workDays')
+  // const moddedList = sortByProp(list, 'workDays')
   // const moddedList = randomizePhone(list, [20, 30, 70])
   // const moddedList = normalizeAvailability(list)
   // const moddedList = normalizeWorkHours(list)
@@ -121,7 +127,18 @@ const randomizeDays = (list) =>
   // const moddedList = randomizeCategory(list, 10)
   // const moddedList = randomizeDays(list)
 
+  // await storeData(moddedList, fileName)
 
-  await storeData(moddedList, filePath)
-  log('normal', 'app terminated.')
+  // ----------------------------------------------------
+
+  // compound operations:
+  const category = await loadData('category.json')
+  const expert = await loadData('expert.json')
+
+  const moddedList = randomizeJob(category, expert)
+
+  await storeData(moddedList, 'expert.json')
+
+
+  logger('normal', 'app terminated.')
 })()
