@@ -9,14 +9,23 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+    data: {
+      title: 'Dashboard'
+    }
   },
   {
     path: 'expert',
     component: ExpertComponent,
+    data: {
+      title: 'Expert'
+    }
   },
   {
     path: 'category',
     component: CategoryComponent,
+    data: {
+      title: 'Category'
+    }
   },
   {
     path: '**',
@@ -25,7 +34,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'top',
+    anchorScrolling: 'enabled',
+    initialNavigation: 'enabledBlocking'
+    // relativeLinkResolution: 'legacy'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

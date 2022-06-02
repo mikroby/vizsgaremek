@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { ConfigService, IMenuItem } from 'src/app/service/config.service';
+import { navItems } from './_nav.items';
 
-import { navItems } from './_nav';
+// import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-sidebar',

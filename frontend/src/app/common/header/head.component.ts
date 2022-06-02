@@ -10,7 +10,7 @@ import { ClassToggleService, HeaderComponent } from '@coreui/angular';
 export class HeadComponent extends HeaderComponent implements OnInit {
 
   @Input() sidebarId: string = "sidebar";
-
+  
   constructor(
     private classToggler: ClassToggleService
   ) {

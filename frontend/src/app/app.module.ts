@@ -1,14 +1,31 @@
 // Angular modules
 import { NgModule } from '@angular/core'
-import { BrowserModule } from '@angular/platform-browser'
+import { BrowserModule, Title } from '@angular/platform-browser'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 
 // CoreUI modules
 import { IconModule, IconSetService } from '@coreui/icons-angular'
 import {
-  FooterModule, HeaderModule, NavModule, SidebarModule, GridModule,
-  BadgeModule, BreadcrumbModule, DropdownModule, AvatarModule
+  AvatarModule,
+  BadgeModule,
+  BreadcrumbModule,
+  ButtonGroupModule,
+  ButtonModule,
+  CardModule,
+  DropdownModule,
+  FooterModule,
+  FormModule,
+  GridModule,
+  HeaderModule,
+  ListGroupModule,
+  NavModule,
+  ProgressModule,
+  SharedModule,
+  SidebarModule,
+  TabsModule,
+  UtilitiesModule,
 } from '@coreui/angular'
 import {
   PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface,
@@ -39,25 +56,37 @@ import { CategoryComponent } from './page/category/category.component'
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    AvatarModule,
+    BreadcrumbModule,
+    FooterModule,
+    DropdownModule,
+    GridModule,
     HeaderModule,
     SidebarModule,
-    FooterModule,
     IconModule,
     PerfectScrollbarModule,
     NavModule,
-    GridModule,
+    ButtonModule,
+    FormModule,
+    UtilitiesModule,
+    ButtonGroupModule,
+    SidebarModule,
+    SharedModule,
+    TabsModule,
+    ListGroupModule,
+    ProgressModule,
     BadgeModule,
-    BreadcrumbModule,
-    DropdownModule,
-    AvatarModule,
+    ListGroupModule,
+    CardModule,
   ],
   providers: [
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
     },
-    IconSetService,
+    IconSetService, Title
   ],
   bootstrap: [AppComponent]
 })

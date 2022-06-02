@@ -13,32 +13,32 @@ export const navItems: INavData[] = [
   {
     name: 'Expert',
     url: '/expert',
-    iconComponent: { name: 'cil-drop' }
+    iconComponent: { name: 'cil-people' }
   },
   {
     name: 'Category',
     url: '/category',
-    iconComponent: { name: 'cil-drop' }
-  },
-  {
-    name: 'Invoice',
-    url: '/invoice',
-    iconComponent: { name: 'cil-drop' }
+    iconComponent: { name: 'cilLayers' }
   },
   {
     name: 'User',
     url: '/user',
-    iconComponent: { name: 'cil-drop' }
+    iconComponent: { name: 'cilUser' }
   },
   {
     name: 'Order',
     url: '/order',
-    iconComponent: { name: 'cil-drop' }
+    iconComponent: { name: 'cilList' }
   },
-   
+  {
+    name: 'Invoice',
+    url: '/invoice',
+    iconComponent: { name: 'cilNotes' }
+  },
+    
 ];
 
-
+// egyéb lehetőségek:
 // {
 //   name: 'Typography',
 //     url: '/theme/typography',
