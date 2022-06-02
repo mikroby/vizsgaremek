@@ -19,9 +19,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 }
 
 // Created App-components
-import { HeaderComponent } from './common/header/header.component'
+import { HeadComponent } from './common/header/head.component'
 import { SidebarComponent } from './common/sidebar/sidebar.component'
-import { FooterComponent } from './common/footer/footer.component'
+import { FootComponent } from './common/footer/foot.component'
 import { HomeComponent } from './page/home/home.component'
 import { ExpertComponent } from './page/expert/expert.component'
 import { CategoryComponent } from './page/category/category.component'
@@ -30,9 +30,9 @@ import { CategoryComponent } from './page/category/category.component'
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    HeadComponent,
     SidebarComponent,
-    FooterComponent,
+    FootComponent,
     HomeComponent,
     ExpertComponent,
     CategoryComponent
