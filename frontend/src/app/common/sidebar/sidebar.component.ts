@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigService, IMenuItem } from 'src/app/service/config.service';
+// import { ConfigService, IMenuItem } from 'src/app/service/config.service';
+
+import { navItems } from './_nav';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,10 +10,16 @@ import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 })
 export class SidebarComponent implements OnInit {
 
-  sidebar: IMenuItem[] = this.config.sidebarMenu
+  public navItems = navItems;
+
+  public perfectScrollbarConfig = {
+    suppressScrollX: true,
+  };
+
+  // sidebar: IMenuItem[] = this.config.sidebarMenu
 
   constructor(
-    private config: ConfigService,
+    // private config: ConfigService,
   ) { }
 
   ngOnInit(): void {
