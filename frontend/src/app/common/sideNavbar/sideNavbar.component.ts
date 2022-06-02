@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { navItems } from './_nav.items';
+import { navItems } from './_navBar.items';
 
 // import { ConfigService, IMenuItem } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  templateUrl: './sideNavbar.component.html',
+  styleUrls: ['./sideNavbar.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class SideNavbarComponent implements OnInit {
 
   public navItems = navItems;
 

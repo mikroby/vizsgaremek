@@ -35,9 +35,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 }
 
-// Created App-components
+// Developer Created App-components
 import { HeadComponent } from './common/header/head.component'
-import { SidebarComponent } from './common/sidebar/sidebar.component'
+import { SideNavbarComponent } from './common/sideNavbar/sideNavbar.component'
 import { FootComponent } from './common/footer/foot.component'
 import { HomeComponent } from './page/home/home.component'
 import { ExpertComponent } from './page/expert/expert.component'
@@ -48,7 +48,7 @@ import { CategoryComponent } from './page/category/category.component'
   declarations: [
     AppComponent,
     HeadComponent,
-    SidebarComponent,
+    SideNavbarComponent,
     FootComponent,
     HomeComponent,
     ExpertComponent,
