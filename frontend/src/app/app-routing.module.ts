@@ -5,6 +5,9 @@ import { HomeComponent } from './page/home/home.component';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { ExpertComponent } from './page/expert/expert.component';
 import { CategoryComponent } from './page/category/category.component';
+import { CustomerComponent } from './page/customer/customer.component';
+import { OrderComponent } from './page/order/order.component';
+import { InvoiceComponent } from './page/invoice/invoice.component';
 
 const routes: Routes = [
   {
@@ -33,6 +36,27 @@ const routes: Routes = [
     component: CategoryComponent,
     data: {
       title: 'Category'
+    }
+  },
+  {
+    path: 'customer',
+    component: CustomerComponent,
+    data: {
+      title: 'Customer'
+    }
+  },
+  {
+    path: 'order',
+    component: OrderComponent,
+    data: {
+      title: 'Order'
+    }
+  },
+  {
+    path: 'invoice',
+    component: InvoiceComponent,
+    data: {
+      title: 'Invoice'
     }
   },
   {

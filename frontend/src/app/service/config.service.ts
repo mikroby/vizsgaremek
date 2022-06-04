@@ -22,10 +22,20 @@ export class ConfigService {
   actualPage = 1
 
   categoryTableColumns: ITableColumn[] = [
-    // { key: '_id', title: '#' },
+    { key: '_id', title: '#' },
     { key: 'categoryID', title: 'Kategória száma' },
     { key: 'name', title: 'Kategória neve' },
     { key: 'job', title: 'Munka neve' },
+  ]
+
+  customerTableColumns: ITableColumn[] = [
+    { key: '_id', title: '#' },
+    { key: 'first_name', title: 'Keresztnév' },
+    { key: 'last_name', title: 'Vezetéknév' },
+    { key: 'email', title: 'E-mail' },
+    { key: 'phone', title: 'Tel.' },
+    { key: 'address', title: 'Lakcím' },
+    { key: 'active', title: 'Aktív' },
   ]
 
   expertTableColumns: ITableColumn[] = [
@@ -43,6 +53,25 @@ export class ConfigService {
     { key: 'availableFrom', title: 'Kezd' },
     { key: 'availableTill', title: 'Végez' },
     { key: 'rating', title: 'Pontszám' },
+  ]
+
+  invoiceTableColumns: ITableColumn[] = [
+    { key: '_id', title: '#' },
+    { key: 'orderID', title: 'Rendelés száma' },
+    { key: 'expertID', title: 'Mester Neve (ID)' },
+    { key: 'categoryID', title: 'Kategória neve (ID)' },
+    { key: 'job', title: 'Munka neve' },
+    { key: 'amount', title: 'Rendelt mennyiség' },
+    { key: 'status', title: 'Állapot' },
+  ]
+
+  orderTableColumns: ITableColumn[] = [
+    { key: '_id', title: '#' },
+    { key: 'customerID', title: 'Megrendelő neve (ID)' },
+    { key: 'expertID', title: 'Mester Neve (ID)' },    
+    { key: 'job', title: 'Munka neve' },
+    { key: 'amount', title: 'Rendelt mennyiség' },
+    { key: 'status', title: 'Állapot' },
   ]
 
   constructor() { }

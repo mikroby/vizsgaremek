@@ -37,42 +37,42 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilLibrary' }
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilAddressBook' }
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilStorage' }
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilSortAscending' }
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilFeaturedPlaylist' }
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilChevronRight' }
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilChevronCircleRightAlt' }
   },
   {
     name: 'Tester',
-    url: '/invoice',
+    url: '/home',
     iconComponent: { name: 'cilArrowCircleRight' }
   },
   

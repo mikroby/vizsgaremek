@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/service/config.service';
+import { ExpertService } from 'src/app/service/expert.service';
 
 @Component({
   selector: 'app-expert',
@@ -7,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpertComponent implements OnInit {
 
-  constructor() { }
+  columns = this.config.expertTableColumns
+
+  list$ = this.expertService.getAll()
+
+  constructor(
+    private config: ConfigService,
+    private expertService: ExpertService,
+  ) { }
 
   ngOnInit(): void {
   }

@@ -5,5 +5,5 @@ export class Order {
   expertID: string = ''
   job: number = 0
   amount: number = 0
-  status: string = 'új' || 'elvégzett'
+  status: string = 'várakozó' || 'elvégzett'
 }
