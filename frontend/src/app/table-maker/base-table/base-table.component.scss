@@ -1,0 +1,12 @@
+.grow {
+  transition: all 0.2s ease;
+}
+
+.grow:hover {
+  transform: scale(110%);
+}
+
+td,
+th {
+  padding: 0.5rem;
+}

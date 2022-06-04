@@ -1,5 +1,6 @@
 // Angular modules
 import { NgModule } from '@angular/core'
+// import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common'
 import { BrowserModule, Title } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module'
@@ -24,16 +25,23 @@ import {
   ProgressModule,
   SharedModule,
   SidebarModule,
+  TableModule,
   TabsModule,
-  UtilitiesModule,
+  UtilitiesModule
 } from '@coreui/angular'
 import {
-  PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG, PerfectScrollbarConfigInterface,
+  PerfectScrollbarModule,
+  PERFECT_SCROLLBAR_CONFIG,
+  PerfectScrollbarConfigInterface,
 } from 'ngx-perfect-scrollbar'
+
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 }
+
+// Developer Created modules
+import { TableMakerModule } from './table-maker/table-maker.module';
 
 // Developer Created App-components
 import { HomeComponent } from './page/home/home.component'
@@ -58,8 +66,9 @@ import { CategoryComponent } from './page/category/category.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+  
     AvatarModule,
     BreadcrumbModule,
     FooterModule,
@@ -67,7 +76,7 @@ import { CategoryComponent } from './page/category/category.component';
     GridModule,
     HeaderModule,
     SidebarModule,
-    IconModule,
+    IconModule,        
     PerfectScrollbarModule,
     NavModule,
     ButtonModule,
@@ -82,13 +91,21 @@ import { CategoryComponent } from './page/category/category.component';
     BadgeModule,
     ListGroupModule,
     CardModule,
+    TableModule,
+
+    TableMakerModule
   ],
   providers: [
+    // {
+    //   provide: LocationStrategy,
+    //   useClass: HashLocationStrategy,
+    // },
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
     },
-    IconSetService, Title
+    IconSetService,
+    Title
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoryService } from 'src/app/service/category.service';
+import { ConfigService } from 'src/app/service/config.service';
 
 @Component({
   selector: 'app-category',
@@ -7,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoryComponent implements OnInit {
 
-  constructor() { }
+  columns = this.config.categoryTableColumns
+
+  list$ = this.categoryService.getAll()
+
+  constructor(
+    private config: ConfigService,
+    private categoryService: CategoryService,
+  ) { }
 
   ngOnInit(): void {
   }

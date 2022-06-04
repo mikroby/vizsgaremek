@@ -1,0 +1,79 @@
+<div class="table-responsive">
+  <table class="table table-sm table-hover align-middle">
+    <thead>
+      <tr>
+        <th *ngFor="let col of columns" scope="col">
+          {{ col.title }}
+        </th>
+        <th *ngIf="buttons.editBtn || buttons.deleteBtn">
+          Művelet
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of list | slice:rowStart:rowEnd">
+        <td *ngFor="let col of columns">
+          {{ row[col.key] }}
+        </td>
+        <td *ngIf="buttons.editBtn || buttons.deleteBtn">
+          <div class="btn-group btn-group-sm">
+            <button class="btn btn-primary" [disabled]="!buttons.editBtn">
+              <!-- edit ikon -->
+              edit
+            </button>
+            <button class="btn btn-danger" [disabled]="!buttons.deleteBtn">
+              <!-- delete ikon -->
+              del
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- <div class="position-fixed top-90 w-90"> -->
+<nav aria-label="Page navigator" class="d-flex justify-content-between mt-5">
+
+  <div class="w-10 grow">
+    <div class="input-group input-group-sm shadow">
+      <span class="input-group-text">sor / lap</span>
+      <input class="form-control text-center" id="shortInput" type="number" name="pageSize" min="4" max="100" step="2"
+        [(ngModel)]="pageSize" (change)="onChange()">
+    </div>
+  </div>
+
+  <div class="d-inline-block grow">
+    <ul class="pagination pagination-sm shadow">
+      <li class="page-item">
+        <button class="page-link" (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
+          <!-- balra nyíl ikon -->
+          <!-- <svg cIcon name="cilChevronLeft" size="sm"></svg>   -->
+          <span aria-hidden="true">&laquo;</span>
+        </button>
+      </li>
+      <li *ngFor="let page of pageList" class="page-item" [ngClass]="{'active': page === actualPage}">
+        <button class="page-link" (click)="jumpToPage(page)">
+          {{ page }}
+        </button>
+      </li>
+      <li class="page-item">
+        <button class="page-link" (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
+          <!-- jobbra nyíl ikon -->
+          <!-- <svg cIcon name="cilChevronRight" size="sm"></svg> -->
+          <span aria-hidden="true">&raquo;</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="w-10">
+    <div class="input-group input-group-sm shadow">
+      <span class="input-group-text">
+        {{ rowStart+1 }} - {{ rowEnd }}.
+      </span>
+    </div>
+  </div>
+
+</nav>
+<!-- </div> -->

@@ -38,7 +38,7 @@ export const navItems: INavData[] = [
     
 ];
 
-// egyéb lehetőségek:
+// other options:
 // {
 //   name: 'Typography',
 //     url: '/theme/typography',
