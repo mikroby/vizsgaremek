@@ -75,15 +75,7 @@ export const navItems: INavData[] = [
     url: '/invoice',
     iconComponent: { name: 'cilArrowCircleRight' }
   },
-  {
-    name: 'Tester',
-    url: '/invoice',
-    iconComponent: { name: 'cilArrowCircleRight' }
-  },
-
-
-
-
+  
 ];
 
 // other options:
