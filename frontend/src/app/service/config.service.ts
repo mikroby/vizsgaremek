@@ -18,7 +18,7 @@ export class ConfigService {
   //   { link: '/category', title: 'Categories', icon:'' },
   // ]
 
-  pageSize = 4
+  pageSize = 50
   actualPage = 1
 
   categoryTableColumns: ITableColumn[] = [
@@ -30,8 +30,8 @@ export class ConfigService {
 
   customerTableColumns: ITableColumn[] = [
     { key: '_id', title: '#' },
-    { key: 'first_name', title: 'Keresztnév' },
     { key: 'last_name', title: 'Vezetéknév' },
+    { key: 'first_name', title: 'Keresztnév' },
     { key: 'email', title: 'E-mail' },
     { key: 'phone', title: 'Tel.' },
     { key: 'address', title: 'Lakcím' },
@@ -40,8 +40,8 @@ export class ConfigService {
 
   expertTableColumns: ITableColumn[] = [
     { key: '_id', title: '#' },
-    { key: 'first_name', title: 'Keresztnév' },
     { key: 'last_name', title: 'Vezetéknév' },
+    { key: 'first_name', title: 'Keresztnév' },
     { key: 'job', title: 'Munka' },
     { key: 'categoryID', title: 'Kategória száma' },
     { key: 'price', title: 'Ár' },

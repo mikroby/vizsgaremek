@@ -1,5 +1,5 @@
 const baseService = require('../base/service')
-const Customer = require('../../model/cutomer')
+const Customer = require('../../model/customer')
 
 const service = baseService(Customer)
 

@@ -5,6 +5,9 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
+// átírni oda!
+const applicationName = process.env.port || 'MesterEmber'
+
 const app = express()
 
 const { host, user, pass } = config.get('database')
@@ -31,20 +34,20 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 
 // Category controller-router call.
-app.use('/product', require('./controller/category/router'))
+app.use('/category', require('./controller/category/router'))
 // Customer controller-router call.
-app.use('/product', require('./controller/customer/router'))
+app.use('/customer', require('./controller/customer/router'))
 // Expert controller-router call.
-app.use('/product', require('./controller/expert/router'))
+app.use('/expert', require('./controller/expert/router'))
 // Invoice controller-router call.
-app.use('/product', require('./controller/invoice/router'))
+app.use('/invoice', require('./controller/invoice/router'))
 // Order controller-router call.
-app.use('/product', require('./controller/order/router'))
+app.use('/order', require('./controller/order/router'))
 
 // request for root sending a welcome message.
 app.use('/', (req, res) => {
   console.log(req.url)
-  res.send(`Welcome! This is The API Server for ${applicatioName} Aplication!`)
+  res.send(`Welcome! This is The API Server for ${applicationName} Application!`)
 })
 
 // Error Handling.
