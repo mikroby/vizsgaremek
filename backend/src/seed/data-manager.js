@@ -111,6 +111,7 @@ const randomizeJob = (category, expert) =>
 
 // starter
 (async () => {
+  // ---------------------------------------------------
   // simple mods:
   // const fileName = 'category.json'
   // const fileName = 'expert.json'
@@ -130,15 +131,14 @@ const randomizeJob = (category, expert) =>
   // await storeData(moddedList, fileName)
 
   // ----------------------------------------------------
-
   // compound operations:
   const category = await loadData('category.json')
   const expert = await loadData('expert.json')
 
   const moddedList = randomizeJob(category, expert)
-
+  
   await storeData(moddedList, 'expert.json')
-
+  // ----------------------------------------------------
 
   logger('normal', 'app terminated.')
 })()

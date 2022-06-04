@@ -1,0 +1,166 @@
+[
+  {
+    "categoryID": 1,
+    "name": "Informatika",
+    "job": [
+      "Adatmentés",
+      "Alkalmazás készítés és tervezés",
+      "Karbantartás",
+      "PC hardware",
+      "Rendszer optimalizálás",
+      "Telepítés",
+      "Üzemeltetés",
+      "Weblap készítés és tervezés"
+    ]
+  },
+  {
+    "categoryID": 2,
+    "name": "Építőipar",
+    "job": [
+      "Ács és tetőfedő",
+      "Asztalos",
+      "Burkoló",
+      "Építészmérnök",
+      "Épületgépész mérnök",
+      "Épületvillamossági mérnök",
+      "Felelős műszaki vezető",
+      "Felújítás",
+      "Festő",
+      "Geodéta",
+      "Gipszkartonozó",
+      "Kertépítés",
+      "Költségvetés készítő",
+      "Kőműves",
+      "Lakatos",
+      "Műszaki ellenőr",
+      "Projekt-menedzser",
+      "Tartószerkezet tervező",
+      "Villanyszerelő",
+      "Víz-gáz-fűtés szerelő"
+    ]
+  },
+  {
+    "categoryID": 3,
+    "name": "Háztartás / kert",
+    "job": [
+      "Bevásárlás",
+      "Fakivágás",
+      "Gyermekfelügyelet",
+      "Háziállat felügyelet",
+      "Idősgondozás",
+      "Javítás-karbantartás",
+      "Kertrendezés",
+      "Takarítás"
+    ]
+  },
+  {
+    "categoryID": 4,
+    "name": "Jármű",
+    "job": [
+      "Autó üvegezés",
+      "Autó villamosság",
+      "Autószerelő",
+      "Gumiszerelés",
+      "Karosszéria javítás",
+      "Kerékpár javítás"
+    ]
+  },
+  {
+    "categoryID": 5,
+    "name": "Egészség",
+    "job": [
+      "Általános orvos",
+      "Bőrgyógyász",
+      "Fogorvos",
+      "Gyermekorvos",
+      "Gyógytornász",
+      "Masszőr",
+      "Pszichológus",
+      "Yoga-oktató"
+    ]
+  },
+  {
+    "categoryID": 6,
+    "name": "Szépségápolás",
+    "job": [
+      "Fodrász",
+      "Kozmetikus",
+      "Manikűrös",
+      "Műkörömépítő",
+      "Pedikűrös"
+    ]
+  },
+  {
+    "categoryID": 7,
+    "name": "Tanácsadás",
+    "job": [
+      "Coach",
+      "Életvezetési tanácsadó",
+      "Könyvelő",
+      "Pénzügyi tanácsadó",
+      "Személyi edző",
+      "Ügyvéd"
+    ]
+  },
+  {
+    "categoryID": 8,
+    "name": "Oktatás",
+    "job": [
+      "Angol",
+      "Biológia",
+      "Dob oktatás",
+      "Ének / hangképzés",
+      "Érettségi-felkészítés",
+      "Felvételi-felkészítés",
+      "Fizika",
+      "Földrajz",
+      "Francia",
+      "Gitár tanítás",
+      "Kémia",
+      "Magyar",
+      "Matematika",
+      "Német",
+      "Olasz",
+      "Rajz",
+      "Spanyol",
+      "Színjátszás",
+      "Társastánc oktatás",
+      "Zongora tanár"
+    ]
+  },
+  {
+    "categoryID": 9,
+    "name": "1000 Apró",
+    "job": [
+      "Árufuvarozás",
+      "Bútorasztalos",
+      "Cipész",
+      "Cukrász",
+      "Elektronikai műszerész",
+      "Grafikus",
+      "Képkeretező",
+      "Költöztetés",
+      "Kulcsmásoló",
+      "Mobiltelefon javítás",
+      "Rovar és kártevő irtás",
+      "Szakács",
+      "Személyszállítás",
+      "Üveges"
+    ]
+  },
+  {
+    "categoryID": 10,
+    "name": "Szórakoztatás / rendezvény",
+    "job": [
+      "Arcfestés",
+      "Bábelőadás",
+      "Bohóc",
+      "Bűvész",
+      "Kézműves foglalkozás",
+      "Stand-up",
+      "Táncos",
+      "Télapó",
+      "Zenész"
+    ]
+  }
+]
