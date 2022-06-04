@@ -18,12 +18,12 @@
         <td *ngIf="buttons.editBtn || buttons.deleteBtn">
           <div class="btn-group btn-group-sm">
             <button class="btn btn-primary" [disabled]="!buttons.editBtn">
-              <!-- edit ikon -->
-              edit
+              <!-- edit icon -->
+              <svg cIcon name="cilPenAlt" size="sm"></svg>              
             </button>
             <button class="btn btn-danger" [disabled]="!buttons.deleteBtn">
-              <!-- delete ikon -->
-              del
+              <!-- delete icon -->
+              <svg cIcon name="cilTrash" size="sm"></svg>
             </button>
           </div>
         </td>
@@ -48,8 +48,8 @@
       <li class="page-item">
         <button class="page-link" (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
           <!-- balra nyíl ikon -->
-          <!-- <svg cIcon name="cilChevronLeft" size="sm"></svg>   -->
-          <span aria-hidden="true">&laquo;</span>
+          <svg cIcon name="cilChevronCircleLeftAlt" size="sm"></svg>  
+          <!-- <span aria-hidden="true">&laquo;</span> -->
         </button>
       </li>
       <li *ngFor="let page of pageList" class="page-item" [ngClass]="{'active': page === actualPage}">
@@ -60,8 +60,8 @@
       <li class="page-item">
         <button class="page-link" (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
           <!-- jobbra nyíl ikon -->
-          <!-- <svg cIcon name="cilChevronRight" size="sm"></svg> -->
-          <span aria-hidden="true">&raquo;</span>
+          <svg cIcon name="cilChevronCircleRightAlt" size="sm"></svg>
+          <!-- <span aria-hidden="true">&raquo;</span> -->
         </button>
       </li>
     </ul>

@@ -21,8 +21,8 @@ export const navItems: INavData[] = [
     iconComponent: { name: 'cilLayers' }
   },
   {
-    name: 'User',
-    url: '/user',
+    name: 'Customer',
+    url: '/customer',
     iconComponent: { name: 'cilUser' }
   },
   {
@@ -35,7 +35,55 @@ export const navItems: INavData[] = [
     url: '/invoice',
     iconComponent: { name: 'cilNotes' }
   },
-    
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilLibrary' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilAddressBook' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilStorage' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilSortAscending' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilFeaturedPlaylist' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilChevronRight' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilChevronCircleRightAlt' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilArrowCircleRight' }
+  },
+  {
+    name: 'Tester',
+    url: '/invoice',
+    iconComponent: { name: 'cilArrowCircleRight' }
+  },
+
+
+
+
 ];
 
 // other options:
