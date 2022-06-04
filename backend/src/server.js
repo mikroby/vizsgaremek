@@ -5,6 +5,8 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
+const { join } = require('path')
+
 const app = express()
 
 const { host, user, pass } = config.get('database')
@@ -25,26 +27,26 @@ mongoose.connect(`mongodb+srv://${host}`, {
 // MIDDLEWARES:
 // Cross origin resource sharing: CORS
 app.use(cors())
-// Static files serving from public folder.
+// Static welcome screen serving from public folder.
 app.use(express.static('public'))
 // JSON parsing the body of incoming request.
 app.use(bodyParser.json())
 
-// Category controller-router call.
+// Category
 app.use('/category', require('./controller/category/router'))
-// Customer controller-router call.
+// Customer
 app.use('/customer', require('./controller/customer/router'))
-// Expert controller-router call.
+// Expert
 app.use('/expert', require('./controller/expert/router'))
-// Invoice controller-router call.
+// Invoice
 app.use('/invoice', require('./controller/invoice/router'))
-// Order controller-router call.
+// Order
 app.use('/order', require('./controller/order/router'))
 
-// request for root sending a welcome message.
-app.use('/', (req, res) => {
+// request for anything else sends a welcome screen.
+app.use('/', (req, res, next) => {
   console.log(req.url)
-  res.send('./index.html')
+  res.sendFile('index.html', { root: join(__dirname, '../public/') })
 })
 
 // Error Handling.
