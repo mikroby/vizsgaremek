@@ -1,5 +1,13 @@
 // Here you can add other styles
 
+.wrapper {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+    url("../images/szerszamok.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
 * {
   user-select: none;
 }
