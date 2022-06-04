@@ -5,9 +5,6 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
 
-// átírni oda!
-const applicationName = process.env.port || 'MesterEmber'
-
 const app = express()
 
 const { host, user, pass } = config.get('database')
@@ -47,7 +44,7 @@ app.use('/order', require('./controller/order/router'))
 // request for root sending a welcome message.
 app.use('/', (req, res) => {
   console.log(req.url)
-  res.send(`Welcome! This is The API Server for ${applicationName} Application!`)
+  res.send('./index.html')
 })
 
 // Error Handling.
