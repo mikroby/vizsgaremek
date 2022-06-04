@@ -10,7 +10,7 @@ export class CategoryService {
   list: Category[] = [
     {
       _id: 'qwetqertert23',
-      categoryId: 1,
+      categoryID: 1,
       name: 'Informatika',
       job: [
         'Adatmentés',
@@ -25,7 +25,7 @@ export class CategoryService {
     },
     {
       _id: 'qwetqez455z2rtert23',
-      categoryId: 2,
+      categoryID: 2,
       name: 'Építőipar',
       job: [
         'Ács és tetőfedő',
@@ -52,7 +52,7 @@ export class CategoryService {
     },
     {
       _id: 'qwetzrz2zz2rtert23',
-      categoryId: 3,
+      categoryID: 3,
       name: 'Háztartás / kert',
       job: [
         'Bevásárlás',
@@ -67,7 +67,7 @@ export class CategoryService {
     },
     {
       _id: 'qwetbdghjet65tert23',
-      categoryId: 4,
+      categoryID: 4,
       name: 'Jármű',
       job: [
         'Autó üvegezés',
@@ -80,7 +80,7 @@ export class CategoryService {
     },
     {
       _id: 'qwevcfgh672rt23',
-      categoryId: 5,
+      categoryID: 5,
       name: 'Egészség',
       job: [
         'Általános orvos',
@@ -95,7 +95,7 @@ export class CategoryService {
     },
     {
       _id: 'qwe67z547uttzt23',
-      categoryId: 6,
+      categoryID: 6,
       name: 'Szépségápolás',
       job: [
         'Fodrász',
@@ -107,7 +107,7 @@ export class CategoryService {
     },
     {
       _id: 'qwetqez455z2346grtw45',
-      categoryId: 7,
+      categoryID: 7,
       name: 'Tanácsadás',
       job: [
         'Coach',
@@ -120,7 +120,7 @@ export class CategoryService {
     },
     {
       _id: 'qwetqez45513241tqg',
-      categoryId: 8,
+      categoryID: 8,
       name: 'Oktatás',
       job: [
         'Angol',
@@ -147,7 +147,7 @@ export class CategoryService {
     },
     {
       _id: 'qwetqez453422gr245',
-      categoryId: 9,
+      categoryID: 9,
       name: '1000 Apró',
       job: [
         'Árufuvarozás',
@@ -168,7 +168,7 @@ export class CategoryService {
     },
     {
       _id: 'qwe2452qzh658i9383',
-      categoryId: 10,
+      categoryID: 10,
       name: 'Szórakoztatás / rendezvény',
       job: [
         'Arcfestés',

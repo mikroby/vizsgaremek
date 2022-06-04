@@ -23,7 +23,7 @@ export class ConfigService {
 
   categoryTableColumns: ITableColumn[] = [
     // { key: '_id', title: '#' },
-    { key: 'categoryId', title: 'Kategória száma' },
+    { key: 'categoryID', title: 'Kategória száma' },
     { key: 'name', title: 'Kategória neve' },
     { key: 'job', title: 'Munka neve' },
   ]
@@ -33,7 +33,7 @@ export class ConfigService {
     { key: 'first_name', title: 'Keresztnév' },
     { key: 'last_name', title: 'Vezetéknév' },
     { key: 'job', title: 'Munka' },
-    { key: 'categoryId', title: 'Kategória száma' },
+    { key: 'categoryID', title: 'Kategória száma' },
     { key: 'price', title: 'Ár' },
     { key: 'age', title: 'Életkor' },
     { key: 'gender', title: 'Nem' },
