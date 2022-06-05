@@ -9,9 +9,9 @@ const { join } = require('path')
 
 (async () => {
   modelName.forEach(async (model) => {
-    const object = await readFile(join(__dirname, `${model}.json`), 'utf8')
-    const rawJson = JSON.parse(object)
-    return await require(`../model/${model}.js`).insertMany(rawJson)
+    const rawJson = await readFile(join(__dirname, `${model}.json`), 'utf8')
+    const entity = JSON.parse(rawJson)
+    return await require(`../model/${model}.js`).insertMany(entity)
   })
   console.log('Data is seeded!')
 })()
