@@ -32,6 +32,9 @@ app.use(express.static('public'))
 // JSON parsing the body of incoming request.
 app.use(bodyParser.json())
 
+// SwaggerUI starts here.
+app.get('/api-docs', (req, res) => res.sendStatus(404))
+
 // Category
 app.use('/category', require('./controller/category/router'))
 // Customer

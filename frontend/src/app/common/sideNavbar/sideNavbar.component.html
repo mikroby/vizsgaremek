@@ -1,14 +1,14 @@
 <c-sidebar #sidebar="cSidebar" class="d-print-none sidebar sidebar-fixed" id="sidebar" visible>
   <c-sidebar-brand [brandFull]="{
-      src: 'assets/img/brand/coreui-angular.svg',
-      width: 200,
-      height: 46,
-      alt: 'CoreUI Logo'
-    }" [brandNarrow]="{
-      src: 'assets/img/brand/coreui-signet-white.svg',
+      src: 'assets/img/brand/expertSearch.svg',
       width: 46,
       height: 46,
-      alt: 'CoreUI Logo'
+      alt: 'expert Logo'
+    }" [brandNarrow]="{
+      src: 'assets/img/brand/x-logo-blue.svg',
+      width: 35,
+      height: 35,
+      alt: 'X Logo'
     }" routerLink="./home">
   </c-sidebar-brand>
   <perfect-scrollbar [config]="perfectScrollbarConfig">
@@ -18,3 +18,13 @@
   </perfect-scrollbar>
   <c-sidebar-toggler *ngIf="!sidebar.narrow" toggle="unfoldable" cSidebarToggle="sidebar"></c-sidebar-toggler>
 </c-sidebar>
+
+<!-- src: 'assets/img/brand/coreui-angular.svg',
+width: 200,
+height: 46,
+alt: 'CoreUI Logo' -->
+
+<!-- src: 'assets/img/brand/coreui-signet-white.svg',
+width: 46,
+height: 46,
+alt: 'CoreUI Logo' -->
