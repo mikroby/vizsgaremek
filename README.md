@@ -175,7 +175,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Infografikával áttekintő kimutatások jelennek meg az adatbázisról.
++ Infografikával áttekintő kimutatások jelennek meg az adatbázisról a Dashboard főoldalán.
 
 
 ---------------------------------------------------------
@@ -218,3 +218,26 @@ A fejléc szerkezete:
 + "Új létrehozás" gomb jelenik meg, melyre kattintva aloldalon megjelenő űrlapon megadhatók az adatok.
 + Validáció után az adatbázisban átvezetésre kerülnek az új adatok.
 + Az űrlap bezáródik és a korábbi lista jelenik meg a frissített adatokkal.
+
+
+---------------------------------------------------------
+## A projekt egyéb adatai:
+
+**Prioritás:** magas
+
+**Megvalósítás időtartama:** 10 hét
+
+**Továbbfejlesztési lehetőségek:**
+
++ Megrendelői regisztráció lehetősége
++ Megrendelői menedzsment-felület létrehozása
++ Szakember-értékelés lehetősége az elvégzett munkára
++ Szakemberek számára menedzsment-felület létrehozása 
++ Közvetlen üzenetküldés lehetősége az oldalon (mindhárom szerepkör között)
++ Adminisztrátor számára autentikáció-menedzsment felület létrehozása
+
+---------------------------------------------------------
+## Linkek:
+
++ Dokumentáció elérhetősége:
++ Kiegészítő anyagok elérhetősége:
