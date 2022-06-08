@@ -70,6 +70,7 @@ import { OrderComponent } from './page/order/order.component';
     InvoiceComponent,
     CustomerComponent,
     OrderComponent,
+
   ],
   imports: [
     BrowserModule,

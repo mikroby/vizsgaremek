@@ -23,9 +23,13 @@ export class BaseTableComponent<T extends { [x: string]: any }> extends HeaderCo
   @Input() columns: ITableColumn[] = []
   @Input() buttons: IOptionButtons = { editBtn: true, deleteBtn: true }
 
+  filterKey: string = ''
+  phrase: string = ''
+  sortBy: string = ''
+  direction: number = 1
 
   paginatorIconSize: string = this.config.paginatorIconSize
-  optionIconSize:string = this.config.optionIconSize
+  optionIconSize: string = this.config.optionIconSize
   pageSize = this.config.pageSize
   // pageSize = this.config.pageSize > this.list.length ? this.list.length : this.config.pageSize
   minPageSize = this.config.minPageSize
@@ -40,7 +44,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> extends HeaderCo
 
   constructor(
     private config: ConfigService,
-  ) { 
+  ) {
     super()
   }
 

@@ -18,7 +18,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let row of list | slice:rowStart:rowEnd">
+      <tr *ngFor="let row of list | slice:rowStart:rowEnd | filter:phrase:key | sorter:sortBy:direction">
         <td *ngFor="let col of columns">
           {{ row[col.key] }}
         </td>
