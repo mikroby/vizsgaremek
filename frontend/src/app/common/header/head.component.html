@@ -9,17 +9,13 @@
 
     <c-header-nav class="d-none d-lg-flex me-auto">
       <c-nav-item>
-        <a cNavLink routerLink="/dashboard" routerLinkActive="active">
-          Vezérlőpult
-        </a>
+        <a cNavLink routerLink="/home" routerLinkActive="active">MesterEmber</a>
       </c-nav-item>
       <c-nav-item>
-        <a cNavLink routerLink="/users" routerLinkActive="active">Users</a>
+        <a cNavLink routerLink="/search" routerLinkActive="active">Szakember keresés</a>
       </c-nav-item>
       <c-nav-item>
-        <a cNavLink routerLink="/settings" routerLinkActive="active">
-          Beállítások
-        </a>
+        <a cNavLink routerLink="/login" routerLinkActive="active">Bejelentkezés</a>
       </c-nav-item>
     </c-header-nav>
 
@@ -47,11 +43,13 @@
 
   </c-container>
 
-  <c-header-divider></c-header-divider>
+  <!-- elválasztó sáv -->
+  <!-- <c-header-divider></c-header-divider> -->
 
-  <c-container [fluid]="true">
+  <!-- breadCrumb menü -->
+  <!-- <c-container [fluid]="true">
     <c-breadcrumb-router class="ms-2"></c-breadcrumb-router>
-  </c-container>
+  </c-container> -->
 
 </ng-container>
 

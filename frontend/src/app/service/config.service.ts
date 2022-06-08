@@ -27,7 +27,7 @@ export class ConfigService {
   optionIconSize = 'lg'
 
   categoryTableColumns: ITableColumn[] = [
-    // { key: '_id', title: '#' },
+    { key: '_id', title: '#' },
     { key: 'categoryID', title: 'Kategória száma' },
     { key: 'name', title: 'Kategória neve' },
     { key: 'job', title: 'Munka neve' },
@@ -44,7 +44,7 @@ export class ConfigService {
   ]
 
   expertTableColumns: ITableColumn[] = [
-    // { key: '_id', title: '#' },
+    { key: '_id', title: '#' },
     { key: 'last_name', title: 'Vezetéknév' },
     { key: 'first_name', title: 'Keresztnév' },
     { key: 'job', title: 'Munka' },

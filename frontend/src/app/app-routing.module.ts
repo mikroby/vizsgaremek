@@ -21,42 +21,42 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashboardComponent,
     data: {
-      title: 'Dashboard'
+      title: 'Vezérlőpult'
     }
   },
   {
     path: 'expert',
     component: ExpertComponent,
     data: {
-      title: 'Expert'
+      title: 'Szakemberek'
     }
   },
   {
     path: 'category',
     component: CategoryComponent,
     data: {
-      title: 'Category'
+      title: 'Kategóriák'
     }
   },
   {
     path: 'customer',
     component: CustomerComponent,
     data: {
-      title: 'Customer'
+      title: 'Felhasználók'
     }
   },
   {
     path: 'order',
     component: OrderComponent,
     data: {
-      title: 'Order'
+      title: 'Rendelések'
     }
   },
   {
     path: 'invoice',
     component: InvoiceComponent,
     data: {
-      title: 'Invoice'
+      title: 'Számlák'
     }
   },
   {
