@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core'
+import { HeaderComponent } from '@coreui/angular'
 import { ConfigService } from 'src/app/service/config.service'
 
 export interface ITableColumn {
@@ -16,7 +17,7 @@ export interface IOptionButtons {
   templateUrl: './base-table.component.html',
   styleUrls: ['./base-table.component.scss']
 })
-export class BaseTableComponent<T extends { [x: string]: any }> implements OnInit {
+export class BaseTableComponent<T extends { [x: string]: any }> extends HeaderComponent implements OnInit {
 
   @Input() list: T[] = []
   @Input() columns: ITableColumn[] = []
@@ -39,7 +40,9 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
 
   constructor(
     private config: ConfigService,
-  ) { }
+  ) { 
+    super()
+  }
 
   ngOnInit(): void {
     this.rowStart = this.pageSize * (this.actualPage - 1)

@@ -1,11 +1,11 @@
 // Angular modules
 import { NgModule } from '@angular/core'
-// import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common'
 import { BrowserModule, Title } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule } from '@angular/common/http';
+// import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common'
 
 // CoreUI modules
 import { IconModule, IconSetService } from '@coreui/icons-angular'

@@ -57,7 +57,7 @@ export class ConfigService {
     { key: 'workDays', title: 'Munkanapok' },
     { key: 'availableFrom', title: 'Kezd' },
     { key: 'availableTill', title: 'Végez' },
-    { key: 'rating', title: 'Pontszám' },
+    { key: 'rating', title: 'Értékelés' },
   ]
 
   invoiceTableColumns: ITableColumn[] = [

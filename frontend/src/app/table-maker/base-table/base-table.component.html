@@ -1,33 +1,9 @@
-<!-- paginator block -->
-<div
-  class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2 rounded-3 bg-light bg-gradient">
-  <div class="input-group input-group-sm shadow grow-10 me-auto align-self-center">
-    <span class="input-group-text">sor / lap</span>
-    <input class="form-control text-center" id="shortInput" type="number" name="pageSize" [min]="minPageSize"
-      [max]="list.length" step="2" [(ngModel)]="pageSize" (change)="onChange()">
-  </div>
+<!-- header block -->
 
-  <div class="btn-group btn-group-sm shadow grow-10 bg-white align-self-center">
-    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
-      (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
-      <svg cIcon name="cilChevronCircleLeftAlt" [size]="paginatorIconSize"></svg>
-    </button>
-    <button *ngFor="let page of pageList" type="button" [ngClass]="{'active': page === actualPage}"
-      class=" btn btn-outline-secondary" (click)="jumpToPage(page)">
-      {{ page }}
-    </button>
-    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
-      (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
-      <svg cIcon name="cilChevronCircleRightAlt" [size]="paginatorIconSize"></svg>
-    </button>
-  </div>
+<c-container [fluid]="true">
+  <c-breadcrumb-router class="ms-2"></c-breadcrumb-router>
+</c-container>
 
-  <div class="input-group input-group-sm shadow ms-auto align-self-center">
-    <span class="input-group-text px-3">
-      {{ rowStart+1 }} - {{ rowEnd }}.
-    </span>
-  </div>
-</div>
 
 <!-- table block -->
 <div class="table-responsive">
@@ -60,4 +36,35 @@
       </tr>
     </tbody>
   </table>
+</div>
+
+<!-- paginator block -->
+<div
+  class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2 rounded-3 bg-light bg-gradient">
+  <div class="input-group input-group-sm shadow grow-10 me-auto align-self-center">
+    <span class="input-group-text">sor / lap</span>
+    <input class="form-control text-center" id="shortInput" type="number" name="pageSize" [min]="minPageSize"
+      [max]="list.length" step="2" [(ngModel)]="pageSize" (change)="onChange()">
+  </div>
+
+  <div class="btn-group btn-group-sm shadow grow-10 bg-white align-self-center">
+    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
+      (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
+      <svg cIcon name="cilChevronCircleLeftAlt" [size]="paginatorIconSize"></svg>
+    </button>
+    <button *ngFor="let page of pageList" type="button" [ngClass]="{'active': page === actualPage}"
+      class=" btn btn-outline-secondary" (click)="jumpToPage(page)">
+      {{ page }}
+    </button>
+    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
+      (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
+      <svg cIcon name="cilChevronCircleRightAlt" [size]="paginatorIconSize"></svg>
+    </button>
+  </div>
+
+  <div class="input-group input-group-sm shadow ms-auto align-self-center">
+    <span class="input-group-text px-3">
+      {{ rowStart+1 }} - {{ rowEnd }}.
+    </span>
+  </div>
 </div>

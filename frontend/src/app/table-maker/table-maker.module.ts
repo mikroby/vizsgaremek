@@ -5,6 +5,9 @@ import { BaseTableComponent } from './base-table/base-table.component';
 
 
 import { IconModule } from '@coreui/icons-angular'
+import { BreadcrumbModule, GridModule, HeaderModule } from '@coreui/angular';
+
+
 
 @NgModule({
   declarations: [
@@ -13,7 +16,11 @@ import { IconModule } from '@coreui/icons-angular'
   imports: [
     CommonModule,
     FormsModule,
-    IconModule
+    IconModule,
+
+    HeaderModule,
+    BreadcrumbModule,
+    GridModule,
   ],
   exports: [
     BaseTableComponent
