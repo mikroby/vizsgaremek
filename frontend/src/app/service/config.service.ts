@@ -23,7 +23,7 @@ export class ConfigService {
   actualPage = 1
 
   // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
-  paginatorIconSize = 'lg'
+  paginatorIconSize = 'xl'
   optionIconSize = 'lg'
 
   categoryTableColumns: ITableColumn[] = [
