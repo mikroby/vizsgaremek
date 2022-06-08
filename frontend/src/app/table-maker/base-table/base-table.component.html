@@ -38,7 +38,7 @@
     <thead>
       <tr>
         <th *ngFor="let col of displayedColumns" scope="col">
-          <span class="position-relative" [id]="col.key" (click)="toggleSortDirection($event)">
+          <span class="position-relative pointer" [id]="col.key" (click)="toggleSortDirection($event)">
             {{ col.title }}
             <span *ngIf="col.key===sortBy" class="position-absolute top-0 start-100 translate-middle">
               <svg *ngIf="direction===1" cIcon name="cilSortAscending" size="sm"></svg>

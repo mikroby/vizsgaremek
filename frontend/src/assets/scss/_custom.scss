@@ -36,7 +36,7 @@ $edit-button-color: $info;
   transform: scale(150%);
 }
 
-.shadow-deep {
+.shadow-custom {
   box-shadow: 0 0 2.5rem rgba(#000000, 50%);
 }
 
@@ -49,4 +49,14 @@ $edit-button-color: $info;
 }
 .edit, .edit:hover {
   color: $edit-button-color;
+}
+
+.pointer {
+  cursor: pointer;
+  transition: all 0.35s ease;
+  background-color: transparent;
+}
+
+.pointer:hover {
+  background-color: $table-hover-bg;
 }
