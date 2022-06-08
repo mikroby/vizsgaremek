@@ -22,8 +22,13 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   @Input() columns: ITableColumn[] = []
   @Input() buttons: IOptionButtons = { editBtn: true, deleteBtn: true }
 
-  pageSize: number = this.config.pageSize
-  actualPage: number = this.config.actualPage
+
+  paginatorIconSize: string = this.config.paginatorIconSize
+  optionIconSize:string = this.config.optionIconSize
+  pageSize = this.config.pageSize
+  // pageSize = this.config.pageSize > this.list.length ? this.list.length : this.config.pageSize
+  minPageSize = this.config.minPageSize
+  actualPage = this.config.actualPage
   rowStart!: number
   rowEnd!: number
 
@@ -49,8 +54,8 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
 
   onChange(): void {
     this.actualPage = 1
-    this.pageSize = this.pageSize > this.list.length ?
-      this.list.length : this.pageSize
+    // this.pageSize = this.pageSize > this.list.length ?
+    //   this.list.length : this.pageSize
     this.ngOnInit()
   }
 }

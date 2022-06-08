@@ -11,7 +11,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Mesterember kereső';
+  title = 'MesterEmber kereső';
 
   constructor(
     private titleService: Title,

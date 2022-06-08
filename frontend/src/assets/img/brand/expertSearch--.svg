@@ -3,9 +3,7 @@
 <defs>
 </defs>
 <rect x="0" y="0" width="100%" height="100%" fill="rgba(255,255,255,0)"/>
-<g transform="matrix(1 0 0 1 500 500)" id="277540">
-<g style="">
-		<g transform="matrix(0.704 0 0 0.704 219.0982 0.0077)" id="983959">
+<g transform="matrix(1 0 0 1 504.6078 500.0084)" id="983959">
 <g style="">
 		<g transform="matrix(1.564 0 0 1.5559 188.0139 152.8648)" id="86063">
 <path style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(240,248,255); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-67.5, -67.5)" d="M 132.5 67.5 C 132.5 103.399 103.399 132.5 67.5 132.5 C 31.6015 132.5 2.5 103.399 2.5 67.5 C 2.5 31.6015 31.6015 2.5 67.5 2.5 C 103.399 2.5 132.5 31.6015 132.5 67.5 Z" stroke-linecap="round"/>
@@ -21,18 +19,6 @@
 </g>
 		<g transform="matrix(1.8425 0 0 1.8425 164.1379 183.9815)" id="Capa_1">
 <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(28,139,187); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-272.5886, -283.358)" d="M 336.396 219.546 c -12.79 -12.79 -29.821 -19.834 -47.957 -19.834 c -18.135 0 -35.166 7.044 -47.955 19.834 c -21.512 21.511 -26.052 54.982 -11.04 81.396 l 1.317 2.319 l -37.284 37.284 c -6.042 6.043 -6.041 15.876 0.002 21.92 c 2.927 2.927 6.819 4.539 10.958 4.539 c 4.142 0 8.033 -1.612 10.96 -4.54 l 37.285 -37.283 l 2.317 1.315 c 10.126 5.748 21.698 8.787 33.464 8.787 c 18.127 0 35.149 -7.04 47.933 -19.824 c 12.791 -12.79 19.835 -29.822 19.835 -47.957 C 356.231 249.367 349.187 232.336 336.396 219.546 z M 319.779 298.842 c -8.357 8.358 -19.488 12.962 -31.339 12.962 c -11.851 0 -22.982 -4.603 -31.341 -12.962 c -17.281 -17.281 -17.281 -45.399 0 -62.68 c 8.359 -8.359 19.49 -12.962 31.341 -12.962 c 11.851 0 22.981 4.604 31.339 12.963 c 8.359 8.358 12.963 19.488 12.963 31.339 S 328.138 290.483 319.779 298.842 z" stroke-linecap="round"/>
-</g>
-</g>
-</g>
-		<g transform="matrix(0.4612 0 0 0.4612 -212.883 0.0074)" id="929070">
-<g style="" vector-effect="non-scaling-stroke">
-		<g transform="matrix(1 0 0 1 -450 -450)">
-<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(255,255,255); fill-opacity: 0; fill-rule: nonzero; opacity: 1;" x="-50" y="-50" rx="0" ry="0" width="100" height="100"/>
-</g>
-		<g transform="matrix(37.8788 0 0 37.8788 -0.4999 -0.4998)" id="556068">
-<path style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(28,139,187); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-12, -12)" d="M 7.28 0.9 H 0 L 8.36 12 L 0 23.1 h 7.28 L 15.64 12 z M 24 0.9 h -7.28 l -2.3 3.06 l 3.64 4.82 z m -9.58 19.15 l 2.3 3.05 H 24 l -5.94 -7.88 z" stroke-linecap="round"/>
-</g>
-</g>
 </g>
 </g>
 </g>

@@ -24,7 +24,7 @@
 A fejléc szerkezete:
 + a főcím megjelenítése középen, egyben "Home" link-ként minden esetben erre a főoldalra navigál.
 + bal szélen az aktuális dátum és időpont, mely folyamatosan frissül
-+ jobb szélen az adminisztrátor ikonja, mely kattintható.
++ jobb szélen az adminisztrátor ikonja, melyre kattintva a beléptető oldara navigál.
 
 **3. User Story:**
 

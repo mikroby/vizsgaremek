@@ -2,7 +2,7 @@ import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'Dashboard',
+    name: 'Vezérlőpult',
     url: '/dashboard',
     iconComponent: { name: 'cil-speedometer' },
     badge: {
@@ -11,27 +11,27 @@ export const navItems: INavData[] = [
     }
   },
   {
-    name: 'Expert',
+    name: 'Szakemberek',
     url: '/expert',
     iconComponent: { name: 'cil-people' }
   },
   {
-    name: 'Category',
+    name: 'Kategóriák',
     url: '/category',
     iconComponent: { name: 'cilLayers' }
   },
   {
-    name: 'Customer',
+    name: 'Felhasználók',
     url: '/customer',
     iconComponent: { name: 'cilUser' }
   },
   {
-    name: 'Order',
+    name: 'Rendelések',
     url: '/order',
     iconComponent: { name: 'cilList' }
   },
   {
-    name: 'Invoice',
+    name: 'Számlák',
     url: '/invoice',
     iconComponent: { name: 'cilNotes' }
   },

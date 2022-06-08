@@ -1,3 +1,35 @@
+<!-- paginator block -->
+<div
+  class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2 rounded-3 bg-light bg-gradient">
+  <div class="input-group input-group-sm shadow grow-10 me-auto align-self-center">
+    <span class="input-group-text">sor / lap</span>
+    <input class="form-control text-center" id="shortInput" type="number" name="pageSize" [min]="minPageSize"
+      [max]="list.length" step="2" [(ngModel)]="pageSize" (change)="onChange()">
+  </div>
+
+  <div class="btn-group btn-group-sm shadow grow-10 bg-white align-self-center">
+    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
+      (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
+      <svg cIcon name="cilChevronCircleLeftAlt" [size]="paginatorIconSize"></svg>
+    </button>
+    <button *ngFor="let page of pageList" type="button" [ngClass]="{'active': page === actualPage}"
+      class=" btn btn-outline-secondary" (click)="jumpToPage(page)">
+      {{ page }}
+    </button>
+    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
+      (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
+      <svg cIcon name="cilChevronCircleRightAlt" [size]="paginatorIconSize"></svg>
+    </button>
+  </div>
+
+  <div class="input-group input-group-sm shadow ms-auto align-self-center">
+    <span class="input-group-text px-3">
+      {{ rowStart+1 }} - {{ rowEnd }}.
+    </span>
+  </div>
+</div>
+
+<!-- table block -->
 <div class="table-responsive">
   <table class="table table-sm table-hover align-middle">
     <thead>
@@ -17,13 +49,11 @@
         </td>
         <td *ngIf="buttons.editBtn || buttons.deleteBtn">
           <div class="btn-group btn-group-sm">
-            <button class="btn btn-primary" [disabled]="!buttons.editBtn">
-              <!-- edit icon -->
-              <svg cIcon name="cilPenAlt" size="sm"></svg>              
+            <button class="btn btn-primary-outline grow-25" [disabled]="!buttons.editBtn">
+              <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
             </button>
-            <button class="btn btn-danger" [disabled]="!buttons.deleteBtn">
-              <!-- delete icon -->
-              <svg cIcon name="cilTrash" size="sm"></svg>
+            <button class="btn btn-danger-outline grow-25" [disabled]="!buttons.deleteBtn">
+              <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>
             </button>
           </div>
         </td>
@@ -31,49 +61,3 @@
     </tbody>
   </table>
 </div>
-
-<!-- <div class="position-fixed top-90 w-90"> -->
-<nav aria-label="Page navigator" class="d-flex justify-content-between mt-5">
-
-  <div class="w-10 grow">
-    <div class="input-group input-group-sm shadow">
-      <span class="input-group-text">sor / lap</span>
-      <input class="form-control text-center" id="shortInput" type="number" name="pageSize" min="4" max="100" step="2"
-        [(ngModel)]="pageSize" (change)="onChange()">
-    </div>
-  </div>
-
-  <div class="d-inline-block grow">
-    <ul class="pagination pagination-sm shadow">
-      <li class="page-item">
-        <button class="page-link" (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
-          <!-- balra nyíl ikon -->
-          <svg cIcon name="cilChevronCircleLeftAlt" size="sm"></svg>  
-          <!-- <span aria-hidden="true">&laquo;</span> -->
-        </button>
-      </li>
-      <li *ngFor="let page of pageList" class="page-item" [ngClass]="{'active': page === actualPage}">
-        <button class="page-link" (click)="jumpToPage(page)">
-          {{ page }}
-        </button>
-      </li>
-      <li class="page-item">
-        <button class="page-link" (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
-          <!-- jobbra nyíl ikon -->
-          <svg cIcon name="cilChevronCircleRightAlt" size="sm"></svg>
-          <!-- <span aria-hidden="true">&raquo;</span> -->
-        </button>
-      </li>
-    </ul>
-  </div>
-
-  <div class="w-10">
-    <div class="input-group input-group-sm shadow">
-      <span class="input-group-text">
-        {{ rowStart+1 }} - {{ rowEnd }}.
-      </span>
-    </div>
-  </div>
-
-</nav>
-<!-- </div> -->

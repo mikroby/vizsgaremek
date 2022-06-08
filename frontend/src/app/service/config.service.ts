@@ -19,10 +19,15 @@ export class ConfigService {
   // ]
 
   pageSize = 50
+  minPageSize = 4
   actualPage = 1
 
+  // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
+  paginatorIconSize = 'lg'
+  optionIconSize = 'lg'
+
   categoryTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#' },
+    // { key: '_id', title: '#' },
     { key: 'categoryID', title: 'Kategória száma' },
     { key: 'name', title: 'Kategória neve' },
     { key: 'job', title: 'Munka neve' },
@@ -39,7 +44,7 @@ export class ConfigService {
   ]
 
   expertTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#' },
+    // { key: '_id', title: '#' },
     { key: 'last_name', title: 'Vezetéknév' },
     { key: 'first_name', title: 'Keresztnév' },
     { key: 'job', title: 'Munka' },
