@@ -52,6 +52,8 @@ export class BaseTableComponent<T extends { [x: string]: any }> extends HeaderCo
     this.rowStart = this.pageSize * (this.actualPage - 1)
     this.rowEnd = this.rowStart + this.pageSize > this.list.length ?
       this.list.length : this.rowStart + this.pageSize
+
+      console.log(this.list)
   }
 
   jumpToPage(pageTo: number): void {

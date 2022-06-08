@@ -5,7 +5,7 @@
 </c-container>
 
 <!-- table block -->
-<div class="table-responsive">
+<div *ngIf="list.length" class="table-responsive">
   <table class="table table-sm table-hover align-middle">
     <thead>
       <tr>
@@ -35,6 +35,13 @@
       </tr>
     </tbody>
   </table>
+</div>
+
+<!-- if no data this message appears -->
+<div *ngIf="!list.length" class="noDataListMessage">
+  <p class="h5 ms-3">Nincs megjeleníthető adat...
+    <!-- "{{input.value}}" -->
+  </p>
 </div>
 
 <!-- paginator block -->

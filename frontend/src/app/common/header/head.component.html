@@ -7,12 +7,19 @@
       <svg cIcon name="cilMenu" size="lg"></svg>
     </button>
 
+    <!-- clock -->
+    <h4 class="mx-4 my-auto">
+      <span class="badge rounded-pill bg-light text-dark shadow">
+        {{dateString}} {{timeString}}
+      </span>
+    </h4>
+
     <c-header-nav class="d-none d-lg-flex me-auto">
       <c-nav-item>
         <a cNavLink routerLink="/home" routerLinkActive="active">MesterEmber</a>
       </c-nav-item>
       <c-nav-item>
-        <a cNavLink routerLink="/search" routerLinkActive="active">Szakember keresés</a>
+        <a cNavLink routerLink="/search" routerLinkActive="active">Keresés</a>
       </c-nav-item>
       <c-nav-item>
         <a cNavLink routerLink="/login" routerLinkActive="active">Bejelentkezés</a>
