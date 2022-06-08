@@ -9,12 +9,12 @@ import { CustomerService } from 'src/app/service/customer.service';
 })
 export class CustomerComponent implements OnInit {
 
-  columns = this.config.customerTableColumns
+  // columns = this.config.customerTableColumns
 
   list$ = this.customerService.getAll()
 
   constructor(
-    private config: ConfigService,
+    // private config: ConfigService,
     private customerService: CustomerService,
   ) { }
 

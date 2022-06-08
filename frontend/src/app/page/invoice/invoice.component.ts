@@ -9,12 +9,12 @@ import { InvoiceService } from 'src/app/service/invoice.service';
 })
 export class InvoiceComponent implements OnInit {
 
-  columns = this.config.invoiceTableColumns
+  // columns = this.config.invoiceTableColumns
 
   list$ = this.invoiceService.getAll()
 
   constructor(
-    private config: ConfigService,
+    // private config: ConfigService,
     private invoiceService: InvoiceService,
   ) { }
 

@@ -11,6 +11,7 @@ import { ITableColumn } from '../table-maker/base-table/base-table.component';
   providedIn: 'root'
 })
 export class ConfigService {
+  [x: string]: any
 
   // sidebarMenu: IMenuItem[] = [
   //   { link: '/', title: 'Dashboard', icon:'' },
@@ -24,60 +25,61 @@ export class ConfigService {
 
   // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
   paginatorIconSize = 'xl'
-  optionIconSize = 'lg'
+  optionIconSize = 'sm'
 
   categoryTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#' },
-    { key: 'categoryID', title: 'Kategória száma' },
-    { key: 'name', title: 'Kategória neve' },
-    { key: 'job', title: 'Munka neve' },
+    { key: '_id', title: '#', visible: false },
+    { key: 'categoryID', title: 'Kategória száma', visible: true },
+    { key: 'name', title: 'Kategória neve', visible: true },
+    { key: 'job', title: 'Munka neve', visible: true },
   ]
 
   customerTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#' },
-    { key: 'last_name', title: 'Vezetéknév' },
-    { key: 'first_name', title: 'Keresztnév' },
-    { key: 'email', title: 'E-mail' },
-    { key: 'phone', title: 'Tel.' },
-    { key: 'address', title: 'Lakcím' },
-    { key: 'active', title: 'Aktív' },
+    { key: '_id', title: '#', visible: false },
+    { key: 'last_name', title: 'Vezetéknév', visible: true },
+    { key: 'first_name', title: 'Keresztnév', visible: true },
+    { key: 'email', title: 'E-mail', visible: true },
+    { key: 'phone', title: 'Telefon', visible: true },
+    { key: 'address', title: 'Lakcím', visible: true },
+    { key: 'active', title: 'Aktív', visible: true },
   ]
 
   expertTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#' },
-    { key: 'last_name', title: 'Vezetéknév' },
-    { key: 'first_name', title: 'Keresztnév' },
-    { key: 'job', title: 'Munka' },
-    { key: 'categoryID', title: 'Kategória száma' },
-    { key: 'price', title: 'Ár' },
-    { key: 'age', title: 'Életkor' },
-    { key: 'gender', title: 'Nem' },
-    { key: 'email', title: 'E-mail' },
-    { key: 'phone', title: 'Tel.' },
-    { key: 'workDays', title: 'Munkanapok' },
-    { key: 'availableFrom', title: 'Kezd' },
-    { key: 'availableTill', title: 'Végez' },
-    { key: 'rating', title: 'Értékelés' },
+    { key: '_id', title: '#', visible: false },
+    { key: 'last_name', title: 'Vezetéknév', visible: true },
+    { key: 'first_name', title: 'Keresztnév', visible: true },
+    { key: 'job', title: 'Munka', visible: true },
+    { key: 'categoryID', title: 'Kategória száma', visible: true },
+    { key: 'price', title: 'Ár', visible: true },
+    { key: 'age', title: 'Életkor', visible: true },
+    { key: 'gender', title: 'Nem', visible: true },
+    { key: 'email', title: 'E-mail', visible: true },
+    { key: 'phone', title: 'Telefon', visible: true },
+    { key: 'workDays', title: 'Munkanapok', visible: true },
+    { key: 'availableFrom', title: 'Kezd', visible: true },
+    { key: 'availableTill', title: 'Végez', visible: true },
+    { key: 'rating', title: 'Értékelés', visible: true },
   ]
 
   invoiceTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#' },
-    { key: 'orderID', title: 'Rendelés száma' },
-    { key: 'expertID', title: 'Mester Neve (ID)' },
-    { key: 'categoryID', title: 'Kategória neve (ID)' },
-    { key: 'job', title: 'Munka neve' },
-    { key: 'amount', title: 'Rendelt mennyiség' },
-    { key: 'status', title: 'Állapot' },
+    { key: '_id', title: '#', visible: false },
+    { key: 'orderID', title: 'Rendelés száma', visible: true },
+    { key: 'expertID', title: 'Mester Neve (ID)', visible: true },
+    { key: 'categoryID', title: 'Kategória neve (ID)', visible: true },
+    { key: 'job', title: 'Munka neve', visible: true },
+    { key: 'amount', title: 'Rendelt mennyiség', visible: true },
+    { key: 'status', title: 'Állapot', visible: true },
   ]
 
   orderTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#' },
-    { key: 'customerID', title: 'Megrendelő neve (ID)' },
-    { key: 'expertID', title: 'Mester Neve (ID)' },    
-    { key: 'job', title: 'Munka neve' },
-    { key: 'amount', title: 'Rendelt mennyiség' },
-    { key: 'status', title: 'Állapot' },
+    { key: '_id', title: '#', visible: false },
+    { key: 'customerID', title: 'Megrendelő neve (ID)', visible: true },
+    { key: 'expertID', title: 'Mester Neve (ID)', visible: true },
+    { key: 'job', title: 'Munka neve', visible: true },
+    { key: 'amount', title: 'Rendelt mennyiség', visible: true },
+    { key: 'status', title: 'Állapot', visible: true },
   ]
 
   constructor() { }
+  
 }

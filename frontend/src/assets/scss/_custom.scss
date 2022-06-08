@@ -20,6 +20,10 @@ $edit-button-color: $info;
   transition: all 0.2s ease;
 }
 
+.grow-5:hover {
+  transform: scale(105%);
+}
+
 .grow-10:hover {
   transform: scale(110%);
 }

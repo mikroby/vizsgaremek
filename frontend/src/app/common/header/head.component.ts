@@ -22,12 +22,10 @@ export class HeadComponent extends HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
     this.startDate = new Date()
     this.showDate(this.startDate)
     const id = setInterval(this.showTime, 1000)
     this.showTime()
-
   }
 
   showDate = (currentDate: Date) => {

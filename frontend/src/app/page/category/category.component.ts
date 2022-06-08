@@ -9,12 +9,12 @@ import { CategoryService } from 'src/app/service/category.service';
 })
 export class CategoryComponent implements OnInit {
 
-  columns = this.config.categoryTableColumns
+  // columns = this.config.categoryTableColumns
 
   list$ = this.categoryService.getAll()
 
   constructor(
-    private config: ConfigService,
+    // private config: ConfigService,
     private categoryService: CategoryService,
   ) { }
 

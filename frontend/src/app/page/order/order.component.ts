@@ -9,12 +9,12 @@ import { OrderService } from 'src/app/service/order.service';
 })
 export class OrderComponent implements OnInit {
 
-  columns = this.config.orderTableColumns
+  // columns = this.config.orderTableColumns
 
   list$ = this.orderService.getAll()
 
   constructor(
-    private config: ConfigService,
+    // private config: ConfigService,
     private orderService: OrderService,
   ) { }
 

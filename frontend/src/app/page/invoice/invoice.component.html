@@ -1,5 +1,6 @@
 <base-table *ngIf="list$ | async as list"
-  [columns]="columns"
+  [tableName]="'invoiceTableColumns'"
   [list]="list"
   [buttons]="{ editBtn: true, deleteBtn: true }">
 </base-table>
+<!-- [columns]="columns" -->

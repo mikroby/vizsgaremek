@@ -1,3 +1,6 @@
-<base-table *ngIf="list$ | async as list" [columns]="columns" [list]="list"
+<base-table *ngIf="list$ | async as list"
+  [tableName]="'expertTableColumns'"
+  [list]="list"
   [buttons]="{ editBtn: true, deleteBtn: true }">
 </base-table>
+<!-- [columns]="columns" -->
