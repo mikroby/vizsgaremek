@@ -1,15 +1,44 @@
 <!-- header block -->
+<div class="d-flex">
+  <c-breadcrumb-router class="mt-0 h4"></c-breadcrumb-router>
+  <!-- filter input-->
+  <div *ngIf="list.length" class="btn-toolbar ms-auto align-self-center">
+    <div class="input-group input-group-sm shadow grow-10">
+      <input class="form-control" type="text" name="phrase" size="15" placeholder="keresés..." [(ngModel)]="phrase">
+    </div>
+    <!-- sorter input -->
+    <div class="input-group input-group-sm shadow grow-10 ms-3">
+      <span class="input-group-text">szűrés</span>
+      <select class="form-select form-select-sm" [(ngModel)]="filterKey">
+        <option selected value="">bármilyen egyezés</option>
+        <option *ngFor="let col of displayedColumns" [value]="col.key">{{col.title | titlecase}}</option>
+      </select>
+    </div>
+    <!-- choose displayed columns -->
+    <div class="input-group input-group-sm shadow grow-10 ms-3">
+      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">megjelenítés</button>
+      <ul class="dropdown-menu">
+        <li *ngFor="let col of columns">
+          <div class="form-check dropdown-item">
+            <input class="form-check-input" type="checkbox" [name]="col.key" id="flexCheck">
+            <label class="form-check-label" for="flexCheck">
+              {{col.title | titlecase}}
+            </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-<c-container [fluid]="true">
-  <c-breadcrumb-router class="ms-2"></c-breadcrumb-router>
-</c-container>
+</div>
 
 <!-- table block -->
 <div *ngIf="list.length" class="table-responsive">
   <table class="table table-sm table-hover align-middle">
     <thead>
       <tr>
-        <th *ngFor="let col of columns" scope="col">
+        <th *ngFor="let col of displayedColumns" scope="col">
           {{ col.title }}
         </th>
         <th *ngIf="buttons.editBtn || buttons.deleteBtn">
@@ -18,16 +47,16 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let row of list | slice:rowStart:rowEnd | filter:phrase:filterKey | sorter:sortBy:direction">
-        <td *ngFor="let col of columns">
+      <tr *ngFor="let row of list | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
+        <td *ngFor="let col of displayedColumns">
           {{ row[col.key] }}
         </td>
         <td *ngIf="buttons.editBtn || buttons.deleteBtn">
           <div class="btn-group btn-group-sm">
-            <button class="btn btn-primary-outline grow-25" [disabled]="!buttons.editBtn">
+            <button class="btn btn-outline grow-30 edit" [disabled]="!buttons.editBtn">
               <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
             </button>
-            <button class="btn btn-danger-outline grow-25" [disabled]="!buttons.deleteBtn">
+            <button class="btn btn-outline grow-30 delete" [disabled]="!buttons.deleteBtn">
               <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>
             </button>
           </div>
@@ -39,18 +68,18 @@
 
 <!-- if no data this message appears -->
 <div *ngIf="!list.length" class="noDataListMessage">
-  <p class="h5 ms-3">Nincs megjeleníthető adat...
+  <p class="h5 ms-1 mt-3">Nincs megjeleníthető adat a listában...
     <!-- "{{input.value}}" -->
   </p>
 </div>
 
 <!-- paginator block -->
-<div class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2
-  rounded-3 bg-light bg-gradient">
-  <div class="input-group input-group-sm shadow grow-10 me-auto align-self-center">
+<div *ngIf="list.length" class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2
+  rounded-pill bg-light bg-gradient grow-10">
+  <div class="input-group input-group-sm shadow grow-10 me-auto ms-2 align-self-center">
     <span class="input-group-text">sor / lap</span>
-    <input class="form-control text-center" id="shortInput" type="number" name="pageSize" [min]="minPageSize"
-      [max]="list.length" step="2" [(ngModel)]="pageSize" (change)="onChange()">
+    <input class="form-control text-center" type="number" name="pageSize" [min]="minPageSize" [max]="list.length"
+      step="2" [(ngModel)]="pageSize" (change)="onChange()">
   </div>
 
   <div class="btn-group btn-group-sm shadow grow-10 bg-white align-self-center">
@@ -68,7 +97,7 @@
     </button>
   </div>
 
-  <div class="input-group input-group-sm shadow ms-auto align-self-center">
+  <div class="input-group input-group-sm shadow ms-auto me-2 align-self-center">
     <span class="input-group-text px-3">
       {{ rowStart+1 }} - {{ rowEnd }}.
     </span>

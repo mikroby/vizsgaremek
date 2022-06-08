@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { HeaderComponent } from '@coreui/angular'
 import { ConfigService } from 'src/app/service/config.service'
 
 export interface ITableColumn {
@@ -17,21 +16,22 @@ export interface IOptionButtons {
   templateUrl: './base-table.component.html',
   styleUrls: ['./base-table.component.scss']
 })
-export class BaseTableComponent<T extends { [x: string]: any }> extends HeaderComponent implements OnInit {
+export class BaseTableComponent<T extends { [x: string]: any }> implements OnInit {
 
   @Input() list: T[] = []
   @Input() columns: ITableColumn[] = []
   @Input() buttons: IOptionButtons = { editBtn: true, deleteBtn: true }
 
+  displayedColumns!: ITableColumn[]
   filterKey: string = ''
   phrase: string = ''
   sortBy: string = ''
   direction: number = 1
 
-  paginatorIconSize: string = this.config.paginatorIconSize
   optionIconSize: string = this.config.optionIconSize
-  pageSize = this.config.pageSize
-  // pageSize = this.config.pageSize > this.list.length ? this.list.length : this.config.pageSize
+
+  paginatorIconSize: string = this.config.paginatorIconSize
+  pageSize!: number
   minPageSize = this.config.minPageSize
   actualPage = this.config.actualPage
   rowStart!: number
@@ -44,27 +44,30 @@ export class BaseTableComponent<T extends { [x: string]: any }> extends HeaderCo
 
   constructor(
     private config: ConfigService,
-  ) {
-    super()
-  }
+  ) { }
 
   ngOnInit(): void {
-    this.rowStart = this.pageSize * (this.actualPage - 1)
-    this.rowEnd = this.rowStart + this.pageSize > this.list.length ?
-      this.list.length : this.rowStart + this.pageSize
+    this.pageSize = this.config.pageSize > this.list.length ? this.list.length : this.config.pageSize
+    this.displayedColumns = [...this.columns]
+    this.calculateRows()
 
-      console.log(this.list)
+    // console.log(this.columns)
   }
 
   jumpToPage(pageTo: number): void {
     this.actualPage = pageTo;
-    this.ngOnInit()
+    this.calculateRows()
   }
 
   onChange(): void {
     this.actualPage = 1
-    // this.pageSize = this.pageSize > this.list.length ?
-    //   this.list.length : this.pageSize
-    this.ngOnInit()
+    this.calculateRows()
   }
+
+  calculateRows(): void {
+    this.rowStart = this.pageSize * (this.actualPage - 1)
+    this.rowEnd = this.rowStart + this.pageSize > this.list.length ?
+      this.list.length : this.rowStart + this.pageSize
+  }
+
 }

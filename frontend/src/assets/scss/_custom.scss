@@ -1,9 +1,10 @@
 // Here you can add other styles
 
-// saját iromány !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+$delete-button-color: $danger;
+$edit-button-color: $info;
+
 .wrapper {
-  background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
     url("../images/szerszamok.jpg");
   background-size: cover;
   background-position: left top;
@@ -12,6 +13,36 @@
 
 * {
   user-select: none;
+  box-sizing: border-box;
 }
 
+[class*="grow-"] {
+  transition: all 0.2s ease;
+}
 
+.grow-10:hover {
+  transform: scale(110%);
+}
+
+.grow-30:hover {
+  transform: scale(130%);
+}
+
+.grow-50:hover {
+  transform: scale(150%);
+}
+
+.shadow-deep {
+  box-shadow: 0 0 2.5rem rgba(#000000, 50%);
+}
+
+.mb-7 {
+  margin-bottom: 5rem;
+}
+
+.delete, .delete:hover {
+  color: $delete-button-color;
+}
+.edit, .edit:hover {
+  color: $edit-button-color;
+}
