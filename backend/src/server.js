@@ -7,13 +7,11 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const swaggerUi = require('swagger-ui-express')
 const YAML = require('yamljs')
+const swaggerDocument = YAML.load('./docs/swagger.yaml')
 const authencticateJwt = require('./module/auth/authenticate')
-
 const { join } = require('path')
-
 const app = express()
 
-const swaggerDocument = YAML.load('./docs/swagger.yaml')
 const { host, user, pass } = config.get('database')
 
 // Mongoose Connection establishment.
@@ -52,8 +50,8 @@ app.use('/expert', authencticateJwt, require('./controller/expert/router'))
 app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
 // Order
 app.use('/order', authencticateJwt, require('./controller/order/router'))
-// SwaggerUI available here.
-app.get('/api-docs', (req, res) => res.sendStatus(404))
+// SwaggerUI docs available here.
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 // request for anything else sends a welcome screen.
 app.use('/', (req, res, next) => {
   console.log(req.url)
