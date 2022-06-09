@@ -10,7 +10,7 @@ export class LoginComponent implements OnInit {
 
   loginData: ILoginData = {};
 
-  loginFailed: boolean = false
+  loginFailed!: boolean
 
   user$ = this.auth.user$;
 
@@ -19,11 +19,11 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.auth.logout();
+    this.auth.logout();    
   }
-
+  
   tryLogin(): void {
-    this.auth.login(this.loginData);
+    this.auth.login(this.loginData);   
   }
 
 }

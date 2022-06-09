@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { BaseTableComponent } from './base-table/base-table.component';
 
 import { IconModule } from '@coreui/icons-angular'
-import { BreadcrumbModule, GridModule, HeaderModule } from '@coreui/angular';
+import { BadgeModule, BreadcrumbModule, GridModule, HeaderModule } from '@coreui/angular';
 
 import { FilterPipe } from '../pipe/filter.pipe';
 import { SorterPipe } from '../pipe/sorter.pipe';
@@ -20,6 +20,7 @@ import { SorterPipe } from '../pipe/sorter.pipe';
     CommonModule,
     FormsModule,
     IconModule,
+    BadgeModule,
 
     HeaderModule,
     BreadcrumbModule,

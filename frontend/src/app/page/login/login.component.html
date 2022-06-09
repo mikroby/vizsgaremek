@@ -9,9 +9,9 @@
     <!-- Login Form -->
     <form #loginForm="ngForm" (ngSubmit)="tryLogin()">
       <input type="email" id="login" class="fadeIn second" [(ngModel)]="loginData.email" name="email"
-        placeholder="E-mail" (focus)="loginFailed=false">
+        placeholder="E-mail" (focus)="!loginFailed">
       <input type="password" id="password" class="fadeIn third" [(ngModel)]="loginData.password" name="password"
-        placeholder="Jelszó" (focus)="loginFailed=false">
+        placeholder="Jelszó" (focus)="!loginFailed">
       <input type="submit" class="fadeIn fourth" value="Belépés" [disabled]="loginForm.invalid">
     </form>
 

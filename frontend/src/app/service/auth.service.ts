@@ -13,13 +13,15 @@ export interface IAuthModel {
 
 export interface ILoginData {
   email?: string;
-  password?: string;  
+  password?: string;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+
+  loginFailed: boolean = false
 
   apiUrl: string = environment.apiUrl;
 
@@ -62,12 +64,15 @@ export class AuthService {
         this.access_token$.next(response.accessToken);
         sessionStorage.setItem('login', JSON.stringify(response));
       },
-      error: (err) => console.error(err),
+      error: (err) => {
+        console.error(err)        
+      }
+
     });
   }
 
   logout(): void {
-    this.user$.next(null);
+    this.user$.next(null);    
   }
 
 }

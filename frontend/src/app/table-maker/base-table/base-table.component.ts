@@ -103,14 +103,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     this.direction *= -1
   }
 
-  // SORT-hoz kell majd object!!!!  a záróprojekt material-ból:
-  //   this.List.sortingDataAccessor = (row: any, colName: string): string => {
-  //   if (typeof row[colName] === 'object') {
-  //     return row[colName][this.sortPropIfObject] as string
-  //   }
-  //   return row[colName] as string;
-  // }
-
+  
   // táblázat adatainak típusa alapján:
   // isBoolean(value: any): boolean {
   //   return (typeof value === 'boolean');
@@ -129,7 +122,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   //     }
   //   });
   //   confirmDialog.afterClosed().subscribe(result => {
-  //     if (result === true) {
+  //     if (result) {
   //       this.removeById.emit(id);
   //     }
   //   });
