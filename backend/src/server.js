@@ -7,7 +7,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const swaggerUi = require('swagger-ui-express')
 const YAML = require('yamljs')
-const authencticateJwt = require('./model/auth/authenticate')
+const authencticateJwt = require('./module/auth/authenticate')
 
 const { join } = require('path')
 
