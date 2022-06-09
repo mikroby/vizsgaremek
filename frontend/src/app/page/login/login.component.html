@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="loginBox fadeInDown mt-5">
+  <div id="formContent">
+    
+    <!-- Icon -->
+    <div class="fadeIn first my-3" id="icon">
+      <svg cIcon name="cil-user" size="3xl"></svg>      
+    </div>
+
+    <!-- Login Form -->
+    <form #loginForm="ngForm" (ngSubmit)="tryLogin()">
+      <input type="email" id="login" class="fadeIn second" [(ngModel)]="loginData.email" name="email"
+        placeholder="E-mail" (focus)="loginFailed=false">
+      <input type="password" id="password" class="fadeIn third" [(ngModel)]="loginData.password" name="password"
+        placeholder="Jelszó" (focus)="loginFailed=false">
+      <input type="submit" class="fadeIn fourth" value="Belépés" [disabled]="loginForm.invalid">
+    </form>
+
+    <!-- forgotten password email -->
+    <div id="formFooter" class="py-1">
+      <a class="underlineHover" routerLink="/login">
+        Elfelejtette a jelszavát?
+      </a>
+    </div>
+
+  </div>
+
+  <!-- message if login failed -->
+  <div *ngIf="loginFailed" class="text-center mt-5 h5">
+    Sikertelen bejelentkezés!
+  </div>
+
+</div>

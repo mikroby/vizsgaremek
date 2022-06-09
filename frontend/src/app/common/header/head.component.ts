@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { ClassToggleService, HeaderComponent } from '@coreui/angular';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -15,8 +16,11 @@ export class HeadComponent extends HeaderComponent implements OnInit {
   timeString: String = ''
   dateString: String = ''
 
+  user$ = this.auth.user$;
+
   constructor(
-    private classToggler: ClassToggleService
+    private classToggler: ClassToggleService,
+    private auth: AuthService,
   ) {
     super()
   }

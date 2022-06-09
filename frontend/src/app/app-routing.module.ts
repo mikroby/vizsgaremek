@@ -8,6 +8,7 @@ import { CategoryComponent } from './page/category/category.component';
 import { CustomerComponent } from './page/customer/customer.component';
 import { OrderComponent } from './page/order/order.component';
 import { InvoiceComponent } from './page/invoice/invoice.component';
+import { LoginComponent } from './page/login/login.component';
 
 const routes: Routes = [
   {
@@ -57,6 +58,13 @@ const routes: Routes = [
     component: InvoiceComponent,
     data: {
       title: 'Számlák'
+    }
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+    data: {
+      title: 'Belépés'
     }
   },
   {

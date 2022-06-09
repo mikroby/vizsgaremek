@@ -235,6 +235,7 @@ A fejléc szerkezete:
 + Szakemberek számára menedzsment-felület létrehozása 
 + Közvetlen üzenetküldés lehetősége az oldalon (mindhárom szerepkör között)
 + Adminisztrátor számára autentikáció-menedzsment felület létrehozása
++ Akadálymentesítés
 
 ---------------------------------------------------------
 ## Linkek:

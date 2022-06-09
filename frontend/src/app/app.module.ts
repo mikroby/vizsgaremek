@@ -4,7 +4,8 @@ import { BrowserModule, Title } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
+import { FormsModule } from '@angular/forms'
 // import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common'
 
 // CoreUI modules
@@ -57,6 +58,10 @@ import { CustomerComponent } from './page/customer/customer.component';
 import { OrderComponent } from './page/order/order.component';
 import { LoginComponent } from './page/login/login.component';
 
+// Developer Created Services Interceptors
+import { JwtInterceptor } from './service/jwt.interceptor'
+import { AuthService } from './service/auth.service'
+
 
 @NgModule({
   declarations: [
@@ -79,6 +84,7 @@ import { LoginComponent } from './page/login/login.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
   
     AvatarModule,
     BreadcrumbModule,
@@ -107,16 +113,24 @@ import { LoginComponent } from './page/login/login.component';
     TableMakerModule
   ],
   providers: [
-    // {
-    //   provide: LocationStrategy,
-    //   useClass: HashLocationStrategy,
-    // },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: JwtInterceptor,
+      deps: [
+        AuthService,
+      ],
+      multi: true,
+    },
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG,
     },
     IconSetService,
-    Title
+    Title,
+    // {
+    //   provide: LocationStrategy,
+    //   useClass: HashLocationStrategy,
+    // },
   ],
   bootstrap: [AppComponent]
 })
