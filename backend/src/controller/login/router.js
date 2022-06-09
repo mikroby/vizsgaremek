@@ -42,7 +42,7 @@ router.post('/', async (req, res, next) => {
             _id: user._id,
             email: user.email,
             role: 1,
-        }, process.env.ACCES_TOKEN_SECRET, {
+        }, `${process.env.ACCES_TOKEN_SECRET}`, {
             expiresIn: process.env.TOKEN_EXPIRY,
         });
         // send access_token back with user datas

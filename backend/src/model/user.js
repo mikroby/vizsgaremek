@@ -40,13 +40,13 @@ UserSchema.pre('save', function (next) {
     })
 });
 
-UserSchema.methods.comparePassword = function (candidatePassword, callBack) {
+UserSchema.methods.comparePassword = function (candidatePassword, cb) {
     bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
         if (err) {
-            return callBack(err);
+            return cb(err);
         }
 
-        callBack(null, isMatch);
+        cb(null, isMatch);
     });
 };
 

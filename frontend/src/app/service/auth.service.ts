@@ -13,8 +13,7 @@ export interface IAuthModel {
 
 export interface ILoginData {
   email?: string;
-  password?: string;
-  // role?:number;
+  password?: string;  
 }
 
 @Injectable({

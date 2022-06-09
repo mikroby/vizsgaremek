@@ -19,13 +19,13 @@ fetch('http://localhost:3000/login', {
     headers: {
         'Content-Type': 'application/json'
     },
-    body: '{"email": "test@test.hu", "password": "test789"}',
+    body: '{"email": "t@t.hu", "password": "012"}',
 }).then(r => r.json())
     .then( d => console.log(d) );
 ```
 
 ## TESZT FELHASZNÁLÓ REGISZTRÁCIÓJA böngészőből:
-(router-ben kommentelt rész)
+(router-ben kommentelt résszel együtt)
 
 ```
 fetch('http://localhost:3000/login', {

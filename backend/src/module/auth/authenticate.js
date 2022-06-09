@@ -6,7 +6,7 @@ module.exports = (req, res, next) => {
     if (authHeader) {
         // 'Bearer access_token' -> access_token
         const token = authHeader.split(' ')[1];
-        jwt.verify(token, process.env.ACCES_TOKEN_SECRET, (err, user) => {
+        jwt.verify(token, `${process.env.ACCES_TOKEN_SECRET}`, (err, user) => {
             if (err)  {
                 // got bad token
                 return res.sendStatus(403);

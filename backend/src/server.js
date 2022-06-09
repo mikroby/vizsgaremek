@@ -13,6 +13,7 @@ const app = express()
 
 const { host, user, pass } = config.get('database')
 
+
 // Mongoose Connection establishment.
 mongoose.connect(`mongodb+srv://${host}`, {
   user,

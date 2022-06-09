@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 // import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common'
 
 // CoreUI modules
@@ -85,6 +85,7 @@ import { AuthService } from './service/auth.service'
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
   
     AvatarModule,
     BreadcrumbModule,

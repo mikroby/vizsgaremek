@@ -15,7 +15,8 @@ export class SorterPipe<T extends { [key: string]: any }> implements PipeTransfo
       if (typeof a[sortBy] === 'number' && typeof b[sortBy] === 'number') {
         return (a[sortBy] - b[sortBy]) * direction;
       }
-      if (typeof a[sortBy] === 'object' || Array.isArray(a[sortBy])) {
+      
+      if (typeof a[sortBy] === 'object') {
         const aValuesString = Object.values(a[sortBy]).join('').toLowerCase()
         const bValuesString = Object.values(b[sortBy]).join('').toLowerCase()
 
