@@ -11,8 +11,8 @@ const cors = require('cors')
 const { join } = require('path')
 const app = express()
 
+const authencticateJwt = require('./module/auth/authenticate')
 const { host, user, pass } = config.get('database')
-
 
 // Mongoose Connection establishment.
 mongoose.connect(`mongodb+srv://${host}`, {
@@ -31,14 +31,13 @@ mongoose.connect(`mongodb+srv://${host}`, {
 // Cross origin resource sharing: CORS
 app.use(cors())
 // Logging
-// TEMPORARILY OFF !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// TEMPORARILY OFF !
 // app.use(morgan('combined', { stream: logger.stream }))
 // Static welcome screen serving from public folder.
 app.use(express.static('public'))
 // JSON parsing the body of incoming request.
 app.use(bodyParser.json())
 
-const authencticateJwt = require('./module/auth/authenticate')
 
 // Login
 app.use('/login', require('./controller/login/router'))
@@ -54,6 +53,7 @@ app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
 app.use('/order', authencticateJwt, require('./controller/order/router'))
 // SwaggerUI docs available here.
 app.use('/api-docs', (req, res,) => { res.sendStatus(404) })
+// api-docs not ready yet
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 // request for anything else sends a welcome screen.
 app.use('/', (req, res, next) => {
