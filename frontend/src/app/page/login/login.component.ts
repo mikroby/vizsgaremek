@@ -12,6 +12,8 @@ export class LoginComponent implements OnInit {
 
   loginFailed: boolean = false
 
+  user$ = this.auth.user$;
+
   constructor(
     private auth: AuthService,
   ) { }
