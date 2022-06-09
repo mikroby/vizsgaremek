@@ -5,10 +5,9 @@ const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const swaggerUi = require('swagger-ui-express')
-const YAML = require('yamljs')
-const swaggerDocument = YAML.load('./docs/swagger.yaml')
-const authencticateJwt = require('./module/auth/authenticate')
+// const swaggerUi = require('swagger-ui-express')
+// const YAML = require('yamljs')
+// const swaggerDocument = YAML.load('./docs/swagger.yaml')
 const { join } = require('path')
 const app = express()
 
@@ -31,12 +30,14 @@ mongoose.connect(`mongodb+srv://${host}`, {
 // Cross origin resource sharing: CORS
 app.use(cors())
 // Logging
-app.use(morgan('combined', { stream: logger.stream }))
+// TEMPORARILY OFF !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// app.use(morgan('combined', { stream: logger.stream }))
 // Static welcome screen serving from public folder.
 app.use(express.static('public'))
 // JSON parsing the body of incoming request.
 app.use(bodyParser.json())
 
+const authencticateJwt = require('./module/auth/authenticate')
 
 // Login
 app.use('/login', require('./controller/login/router'))
@@ -51,7 +52,8 @@ app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
 // Order
 app.use('/order', authencticateJwt, require('./controller/order/router'))
 // SwaggerUI docs available here.
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+app.use('/api-docs', (req, res,) => { res.sendStatus(404) })
+// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 // request for anything else sends a welcome screen.
 app.use('/', (req, res, next) => {
   console.log(req.url)
@@ -69,4 +71,4 @@ app.use((err, req, res, next) => {
 
 module.exports = app
 
-// még nincs rendes logolás file-ba, hibakezelést át kell még nézni.
+// hibakezelést át kell még nézni.

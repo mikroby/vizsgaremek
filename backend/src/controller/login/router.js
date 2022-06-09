@@ -7,12 +7,12 @@ const router = express.Router();
 // POST
 router.post('/', async (req, res, next) => {
 
-    // TESZT USER REGISZTRÁLÁSA:
+    // TESZT USER REGISZTRÁLÁSA: (fetch POST kérésre a böngészőből)
     // const newUser = new User({
-    //     email: 'test@test.hu',
+    //     email: 't@t.hu',
     //     lastName: 'Elek',
     //     firstName: 'Test',
-    //     password: 'test789',
+    //     password: '012',
     // });
 
     // try {
@@ -43,7 +43,7 @@ router.post('/', async (req, res, next) => {
             email: user.email,
             role: 1,
         }, process.env.ACCES_TOKEN_SECRET, {
-            expiresIn: '1h',
+            expiresIn: process.env.TOKEN_EXPIRY,
         });
         // send access_token back with user datas
         res.json({
