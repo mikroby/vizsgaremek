@@ -55,6 +55,7 @@ import { CategoryComponent } from './page/category/category.component';
 import { InvoiceComponent } from './page/invoice/invoice.component';
 import { CustomerComponent } from './page/customer/customer.component';
 import { OrderComponent } from './page/order/order.component';
+import { LoginComponent } from './page/login/login.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { OrderComponent } from './page/order/order.component';
     InvoiceComponent,
     CustomerComponent,
     OrderComponent,
+    LoginComponent,
 
   ],
   imports: [

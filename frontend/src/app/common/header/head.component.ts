@@ -29,7 +29,8 @@ export class HeadComponent extends HeaderComponent implements OnInit {
   }
 
   showDate = (currentDate: Date) => {
-    this.dateString = currentDate.toLocaleDateString('hu').replace(' ', '').replace(' ', '')
+    this.dateString = currentDate.toLocaleDateString('hu')
+      .replace(' ', '').replace(' ', '')
   }
 
   showTime = () => {

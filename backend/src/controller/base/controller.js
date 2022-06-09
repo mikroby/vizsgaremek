@@ -7,6 +7,9 @@ module.exports = (model) => {
     findAll(req, res, next) {
       return service.findAll()
         .then(list => res.json(list))
-    }
+    },
+    
+
+
   }
 }

@@ -103,12 +103,36 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     this.direction *= -1
   }
 
-  // SORT-hoz kell majd object!!!!
+  // SORT-hoz kell majd object!!!!  a záróprojekt material-ból:
   //   this.List.sortingDataAccessor = (row: any, colName: string): string => {
   //   if (typeof row[colName] === 'object') {
   //     return row[colName][this.sortPropIfObject] as string
   //   }
   //   return row[colName] as string;
+  // }
+
+  // táblázat adatainak típusa alapján:
+  // isBoolean(value: any): boolean {
+  //   return (typeof value === 'boolean');
+  // }
+
+  // isNestedObject(value: any): boolean {
+  //   return (typeof value === 'object');
+  // }
+
+  // törlés gombhoz kell majd, a záróprojekt material-ból:
+  // onRemove(id: number): void {
+  //   const confirmDialog = this.dialog.open(ConfirmDialogComponent, {
+  //     data: {
+  //       title: 'Megerősítés',
+  //       message: 'Biztos vagy benne, hogy törölni szeretnéd?'
+  //     }
+  //   });
+  //   confirmDialog.afterClosed().subscribe(result => {
+  //     if (result === true) {
+  //       this.removeById.emit(id);
+  //     }
+  //   });
   // }
 
 }
