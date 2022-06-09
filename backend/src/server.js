@@ -1,14 +1,19 @@
-const express = require('express')
 const config = require('config')
+const logger = require('./module/logger')
+const express = require('express')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const swaggerUi = require('swagger-ui-express')
+const YAML = require('yamljs')
+const authencticateJwt = require('./model/auth/authenticate')
 
 const { join } = require('path')
 
 const app = express()
 
+const swaggerDocument = YAML.load('./docs/swagger.yaml')
 const { host, user, pass } = config.get('database')
 
 // Mongoose Connection establishment.
@@ -16,8 +21,8 @@ mongoose.connect(`mongodb+srv://${host}`, {
   user,
   pass,
 }).then(connection => {
-  console.log('DataBase Connection successfully established!')
-  // to run seeder:
+  logger.info('DataBase Connection successfully established!')
+  // SEEDER:
   // require('./seed/seeder')
 })
   .catch(err => {
@@ -27,25 +32,28 @@ mongoose.connect(`mongodb+srv://${host}`, {
 // MIDDLEWARES:
 // Cross origin resource sharing: CORS
 app.use(cors())
+// Logging
+app.use(morgan('combined', { stream: logger.stream }))
 // Static welcome screen serving from public folder.
 app.use(express.static('public'))
 // JSON parsing the body of incoming request.
 app.use(bodyParser.json())
 
-// SwaggerUI starts here.
-app.get('/api-docs', (req, res) => res.sendStatus(404))
 
+// Login
+app.use('/login', require('./controller/login/router'))
 // Category
-app.use('/category', require('./controller/category/router'))
+app.use('/category', authencticateJwt, require('./controller/category/router'))
 // Customer
-app.use('/customer', require('./controller/customer/router'))
+app.use('/customer', authencticateJwt, require('./controller/customer/router'))
 // Expert
-app.use('/expert', require('./controller/expert/router'))
+app.use('/expert', authencticateJwt, require('./controller/expert/router'))
 // Invoice
-app.use('/invoice', require('./controller/invoice/router'))
+app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
 // Order
-app.use('/order', require('./controller/order/router'))
-
+app.use('/order', authencticateJwt, require('./controller/order/router'))
+// SwaggerUI available here.
+app.get('/api-docs', (req, res) => res.sendStatus(404))
 // request for anything else sends a welcome screen.
 app.use('/', (req, res, next) => {
   console.log(req.url)
