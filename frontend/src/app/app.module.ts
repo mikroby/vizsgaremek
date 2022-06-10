@@ -88,7 +88,7 @@ import { AuthService } from './service/auth.service'
     ReactiveFormsModule,
   
     AvatarModule,
-    BreadcrumbModule,
+    // BreadcrumbModule,
     FooterModule,
     DropdownModule,
     GridModule,

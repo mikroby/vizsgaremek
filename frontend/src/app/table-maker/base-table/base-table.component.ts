@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core'
+import { ActivatedRoute } from '@angular/router';
 import { ConfigService } from 'src/app/service/config.service'
 
 export interface ITableColumn {
@@ -24,6 +25,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   @Input() tableName: string = ''
   @Input() allowedButtons: IAllowedButtons = { edit: true, delete: true }
 
+  tableTitle: string = ''
   columns: ITableColumn[] = []
   displayedColumns: ITableColumn[] = []
   filterKey: string = ''
@@ -51,9 +53,11 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
 
   constructor(
     private config: ConfigService,
+    private route: ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
+    this.getRouteData()
     this.getColumns()
     this.pageSize = this.config.defaultPageSize > this.list.length ?
       this.list.length : this.config.defaultPageSize
@@ -103,6 +107,12 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   toggleSortDirection(event: any): void {
     this.sortBy = event.target.id
     this.direction *= -1
+  }
+
+  getRouteData():void{
+    this.route.data.subscribe(params => {
+      this.tableTitle = params['title']
+    })
   }
 
 

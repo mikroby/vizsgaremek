@@ -1,6 +1,6 @@
 <!-- header block -->
-<div class="d-flex flex-row flex-column-md">
-  <c-breadcrumb-router class="mt-0 h4"></c-breadcrumb-router>
+<div class="d-flex flex-row flex-column-md my-0">
+  <div class="h3 text-muted ">{{tableTitle}}</div>
 
   <!-- data operations -->
   <div *ngIf="list.length" class="btn-toolbar ms-auto align-self-center">
@@ -37,7 +37,7 @@
 
 <!-- table block -->
 <ng-container *ngIf="list.length; else no_list_message">
-  <div class="table-responsive">
+  <div class="table-responsive pt-2">
     <table class="table table-sm table-hover align-middle">
       <thead>
         <tr>
