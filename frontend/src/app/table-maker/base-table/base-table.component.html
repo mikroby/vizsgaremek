@@ -81,7 +81,7 @@
     <div class="input-group input-group-sm shadow grow-5 me-auto ms-2 align-self-center">
       <span class="input-group-text">sor / lap</span>
       <input class="form-control text-center" type="number" name="pageSize" [min]="minPageSize" [max]="list.length"
-        step="2" [(ngModel)]="pageSize" (change)="pageSizeChange()">
+        [step]="step" [(ngModel)]="pageSize" (change)="pageSizeChange()">
     </div>
 
     <div class="btn-group btn-group-sm shadow grow-5 bg-white align-self-center">

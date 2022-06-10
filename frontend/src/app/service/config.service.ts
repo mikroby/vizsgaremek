@@ -25,9 +25,10 @@ export class ConfigService {
   sideBarWidth_full = 256
   sideBarWidth_narrow = 64
 
-  pageSize = 50
+  defaultPageSize = 50
   minPageSize = 10
-  startPage = 1
+  defaultStartPage = 1
+  defaultStep=5
 
   // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
   paginatorIconSize = 'xl'

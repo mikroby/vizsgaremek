@@ -37,7 +37,8 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   paginatorIconSize: string = this.config.paginatorIconSize
   pageSize: number = 0
   minPageSize = this.config.minPageSize
-  actualPage = this.config.startPage
+  actualPage = this.config.defaultStartPage
+  step = this.config.defaultStep
   rowStart: number = 0
   rowEnd: number = 0
 
@@ -54,9 +55,10 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
 
   ngOnInit(): void {
     this.getColumns()
-    this.pageSize = this.config.pageSize > this.list.length ? this.list.length : this.config.pageSize
+    this.pageSize = this.config.defaultPageSize > this.list.length ?
+      this.list.length : this.config.defaultPageSize
     this.calculateRows()
-    this.sortBy=this.displayedColumns[0].key
+    this.sortBy = this.displayedColumns[0].key
   }
 
   jumpToPage(pageTo: number): void {
@@ -103,7 +105,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     this.direction *= -1
   }
 
-  
+
   // táblázat adatainak típusvizsgálata a záróprojekt material-ból:
   // isBoolean(value: any): boolean {
   //   return (typeof value === 'boolean');
