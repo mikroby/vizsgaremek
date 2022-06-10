@@ -7,9 +7,9 @@ export interface ITableColumn {
   visible: boolean
 }
 
-export interface IOptionButtons {
-  editBtn: boolean
-  deleteBtn: boolean
+export interface IAllowedButtons {
+  edit: boolean
+  delete: boolean
 }
 
 @Component({
@@ -22,7 +22,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   @Input() list: T[] = []
   // @Input() columns: ITableColumn[] = []
   @Input() tableName: string = ''
-  @Input() buttons: IOptionButtons = { editBtn: true, deleteBtn: true }
+  @Input() allowedButtons: IAllowedButtons = { edit: true, delete: true }
 
   columns: ITableColumn[] = []
   displayedColumns: ITableColumn[] = []
@@ -104,7 +104,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   }
 
   
-  // táblázat adatainak típusa alapján:
+  // táblázat adatainak típusvizsgálata a záróprojekt material-ból:
   // isBoolean(value: any): boolean {
   //   return (typeof value === 'boolean');
   // }
@@ -112,6 +112,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   // isNestedObject(value: any): boolean {
   //   return (typeof value === 'object');
   // }
+
 
   // törlés gombhoz kell majd, a záróprojekt material-ból:
   // onRemove(id: number): void {

@@ -3,6 +3,11 @@
 $delete-button-color: $danger;
 $edit-button-color: $info;
 
+* {
+  user-select: none;
+  box-sizing: border-box;
+}
+
 .wrapper {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
     url("../images/szerszamok.jpg");
@@ -11,9 +16,8 @@ $edit-button-color: $info;
   background-attachment: fixed;
 }
 
-* {
-  user-select: none;
-  box-sizing: border-box;
+.breadcrumb {
+  background-color: transparent;
 }
 
 [class*="grow-"] {
@@ -44,10 +48,12 @@ $edit-button-color: $info;
   margin-bottom: 5rem;
 }
 
-.delete, .delete:hover {
+.delete,
+.delete:hover {
   color: $delete-button-color;
 }
-.edit, .edit:hover {
+.edit,
+.edit:hover {
   color: $edit-button-color;
 }
 

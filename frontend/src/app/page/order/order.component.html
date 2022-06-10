@@ -1,6 +1,6 @@
 <base-table *ngIf="list$ | async as list"
   [tableName]="'oderTableColumns'"
   [list]="list"
-  [buttons]="{ editBtn: true, deleteBtn: true }">
+  [allowedButtons]="{ edit: true, delete: true }">
 </base-table>
 <!-- [columns]="columns" -->

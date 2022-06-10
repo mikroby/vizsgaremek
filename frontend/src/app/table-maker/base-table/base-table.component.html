@@ -46,7 +46,7 @@
             </c-badge>
           </span>
         </th>
-        <th *ngIf="buttons.editBtn || buttons.deleteBtn">
+        <th *ngIf="allowedButtons.edit || allowedButtons.delete">
           Művelet
         </th>
       </tr>
@@ -56,12 +56,12 @@
         <td *ngFor="let col of displayedColumns">
           {{ row[col.key] }}
         </td>
-        <td *ngIf="buttons.editBtn || buttons.deleteBtn">
+        <td *ngIf="allowedButtons.edit || allowedButtons.delete">
           <div class="btn-group btn-group-sm">
-            <button class="btn btn-outline grow-50 edit" [disabled]="!buttons.editBtn">
+            <button class="btn btn-outline grow-50 edit" [disabled]="!allowedButtons.edit">
               <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
             </button>
-            <button class="btn btn-outline grow-50 delete" [disabled]="!buttons.deleteBtn">
+            <button class="btn btn-outline grow-50 delete" [disabled]="!allowedButtons.delete">
               <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>
             </button>
           </div>
