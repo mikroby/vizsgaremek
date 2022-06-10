@@ -7,34 +7,28 @@ export class FilterPipe<T extends { [key: string]: any }> implements PipeTransfo
 
   transform(value: T[] | null, phrase: string = '', key: string = ''): T[] | null {
 
+    // no array or no phrase to filter by
     if (!Array.isArray(value) || !phrase) {
       return value;
     }
 
     phrase = phrase.toLowerCase();
 
-    if (!key && !value[0]['address']) {
+    // no key with one-level embedded object and any-level arrays
+    if (!key) {
       return value.filter(
-        item => Object.values(item).join(' ').toLowerCase().includes(phrase)
+        item => Object.values(item).map(item => typeof item === 'object' ? Object.values(item) : item)
+          .flat(Infinity).join(' ').toLowerCase().includes(phrase)
       );
     }
 
-    if (!key && value[0]['address']) {
-      return value.filter(
-        item => (Object.values(item) + ' ' + (Object.values(item['address'])).join(' ')).toLowerCase().includes(phrase)
-      );
-    }
+    // key presents
+    return value.filter(item =>
+      typeof item[key] !== 'object' ?
+        String(item[key]).toLowerCase().includes(phrase) :
+        Object.values(item[key]).flat(Infinity).join(' ').toLocaleLowerCase().includes(phrase)
+    )
 
-    if (key === 'address') {
-      return value.filter(
-        item => ((Object.values(item['address'])).join(' ').toLowerCase().includes(phrase)
-        ));
-    }
-
-    return value.filter(item => {
-      const data = String(item[key]).toLowerCase();
-      return data.includes(phrase);
-    });
   }
 
 }

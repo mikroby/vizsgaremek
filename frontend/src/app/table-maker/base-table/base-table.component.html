@@ -1,11 +1,14 @@
 <!-- header block -->
 <div class="d-flex flex-row flex-column-md">
   <c-breadcrumb-router class="mt-0 h4"></c-breadcrumb-router>
-  <!-- filter input-->
+
+  <!-- data operations -->
   <div *ngIf="list.length" class="btn-toolbar ms-auto align-self-center">
+    <!-- filter input-->
     <div class="input-group input-group-sm shadow grow-10">
       <input class="form-control" type="text" name="phrase" size="15" placeholder="keresés..." [(ngModel)]="phrase">
     </div>
+
     <!-- sorter input -->
     <div class="input-group input-group-sm shadow grow-5 ms-3">
       <span class="input-group-text">szűrés</span>
@@ -14,10 +17,11 @@
         <option *ngFor="let col of displayedColumns" [value]="col.key">{{col.title | titlecase}}</option>
       </select>
     </div>
+
     <!-- select displayed columns -->
     <div *ngIf="refresh" class="input-group input-group-sm shadow ms-3 dropstart">
       <button class="btn btn-outline-secondary dropdown-toggle grow-5" type="button" data-bs-toggle="dropdown"
-        aria-expanded="false">megjelenítés</button>
+        aria-expanded="false">testreszabás</button>
       <ul class="dropdown-menu">
         <li *ngFor="let col of columns; index as index" class="dropdown-item">
           <div class="form-check">
@@ -29,82 +33,83 @@
       </ul>
     </div>
   </div>
-
 </div>
 
 <!-- table block -->
-<div *ngIf="list.length" class="table-responsive">
-  <table class="table table-sm table-hover align-middle">
-    <thead>
-      <tr>
-        <th *ngFor="let col of displayedColumns" scope="col">
-          <span class="position-relative pointer" [id]="col.key" (click)="toggleSortDirection($event)">
-            {{ col.title }}
-            <c-badge *ngIf="col.key===sortBy" color="info" position="top-end" shape="rounded-pill">
-              <svg *ngIf="direction===1" cIcon name="cilSortAscending" size="sm"></svg>
-              <svg *ngIf="direction===-1" cIcon name="cilSortDescending" size="sm"></svg>
-            </c-badge>
-          </span>
-        </th>
-        <th *ngIf="allowedButtons.edit || allowedButtons.delete">
-          Művelet
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let row of list | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
-        <td *ngFor="let col of displayedColumns">
-          {{ row[col.key] }}
-        </td>
-        <td *ngIf="allowedButtons.edit || allowedButtons.delete">
-          <div class="btn-group btn-group-sm">
-            <button class="btn btn-outline grow-50 edit" [disabled]="!allowedButtons.edit">
-              <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
-            </button>
-            <button class="btn btn-outline grow-50 delete" [disabled]="!allowedButtons.delete">
-              <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>
-            </button>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<ng-container *ngIf="list.length; else no_list_message">
+  <div class="table-responsive">
+    <table class="table table-sm table-hover align-middle">
+      <thead>
+        <tr>
+          <th *ngFor="let col of displayedColumns" scope="col">
+            <span class="position-relative pointer" [id]="col.key" (click)="toggleSortDirection($event)">
+              {{ col.title }}
+              <c-badge *ngIf="col.key===sortBy" color="info" position="top-end" shape="rounded-pill">
+                <svg *ngIf="direction===1" cIcon name="cilSortAscending" size="sm"></svg>
+                <svg *ngIf="direction===-1" cIcon name="cilSortDescending" size="sm"></svg>
+              </c-badge>
+            </span>
+          </th>
+          <th *ngIf="allowedButtons.edit || allowedButtons.delete">
+            Művelet
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of list | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
+          <td *ngFor="let col of displayedColumns">
+            {{ row[col.key] }}
+          </td>
+          <td *ngIf="allowedButtons.edit || allowedButtons.delete">
+            <div class="btn-group btn-group-sm">
+              <button class="btn btn-outline grow-50 edit" [disabled]="!allowedButtons.edit">
+                <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
+              </button>
+              <button class="btn btn-outline grow-50 delete" [disabled]="!allowedButtons.delete">
+                <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- paginator block -->
+  <div class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2
+  rounded-pill bg-light bg-gradient grow-5">
+    <div class="input-group input-group-sm shadow grow-5 me-auto ms-2 align-self-center">
+      <span class="input-group-text">sor / lap</span>
+      <input class="form-control text-center" type="number" name="pageSize" [min]="minPageSize" [max]="list.length"
+        step="2" [(ngModel)]="pageSize" (change)="pageSizeChange()">
+    </div>
+
+    <div class="btn-group btn-group-sm shadow grow-5 bg-white align-self-center">
+      <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
+        (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
+        <svg cIcon name="cilChevronCircleLeftAlt" [size]="paginatorIconSize"></svg>
+      </button>
+      <button *ngFor="let page of pageList" type="button" [ngClass]="{'active': page === actualPage}"
+        class=" btn btn-outline-secondary" (click)="jumpToPage(page)">
+        {{ page }}
+      </button>
+      <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
+        (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
+        <svg cIcon name="cilChevronCircleRightAlt" [size]="paginatorIconSize"></svg>
+      </button>
+    </div>
+
+    <div class="input-group input-group-sm shadow ms-auto me-2 align-self-center">
+      <span class="input-group-text px-3">
+        {{ rowStart+1 }} - {{ rowEnd }}.
+      </span>
+    </div>
+  </div>
+</ng-container>
 
 <!-- if no data this message appears -->
-<div *ngIf="!list.length" class="noDataListMessage">
-  <p class="h5 ms-1 mt-3">Nincs megjeleníthető adat a listában...
-    <!-- "{{input.value}}" -->
-  </p>
-</div>
-
-<!-- paginator block -->
-<div *ngIf="list.length" class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2
-  rounded-pill bg-light bg-gradient grow-5">
-  <div class="input-group input-group-sm shadow grow-5 me-auto ms-2 align-self-center">
-    <span class="input-group-text">sor / lap</span>
-    <input class="form-control text-center" type="number" name="pageSize" [min]="minPageSize" [max]="list.length"
-      step="2" [(ngModel)]="pageSize" (change)="pageSizeChange()">
+<ng-template #no_list_message>
+  <div class="noDataListMessage">
+    <p class="h5 ms-1 mt-3">Nincs megjeleníthető adat a listában...</p>
   </div>
-
-  <div class="btn-group btn-group-sm shadow grow-5 bg-white align-self-center">
-    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
-      (click)="jumpToPage(actualPage-1)" [disabled]="actualPage === 1">
-      <svg cIcon name="cilChevronCircleLeftAlt" [size]="paginatorIconSize"></svg>
-    </button>
-    <button *ngFor="let page of pageList" type="button" [ngClass]="{'active': page === actualPage}"
-      class=" btn btn-outline-secondary" (click)="jumpToPage(page)">
-      {{ page }}
-    </button>
-    <button type="button" class="btn btn-outline-secondary d-flex flex-column justify-content-center"
-      (click)="jumpToPage(actualPage+1)" [disabled]="actualPage === pageList.length">
-      <svg cIcon name="cilChevronCircleRightAlt" [size]="paginatorIconSize"></svg>
-    </button>
-  </div>
-
-  <div class="input-group input-group-sm shadow ms-auto me-2 align-self-center">
-    <span class="input-group-text px-3">
-      {{ rowStart+1 }} - {{ rowEnd }}.
-    </span>
-  </div>
-</div>
+</ng-template>
