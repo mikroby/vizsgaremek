@@ -8,9 +8,9 @@ import { AuthService, ILoginData } from 'src/app/service/auth.service';
 })
 export class LoginComponent implements OnInit {
 
+  loginFailed$= this.auth.loginFailed$
+  
   loginData: ILoginData = {};
-
-  loginFailed!: boolean
 
   user$ = this.auth.user$;
 
@@ -23,7 +23,11 @@ export class LoginComponent implements OnInit {
   }
   
   tryLogin(): void {
-    this.auth.login(this.loginData);   
+    this.auth.login(this.loginData)
+  }
+
+  onFocus():void{
+    this.auth.loginFailed$.next(false)
   }
 
 }

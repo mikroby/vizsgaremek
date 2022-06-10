@@ -20,8 +20,8 @@ export interface ILoginData {
   providedIn: 'root'
 })
 export class AuthService {
-
-  loginFailed: boolean = false
+  
+  loginFailed$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   apiUrl: string = environment.apiUrl;
 
@@ -65,7 +65,8 @@ export class AuthService {
         sessionStorage.setItem('login', JSON.stringify(response));
       },
       error: (err) => {
-        console.error(err)        
+        console.error(err)
+        this.loginFailed$.next(true)     
       }
 
     });

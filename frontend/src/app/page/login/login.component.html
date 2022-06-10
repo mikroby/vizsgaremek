@@ -9,9 +9,9 @@
     <!-- Login Form -->
     <form #loginForm="ngForm" (ngSubmit)="tryLogin()">
       <input type="email" id="login" class="fadeIn second" [(ngModel)]="loginData.email" name="email"
-        placeholder="E-mail" (focus)="!loginFailed">
+        placeholder="E-mail" (focus)="onFocus()">
       <input type="password" id="password" class="fadeIn third" [(ngModel)]="loginData.password" name="password"
-        placeholder="Jelszó" (focus)="!loginFailed">
+        placeholder="Jelszó" (focus)="onFocus()">
       <input type="submit" class="fadeIn fourth" value="Belépés" [disabled]="loginForm.invalid">
     </form>
 
@@ -25,7 +25,7 @@
   </div>
 
   <!-- message if login failed -->
-  <div *ngIf="loginFailed" class="text-center mt-5 h5">
+  <div *ngIf="(loginFailed$ | async)" class="text-center mt-5 h5">
     Sikertelen bejelentkezés!
   </div>
 
