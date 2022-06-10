@@ -1,6 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { ConfigService } from 'src/app/service/config.service';
+import { Component, OnInit, Input, AfterViewInit } from '@angular/core';
 
-import { ClassToggleService, HeaderComponent } from '@coreui/angular';
+import { HeaderComponent } from '@coreui/angular';
 import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
@@ -8,39 +9,52 @@ import { AuthService } from 'src/app/service/auth.service';
   templateUrl: './head.component.html',
   styleUrls: ['./head.component.scss']
 })
-export class HeadComponent extends HeaderComponent implements OnInit {
+export class HeadComponent extends HeaderComponent implements OnInit, AfterViewInit {
 
   @Input() sidebarId: string = "sidebar";
 
-  startDate!: Date
-  timeString: String = ''
-  dateString: String = ''
+  dateString: string = ''
+  timeString: string = ''
+
+  sideBar_full = this.config.sideBarWidth_full
+  sideBar_narrow = this.config.sideBarWidth_narrow
 
   user$ = this.auth.user$;
 
   constructor(
-    private classToggler: ClassToggleService,
     private auth: AuthService,
+    private config: ConfigService,
   ) {
     super()
   }
 
   ngOnInit(): void {
-    this.startDate = new Date()
-    this.showDate(this.startDate)
-    const id = setInterval(this.showTime, 1000)
-    this.showTime()
+    const id = setInterval(this.showDateTime, 1000)
   }
 
-  showDate = (currentDate: Date) => {
+  showDateTime = () => {
+    const currentDate = new Date()
     this.dateString = currentDate.toLocaleDateString('hu')
       .replace(' ', '').replace(' ', '')
-  }
-
-  showTime = () => {
-    const currentDate = new Date()
-    if (this.startDate !== currentDate) { this.showDate(currentDate) }
-
     this.timeString = currentDate.toLocaleTimeString('hu').padStart(8, '0')
   }
+
+  // sideBar and header toggle correction.
+  changeSidebar(): void {
+    const wrapper = (document.querySelector('.wrapper') as HTMLDivElement)
+    const sideBar = document.querySelector('c-sidebar')?.classList;
+
+    if (!sideBar?.contains('hide')) { wrapper.style.paddingLeft = '0' }
+    else {
+      wrapper.style.paddingLeft = sideBar?.contains('sidebar-narrow-unfoldable') ?
+        `${this.sideBar_narrow}px` : `${this.sideBar_full}px`
+    }
+  }
+
+  // default header-width to full-width sideBar.
+  ngAfterViewInit(): void {
+    (document.querySelector('.wrapper') as HTMLDivElement)
+      .style.paddingLeft = `${this.sideBar_full}px`;
+  }
+
 }

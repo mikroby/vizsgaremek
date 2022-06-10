@@ -37,7 +37,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   paginatorIconSize: string = this.config.paginatorIconSize
   pageSize: number = 0
   minPageSize = this.config.minPageSize
-  actualPage = this.config.actualPage
+  actualPage = this.config.startPage
   rowStart: number = 0
   rowEnd: number = 0
 

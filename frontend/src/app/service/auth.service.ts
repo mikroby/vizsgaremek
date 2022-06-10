@@ -6,14 +6,16 @@ import { environment } from 'src/environments/environment';
 import { User } from '../model/user';
 
 export interface IAuthModel {
-  success: boolean;
+  success: boolean
   accessToken: string;
-  user: User,
+  user: User
+  role?: number
 }
 
 export interface ILoginData {
   email?: string;
   password?: string;
+  role?: number
 }
 
 @Injectable({
@@ -37,6 +39,13 @@ export class AuthService {
   ) {
     this.loginUrl = `${this.apiUrl}login`;
 
+    const loginInfo = sessionStorage.getItem('login');
+    if (loginInfo) {
+      const loginObject = JSON.parse(loginInfo);
+      this.access_token$.next(loginObject.accessToken);
+      this.user$.next(loginObject.user);
+    }
+
     this.user$.subscribe({
       next: user => {
         if (user) {
@@ -48,13 +57,7 @@ export class AuthService {
         }
       }
     });
-
-    const loginInfo = sessionStorage.getItem('login');
-    if (loginInfo) {
-      const loginObject = JSON.parse(loginInfo);
-      this.access_token$.next(loginObject.accessToken);
-      this.user$.next(loginObject.user);
-    }
+    
   }
 
   login(loginData: ILoginData): void {
@@ -65,7 +68,7 @@ export class AuthService {
         sessionStorage.setItem('login', JSON.stringify(response));
       },
       error: (err) => {
-        console.error(err)
+        // console.error(err)
         this.loginFailed$.next(true)     
       }
 

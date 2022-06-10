@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { ITableColumn } from '../table-maker/base-table/base-table.component';
 
 // export interface IMenuItem {
@@ -19,9 +20,14 @@ export class ConfigService {
   //   { link: '/category', title: 'Categories', icon:'' },
   // ]
 
+  triggerHeader$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+
+  sideBarWidth_full = 256
+  sideBarWidth_narrow = 64
+
   pageSize = 50
-  minPageSize = 4
-  actualPage = 1
+  minPageSize = 10
+  startPage = 1
 
   // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
   paginatorIconSize = 'xl'
@@ -81,5 +87,5 @@ export class ConfigService {
   ]
 
   constructor() { }
-  
+
 }
