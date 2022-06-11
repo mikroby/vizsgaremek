@@ -10,11 +10,13 @@ $enable-rtl: false;
 // Import Chart.js custom tooltips styles
 @import "~@coreui/chartjs/scss/coreui-chartjs";
 
-// eredetileg ez ki van kommentelve !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // perfect scrollbar theming for use with [perfectScrollbar] directive
 // @import '~perfect-scrollbar/css/perfect-scrollbar.css';
 
 @import "layout";
+
+// saját
+@import "login-signup";
 
 // Some temp fixes
 @import "fixes";

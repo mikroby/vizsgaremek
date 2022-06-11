@@ -16,53 +16,54 @@ $edit-button-color: $info;
   background-attachment: fixed;
 }
 
-.breadcrumb {
-  background-color: transparent;
-}
-
 [class*="grow-"] {
   transition: all 0.2s ease;
 }
 
-.grow-5:hover {
-  transform: scale(105%);
-}
+.grow- {
+  &5:hover {
+    transform: scale(105%);
+  }
 
-.grow-10:hover {
-  transform: scale(110%);
-}
+  &10:hover {
+    transform: scale(110%);
+  }
 
-.grow-30:hover {
-  transform: scale(130%);
-}
+  &30:hover {
+    transform: scale(130%);
+  }
 
-.grow-50:hover {
-  transform: scale(150%);
-}
-
-.shadow-custom {
-  box-shadow: 0 0 2.5rem rgba(#000000, 50%);
+  &50:hover {
+    transform: scale(150%);
+  }
 }
 
 .mb-7 {
   margin-bottom: 5rem;
 }
 
-.delete,
-.delete:hover {
+.delete_btn {
   color: $delete-button-color;
+  &:hover,
+  &:active {
+    color: $delete-button-color;
+  }
 }
-.edit,
-.edit:hover {
+
+.edit_btn {
   color: $edit-button-color;
+  &:hover,
+  &:active {
+    color: $edit-button-color;
+  }
 }
 
 .pointer {
   cursor: pointer;
   transition: all 0.35s ease;
   background-color: transparent;
-}
 
-.pointer:hover {
-  background-color: $table-hover-bg;
+  &:hover {
+    background-color: $table-hover-bg;
+  }
 }

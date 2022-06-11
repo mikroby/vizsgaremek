@@ -1,1 +1,38 @@
-<p>signup works!</p>
+<div class="slidingBox fadeInDown mt-4">
+  <div class="formContent shadow">
+
+    <!-- Icon -->
+    <div class="fadeIn first form_icon">
+      <svg cIcon name="cilUserPlus" size="3xl"></svg>
+    </div>
+
+    <p>Kérem töltse ki az alábbi mezőket!</p>
+
+    <!-- SignUp Form -->
+    <form #signUpForm="ngForm" (ngSubmit)="trySignUp()">
+      <input type="text" id="lastName" class="fadeIn third" [(ngModel)]="signUpData.last_name" name="last_name"
+        placeholder="Vezetéknév" (focus)="onFocus()">
+      <input type="text" id="firstName" class="fadeIn second" [(ngModel)]="signUpData.first_name" name="first_name"
+        placeholder="Keresztnév" (focus)="onFocus()">
+      <input type="email" id="email" class="fadeIn second" [(ngModel)]="signUpData.email" name="email"
+        placeholder="E-mail" (focus)="onFocus()">
+      <input type="password" id="password" class="fadeIn third" [(ngModel)]="signUpData.password" name="password"
+        placeholder="Jelszó" (focus)="onFocus()">
+      <input type="submit" id="submit" class="fadeIn fourth" value="Regisztráció" [disabled]="signUpForm.invalid">
+    </form>
+
+    <!-- accept terms and policy -->
+    <div class="formFooter">
+      <a class="underlineHover" routerLink="/login">
+        Már van regisztrált fiókja?
+      </a>
+    </div>
+
+  </div>
+
+  <!-- message if SignUp failed -->
+  <div *ngIf="(signUpFailed$ | async)" class="text-center mt-5 h5">
+    Sikertelen regisztráció!
+  </div>
+
+</div>

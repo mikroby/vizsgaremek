@@ -1,23 +1,23 @@
-<div class="loginBox fadeInDown mt-5">
-  <div id="formContent">
-    
+<div class="slidingBox fadeInDown mt-5">
+  <div class="formContent shadow">
+
     <!-- Icon -->
-    <div class="fadeIn first my-3" id="login_icon">
-      <svg cIcon name="cil-user" size="3xl"></svg>      
+    <div class="fadeIn first form_icon">
+      <svg cIcon name="cilUser" size="3xl"></svg>
     </div>
 
     <!-- Login Form -->
     <form #loginForm="ngForm" (ngSubmit)="tryLogin()">
-      <input type="email" id="login" class="fadeIn second" [(ngModel)]="loginData.email" name="email"
+      <input type="email" id="email" class="fadeIn second" [(ngModel)]="loginData.email" name="email"
         placeholder="E-mail" (focus)="onFocus()">
       <input type="password" id="password" class="fadeIn third" [(ngModel)]="loginData.password" name="password"
         placeholder="Jelszó" (focus)="onFocus()">
-      <input type="submit" class="fadeIn fourth" value="Belépés" [disabled]="loginForm.invalid">
+      <input type="submit" id="submit" class="fadeIn fourth" value="Belépés" [disabled]="loginForm.invalid">
     </form>
 
     <!-- forgotten password email -->
-    <div id="formFooter" class="py-1">
-      <a class="underlineHover" routerLink="/login">
+    <div class="formFooter">
+      <a class="underlineHover" routerLink="/forgotten">
         Elfelejtette a jelszavát?
       </a>
     </div>

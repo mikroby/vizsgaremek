@@ -18,12 +18,21 @@ export interface ILoginData {
   role?: number
 }
 
+export interface ISignUpData {
+  first_name:string
+  last_name:string  
+  email: string;
+  password: string;
+  role?: number
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   
   loginFailed$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  signUpFailed$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   apiUrl: string = environment.apiUrl;
 
@@ -51,7 +60,8 @@ export class AuthService {
         if (user) {
           this.router.navigate(['/']);
         } else {
-          this.router.navigate(['/', 'login']);
+          // this.router.navigate(['/', 'login']);
+          this.loginFailed$.next(false)
           this.access_token$.next('');
           sessionStorage.removeItem('login');
         }

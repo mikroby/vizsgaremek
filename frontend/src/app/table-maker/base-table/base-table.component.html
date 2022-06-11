@@ -62,10 +62,10 @@
           </td>
           <td *ngIf="allowedButtons.edit || allowedButtons.delete">
             <div class="btn-group btn-group-sm">
-              <button class="btn btn-outline grow-50 edit" [disabled]="!allowedButtons.edit">
+              <button class="btn btn-outline grow-50 edit_btn" [disabled]="!allowedButtons.edit">
                 <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
               </button>
-              <button class="btn btn-outline grow-50 delete" [disabled]="!allowedButtons.delete">
+              <button class="btn btn-outline grow-50 delete_btn" [disabled]="!allowedButtons.delete">
                 <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>
               </button>
             </div>
@@ -76,7 +76,7 @@
   </div>
 
   <!-- paginator block -->
-  <div class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 mb-7 offset-3 shadow px-3 py-2
+  <div class="btn-toolbar d-flex justify-content-center flex-wrap flex-row fixed-bottom col-6 offset-3 mb-7 shadow px-3 py-2
   rounded-pill bg-light bg-gradient grow-5">
     <div class="input-group input-group-sm shadow grow-5 me-auto ms-2 align-self-center">
       <span class="input-group-text">sor / lap</span>

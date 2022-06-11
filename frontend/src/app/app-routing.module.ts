@@ -1,4 +1,3 @@
-import { SignupComponent } from './page/signup/signup.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -10,6 +9,7 @@ import { CustomerComponent } from './page/customer/customer.component';
 import { OrderComponent } from './page/order/order.component';
 import { InvoiceComponent } from './page/invoice/invoice.component';
 import { LoginComponent } from './page/login/login.component';
+import { SignupComponent } from './page/signup/signup.component';
 
 const routes: Routes = [
   {
