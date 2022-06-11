@@ -60,7 +60,8 @@ import { LoginComponent } from './page/login/login.component';
 
 // Developer Created Services Interceptors
 import { JwtInterceptor } from './service/jwt.interceptor'
-import { AuthService } from './service/auth.service'
+import { AuthService } from './service/auth.service';
+import { SignupComponent } from './page/signup/signup.component'
 
 
 @NgModule({
@@ -77,6 +78,7 @@ import { AuthService } from './service/auth.service'
     CustomerComponent,
     OrderComponent,
     LoginComponent,
+    SignupComponent,
 
   ],
   imports: [

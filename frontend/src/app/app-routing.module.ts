@@ -1,3 +1,4 @@
+import { SignupComponent } from './page/signup/signup.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -65,6 +66,13 @@ const routes: Routes = [
     component: LoginComponent,
     data: {
       title: 'Belépés'
+    }
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
+    data: {
+      title: 'Regisztráció'
     }
   },
   {
