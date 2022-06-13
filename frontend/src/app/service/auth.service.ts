@@ -60,10 +60,13 @@ export class AuthService {
         if (user) {
           this.router.navigate(['/']);
         } else {
-          // this.router.navigate(['/', 'login']);
+          // induláskor ide érkezünk:
+          // kinullázunk mindent.
           this.loginFailed$.next(false)
+          this.signUpFailed$.next(false)
           this.access_token$.next('');
           sessionStorage.removeItem('login');
+          // this.router.navigate(['/', 'login']);
         }
       }
     });

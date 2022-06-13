@@ -1,3 +1,4 @@
+
 // Angular modules
 import { NgModule } from '@angular/core'
 import { BrowserModule, Title } from '@angular/platform-browser'
@@ -45,6 +46,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 // Developer Created modules
 import { TableMakerModule } from './table-maker/table-maker.module';
 
+
 // Developer Created App-components
 import { HomeComponent } from './page/home/home.component'
 import { HeadComponent } from './common/header/head.component'
@@ -58,11 +60,12 @@ import { CustomerComponent } from './page/customer/customer.component';
 import { OrderComponent } from './page/order/order.component';
 import { LoginComponent } from './page/login/login.component';
 import { SignupComponent } from './page/signup/signup.component';
+import { DynamicPipe } from './pipe/dynamic.pipe';
 
 // Developer Created Services Interceptors
 import { JwtInterceptor } from './service/jwt.interceptor'
 import { AuthService } from './service/auth.service';
-
+import { CurrencyPipe } from '@angular/common'
 
 @NgModule({
   declarations: [
@@ -78,7 +81,9 @@ import { AuthService } from './service/auth.service';
     CustomerComponent,
     OrderComponent,
     LoginComponent,
-    SignupComponent,   
+    SignupComponent,
+    // DynamicPipe,
+
 
   ],
   imports: [
@@ -130,6 +135,8 @@ import { AuthService } from './service/auth.service';
     },
     IconSetService,
     Title,
+    CurrencyPipe,
+
     // {
     //   provide: LocationStrategy,
     //   useClass: HashLocationStrategy,

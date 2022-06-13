@@ -6,6 +6,7 @@ export interface ITableColumn {
   title: string
   key: string
   visible: boolean
+  pipe?: { token: string, args: any[] }
 }
 
 export interface IAllowedButtons {
@@ -82,7 +83,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   }
 
   getColumns(): void {
-    this.columns = [...this.config[this.tableName]]
+    this.columns = [...this.config[`${this.tableName}TableColumns`]]
     this.displayedColumns = this.columns.filter(col => col.visible)
   }
 
@@ -90,12 +91,14 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     const checkbox = event.target
     const index = checkbox.value
 
+    // ensures that one box must be checked to show data!
     if (!checkbox.checked && this.displayedColumns.length === 1) {
       this.reload()
       return
     }
 
-    this.config[this.tableName][index].visible = checkbox.checked ? true : false
+    this.config[`${this.tableName}TableColumns`][index]
+      .visible = checkbox.checked ? true : false
     this.getColumns()
   }
 
@@ -109,18 +112,16 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     this.direction *= -1
   }
 
-  getRouteData():void{
+  getRouteData(): void {
     this.route.data.subscribe(params => {
       this.tableTitle = params['title']
     })
   }
 
-
   // táblázat adatainak típusvizsgálata a záróprojekt material-ból:
-  // isBoolean(value: any): boolean {
-  //   return (typeof value === 'boolean');
-  // }
-
+  isBoolean(value: any): boolean {
+    return (typeof value === 'boolean');
+  }
   // isNestedObject(value: any): boolean {
   //   return (typeof value === 'object');
   // }

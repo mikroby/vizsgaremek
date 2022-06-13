@@ -57,14 +57,14 @@ export class ConfigService {
     { key: 'first_name', title: 'Keresztnév', visible: true },
     { key: 'job', title: 'Munka', visible: true },
     { key: 'categoryID', title: 'Kategória száma', visible: true },
-    { key: 'price', title: 'Ár', visible: true },
+    { key: 'price', title: 'Óradíj', visible: true, pipe: { token: 'currency', args: ['HUF'] } },
     { key: 'age', title: 'Életkor', visible: true },
     { key: 'gender', title: 'Nem', visible: true },
     { key: 'email', title: 'E-mail', visible: true },
     { key: 'phone', title: 'Telefon', visible: true },
     { key: 'workDays', title: 'Munkanapok', visible: true },
-    { key: 'availableFrom', title: 'Kezd', visible: true },
-    { key: 'availableTill', title: 'Végez', visible: true },
+    { key: 'availableFrom', title: 'Kezdés', visible: true },
+    { key: 'availableTill', title: 'Befejezés', visible: true },
     { key: 'rating', title: 'Értékelés', visible: true },
   ]
 

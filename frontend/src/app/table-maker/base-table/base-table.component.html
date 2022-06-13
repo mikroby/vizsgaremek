@@ -58,7 +58,10 @@
       <tbody>
         <tr *ngFor="let row of list | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
           <td *ngFor="let col of displayedColumns">
-            {{ row[col.key] }}
+            <!-- kell még írni majd a feltételt a typeof-ra is X vagy pipa ? ha boolean!!! -->
+            <ng-container *ngIf="col.pipe as pipe; else noPipe">{{ row[col.key] |dynamicPipe:pipe.token:pipe.args }}
+            </ng-container>
+            <ng-template #noPipe>{{ row[col.key] }}</ng-template>
           </td>
           <td *ngIf="allowedButtons.edit || allowedButtons.delete">
             <div class="btn-group btn-group-sm">

@@ -225,7 +225,7 @@ A fejléc szerkezete:
 
 **Prioritás:** magas
 
-**Megvalósítás időtartama:** 10 hét
+**Megvalósítás időtartama:** 34 nap
 
 **Továbbfejlesztési lehetőségek:**
 
