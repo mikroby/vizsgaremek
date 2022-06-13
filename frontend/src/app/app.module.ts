@@ -60,12 +60,11 @@ import { CustomerComponent } from './page/customer/customer.component';
 import { OrderComponent } from './page/order/order.component';
 import { LoginComponent } from './page/login/login.component';
 import { SignupComponent } from './page/signup/signup.component';
-import { DynamicPipe } from './pipe/dynamic.pipe';
 
 // Developer Created Services Interceptors
 import { JwtInterceptor } from './service/jwt.interceptor'
 import { AuthService } from './service/auth.service';
-import { CurrencyPipe } from '@angular/common'
+
 
 @NgModule({
   declarations: [
@@ -82,8 +81,6 @@ import { CurrencyPipe } from '@angular/common'
     OrderComponent,
     LoginComponent,
     SignupComponent,
-    // DynamicPipe,
-
 
   ],
   imports: [
@@ -93,7 +90,7 @@ import { CurrencyPipe } from '@angular/common'
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-  
+
     AvatarModule,
     // BreadcrumbModule,
     FooterModule,
@@ -101,7 +98,7 @@ import { CurrencyPipe } from '@angular/common'
     GridModule,
     HeaderModule,
     SidebarModule,
-    IconModule,        
+    IconModule,
     PerfectScrollbarModule,
     NavModule,
     ButtonModule,
@@ -135,8 +132,7 @@ import { CurrencyPipe } from '@angular/common'
     },
     IconSetService,
     Title,
-    CurrencyPipe,
-
+    
     // {
     //   provide: LocationStrategy,
     //   useClass: HashLocationStrategy,

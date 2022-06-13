@@ -6,7 +6,7 @@ export interface ITableColumn {
   title: string
   key: string
   visible: boolean
-  pipe?: { token: string, args: any[] }
+  pipe?: { token: string, args?: any[] }
 }
 
 export interface IAllowedButtons {

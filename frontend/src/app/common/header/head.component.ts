@@ -29,6 +29,7 @@ export class HeadComponent extends HeaderComponent implements OnInit, AfterViewI
   }
 
   ngOnInit(): void {
+    this.showDateTime()
     const id = setInterval(this.showDateTime, 1000)
   }
 

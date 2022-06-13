@@ -58,10 +58,17 @@
       <tbody>
         <tr *ngFor="let row of list | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
           <td *ngFor="let col of displayedColumns">
-            <!-- kell még írni majd a feltételt a typeof-ra is X vagy pipa ? ha boolean!!! -->
-            <ng-container *ngIf="col.pipe as pipe; else noPipe">{{ row[col.key] |dynamicPipe:pipe.token:pipe.args }}
+            <ng-container *ngIf="!isBoolean(row[col.key]) ; else boolData">
+              <ng-container *ngIf="!col.pipe; else piped">{{ row[col.key] }}</ng-container>
+              <ng-template #piped>
+                {{ row[col.key] | dynamicPipe:col.pipe }}
+                <!-- {{ row[col.key] | spreadPipe}} -->
+              </ng-template>
             </ng-container>
-            <ng-template #noPipe>{{ row[col.key] }}</ng-template>
+            <ng-template #boolData>
+              <svg *ngIf="row[col.key]" cIcon name="cilCheckCircle" [size]="optionIconSize"></svg>
+              <svg *ngIf="!row[col.key]" cIcon name="cilXCircle" [size]="optionIconSize"></svg>
+            </ng-template>
           </td>
           <td *ngIf="allowedButtons.edit || allowedButtons.delete">
             <div class="btn-group btn-group-sm">

@@ -8,8 +8,9 @@ import { BadgeModule, BreadcrumbModule, GridModule, HeaderModule } from '@coreui
 import { BaseTableComponent } from './base-table/base-table.component';
 import { FilterPipe } from '../pipe/filter.pipe';
 import { SorterPipe } from '../pipe/sorter.pipe';
-import { SpreadPipe } from '../pipe/spread.pipe';
 import { DynamicPipe } from '../pipe/dynamic.pipe';
+import { SpreadPipe } from '../pipe/spread.pipe';
+import { DayPipe } from './../pipe/day.pipe';
 
 
 @NgModule({
@@ -17,9 +18,9 @@ import { DynamicPipe } from '../pipe/dynamic.pipe';
     BaseTableComponent,
     SorterPipe,
     FilterPipe,
-    SpreadPipe,
-    DynamicPipe,
-
+    DynamicPipe,   
+    // SpreadPipe,
+    // DayPipe,
   ],
   imports: [
     CommonModule,
@@ -36,7 +37,8 @@ import { DynamicPipe } from '../pipe/dynamic.pipe';
   ],
   providers:[
     SpreadPipe,
-    // CurrencyPipe,
+    CurrencyPipe,
+    DayPipe,
   ]
 })
 export class TableMakerModule { }

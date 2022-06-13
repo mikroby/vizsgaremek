@@ -9,13 +9,13 @@ export class DynamicPipe implements PipeTransform {
     private injector: Injector
   ) { }
 
-  transform(value: any, pipeToken: any, pipeArgs: any[]): any {
-    if (!pipeToken) {
+  transform(value: any, pipe: any): any {
+    const { token, args } = pipe
+    if (!token) {
       return value;
     }
-    else {
-      let pipe = this.injector.get(pipeToken);
-      return pipe.transform(value, ...pipeArgs);
-    }
+
+    const pipeName = this.injector.get(token);
+    return pipeName.transform(value, ...args);
   }
 }
