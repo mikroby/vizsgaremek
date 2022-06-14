@@ -1,0 +1,57 @@
+.custom-bg {
+  background-color: aliceblue;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-text {
+  opacity: 0;
+  animation: moveText 1s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveGroup {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.animate-experts {
+  opacity: 0;
+  animation: moveGroup 1s 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+}
+
+@keyframes  moveGirl{
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+.animate-girl {
+  opacity: 0;
+  animation: moveGirl 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+}

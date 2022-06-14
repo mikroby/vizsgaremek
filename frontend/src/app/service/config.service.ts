@@ -10,8 +10,8 @@ export class ConfigService {
 
   triggerHeader$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
-  sideBarWidth_full = '256px'
-  sideBarWidth_narrow = '64px'
+  sideBarWidth_full = '16rem'
+  sideBarWidth_narrow = '4rem'
 
   defaultPageSize = 50
   minPageSize = 10
