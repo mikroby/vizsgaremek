@@ -8,7 +8,7 @@
 
     <!-- Login Form -->
     <form #loginForm="ngForm" (ngSubmit)="tryLogin()">
-      <input type="email" id="email" class="fadeIn second" [(ngModel)]="loginData.email" name="email"
+      <input type="email" id="e-mail" class="fadeIn second" [(ngModel)]="loginData.email" name="email"
         placeholder="E-mail" (focus)="onFocus()">
       <input type="password" id="password" class="fadeIn third" [(ngModel)]="loginData.password" name="password"
         placeholder="Jelszó" (focus)="onFocus()">

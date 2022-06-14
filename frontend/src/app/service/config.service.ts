@@ -26,7 +26,7 @@ export class ConfigService {
   sideBarWidth_narrow = 64
 
   defaultPageSize = 50
-  minPageSize = 5
+  minPageSize = 10
   defaultStartPage = 1
   defaultStep = 5
 
@@ -40,7 +40,7 @@ export class ConfigService {
     { key: '_id', title: '#', visible: false },
     { key: 'categoryID', title: 'Kategória száma', visible: true },
     { key: 'name', title: 'Kategória neve', visible: true },
-    { key: 'job', title: 'Munka neve', visible: true, pipe: { token: 'spreadPipe' } },
+    { key: 'job', title: 'Munka neve', visible: true },
   ]
 
   customerTableColumns: ITableColumn[] = [
@@ -49,7 +49,7 @@ export class ConfigService {
     { key: 'first_name', title: 'Keresztnév', visible: true },
     { key: 'email', title: 'E-mail', visible: true },
     { key: 'phone', title: 'Telefon', visible: true },
-    { key: 'address', title: 'Lakcím', visible: true, pipe: { token: 'spreadPipe' } },
+    { key: 'address', title: 'Lakcím', visible: true },
     { key: 'active', title: 'Aktív', visible: true },
   ]
 
@@ -57,14 +57,14 @@ export class ConfigService {
     { key: '_id', title: '#', visible: false },
     { key: 'last_name', title: 'Vezetéknév', visible: true },
     { key: 'first_name', title: 'Keresztnév', visible: true },
-    { key: 'job', title: 'Munka', visible: true, pipe: { token: 'spreadPipe' } },
+    { key: 'job', title: 'Munka', visible: true },
     { key: 'categoryID', title: 'Kategória száma', visible: true },
-    { key: 'price', title: 'Óradíj', visible: true, pipe: { token: 'currency', args: ['Ft'] } },
+    { key: 'price', title: 'Óradíj', visible: true, pipe: 'currPipe' },
     { key: 'age', title: 'Életkor', visible: true },
     { key: 'gender', title: 'Nem', visible: true },
     { key: 'email', title: 'E-mail', visible: true },
     { key: 'phone', title: 'Telefon', visible: true },
-    { key: 'workDays', title: 'Munkanapok', visible: true, pipe: { token: 'dayPipe' } },
+    { key: 'workDays', title: 'Munkanapok', visible: true, pipe: 'dayPipe' },
     { key: 'availableFrom', title: 'Kezdés', visible: true },
     { key: 'availableTill', title: 'Befejezés', visible: true },
     { key: 'rating', title: 'Értékelés', visible: true },
@@ -75,7 +75,7 @@ export class ConfigService {
     { key: 'orderID', title: 'Rendelés száma', visible: true },
     { key: 'expertID', title: 'Mester Neve (ID)', visible: true },
     { key: 'categoryID', title: 'Kategória neve (ID)', visible: true },
-    { key: 'job', title: 'Munka neve', visible: true, pipe: { token: 'spreadPipe' } },
+    { key: 'job', title: 'Munka neve', visible: true },
     { key: 'amount', title: 'Rendelt mennyiség', visible: true },
     { key: 'status', title: 'Állapot', visible: true },
   ]
@@ -84,7 +84,7 @@ export class ConfigService {
     { key: '_id', title: '#', visible: false },
     { key: 'customerID', title: 'Megrendelő neve (ID)', visible: true },
     { key: 'expertID', title: 'Mester Neve (ID)', visible: true },
-    { key: 'job', title: 'Munka neve', visible: true, pipe: { token: 'spreadPipe' } },
+    { key: 'job', title: 'Munka neve', visible: true },
     { key: 'amount', title: 'Rendelt mennyiség', visible: true },
     { key: 'status', title: 'Állapot', visible: true },
   ]

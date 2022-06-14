@@ -56,14 +56,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let row of list | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
+        <tr
+          *ngFor="let row of list | dayPipe:displayedColumns | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
           <td *ngFor="let col of displayedColumns">
-            <ng-container *ngIf="!isBoolean(row[col.key]) ; else boolData">
-              <ng-container *ngIf="!col.pipe; else piped">{{ row[col.key] }}</ng-container>
-              <ng-template #piped>
-                {{ row[col.key] | dynamicPipe:col.pipe }}
-                <!-- {{ row[col.key] | spreadPipe}} -->
-              </ng-template>
+            <ng-container *ngIf="!isBoolean(row[col.key]); else boolData">
+              {{ row[col.key] | currPipe:col | spreadPipe}}
             </ng-container>
             <ng-template #boolData>
               <svg *ngIf="row[col.key]" cIcon name="cilCheckCircle" [size]="optionIconSize"></svg>

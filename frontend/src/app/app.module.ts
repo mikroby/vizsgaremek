@@ -80,7 +80,7 @@ import { AuthService } from './service/auth.service';
     CustomerComponent,
     OrderComponent,
     LoginComponent,
-    SignupComponent,
+    SignupComponent,    
 
   ],
   imports: [

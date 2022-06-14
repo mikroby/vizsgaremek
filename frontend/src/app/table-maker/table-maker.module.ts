@@ -1,6 +1,6 @@
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import { CommonModule, CurrencyPipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 import { IconModule } from '@coreui/icons-angular'
 import { BadgeModule, BreadcrumbModule, GridModule, HeaderModule } from '@coreui/angular';
@@ -8,9 +8,9 @@ import { BadgeModule, BreadcrumbModule, GridModule, HeaderModule } from '@coreui
 import { BaseTableComponent } from './base-table/base-table.component';
 import { FilterPipe } from '../pipe/filter.pipe';
 import { SorterPipe } from '../pipe/sorter.pipe';
-import { DynamicPipe } from '../pipe/dynamic.pipe';
 import { SpreadPipe } from '../pipe/spread.pipe';
 import { DayPipe } from './../pipe/day.pipe';
+import { CurrPipe } from './../pipe/curr.pipe';
 
 
 @NgModule({
@@ -18,9 +18,10 @@ import { DayPipe } from './../pipe/day.pipe';
     BaseTableComponent,
     SorterPipe,
     FilterPipe,
-    DynamicPipe,   
-    // SpreadPipe,
-    // DayPipe,
+    SpreadPipe,
+    DayPipe,
+    CurrPipe
+    
   ],
   imports: [
     CommonModule,
@@ -36,9 +37,10 @@ import { DayPipe } from './../pipe/day.pipe';
     BaseTableComponent,
   ],
   providers:[
-    SpreadPipe,
-    CurrencyPipe,
-    DayPipe,
+    // SpreadPipe,
+    // DayPipe,
+    // CurrPipe,
+
   ]
 })
 export class TableMakerModule { }

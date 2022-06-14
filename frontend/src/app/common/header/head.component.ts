@@ -19,7 +19,7 @@ export class HeadComponent extends HeaderComponent implements OnInit, AfterViewI
   sideBar_full = this.config.sideBarWidth_full
   sideBar_narrow = this.config.sideBarWidth_narrow
 
-  user$ = this.auth.user$;
+  user$ = this.auth.user$
 
   constructor(
     private auth: AuthService,

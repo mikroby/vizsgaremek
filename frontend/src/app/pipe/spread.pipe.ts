@@ -1,14 +1,20 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+const name = 'spreadPipe'
+
 @Pipe({
-  name: 'spreadPipe'
+  name: `${name}`
 })
 
-export class SpreadPipe implements PipeTransform {
+export class SpreadPipe<T> implements PipeTransform {
 
-  transform(value: {} | []): string {
-    return Object.values(value)
-      .map(item => typeof item === 'object' ? Object.values(item).flat(Infinity).join(', ') : item)
-      .join(', ')
+  transform(value: T | null): T | null {
+
+    // no object as value
+    if (!value || typeof value !== 'object') return value
+
+    const flatString = Object.values(value).flat(Infinity).join(', ')
+
+    return flatString as unknown as T
   }
 }

@@ -52,7 +52,7 @@ export class AuthService {
     if (loginInfo) {
       const loginObject = JSON.parse(loginInfo);
       this.access_token$.next(loginObject.accessToken);
-      this.user$.next(loginObject.user);
+      this.user$.next(loginObject.user);      
     }
 
     this.user$.subscribe({
@@ -66,7 +66,7 @@ export class AuthService {
           this.signUpFailed$.next(false)
           this.access_token$.next('');
           sessionStorage.removeItem('login');
-          // this.router.navigate(['/', 'login']);
+          this.router.navigate(['/', 'login']);
         }
       }
     });
