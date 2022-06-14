@@ -3,7 +3,7 @@ import { INavData } from '@coreui/angular';
 export const navItems: INavData[] = [
   {
     name: 'Vezérlőpult',
-    url: '/dashboard',
+    url: '/admin',
     iconComponent: { name: 'cil-speedometer' },
     badge: {
       color: 'info',
@@ -12,73 +12,73 @@ export const navItems: INavData[] = [
   },
   {
     name: 'Szakemberek',
-    url: '/expert',
+    url: '/admin/expert',
     iconComponent: { name: 'cil-people' }
   },
   {
     name: 'Kategóriák',
-    url: '/category',
+    url: '/admin/category',
     iconComponent: { name: 'cilLayers' }
   },
   {
     name: 'Felhasználók',
-    url: '/customer',
+    url: '/admin/customer',
     iconComponent: { name: 'cilUser' }
   },
   {
     name: 'Rendelések',
-    url: '/order',
+    url: '/admin/order',
     iconComponent: { name: 'cilList' }
   },
   {
     name: 'Számlák',
-    url: '/invoice',
+    url: '/admin/invoice',
     iconComponent: { name: 'cilNotes' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilLibrary' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilAddressBook' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilStorage' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilSortAscending' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilFeaturedPlaylist' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilChevronRight' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilChevronCircleRightAlt' }
   },
   {
     name: 'Tester',
-    url: '/home',
+    url: '/admin',
     iconComponent: { name: 'cilArrowCircleRight' }
   },
   
 ];
 
-// other options:
+// other useful options:
 // {
 //   name: 'Typography',
 //     url: '/theme/typography',

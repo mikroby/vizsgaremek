@@ -14,7 +14,8 @@ export class SignupComponent implements OnInit {
     first_name: '',
     last_name: '',
     email: '',
-    password: ''
+    password: '',
+    role: 2
   };
 
   user$ = this.auth.user$;
@@ -28,7 +29,7 @@ export class SignupComponent implements OnInit {
   }
 
   trySignUp(): void {
-    this.auth.login(this.signUpData)
+    // this.auth.signup(this.signUpData)
   }
 
   onFocus(): void {

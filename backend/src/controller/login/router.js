@@ -13,6 +13,7 @@ router.post('/', async (req, res, next) => {
     //     lastName: 'Elek',
     //     firstName: 'Test',
     //     password: '012',
+    //     role: 2
     // });
 
     // try {
@@ -41,7 +42,7 @@ router.post('/', async (req, res, next) => {
         const accessToken = jwt.sign({
             _id: user._id,
             email: user.email,
-            role: 1,
+            role: user.role,
         }, `${process.env.ACCES_TOKEN_SECRET}`, {
             expiresIn: process.env.TOKEN_EXPIRY,
         });

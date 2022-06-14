@@ -46,6 +46,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 // Developer Created modules
 import { TableMakerModule } from './table-maker/table-maker.module';
 
+// Developer Created Services Interceptors
+import { JwtInterceptor } from './service/jwt.interceptor'
+import { AuthService } from './service/auth.service';
 
 // Developer Created App-components
 import { HomeComponent } from './page/home/home.component'
@@ -60,10 +63,9 @@ import { CustomerComponent } from './page/customer/customer.component';
 import { OrderComponent } from './page/order/order.component';
 import { LoginComponent } from './page/login/login.component';
 import { SignupComponent } from './page/signup/signup.component';
-
-// Developer Created Services Interceptors
-import { JwtInterceptor } from './service/jwt.interceptor'
-import { AuthService } from './service/auth.service';
+import { SearchComponent } from './page/search/search.component';
+import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
+import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
 
 
 @NgModule({
@@ -80,7 +82,10 @@ import { AuthService } from './service/auth.service';
     CustomerComponent,
     OrderComponent,
     LoginComponent,
-    SignupComponent,    
+    SignupComponent,
+    AdminLayoutComponent,
+    HomeLayoutComponent,
+    SearchComponent,    
 
   ],
   imports: [
@@ -89,7 +94,7 @@ import { AuthService } from './service/auth.service';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
+    // ReactiveFormsModule,
 
     AvatarModule,
     // BreadcrumbModule,

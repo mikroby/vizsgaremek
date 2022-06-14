@@ -2,28 +2,16 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { ITableColumn } from '../table-maker/base-table/base-table.component';
 
-// export interface IMenuItem {
-//   link: string
-//   title: string
-//   icon?: string
-// }
-
 @Injectable({
   providedIn: 'root'
 })
 export class ConfigService {
   [x: string]: any
 
-  // sidebarMenu: IMenuItem[] = [
-  //   { link: '/', title: 'Dashboard', icon:'' },
-  //   { link: '/expert', title: 'Experts', icon:'' },
-  //   { link: '/category', title: 'Categories', icon:'' },
-  // ]
-
   triggerHeader$: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
-  sideBarWidth_full = 256
-  sideBarWidth_narrow = 64
+  sideBarWidth_full = '256px'
+  sideBarWidth_narrow = '64px'
 
   defaultPageSize = 50
   minPageSize = 10
@@ -34,7 +22,7 @@ export class ConfigService {
   paginatorIconSize = 'xl'
   optionIconSize = 'sm'
 
-  days = ['H', 'K', 'SZe', 'CS', 'P', 'SZo', 'V']
+  days = ['H', 'K', 'Sze', 'CS', 'P', 'Szo', 'V']
 
   categoryTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },

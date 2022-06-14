@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ConfigService } from 'src/app/service/config.service';
 import { navItems } from './_navBar.items';
 
-// import { ConfigService, IMenuItem } from 'src/app/service/config.service';
-
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sideNavbar.component.html',
@@ -19,9 +17,7 @@ export class SideNavbarComponent implements OnInit {
   public perfectScrollbarConfig = {
     suppressScrollX: true,
   };
-
-  // sidebar: IMenuItem[] = this.config.sidebarMenu
-
+  
   constructor(
     private config: ConfigService,
   ) { }
@@ -34,7 +30,7 @@ export class SideNavbarComponent implements OnInit {
     const wrapper = (document.querySelector('.wrapper') as HTMLDivElement)
     const sideBar = document.querySelector('c-sidebar')?.classList;
     wrapper.style.paddingLeft = !sideBar?.contains('sidebar-narrow-unfoldable') ?
-      `${this.sideBar_narrow}px` : `${this.sideBar_full}px`
+     this.sideBar_narrow : this.sideBar_full
   }
 
 }

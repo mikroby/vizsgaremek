@@ -41,6 +41,9 @@ app.use(bodyParser.json())
 
 // Login
 app.use('/login', require('./controller/login/router'))
+// Signup
+
+
 // Category
 app.use('/category', authencticateJwt, require('./controller/category/router'))
 // Customer
@@ -51,10 +54,9 @@ app.use('/expert', authencticateJwt, require('./controller/expert/router'))
 app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
 // Order
 app.use('/order', authencticateJwt, require('./controller/order/router'))
-// SwaggerUI docs available here.
-app.use('/api-docs', (req, res,) => { res.sendStatus(404) })
-// api-docs not ready yet
+// SwaggerUI docs available here. temporarily 404
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+app.use('/api-docs', (req, res,) => { res.sendStatus(404) })
 // request for anything else sends a welcome screen.
 app.use('/', (req, res, next) => {
   console.log(req.url)
@@ -63,13 +65,11 @@ app.use('/', (req, res, next) => {
 
 // Error Handling.
 app.use((err, req, res, next) => {
-  res.status = 500
+  res.status(err.statusCode)
   res.json({
     hasError: true,
-    message: 'Server Error',
+    message: err.message,
   })
 })
 
 module.exports = app
-
-// hibakezelést át kell még nézni.

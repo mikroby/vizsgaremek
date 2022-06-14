@@ -44,10 +44,11 @@
           <th *ngFor="let col of displayedColumns" scope="col">
             <span class="position-relative pointer" [id]="col.key" (click)="toggleSortDirection($event)">
               {{ col.title }}
-              <c-badge *ngIf="col.key===sortBy" color="info" position="top-end" shape="rounded-pill">
+              <div class="badge transparent text-primary position-absolute rounded-pill start-100 top-0 translate-middle"
+                *ngIf="col.key===sortBy">
                 <svg *ngIf="direction===1" cIcon name="cilSortAscending" size="sm"></svg>
                 <svg *ngIf="direction===-1" cIcon name="cilSortDescending" size="sm"></svg>
-              </c-badge>
+              </div>
             </span>
           </th>
           <th *ngIf="allowedButtons.edit || allowedButtons.delete">
