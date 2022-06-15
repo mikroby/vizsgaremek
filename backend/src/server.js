@@ -49,7 +49,7 @@ app.use('/category', authencticateJwt, require('./controller/category/router'))
 // Customer
 app.use('/customer', authencticateJwt, require('./controller/customer/router'))
 // Expert
-app.use('/expert', authencticateJwt, require('./controller/expert/router'))
+app.use('/expert',  require('./controller/expert/router'))
 // Invoice
 app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
 // Order

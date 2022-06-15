@@ -66,6 +66,7 @@ import { SignupComponent } from './page/signup/signup.component';
 import { SearchComponent } from './page/search/search.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
+import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 
 
 @NgModule({
@@ -85,7 +86,8 @@ import { HomeLayoutComponent } from './layout/home-layout/home-layout.component'
     SignupComponent,
     AdminLayoutComponent,
     HomeLayoutComponent,
-    SearchComponent,    
+    SearchComponent,
+    ForbiddenComponent,    
 
   ],
   imports: [

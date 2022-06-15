@@ -1,1 +1,4 @@
-<p>search works!</p>
+<base-table *ngIf="list$ | async as list"
+  [tableName]="'expert'" [list]="list"
+  [allowedButtons]="{ edit: false, delete: false }">
+</base-table>

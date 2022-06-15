@@ -38,6 +38,8 @@ export class AuthService {
 
   loginUrl: string = ''
 
+  storageKey: string = 'mesterember'
+
   user$: BehaviorSubject<User | null> = new BehaviorSubject<User | null>(null)
 
   access_token$: BehaviorSubject<string> = new BehaviorSubject<string>('')
@@ -45,10 +47,10 @@ export class AuthService {
   constructor(
     private http: HttpClient,
     private router: Router,
-  ) {
+  ) {    
     this.loginUrl = `${this.apiUrl}login`
 
-    const loginInfo = sessionStorage.getItem('login')
+    const loginInfo = sessionStorage.getItem(this.storageKey)
     if (loginInfo) {
       const loginObject = JSON.parse(loginInfo)
       this.access_token$.next(loginObject.accessToken)
@@ -64,12 +66,12 @@ export class AuthService {
           this.signUpFailed$.next(false)
 
           this.access_token$.next('')
-          sessionStorage.removeItem('login')
+          sessionStorage.removeItem(this.storageKey)
 
           // this.router.navigate(['/'])
         } else {
           if (user.role === 3) {
-            this.router.navigate(['/admin'])
+            this.router.navigate(['/','admin','dashboard'])
           } else {
             this.router.navigate(['/'])
           }
@@ -79,12 +81,16 @@ export class AuthService {
 
   }
 
+  get currentUser(): User | null {
+    return this.user$.value
+  }
+
   login(loginData: ILoginData): void {
     this.http.post<IAuthModel>(this.loginUrl, loginData).subscribe({
       next: (response: IAuthModel) => {
         this.user$.next(response.user)
         this.access_token$.next(response.accessToken)
-        sessionStorage.setItem('login', JSON.stringify(response))
+        sessionStorage.setItem(this.storageKey, JSON.stringify(response))
       },
       error: (err) => {
         // console.error(err)
