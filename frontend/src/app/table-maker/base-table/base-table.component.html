@@ -58,10 +58,10 @@
       </thead>
       <tbody>
         <tr
-          *ngFor="let row of list | dayPipe:displayedColumns | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
+          *ngFor="let row of list | visible:displayedColumns | day:displayedColumns | spread | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
           <td *ngFor="let col of displayedColumns">
             <ng-container *ngIf="!isBoolean(row[col.key]); else boolData">
-              {{ row[col.key] | currPipe:col | spreadPipe}}
+              {{ row[col.key] | curr:col }}             
             </ng-container>
             <ng-template #boolData>
               <svg *ngIf="row[col.key]" cIcon name="cilCheckCircle" [size]="optionIconSize"></svg>

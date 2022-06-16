@@ -6,15 +6,15 @@ import { Pipe, PipeTransform } from '@angular/core'
 export class FilterPipe<T extends { [key: string]: any }> implements PipeTransform {
 
   transform(value: T[] | null, phrase: string = '', key: string = ''): T[] | null {
-
-    // no array or no phrase to filter by
+    
     if (!Array.isArray(value) || !phrase) {
       return value
     }
 
     phrase = phrase.toLowerCase()
 
-    // no key with one-level embedded object and any-level arrays
+    // flattens: one-level embedded object and any-dimension arrays
+    // no key.
     if (!key) {
       return value.filter(
         row => Object.values(row).map(data => typeof data !== 'object' ? data : Object.values(data))
@@ -22,7 +22,7 @@ export class FilterPipe<T extends { [key: string]: any }> implements PipeTransfo
       )
     }
 
-    // key presents
+    // has key. 
     return value.filter(row =>
       typeof row[key] !== 'object' ?
         String(row[key]).toLowerCase().includes(phrase) :

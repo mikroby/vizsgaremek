@@ -2,7 +2,7 @@ import { ConfigService } from 'src/app/service/config.service';
 import { ITableColumn } from '../table-maker/base-table/base-table.component';
 import { Pipe, PipeTransform } from '@angular/core';
 
-const name = 'dayPipe'
+const name = 'day'
 
 @Pipe({
   name: `${name}`
@@ -18,7 +18,6 @@ export class DayPipe<T extends { [key: string]: any }> implements PipeTransform 
 
     const key = coloumns.find(col => col.pipe === `${name}`)?.key
 
-    // no keys for dayPipe
     if (!key) return value
 
     return value.map(row => {

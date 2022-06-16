@@ -87,8 +87,8 @@ import { ForbiddenComponent } from './page/forbidden/forbidden.component';
     AdminLayoutComponent,
     HomeLayoutComponent,
     SearchComponent,
-    ForbiddenComponent,    
-
+    ForbiddenComponent,
+   
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { SorterPipe } from '../pipe/sorter.pipe';
 import { SpreadPipe } from '../pipe/spread.pipe';
 import { DayPipe } from './../pipe/day.pipe';
 import { CurrPipe } from './../pipe/curr.pipe';
+import { VisiblePipe } from './../pipe/visible.pipe';
 
 
 @NgModule({
@@ -20,8 +21,9 @@ import { CurrPipe } from './../pipe/curr.pipe';
     FilterPipe,
     SpreadPipe,
     DayPipe,
-    CurrPipe
-    
+    CurrPipe,
+    VisiblePipe
+
   ],
   imports: [
     CommonModule,
@@ -36,11 +38,6 @@ import { CurrPipe } from './../pipe/curr.pipe';
   exports: [
     BaseTableComponent,
   ],
-  providers:[
-    // SpreadPipe,
-    // DayPipe,
-    // CurrPipe,
-
-  ]
+  providers: []
 })
 export class TableMakerModule { }

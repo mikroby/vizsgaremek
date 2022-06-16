@@ -1,20 +1,30 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-const name = 'spreadPipe'
-
 @Pipe({
-  name: `${name}`
+  name: 'spread'
 })
 
-export class SpreadPipe<T> implements PipeTransform {
+export class SpreadPipe<T extends { [key: string]: any }> implements PipeTransform {
 
-  transform(value: T | null): T | null {
+  transform(value: T[] | null): T[] | null {
 
-    // no object as value
-    if (!value || typeof value !== 'object') return value
+    if (!Array.isArray(value) || !value.length) return value
 
-    const flatString = Object.values(value).flat(Infinity).join(', ')
+    // get keys having object as value from first row of data
+    const keys = Object.entries(value[0]).filter(data => typeof data[1] === 'object').map(item => item[0])
 
-    return flatString as unknown as T
+    if (!keys.length) return value
+
+    return value.map(row => {
+      let obj = { ...row }
+      keys.forEach(key => {
+        const spread = Object.values(row[key]).flat(Infinity).join(', ')
+        obj = { ...obj, [key]: spread }
+      })
+
+      return obj
+    })
+
   }
+
 }

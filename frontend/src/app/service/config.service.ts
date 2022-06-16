@@ -47,12 +47,12 @@ export class ConfigService {
     { key: 'first_name', title: 'Keresztnév', visible: true },
     { key: 'job', title: 'Munka', visible: true },
     { key: 'categoryID', title: 'Kategória', visible: true },
-    { key: 'price', title: 'Óradíj', visible: true, pipe: 'currPipe' },
+    { key: 'price', title: 'Óradíj', visible: true, pipe: 'curr' },
     { key: 'age', title: 'Életkor', visible: true },
     { key: 'gender', title: 'Nem', visible: true },
     { key: 'email', title: 'E-mail', visible: true },
     { key: 'phone', title: 'Telefon', visible: true },
-    { key: 'workDays', title: 'Munkanapok', visible: true, pipe: 'dayPipe' },
+    { key: 'workDays', title: 'Munkanapok', visible: true, pipe: 'day' },
     { key: 'availableFrom', title: 'Kezdés', visible: true },
     { key: 'availableTill', title: 'Befejezés', visible: true },
     { key: 'rating', title: 'Értékelés', visible: true },
@@ -64,7 +64,7 @@ export class ConfigService {
     { key: 'expertID', title: 'Mester (ID)', visible: true },
     { key: 'categoryID', title: 'Kategória (ID)', visible: true },
     { key: 'job', title: 'Munka', visible: true },
-    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'currPipe' },
+    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'curr' },
     { key: 'status', title: 'Állapot', visible: true },
   ]
 
@@ -73,7 +73,7 @@ export class ConfigService {
     { key: 'customerID', title: 'Megrendelő (ID)', visible: true },
     { key: 'expertID', title: 'Mester (ID)', visible: true },
     { key: 'job', title: 'Munka', visible: true },
-    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'currPipe' },
+    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'curr' },
     { key: 'status', title: 'Állapot', visible: true },
   ]
 
