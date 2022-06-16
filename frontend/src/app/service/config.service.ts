@@ -64,7 +64,7 @@ export class ConfigService {
     { key: 'expertID', title: 'Mester (ID)', visible: true },
     { key: 'categoryID', title: 'Kategória (ID)', visible: true },
     { key: 'job', title: 'Munka', visible: true },
-    { key: 'amount', title: 'Rendelt mennyiség', visible: true },
+    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'currPipe' },
     { key: 'status', title: 'Állapot', visible: true },
   ]
 
@@ -73,7 +73,7 @@ export class ConfigService {
     { key: 'customerID', title: 'Megrendelő (ID)', visible: true },
     { key: 'expertID', title: 'Mester (ID)', visible: true },
     { key: 'job', title: 'Munka', visible: true },
-    { key: 'amount', title: 'Rendelt mennyiség', visible: true },
+    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'currPipe' },
     { key: 'status', title: 'Állapot', visible: true },
   ]
 

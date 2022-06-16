@@ -12,20 +12,23 @@ export class SorterPipe<T extends { [key: string]: any }> implements PipeTransfo
     }
 
     return value.sort((a, b) => {
+      const aValue = a[sortBy]
+      const bValue = b[sortBy]
+
       // number
-      if (typeof a[sortBy] === 'number' && typeof b[sortBy] === 'number') {
-        return (a[sortBy] - b[sortBy]) * direction;
+      if (typeof aValue === 'number' && typeof bValue === 'number') {
+        return (aValue - bValue) * direction;
       }
       // object
-      if (typeof a[sortBy] === 'object') {
-        const aValuesString = Object.values(a[sortBy]).join('').toLowerCase()
-        const bValuesString = Object.values(b[sortBy]).join('').toLowerCase()
+      if (typeof aValue === 'object') {
+        const aValuesString = Object.values(aValue).join('').toLowerCase()
+        const bValuesString = Object.values(bValue).join('').toLowerCase()
 
         return (aValuesString.localeCompare(bValuesString)) * direction
       }
       // string
-      return (String(a[sortBy]).toLowerCase().localeCompare(String(b[sortBy])
+      return (String(aValue).toLowerCase().localeCompare(String(bValue)
         .toLowerCase())) * direction
-    });
+    })
   }
 }
