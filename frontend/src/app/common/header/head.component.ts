@@ -1,4 +1,4 @@
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ConfigService } from 'src/app/service/config.service';
 import { Component, OnInit, Input } from '@angular/core';
 
@@ -21,10 +21,13 @@ export class HeadComponent extends HeaderComponent implements OnInit {
 
   user$ = this.auth.user$
 
+  layout!:string
+
   constructor(
     private auth: AuthService,
     private config: ConfigService,
     private ar: ActivatedRoute,
+    // private router: Router,
   ) {
     super()
   }
@@ -32,6 +35,10 @@ export class HeadComponent extends HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.showDateTime()
     const id = setInterval(this.showDateTime, 1000)
+
+    this.ar.data.subscribe(params => {
+      this.layout = params['title']      
+    })
   }
 
   showDateTime = () => {

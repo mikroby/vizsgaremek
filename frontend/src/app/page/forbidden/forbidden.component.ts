@@ -12,4 +12,7 @@ export class ForbiddenComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  stepBack(): void {
+    history.back()
+  }
 }

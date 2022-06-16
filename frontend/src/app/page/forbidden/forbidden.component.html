@@ -1,14 +1,17 @@
 <div class="row animate-error">
   <div class="col-10 col-md-6 offset-1 offset-md-3">
-    <div class="alert alert-lg alert-danger mt-5 shadow-lg">
+    <div class="alert alert-lg alert-secondary mt-5 shadow-lg">
       <p class="h4">Hiba:</p>
       <hr>
       <div class="text-center">
         <p class="lead fs-4">Nincs hozzáférése ehhez a tartalomhoz.</p>
         <p class="h6">Kérem jelentkezzen be a megfelelő jogosultsággal !</p>
       </div>
-      <div class="mt-4 text-center mb-2">
-        <a routerLink="/login" class="btn btn-outline-dark rounded-pill">BEJELENTKEZÉS</a>
+      <div class="mt-4 mb-2">
+        <div class="btn-group btn-group-sm offset-1 col-10" role="group">
+            <a routerLink="/login" class="btn btn-outline-info">BEJELENTKEZÉS</a>
+            <a (click)="stepBack()" class="btn btn-outline-secondary">VISSZALÉPÉS</a>
+        </div>
       </div>
     </div>
   </div>

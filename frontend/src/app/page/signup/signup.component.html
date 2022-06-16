@@ -10,18 +10,18 @@
 
     <!-- SignUp Form -->
     <form #signUpForm="ngForm" (ngSubmit)="trySignUp()">
-      <input type="text" id="lastName" class="fadeIn second" [(ngModel)]="signUpData.last_name" name="last_name"
+      <input type="text" id="lastName" class="fadeIn second" [(ngModel)]="signupData.lastName" name="lastName"
         placeholder="Vezetéknév" (focus)="onFocus()">
-      <input type="text" id="firstName" class="fadeIn second" [(ngModel)]="signUpData.first_name" name="first_name"
+      <input type="text" id="firstName" class="fadeIn second" [(ngModel)]="signupData.firstName" name="firstName"
         placeholder="Keresztnév" (focus)="onFocus()">
-      <input type="email" id="e-mail" class="fadeIn third" [(ngModel)]="signUpData.email" name="email"
+      <input type="email" id="e-mail" class="fadeIn third" [(ngModel)]="signupData.email" name="email"
         placeholder="E-mail" (focus)="onFocus()">
-      <input type="password" id="password" class="fadeIn third" [(ngModel)]="signUpData.password" name="password"
+      <input type="password" id="password" class="fadeIn third" [(ngModel)]="signupData.password" name="password"
         placeholder="Jelszó" (focus)="onFocus()">
       <input type="submit" id="submit" class="fadeIn fourth" value="Regisztráció" [disabled]="signUpForm.invalid">
     </form>
 
-    <!-- accept terms and policy -->
+    <!-- link to login -->
     <div class="formFooter">
       <a class="underlineHover" routerLink="/login">
         Már van regisztrált fiókja?

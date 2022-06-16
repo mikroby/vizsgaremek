@@ -19,11 +19,12 @@ export interface ILoginData {
 }
 
 export interface ISignUpData {
-  first_name: string
-  last_name: string
+  firstName: string
+  lastName: string
   email: string
   password: string
   role: number
+  avatar: string
 }
 
 @Injectable({
@@ -37,6 +38,7 @@ export class AuthService {
   apiUrl: string = environment.apiUrl
 
   loginUrl: string = ''
+  signupUrl: string = ''
 
   storageKey: string = 'mesterember'
 
@@ -47,8 +49,9 @@ export class AuthService {
   constructor(
     private http: HttpClient,
     private router: Router,
-  ) {    
+  ) {
     this.loginUrl = `${this.apiUrl}login`
+    this.signupUrl = `${this.apiUrl}signup`
 
     const loginInfo = sessionStorage.getItem(this.storageKey)
     if (loginInfo) {
@@ -60,18 +63,17 @@ export class AuthService {
     this.user$.subscribe({
       next: user => {
         if (!user) {
-          // induláskor ide érkezünk:
-          // kinullázunk mindent.
+          // start here, initialize.
           this.loginFailed$.next(false)
           this.signUpFailed$.next(false)
 
           this.access_token$.next('')
           sessionStorage.removeItem(this.storageKey)
-
           // this.router.navigate(['/'])
+
         } else {
           if (user.role === 3) {
-            this.router.navigate(['/','admin','dashboard'])
+            this.router.navigate(['/', 'admin'])
           } else {
             this.router.navigate(['/'])
           }
@@ -92,8 +94,8 @@ export class AuthService {
         this.access_token$.next(response.accessToken)
         sessionStorage.setItem(this.storageKey, JSON.stringify(response))
       },
-      error: (err) => {
-        // console.error(err)
+      error: (error) => {
+        // console.error(error)
         this.loginFailed$.next(true)
       }
 
@@ -105,7 +107,16 @@ export class AuthService {
   }
 
   signup(signupData: ISignUpData): void {
+    this.http.post(this.signupUrl, signupData).subscribe({
+      next: (response) => {
+        this.router.navigate(['/','login'])
+      },
+      error: (error) => {
+        // console.error(error)
+        this.signUpFailed$.next(true)
+      }
 
+    })
   }
 
 }

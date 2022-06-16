@@ -53,11 +53,6 @@ export const navItems: INavData[] = [
   {
     name: 'Tester',
     url: '/admin',
-    iconComponent: { name: 'cilSortAscending' }
-  },
-  {
-    name: 'Tester',
-    url: '/admin',
     iconComponent: { name: 'cilFeaturedPlaylist' }
   },
   {
@@ -75,7 +70,7 @@ export const navItems: INavData[] = [
     url: '/admin',
     iconComponent: { name: 'cilArrowCircleRight' }
   },
-  
+
 ];
 
 // other useful options:

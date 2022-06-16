@@ -68,7 +68,7 @@ const routes: Routes = [
     },
     children: [
       {
-        path: 'dashboard',
+        path: '',
         component: DashboardComponent,
         data: {
           title: 'Vezérlőpult'

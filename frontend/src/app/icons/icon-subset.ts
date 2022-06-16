@@ -12,6 +12,7 @@ import {
   cibTwitter,
   cifBr, 
   cifUs,
+  cilAccountLogout,
   cilAlignCenter,
   cilAlignLeft,
   cilAlignRight,
@@ -119,6 +120,7 @@ export const iconSubset = {
   cifBr,  
   cifUs,
 
+  cilAccountLogout,
   cilAlignCenter,
   cilAlignLeft,
   cilAlignRight,
@@ -226,6 +228,7 @@ export enum IconSubset {
   cifBr = 'cifBr',  
   cifUs = 'cifUs',
 
+  cilAccountLogout ='cilAccountLogout',
   cilAlignCenter = 'cilAlignCenter',
   cilAlignLeft = 'cilAlignLeft',
   cilAlignRight = 'cilAlignRight',

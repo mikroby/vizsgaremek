@@ -10,12 +10,13 @@ export class SignupComponent implements OnInit {
 
   signUpFailed$ = this.auth.signUpFailed$
 
-  signUpData: ISignUpData = {
-    first_name: '',
-    last_name: '',
+  signupData: ISignUpData = {
+    firstName: '',
+    lastName: '',
     email: '',
     password: '',
-    role: 2
+    role: 2,
+    avatar: '8'
   };
 
   user$ = this.auth.user$;
@@ -29,7 +30,7 @@ export class SignupComponent implements OnInit {
   }
 
   trySignUp(): void {
-    // this.auth.signup(this.signUpData)
+    this.auth.signup(this.signupData)
   }
 
   onFocus(): void {

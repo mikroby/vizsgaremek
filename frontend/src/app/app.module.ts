@@ -67,6 +67,7 @@ import { SearchComponent } from './page/search/search.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
+import { SelectCategoryComponent } from './page/select-category/select-category.component';
 
 
 @NgModule({
@@ -88,6 +89,7 @@ import { ForbiddenComponent } from './page/forbidden/forbidden.component';
     HomeLayoutComponent,
     SearchComponent,
     ForbiddenComponent,
+    SelectCategoryComponent,
    
   ],
   imports: [

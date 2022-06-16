@@ -19,7 +19,7 @@ fetch('http://localhost:3000/login', {
     headers: {
         'Content-Type': 'application/json'
     },
-    body: '{"email": "t@t.hu", "password": "012"}',
+    body: '{"email": "a@a.hu", "password": "012"}',
 }).then(r => r.json())
     .then( d => console.log(d) );
 ```

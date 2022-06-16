@@ -54,7 +54,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
 
   constructor(
     private config: ConfigService,
-    private route: ActivatedRoute,
+    private ar: ActivatedRoute,
   ) { }
 
   ngOnInit(): void {
@@ -113,7 +113,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   }
 
   getRouteData(): void {
-    this.route.data.subscribe(params => {
+    this.ar.data.subscribe(params => {
       this.tableTitle = params['title']
     })
   }

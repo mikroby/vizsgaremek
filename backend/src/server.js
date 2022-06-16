@@ -38,11 +38,10 @@ app.use(express.static('public'))
 // JSON parsing the body of incoming request.
 app.use(bodyParser.json())
 
-
 // Login
 app.use('/login', require('./controller/login/router'))
 // Signup
-
+app.use('/signup', require('./controller/login/router'))
 
 // Category
 app.use('/category', authencticateJwt, require('./controller/category/router'))
