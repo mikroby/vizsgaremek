@@ -57,10 +57,10 @@ app.use('/order', authencticateJwt, require('./controller/order/router'))
 // SwaggerUI docs available here. temporarily 404
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 app.use('/api-docs', (req, res,) => { res.sendStatus(404) })
-// request for anything else sends a welcome screen.
-app.use('/', (req, res, next) => {
+// request for /welcome sends a welcome screen.
+app.get('/welcome', (req, res, next) => {
   console.log(req.url)
-  res.sendFile('index.html', { root: join(__dirname, '../public/') })
+  res.sendFile('index.html', { root: join(__dirname, '../welcome/') })
 })
 
 // Error Handling.

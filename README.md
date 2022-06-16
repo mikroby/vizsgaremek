@@ -23,8 +23,8 @@
 
 A fejléc szerkezete:
 + a főcím megjelenítése középen, egyben "Home" link-ként minden esetben erre a főoldalra navigál.
-+ bal szélen az aktuális dátum és időpont, mely folyamatosan frissül
-+ jobb szélen az adminisztrátor ikonja, melyre kattintva a beléptető oldara navigál.
++ bal szélen az aktuális dátum és időpont, a hét napjának rövidítésével, mely folyamatosan frissül
++ jobb szélen a "bejelentkezés" felirat látható, melyre kattintva a beléptető oldara navigál.
 
 **3. User Story:**
 
@@ -136,6 +136,24 @@ A fejléc szerkezete:
 + Ha a beléptetés elvégezhető innen a megfelelő oldalra navigál. Adminisztrátor esetében az "admin" oldalra, szakember esetében a "szerkesztő" oldalra.
 + Ha a megadott azonosító adatok nem megfelelőek, hibaüzenet jelenik meg. Újrapróbálkozás lehetséges.
 
+**2. User Story:**
+
+> _Az egyes oldalak megtekintése jogosultsághoz kötött_
+
+**Elfogadási kritérium:**
+
++ Jogosultság alapján szervezett elérési út rendszer.
++ JWT autentikáció használata.
++ Back-end felől beszerzett adatok alapján session-storage-ba mentett bejelentkezési adatok, melyek onnan bármikor kinyerhetők az alkalmazás számára.
++ Ezen adatok: felhasználó neve, e-mail címe, jogköre, access_token, belépés sikerességét jelző logikai érték.
+
+**3. User Story:**
+
+> _A nem jogosult oldalak helyett tájékoztató üzenet jelenik meg a megfelelő bejelentkezés szükségességéről._
+
+**Elfogadási kritérium:**
+
++ Szöveges tájékoztató oldal a hiba okáról a bejelentkezésre lehetőséget biztosító, kattintható gomb megjelenítésével.
 
 ---------------------------------------------------------
 ## 5. Regisztrációs oldal

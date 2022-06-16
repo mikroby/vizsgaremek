@@ -63,7 +63,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     this.pageSize = this.config.defaultPageSize > this.list.length ?
       this.list.length : this.config.defaultPageSize
     this.calculateRows()
-    this.sortBy = this.displayedColumns[0].key
+    // this.sortBy = this.displayedColumns[0].key
   }
 
   jumpToPage(pageTo: number): void {
@@ -118,10 +118,11 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     })
   }
 
-  // táblázat adatainak típusvizsgálata a záróprojekt material-ból:
+  // data boolean type-check for nicer display
   isBoolean(value: any): boolean {
     return (typeof value === 'boolean');
   }
+
   // isNestedObject(value: any): boolean {
   //   return (typeof value === 'object');
   // }
