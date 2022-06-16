@@ -1,11 +1,10 @@
-const express = require('express')
-const User = require('../../model/user')
-const jwt = require('jsonwebtoken')
-const createError = require('http-errors')
+const express = require('express');
+const User = require('../../model/user');
+const jwt = require('jsonwebtoken');
 
-const router = express.Router()
+const router = express.Router();
 
-// POST request
+// POST
 router.post('/', async (req, res, next) => {
 
     // TESZT USER REGISZTRÁLÁSA: (fetch POST kérésre a böngészőből)
@@ -16,7 +15,7 @@ router.post('/', async (req, res, next) => {
     //     password: '012',
     //     role: 3
     // })
-    
+
     // const newUser = new User({
     //     email: 'x@x.hu',
     //     lastName: 'Expert',
@@ -26,24 +25,27 @@ router.post('/', async (req, res, next) => {
     // })
 
     // try {
-    //     await newUser.save()
+    //     await newUser.save();
     // } catch(e) {
-    //     res.statusCode = 401
-    //     return res.json({error: 'Database Error!'})
+    //     res.statusCode = 401;
+    //     return res.json({error: 'Database Error!'});
     // }
-    // return res.json({message: 'user created'})
+    // return res.json({message: 'user created'});
 
-    const { email, password } = req.body
-    const user = await User.findOne({ email })
+
+    const { email, password } = req.body;
+    const user = await User.findOne({ email });
 
     if (!user) {
-        // user not registered
-        return next(new createError.Unauthorized('Authorization process failed.'))       
+        // user not registered in the database
+        return res.sendStatus(401);
     }
 
-    const valid = user.verifyPasswordSync(password)
-
-    if (valid) {
+    user.comparePassword(password, function (err, isMatch) {
+        if (err || !isMatch) {
+            // bad password
+            return res.sendStatus(403);
+        }
         // Login successful, sign access_token
         const accessToken = jwt.sign({
             _id: user._id,
@@ -51,19 +53,15 @@ router.post('/', async (req, res, next) => {
             role: user.role,
         }, `${process.env.ACCES_TOKEN_SECRET}`, {
             expiresIn: process.env.TOKEN_EXPIRY,
-        })
-        // send access_token and user datas to frontend
+        });
+        // send access_token back with user datas
         res.json({
             success: true,
             accessToken,
             user: { ...user._doc, password: '' },
-        })
-    } else {
-        // bad password
-        return next(new createError.Unauthorized('Authorization process failed.'))
-    }
+        });
+    });
+});
 
-})
-
-module.exports = router
+module.exports = router;
 
