@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService, ISignUpData } from 'src/app/service/auth.service';
+import { User } from 'src/app/model/user';
+import { AuthService } from 'src/app/service/auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -10,14 +11,7 @@ export class SignupComponent implements OnInit {
 
   signUpFailed$ = this.auth.signUpFailed$
 
-  signupData: ISignUpData = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
-    role: 2,
-    avatar: '8'
-  };
+  signupData: User = new User()
 
   user$ = this.auth.user$;
 

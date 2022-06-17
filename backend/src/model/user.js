@@ -8,16 +8,19 @@ const UserSchema = mongoose.Schema({
             unique: true,
         },
     },
-    lastName: String,
-    firstName: String,
+    lastName: {
+        type: String,
+        required: true,
+    },
+    firstName: {
+        type: String,
+        required: true,
+    },
     role: {
         type: Number,
         required: true
     },
-    avatar: {
-        type:Number,
-        required:true
-    }
+    avatar: String
 });
 
 UserSchema.plugin(require('mongoose-bcrypt'));

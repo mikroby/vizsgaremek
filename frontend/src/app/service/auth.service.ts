@@ -18,15 +18,6 @@ export interface ILoginData {
   // role?: number
 }
 
-export interface ISignUpData {
-  firstName: string
-  lastName: string
-  email: string
-  password: string
-  role: number
-  avatar: string
-}
-
 @Injectable({
   providedIn: 'root'
 })
@@ -80,7 +71,6 @@ export class AuthService {
         }
       }
     })
-
   }
 
   get currentUser(): User | null {
@@ -98,7 +88,6 @@ export class AuthService {
         // console.error(error)
         this.loginFailed$.next(true)
       }
-
     })
   }
 
@@ -106,7 +95,7 @@ export class AuthService {
     this.user$.next(null)
   }
 
-  signup(signupData: ISignUpData): void {
+  signup(signupData: User): void {
     this.http.post(this.signupUrl, signupData).subscribe({
       next: (response) => {
         this.router.navigate(['/','login'])
@@ -115,7 +104,6 @@ export class AuthService {
         // console.error(error)
         this.signUpFailed$.next(true)
       }
-
     })
   }
 

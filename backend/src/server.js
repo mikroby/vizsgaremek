@@ -39,9 +39,9 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 
 // Login
-app.use('/login', require('./controller/login/router'))
+app.post('/login', require('./module/auth/login'))
 // Signup
-app.use('/signup', require('./controller/login/router'))
+app.post('/signup', require('./module/auth/signup'))
 
 // Category
 app.use('/category', authencticateJwt, require('./controller/category/router'))
