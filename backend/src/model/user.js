@@ -20,7 +20,10 @@ const UserSchema = mongoose.Schema({
         type: Number,
         required: true
     },
-    avatar: String
+    avatar: {
+        type: String,
+        required: true
+    }
 });
 
 UserSchema.plugin(require('mongoose-bcrypt'));

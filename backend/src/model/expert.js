@@ -21,14 +21,8 @@ const ExpertSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  age: {
-    type: Number,
-    required: false,
-  },
-  gender: {
-    type: String,
-    required: false,
-  },
+  age: Number,
+  gender: String,
   email: {
     type: String,
     required: true,
@@ -36,11 +30,7 @@ const ExpertSchema = mongoose.Schema({
   phone: {
     type: String,
     required: true,
-  },
-  password: {
-    type: String,
-    required: true,
-  },
+  },  
   workDays: {
     type: Array,
     required: true,
@@ -54,9 +44,11 @@ const ExpertSchema = mongoose.Schema({
     required: true,
   },
   rating: {
+    min: 0,
+    max: 10,
     type: Number,
     required: true
-  }  
+  }
 });
 
 module.exports = mongoose.model('Expert', ExpertSchema)

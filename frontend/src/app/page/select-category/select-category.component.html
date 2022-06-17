@@ -1,1 +1,11 @@
-<p>select-category works!</p>
+<div class="container">
+  <div class="row mb-3">
+    <div class="col-12 h3 text-muted">{{listTitle}}</div>
+  </div>
+
+  <div class="mb-3">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
+      <app-card [card]="category" *ngFor="let category of list"> </app-card>
+    </div>
+  </div>
+</div>

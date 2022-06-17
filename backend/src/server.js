@@ -1,18 +1,19 @@
 const config = require('config')
-const logger = require('./module/logger')
 const express = require('express')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
+const { join } = require('path')
 // const swaggerUi = require('swagger-ui-express')
 // const YAML = require('yamljs')
-// const swaggerDocument = YAML.load('./docs/swagger.yaml')
-const { join } = require('path')
-const app = express()
 
-const authencticateJwt = require('./module/auth/authenticate')
 const { host, user, pass } = config.get('database')
+const logger = require('./module/logger')
+const authencticateJwt = require('./module/auth/authenticate')
+// const swaggerDocument = YAML.load('./docs/swagger.yaml')
+
+const app = express()
 
 // Mongoose Connection establishment.
 mongoose.connect(`mongodb+srv://${host}`, {
@@ -44,7 +45,7 @@ app.post('/login', require('./module/auth/login'))
 app.post('/signup', require('./module/auth/signup'))
 
 // Category
-app.use('/category', authencticateJwt, require('./controller/category/router'))
+app.use('/category', require('./controller/category/router'))
 // Customer
 app.use('/customer', authencticateJwt, require('./controller/customer/router'))
 // Expert
@@ -59,7 +60,7 @@ app.use('/api-docs', (req, res,) => { res.sendStatus(404) })
 // request for /welcome sends a welcome screen.
 app.get('/welcome', (req, res, next) => {
   console.log(req.url)
-  res.sendFile('index.html', { root: join(__dirname, '../welcome/') })
+  res.sendFile('index.html', { root: '/welcome' })
 })
 
 // Error Handling.

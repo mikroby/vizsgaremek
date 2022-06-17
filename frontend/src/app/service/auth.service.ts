@@ -10,6 +10,7 @@ export interface IAuthModel {
   accessToken: string
   user: User
   role: number
+  avatar: string
 }
 
 export interface ILoginData {
@@ -77,6 +78,10 @@ export class AuthService {
     return this.user$.value
   }
 
+  get currentAvatarUrl(): string {
+    return `${this.apiUrl}avatar/${this.currentUser?.avatar}`
+  }
+
   login(loginData: ILoginData): void {
     this.http.post<IAuthModel>(this.loginUrl, loginData).subscribe({
       next: (response: IAuthModel) => {
@@ -98,7 +103,7 @@ export class AuthService {
   signup(signupData: User): void {
     this.http.post(this.signupUrl, signupData).subscribe({
       next: (response) => {
-        this.router.navigate(['/','login'])
+        this.router.navigate(['/', 'login'])
       },
       error: (error) => {
         // console.error(error)

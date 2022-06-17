@@ -4,5 +4,5 @@ export class Category {
   categoryID: number = 0
   name: string = ''
   job: string[] = []
-
+  logo: string=''
 }

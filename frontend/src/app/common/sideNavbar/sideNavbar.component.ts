@@ -25,7 +25,7 @@ export class SideNavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // sideBar and header toggle correction.
+  // CoreUI sideBar and header toggle correction.
   changeWrapper(): void {
     const wrapper = (document.querySelector('.wrapper') as HTMLDivElement)
     const sideBar = document.querySelector('c-sidebar')?.classList;

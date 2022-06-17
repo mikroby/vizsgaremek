@@ -5,5 +5,5 @@ export class User {
   firstName: string = ''
   password?: string = ''
   role: number = 2
-  avatar: string = '8'
+  avatar: string = 'default.png'
 }

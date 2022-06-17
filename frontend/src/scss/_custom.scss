@@ -21,6 +21,9 @@ $edit-button-color: $info;
 }
 
 .grow- {
+  &2:hover {
+    transform: scale(102.5%);
+  }
   &5:hover {
     transform: scale(105%);
   }
@@ -73,4 +76,3 @@ $edit-button-color: $info;
     background-color: $table-hover-bg;
   }
 }
-

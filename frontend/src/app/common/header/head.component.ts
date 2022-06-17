@@ -1,9 +1,10 @@
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { ConfigService } from 'src/app/service/config.service';
 import { Component, OnInit, Input } from '@angular/core';
 
 import { HeaderComponent } from '@coreui/angular';
 import { AuthService } from 'src/app/service/auth.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -19,9 +20,11 @@ export class HeadComponent extends HeaderComponent implements OnInit {
   sideBar_full = this.config.sideBarWidth_full
   sideBar_narrow = this.config.sideBarWidth_narrow
 
+  apiUrl: string = environment.apiUrl
+
   user$ = this.auth.user$
 
-  layout!:string
+  layout!: string
 
   constructor(
     private auth: AuthService,
@@ -37,7 +40,7 @@ export class HeadComponent extends HeaderComponent implements OnInit {
     const id = setInterval(this.showDateTime, 1000)
 
     this.ar.data.subscribe(params => {
-      this.layout = params['title']      
+      this.layout = params['title']
     })
   }
 
@@ -50,7 +53,7 @@ export class HeadComponent extends HeaderComponent implements OnInit {
     this.chronometer = `${dateString} - ${day} - ${timeString}`
   }
 
-  // sideBar and header toggle correction.
+  // CoreUI sideBar and header toggle correction.
   changeSidebar(): void {
     const wrapper = (document.querySelector('.wrapper') as HTMLDivElement)
     const sideBar = document.querySelector('c-sidebar')?.classList;
@@ -60,6 +63,10 @@ export class HeadComponent extends HeaderComponent implements OnInit {
       wrapper.style.paddingLeft = sideBar?.contains('sidebar-narrow-unfoldable') ?
         this.sideBar_narrow : this.sideBar_full
     }
+  }
+
+  getAvatar(): string {
+    return this.auth.currentAvatarUrl
   }
 
 }

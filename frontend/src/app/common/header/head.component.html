@@ -15,7 +15,7 @@
     <!-- nav links -->
     <c-header-nav class="d-flex ms-auto" role="navigation">
       <a cNavLink routerLink="/home" routerLinkActive="active" class="grow-10 fw-bolder">MesterEmber</a>
-      <a cNavLink routerLink="/search" routerLinkActive="active" class="grow-10">Keresés</a>
+      <a cNavLink routerLink="/select" routerLinkActive="active" class="grow-10">Keresés</a>
       <a cNavLink routerLink="/signup" routerLinkActive="active" class="grow-10">Regisztráció</a>
     </c-header-nav>
 
@@ -43,7 +43,7 @@
 
     <button cButton color="" [caret]="false" cDropdownToggle class="py-0">
       <c-avatar cTextColor="primary" shape="rounded-1" size="md"
-        src="./assets/images/avatars/{{(user$ | async)?.avatar}}.jpg" status="success">
+        [src]="getAvatar()" status="success">
       </c-avatar>
     </button>
 

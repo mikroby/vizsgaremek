@@ -12,6 +12,7 @@ import { LoginComponent } from './page/login/login.component';
 import { SignupComponent } from './page/signup/signup.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
+import { SelectCategoryComponent } from './page/select-category/select-category.component';
 import { SearchComponent } from './page/search/search.component';
 import { RoleGuardService } from './service/role-guard.service';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
@@ -43,10 +44,17 @@ const routes: Routes = [
         }
       },
       {
-        path: 'search',
+        path: 'search/:category',
         component: SearchComponent,
         data: {
           title: 'Keresés'
+        }
+      },
+      {
+        path: 'select',
+        component: SelectCategoryComponent,
+        data: {
+          title: 'Kategória választás'
         }
       },
       {
