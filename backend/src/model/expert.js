@@ -21,8 +21,7 @@ const ExpertSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  age: Number,
-  gender: String,
+  age: Number,  
   email: {
     type: String,
     required: true,

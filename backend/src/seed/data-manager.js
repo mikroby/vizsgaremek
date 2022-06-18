@@ -108,15 +108,21 @@ const randomizeJob = (category, expert) =>
     return object
   });
 
+const randomizeRatings = (list) =>
+  list.map(object => {
+    const randomRating = Number((3 + Math.random() * 7).toFixed(1))
+    object.rating = randomRating
+    return object
+  });
 
 // starter
 (async () => {
   // ---------------------------------------------------
   // simple mods:
   // const fileName = 'category.json'
-  // const fileName = 'expert.json'
+  const fileName = 'expert.json'
 
-  // const list = await loadData(fileName)
+  const list = await loadData(fileName)
 
   // const moddedList = sortByProp(list, 'categoryId')
   // const moddedList = sortByProp(list, 'job')
@@ -127,16 +133,17 @@ const randomizeJob = (category, expert) =>
   // const moddedList = roundPrice(list)
   // const moddedList = randomizeCategory(list, 10)
   // const moddedList = randomizeDays(list)
+  const moddedList = randomizeRatings(list)
 
-  // await storeData(moddedList, fileName)
+  await storeData(moddedList, fileName)
 
   // ----------------------------------------------------
   // compound operations:
-  const category = await loadData('category.json')
-  const expert = await loadData('expert.json')
+  // const category = await loadData('category.json')
+  // const expert = await loadData('expert.json')
 
-  const moddedList = randomizeJob(category, expert)
-  
+  // const moddedList = randomizeJob(category, expert)
+
   await storeData(moddedList, 'expert.json')
   // ----------------------------------------------------
 

@@ -3,6 +3,7 @@ import { ICard } from './../../common/card/card.component';
 import { CategoryService } from 'src/app/service/category.service';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { Category } from 'src/app/model/category';
 
 @Component({
   selector: 'app-select-category',
@@ -11,7 +12,7 @@ import { environment } from 'src/environments/environment';
 })
 export class SelectCategoryComponent implements OnInit {
 
-  list!: ICard[]
+  list: ICard[] | null = null
 
   apiUrl: string = environment.apiUrl
 
@@ -25,19 +26,10 @@ export class SelectCategoryComponent implements OnInit {
   ngOnInit(): void {
     this.categoryService.getAll().subscribe(
       {
-        next: (res) => {
-          this.list = res.map(item => {
-            const image = `${this.apiUrl}category/${item.logo}`
-            const link = `/search/${item.categoryID}`
-            const btnText = item.name
-            // const title = item.name
-            // const link = '/search'
-            // const description = item.job
-            return { image, link, btnText } as ICard
-            // return { image, title, description, link, btnText } as ICard
-          })
+        next: response => {
+          this.list = this.mapper(response)
         },
-        error: (error) => {
+        error: error => {
           console.log(error);
         }
       }
@@ -50,6 +42,18 @@ export class SelectCategoryComponent implements OnInit {
     this.ar.data.subscribe(params => {
       this.listTitle = params['title']
     })
-  }  
+  }
+
+  // map from list to card datas
+  mapper(response: Category[]): ICard[] {
+    return response.map(item => {
+      const image = `${this.apiUrl}category/${item.logo}`
+      const link = `/search/${item.categoryID}/${item.name}`
+      const btnText = item.name
+      const description = item.job
+      const tooltip = true
+      return { image, link, btnText, description, tooltip } as ICard
+    })
+  }
 
 }

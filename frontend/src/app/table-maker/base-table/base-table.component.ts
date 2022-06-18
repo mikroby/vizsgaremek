@@ -26,7 +26,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   @Input() tableName: string = ''
   @Input() allowedButtons: IAllowedButtons = { edit: true, delete: true }
 
-  tableTitle: string = ''
+  tableTitle: string = ''  
   columns: ITableColumn[] = []
   displayedColumns: ITableColumn[] = []
   filterKey: string = ''
@@ -116,6 +116,11 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     this.ar.data.subscribe(params => {
       this.tableTitle = params['title']
     })
+    this.ar.params.subscribe(
+      params => {
+        this.tableTitle += params['category'] ? ` - ${params['category']}` : ''        
+      }
+    )
   }
 
   // data boolean type-check for nicer display

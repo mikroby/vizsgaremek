@@ -14,7 +14,7 @@ import { IconModule, IconSetService } from '@coreui/icons-angular'
 import {
   AvatarModule,
   BadgeModule,
-  BreadcrumbModule,
+  TooltipModule,
   ButtonGroupModule,
   ButtonModule,
   CardModule,
@@ -91,8 +91,8 @@ import { CardComponent } from './common/card/card.component';
     SearchComponent,
     ForbiddenComponent,
     SelectCategoryComponent,
-    CardComponent,
-   
+    // CardComponent,
+           
   ],
   imports: [
     BrowserModule,
@@ -103,7 +103,7 @@ import { CardComponent } from './common/card/card.component';
     // ReactiveFormsModule,
 
     AvatarModule,
-    // BreadcrumbModule,
+    TooltipModule,
     FooterModule,
     DropdownModule,
     GridModule,
@@ -143,7 +143,7 @@ import { CardComponent } from './common/card/card.component';
     },
     IconSetService,
     Title,
-    
+        
     // {
     //   provide: LocationStrategy,
     //   useClass: HashLocationStrategy,

@@ -44,7 +44,7 @@ const routes: Routes = [
         }
       },
       {
-        path: 'search/:category',
+        path: 'search/:id/:category',
         component: SearchComponent,
         data: {
           title: 'Keresés'

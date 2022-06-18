@@ -6,6 +6,7 @@ export interface ICard {
   description?: string[]
   link?: string
   btnText?: string
+  tooltip: boolean
 }
 
 @Component({
@@ -17,9 +18,12 @@ export class CardComponent implements OnInit {
 
   @Input() card!: ICard
 
+  tooltip?: string
+
   constructor() { }
 
   ngOnInit(): void {
+    this.tooltip = this.card.tooltip ? this.card.description?.join(', ') : ''
   }
 
 }

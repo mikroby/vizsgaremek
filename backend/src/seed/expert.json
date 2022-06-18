@@ -12,8 +12,7 @@
     "age": 27,
     "gender": "Nő",
     "email": "vtythacott0@who.int",
-    "phone": "+36-20-266-9771",
-    "password": "LhBYkKEcJ6l2",
+    "phone": "+36202669771",
     "workDays": [
       2,
       4,
@@ -21,7 +20,7 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5
+    "rating": 9.8
   },
   {
     "first_name": "Myrta",
@@ -36,8 +35,7 @@
     "age": 18,
     "gender": "Nő",
     "email": "mcundict1@wix.com",
-    "phone": "+36-20-637-4631",
-    "password": "cnxL24mF0",
+    "phone": "+36206374631",
     "workDays": [
       1,
       5,
@@ -45,7 +43,7 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5
+    "rating": 6.4
   },
   {
     "first_name": "Elonore",
@@ -60,8 +58,7 @@
     "age": 18,
     "gender": "Nő",
     "email": "ehiland2@twitter.com",
-    "phone": "+36-70-183-2501",
-    "password": "AhBeRDdm",
+    "phone": "+36701832501",
     "workDays": [
       1,
       2,
@@ -70,7 +67,7 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 7.4
   },
   {
     "first_name": "Bianca",
@@ -85,8 +82,7 @@
     "age": 46,
     "gender": "Nő",
     "email": "bkristufek3@ask.com",
-    "phone": "+36-70-262-3033",
-    "password": "TW7cNQylY",
+    "phone": "+36702623033",
     "workDays": [
       3,
       4,
@@ -94,7 +90,7 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 5
+    "rating": 9.4
   },
   {
     "first_name": "Dex",
@@ -109,14 +105,13 @@
     "age": 66,
     "gender": "Férfi",
     "email": "dbarnhart4@lulu.com",
-    "phone": "+36-30-755-8051",
-    "password": "6pAOeQbG",
+    "phone": "+36307558051",
     "workDays": [
       2
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 5.7
   },
   {
     "first_name": "Hazel",
@@ -131,15 +126,14 @@
     "age": 31,
     "gender": "Férfi",
     "email": "hsarrell5@github.io",
-    "phone": "+36-70-712-5306",
-    "password": "BdKScv",
+    "phone": "+36707125306",
     "workDays": [
       2,
       3
     ],
     "availableFrom": "6:15",
     "availableTill": "14:15",
-    "rating": 5
+    "rating": 7.5
   },
   {
     "first_name": "Luke",
@@ -154,14 +148,13 @@
     "age": 55,
     "gender": "Férfi",
     "email": "lellph6@constantcontact.com",
-    "phone": "+36-70-401-7565",
-    "password": "t33WeQe",
+    "phone": "+36704017565",
     "workDays": [
       2
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 6.4
   },
   {
     "first_name": "Stearne",
@@ -176,8 +169,7 @@
     "age": 19,
     "gender": "Férfi",
     "email": "siacovo7@e-recht24.de",
-    "phone": "+36-20-630-7840",
-    "password": "ZnEMUe",
+    "phone": "+36206307840",
     "workDays": [
       0,
       1,
@@ -186,7 +178,7 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5
+    "rating": 5.9
   },
   {
     "first_name": "Siward",
@@ -201,8 +193,7 @@
     "age": 32,
     "gender": "Férfi",
     "email": "sbartul8@huffingtonpost.com",
-    "phone": "+36-30-454-8655",
-    "password": "rv0bY6kuD",
+    "phone": "+36304548655",
     "workDays": [
       1,
       4,
@@ -210,7 +201,7 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 5
+    "rating": 4.9
   },
   {
     "first_name": "Hieronymus",
@@ -225,8 +216,7 @@
     "age": 38,
     "gender": "Férfi",
     "email": "hkenner9@abc.net.au",
-    "phone": "+36-30-790-4825",
-    "password": "cJXCa0GegH",
+    "phone": "+36307904825",
     "workDays": [
       3,
       4,
@@ -235,7 +225,7 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 5
+    "rating": 6.4
   },
   {
     "first_name": "Silvanus",
@@ -250,15 +240,14 @@
     "age": 48,
     "gender": "Férfi",
     "email": "smcreidya@cornell.edu",
-    "phone": "+36-20-937-3755",
-    "password": "R5JmoTp5g",
+    "phone": "+36209373755",
     "workDays": [
       3,
       5
     ],
     "availableFrom": "8:15",
     "availableTill": "16:15",
-    "rating": 5
+    "rating": 4.3
   },
   {
     "first_name": "Buddie",
@@ -273,8 +262,7 @@
     "age": 63,
     "gender": "Férfi",
     "email": "bblincoweb@blinklist.com",
-    "phone": "+36-20-807-5636",
-    "password": "5W7BtaAD",
+    "phone": "+36208075636",
     "workDays": [
       2,
       5,
@@ -282,7 +270,7 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 5
+    "rating": 8.3
   },
   {
     "first_name": "Charles",
@@ -297,14 +285,13 @@
     "age": 70,
     "gender": "Férfi",
     "email": "cgriffenc@sogou.com",
-    "phone": "+36-70-726-0110",
-    "password": "VDfhC7ex6A",
+    "phone": "+36707260110",
     "workDays": [
       3
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 5
+    "rating": 4.4
   },
   {
     "first_name": "Jillane",
@@ -319,15 +306,14 @@
     "age": 67,
     "gender": "Nő",
     "email": "jjerdond@abc.net.au",
-    "phone": "+36-30-111-0340",
-    "password": "9qk1r6RZcY2",
+    "phone": "+36301110340",
     "workDays": [
       1,
       3
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5
+    "rating": 3.7
   },
   {
     "first_name": "Isak",
@@ -342,8 +328,7 @@
     "age": 32,
     "gender": "Férfi",
     "email": "ihubande@com.com",
-    "phone": "+36-70-853-1190",
-    "password": "dwTWpN5qhdC",
+    "phone": "+36708531190",
     "workDays": [
       1,
       2,
@@ -351,7 +336,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 8.6
   },
   {
     "first_name": "Opaline",
@@ -366,15 +351,14 @@
     "age": 59,
     "gender": "Nő",
     "email": "ochablef@t-online.de",
-    "phone": "+36-70-999-7916",
-    "password": "b6Ww9HZS3n",
+    "phone": "+36709997916",
     "workDays": [
       0,
       4
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 5
+    "rating": 8.3
   },
   {
     "first_name": "Becka",
@@ -389,15 +373,14 @@
     "age": 72,
     "gender": "Nő",
     "email": "bsalwayg@phoca.cz",
-    "phone": "+36-30-208-4388",
-    "password": "bIu6iV9XyLH",
+    "phone": "+36302084388",
     "workDays": [
       1,
       3
     ],
     "availableFrom": "6:15",
     "availableTill": "14:15",
-    "rating": 5
+    "rating": 4.1
   },
   {
     "first_name": "Dyna",
@@ -412,8 +395,7 @@
     "age": 74,
     "gender": "Nő",
     "email": "dduinkerkh@squidoo.com",
-    "phone": "+36-30-977-8490",
-    "password": "X5sXjUWjN",
+    "phone": "+36309778490",
     "workDays": [
       2,
       3,
@@ -423,7 +405,7 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 5
+    "rating": 3
   },
   {
     "first_name": "Scotti",
@@ -438,15 +420,14 @@
     "age": 44,
     "gender": "Férfi",
     "email": "sfishei@ibm.com",
-    "phone": "+36-70-181-1570",
-    "password": "IiPHurwMLC",
+    "phone": "+36701811570",
     "workDays": [
       4,
       5
     ],
     "availableFrom": "11:30",
     "availableTill": "19:30",
-    "rating": 5
+    "rating": 9.4
   },
   {
     "first_name": "Almira",
@@ -461,8 +442,7 @@
     "age": 54,
     "gender": "Nő",
     "email": "avlasinj@cbc.ca",
-    "phone": "+36-70-535-3246",
-    "password": "OHwSqOUcf",
+    "phone": "+36705353246",
     "workDays": [
       1,
       3,
@@ -471,7 +451,7 @@
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 5
+    "rating": 7.2
   },
   {
     "first_name": "Leonelle",
@@ -486,8 +466,7 @@
     "age": 67,
     "gender": "Nő",
     "email": "loleshunink@ifeng.com",
-    "phone": "+36-30-413-6099",
-    "password": "kuMGLFK",
+    "phone": "+36304136099",
     "workDays": [
       1,
       2,
@@ -495,7 +474,7 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 5
+    "rating": 3.1
   },
   {
     "first_name": "Hamlen",
@@ -510,15 +489,14 @@
     "age": 70,
     "gender": "Férfi",
     "email": "hviveashl@ibm.com",
-    "phone": "+36-70-494-7831",
-    "password": "2xXqPK",
+    "phone": "+36704947831",
     "workDays": [
       1,
       5
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 8.7
   },
   {
     "first_name": "Robinet",
@@ -533,14 +511,13 @@
     "age": 65,
     "gender": "Nő",
     "email": "rvickm@dion.ne.jp",
-    "phone": "+36-30-276-1955",
-    "password": "9u8wm9HsGVuJ",
+    "phone": "+36302761955",
     "workDays": [
       3
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 5
+    "rating": 4.7
   },
   {
     "first_name": "Swen",
@@ -555,8 +532,7 @@
     "age": 55,
     "gender": "Férfi",
     "email": "sdundonn@nymag.com",
-    "phone": "+36-70-404-7022",
-    "password": "gWnTUgS",
+    "phone": "+36704047022",
     "workDays": [
       0,
       1,
@@ -580,8 +556,7 @@
     "age": 38,
     "gender": "Nő",
     "email": "cseneschalo@rakuten.co.jp",
-    "phone": "+36-30-288-4918",
-    "password": "PpjY547Whdi",
+    "phone": "+36302884918",
     "workDays": [
       0,
       1,
@@ -592,7 +567,7 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 9.1
   },
   {
     "first_name": "Lexie",
@@ -607,15 +582,14 @@
     "age": 41,
     "gender": "Nő",
     "email": "lkerriganp@wp.com",
-    "phone": "+36-30-273-7192",
-    "password": "griD62Xl9O",
+    "phone": "+36302737192",
     "workDays": [
       3,
       4
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 5
+    "rating": 6.3
   },
   {
     "first_name": "Clo",
@@ -630,8 +604,7 @@
     "age": 41,
     "gender": "Nő",
     "email": "cgaiterq@storify.com",
-    "phone": "+36-30-803-9230",
-    "password": "2v2ecN3Vl5O",
+    "phone": "+36308039230",
     "workDays": [
       0,
       2,
@@ -640,7 +613,7 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 4.4
   },
   {
     "first_name": "Sol",
@@ -655,8 +628,7 @@
     "age": 29,
     "gender": "Férfi",
     "email": "spreuvostr@examiner.com",
-    "phone": "+36-20-208-3167",
-    "password": "ZzPGMI2k",
+    "phone": "+36202083167",
     "workDays": [
       0,
       4,
@@ -664,7 +636,7 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 3.6
   },
   {
     "first_name": "Bernarr",
@@ -679,15 +651,14 @@
     "age": 23,
     "gender": "Férfi",
     "email": "bfranzonettis@nih.gov",
-    "phone": "+36-20-619-6601",
-    "password": "1KCDkroKxm",
+    "phone": "+36206196601",
     "workDays": [
       2,
       5
     ],
     "availableFrom": "6:15",
     "availableTill": "14:15",
-    "rating": 5
+    "rating": 6.3
   },
   {
     "first_name": "Reiko",
@@ -702,15 +673,14 @@
     "age": 50,
     "gender": "Nő",
     "email": "rwhightt@cnet.com",
-    "phone": "+36-30-653-6687",
-    "password": "DkjCE4nd",
+    "phone": "+36306536687",
     "workDays": [
       0,
       2
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5
+    "rating": 3.5
   },
   {
     "first_name": "Karlen",
@@ -725,8 +695,7 @@
     "age": 27,
     "gender": "Nő",
     "email": "kmacaskillu@ovh.net",
-    "phone": "+36-20-571-9107",
-    "password": "7k0c0v",
+    "phone": "+36205719107",
     "workDays": [
       1,
       2,
@@ -734,7 +703,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 9.7
   },
   {
     "first_name": "Robbi",
@@ -749,8 +718,7 @@
     "age": 54,
     "gender": "Nő",
     "email": "rbalfrev@umn.edu",
-    "phone": "+36-70-403-3506",
-    "password": "xR2GfbJKvTOM",
+    "phone": "+36704033506",
     "workDays": [
       0,
       4,
@@ -758,7 +726,7 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 5
+    "rating": 4.7
   },
   {
     "first_name": "Ted",
@@ -773,8 +741,7 @@
     "age": 73,
     "gender": "Férfi",
     "email": "tmataninw@delicious.com",
-    "phone": "+36-30-781-8273",
-    "password": "kS2g8TBa",
+    "phone": "+36307818273",
     "workDays": [
       0,
       2,
@@ -783,7 +750,7 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 5.7
   },
   {
     "first_name": "Marisa",
@@ -798,8 +765,7 @@
     "age": 70,
     "gender": "Nő",
     "email": "mbrandsmax@last.fm",
-    "phone": "+36-30-461-8087",
-    "password": "Nm6BWNqCv0",
+    "phone": "+36304618087",
     "workDays": [
       2,
       3,
@@ -807,7 +773,7 @@
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 5
+    "rating": 6.4
   },
   {
     "first_name": "Siward",
@@ -822,8 +788,7 @@
     "age": 62,
     "gender": "Férfi",
     "email": "stolery@behance.net",
-    "phone": "+36-20-702-9793",
-    "password": "cfkXnamFfq",
+    "phone": "+36207029793",
     "workDays": [
       1,
       2,
@@ -831,7 +796,7 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 5
+    "rating": 3.5
   },
   {
     "first_name": "Bessie",
@@ -846,14 +811,13 @@
     "age": 51,
     "gender": "Nő",
     "email": "bcaffinz@irs.gov",
-    "phone": "+36-20-424-0626",
-    "password": "uK9BiYZ",
+    "phone": "+36204240626",
     "workDays": [
       5
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 5
+    "rating": 3.4
   },
   {
     "first_name": "Raimund",
@@ -868,8 +832,7 @@
     "age": 44,
     "gender": "Férfi",
     "email": "rbecks10@nyu.edu",
-    "phone": "+36-20-967-5109",
-    "password": "GgEwUoASg2",
+    "phone": "+36209675109",
     "workDays": [
       0,
       2,
@@ -879,7 +842,7 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5
+    "rating": 7.1
   },
   {
     "first_name": "Clare",
@@ -894,15 +857,14 @@
     "age": 59,
     "gender": "Nő",
     "email": "clatehouse11@stanford.edu",
-    "phone": "+36-30-205-1841",
-    "password": "N0EBzRUALvi",
+    "phone": "+36302051841",
     "workDays": [
       2,
       4
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5
+    "rating": 8.3
   },
   {
     "first_name": "Kristos",
@@ -917,15 +879,14 @@
     "age": 47,
     "gender": "Férfi",
     "email": "kpollitt12@webeden.co.uk",
-    "phone": "+36-70-854-4529",
-    "password": "Ar6vgUyC",
+    "phone": "+36708544529",
     "workDays": [
       3,
       4
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5
+    "rating": 9.2
   },
   {
     "first_name": "Annelise",
@@ -940,15 +901,14 @@
     "age": 31,
     "gender": "Nő",
     "email": "aaingel13@gov.uk",
-    "phone": "+36-20-421-6360",
-    "password": "2PV6te26D",
+    "phone": "+36204216360",
     "workDays": [
       1,
       4
     ],
     "availableFrom": "8:15",
     "availableTill": "16:15",
-    "rating": 5
+    "rating": 3.6
   },
   {
     "first_name": "Catharine",
@@ -963,15 +923,14 @@
     "age": 19,
     "gender": "Nő",
     "email": "csichardt14@goodreads.com",
-    "phone": "+36-70-662-0057",
-    "password": "f9CelOX",
+    "phone": "+36706620057",
     "workDays": [
       1,
       3
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5
+    "rating": 6.7
   },
   {
     "first_name": "Ardath",
@@ -986,8 +945,7 @@
     "age": 45,
     "gender": "Nő",
     "email": "amordecai15@ihg.com",
-    "phone": "+36-70-886-7560",
-    "password": "Umn4IizY",
+    "phone": "+36708867560",
     "workDays": [
       2,
       3,
@@ -995,7 +953,7 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 6.5
   },
   {
     "first_name": "Morgun",
@@ -1010,8 +968,7 @@
     "age": 22,
     "gender": "Férfi",
     "email": "mgimber16@abc.net.au",
-    "phone": "+36-20-774-1142",
-    "password": "LssBtKN0tOJU",
+    "phone": "+36207741142",
     "workDays": [
       1,
       2,
@@ -1020,7 +977,7 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 5.1
   },
   {
     "first_name": "Fredericka",
@@ -1035,15 +992,14 @@
     "age": 48,
     "gender": "Nő",
     "email": "fallberry17@joomla.org",
-    "phone": "+36-20-854-6004",
-    "password": "VXtaCUCeKo7n",
+    "phone": "+36208546004",
     "workDays": [
       3,
       5
     ],
     "availableFrom": "9:45",
     "availableTill": "17:45",
-    "rating": 5
+    "rating": 9.1
   },
   {
     "first_name": "Valery",
@@ -1058,15 +1014,14 @@
     "age": 33,
     "gender": "Nő",
     "email": "vbrinkley18@psu.edu",
-    "phone": "+36-20-947-2727",
-    "password": "kW4GRcIEBt5",
+    "phone": "+36209472727",
     "workDays": [
       2,
       4
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 6.5
   },
   {
     "first_name": "Corby",
@@ -1081,15 +1036,14 @@
     "age": 21,
     "gender": "Férfi",
     "email": "ccornillot19@prweb.com",
-    "phone": "+36-70-345-4304",
-    "password": "2yBwZTMzC2",
+    "phone": "+36703454304",
     "workDays": [
       2,
       3
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 5
+    "rating": 9.3
   },
   {
     "first_name": "Arv",
@@ -1104,8 +1058,7 @@
     "age": 63,
     "gender": "Férfi",
     "email": "acavolini1a@parallels.com",
-    "phone": "+36-20-953-0330",
-    "password": "lckFCzeMdo",
+    "phone": "+36209530330",
     "workDays": [
       2,
       4,
@@ -1113,7 +1066,7 @@
     ],
     "availableFrom": "11:45",
     "availableTill": "19:45",
-    "rating": 5
+    "rating": 7
   },
   {
     "first_name": "Aida",
@@ -1128,14 +1081,13 @@
     "age": 19,
     "gender": "Nő",
     "email": "agrigson1b@shareasale.com",
-    "phone": "+36-30-523-4577",
-    "password": "8WOJA7jwwmjd",
+    "phone": "+36305234577",
     "workDays": [
       2
     ],
     "availableFrom": "9:45",
     "availableTill": "17:45",
-    "rating": 5
+    "rating": 8.8
   },
   {
     "first_name": "Tudor",
@@ -1150,8 +1102,7 @@
     "age": 36,
     "gender": "Férfi",
     "email": "tgamwell1c@nih.gov",
-    "phone": "+36-30-757-2974",
-    "password": "fwYxsVRBj",
+    "phone": "+36307572974",
     "workDays": [
       1,
       2,
@@ -1161,7 +1112,7 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 5.2
   },
   {
     "first_name": "Chryste",
@@ -1176,8 +1127,7 @@
     "age": 73,
     "gender": "Nő",
     "email": "csherrock1d@amazon.co.jp",
-    "phone": "+36-30-279-9831",
-    "password": "pYdtWEe5QNZ",
+    "phone": "+36302799831",
     "workDays": [
       1,
       3,
@@ -1185,7 +1135,7 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5
+    "rating": 7.2
   },
   {
     "first_name": "Maurine",
@@ -1200,8 +1150,7 @@
     "age": 51,
     "gender": "Nő",
     "email": "membleton1e@people.com.cn",
-    "phone": "+36-20-109-5096",
-    "password": "ygks7Ah",
+    "phone": "+36201095096",
     "workDays": [
       0,
       2,
@@ -1211,7 +1160,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 9.9
   },
   {
     "first_name": "Mollie",
@@ -1226,14 +1175,13 @@
     "age": 51,
     "gender": "Nő",
     "email": "mpraill1f@goo.gl",
-    "phone": "+36-20-404-0802",
-    "password": "PsVsTN",
+    "phone": "+36204040802",
     "workDays": [
       3
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5
+    "rating": 8.5
   },
   {
     "first_name": "Lonee",
@@ -1248,8 +1196,7 @@
     "age": 53,
     "gender": "Nő",
     "email": "landrews1g@photobucket.com",
-    "phone": "+36-20-810-5349",
-    "password": "ye0fVYkl8dz",
+    "phone": "+36208105349",
     "workDays": [
       1,
       2,
@@ -1258,7 +1205,7 @@
     ],
     "availableFrom": "9:15",
     "availableTill": "17:15",
-    "rating": 5
+    "rating": 3.2
   },
   {
     "first_name": "Brennen",
@@ -1273,8 +1220,7 @@
     "age": 35,
     "gender": "Férfi",
     "email": "bstanex1h@pen.io",
-    "phone": "+36-30-895-4046",
-    "password": "D7Wly0A",
+    "phone": "+36308954046",
     "workDays": [
       1,
       2,
@@ -1282,7 +1228,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 3.1
   },
   {
     "first_name": "Abigael",
@@ -1297,8 +1243,7 @@
     "age": 70,
     "gender": "Nő",
     "email": "akerfut1i@google.com.au",
-    "phone": "+36-20-969-8662",
-    "password": "G53GCZoXfnB1",
+    "phone": "+36209698662",
     "workDays": [
       1,
       2,
@@ -1307,7 +1252,7 @@
     ],
     "availableFrom": "8:00",
     "availableTill": "16:00",
-    "rating": 5
+    "rating": 4.4
   },
   {
     "first_name": "Lane",
@@ -1322,14 +1267,13 @@
     "age": 39,
     "gender": "Férfi",
     "email": "lbooth1j@washington.edu",
-    "phone": "+36-30-523-8895",
-    "password": "8ksiwLpbz50",
+    "phone": "+36305238895",
     "workDays": [
       2
     ],
     "availableFrom": "6:50",
     "availableTill": "14:50",
-    "rating": 5
+    "rating": 7.7
   },
   {
     "first_name": "Junette",
@@ -1344,15 +1288,14 @@
     "age": 39,
     "gender": "Nő",
     "email": "jmacourek1k@baidu.com",
-    "phone": "+36-30-106-5992",
-    "password": "QnOQ1nxDX8",
+    "phone": "+36301065992",
     "workDays": [
       2,
       5
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 5
+    "rating": 8
   },
   {
     "first_name": "Rosamond",
@@ -1367,15 +1310,14 @@
     "age": 55,
     "gender": "Nő",
     "email": "rdalgliesh1l@seesaa.net",
-    "phone": "+36-30-941-8018",
-    "password": "7glXeT",
+    "phone": "+36309418018",
     "workDays": [
       3,
       6
     ],
     "availableFrom": "8:15",
     "availableTill": "16:15",
-    "rating": 5
+    "rating": 4.4
   },
   {
     "first_name": "Farlay",
@@ -1390,15 +1332,14 @@
     "age": 59,
     "gender": "Férfi",
     "email": "fbusain1m@ucoz.com",
-    "phone": "+36-70-985-1279",
-    "password": "AW2euJRmae",
+    "phone": "+36709851279",
     "workDays": [
       4,
       6
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 5
+    "rating": 8.7
   },
   {
     "first_name": "Cassie",
@@ -1413,15 +1354,14 @@
     "age": 66,
     "gender": "Nő",
     "email": "cbonifazio1n@whitehouse.gov",
-    "phone": "+36-30-877-9514",
-    "password": "nzt9r1Yr",
+    "phone": "+36308779514",
     "workDays": [
       0,
       5
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 5
+    "rating": 4.1
   },
   {
     "first_name": "Torin",
@@ -1436,8 +1376,7 @@
     "age": 24,
     "gender": "Férfi",
     "email": "tkondrat1o@creativecommons.org",
-    "phone": "+36-30-243-8389",
-    "password": "oBhnIGPEd",
+    "phone": "+36302438389",
     "workDays": [
       2,
       3,
@@ -1445,7 +1384,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 8.5
   },
   {
     "first_name": "Brok",
@@ -1460,8 +1399,7 @@
     "age": 39,
     "gender": "Férfi",
     "email": "bheild1p@slate.com",
-    "phone": "+36-70-972-5699",
-    "password": "vaSMmm7",
+    "phone": "+36709725699",
     "workDays": [
       0,
       1,
@@ -1470,7 +1408,7 @@
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 5
+    "rating": 4
   },
   {
     "first_name": "Georgianne",
@@ -1485,15 +1423,14 @@
     "age": 40,
     "gender": "Nő",
     "email": "gwilkenson1q@angelfire.com",
-    "phone": "+36-30-664-8343",
-    "password": "7MTkmYT",
+    "phone": "+36306648343",
     "workDays": [
       0,
       2
     ],
     "availableFrom": "8:45",
     "availableTill": "16:45",
-    "rating": 5
+    "rating": 4.9
   },
   {
     "first_name": "Adair",
@@ -1508,15 +1445,14 @@
     "age": 28,
     "gender": "Férfi",
     "email": "aflowitt1r@feedburner.com",
-    "phone": "+36-30-619-0822",
-    "password": "kqpIVOS",
+    "phone": "+36306190822",
     "workDays": [
       1,
       4
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 5
+    "rating": 4.7
   },
   {
     "first_name": "Nathanial",
@@ -1531,14 +1467,13 @@
     "age": 46,
     "gender": "Férfi",
     "email": "nlensch1s@163.com",
-    "phone": "+36-30-548-5898",
-    "password": "BAFPoBs",
+    "phone": "+36305485898",
     "workDays": [
       6
     ],
     "availableFrom": "8:45",
     "availableTill": "16:45",
-    "rating": 5
+    "rating": 8.3
   },
   {
     "first_name": "Crosby",
@@ -1553,15 +1488,14 @@
     "age": 36,
     "gender": "Férfi",
     "email": "cyanez1t@state.tx.us",
-    "phone": "+36-30-197-5431",
-    "password": "WOwAs9iDXM",
+    "phone": "+36301975431",
     "workDays": [
       3,
       4
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 3.3
   },
   {
     "first_name": "Barbette",
@@ -1576,8 +1510,7 @@
     "age": 60,
     "gender": "Nő",
     "email": "bkiddey1u@upenn.edu",
-    "phone": "+36-30-339-8278",
-    "password": "l94n8H",
+    "phone": "+36303398278",
     "workDays": [
       1,
       4,
@@ -1585,7 +1518,7 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 6.8
   },
   {
     "first_name": "Rana",
@@ -1600,8 +1533,7 @@
     "age": 22,
     "gender": "Nő",
     "email": "rshutler1v@wikipedia.org",
-    "phone": "+36-70-657-2838",
-    "password": "TlgvDXlp",
+    "phone": "+36706572838",
     "workDays": [
       1,
       4,
@@ -1609,7 +1541,7 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5
+    "rating": 8.1
   },
   {
     "first_name": "Gauthier",
@@ -1624,8 +1556,7 @@
     "age": 24,
     "gender": "Férfi",
     "email": "gfoote1w@bizjournals.com",
-    "phone": "+36-20-284-0887",
-    "password": "pYtNOI6M2",
+    "phone": "+36202840887",
     "workDays": [
       0,
       5,
@@ -1633,7 +1564,7 @@
     ],
     "availableFrom": "8:00",
     "availableTill": "16:00",
-    "rating": 5
+    "rating": 6.7
   },
   {
     "first_name": "Hollyanne",
@@ -1648,15 +1579,14 @@
     "age": 58,
     "gender": "Nő",
     "email": "hallchorn1x@reference.com",
-    "phone": "+36-30-475-1662",
-    "password": "JDTKJNOLrevA",
+    "phone": "+36304751662",
     "workDays": [
       1,
       4
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 5
+    "rating": 4.9
   },
   {
     "first_name": "Dicky",
@@ -1671,15 +1601,14 @@
     "age": 48,
     "gender": "Férfi",
     "email": "dmcgee1y@bbc.co.uk",
-    "phone": "+36-70-616-1204",
-    "password": "YvPPRicQ",
+    "phone": "+36706161204",
     "workDays": [
       1,
       4
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 5
+    "rating": 3.7
   },
   {
     "first_name": "Bat",
@@ -1694,8 +1623,7 @@
     "age": 68,
     "gender": "Férfi",
     "email": "btripcony1z@fema.gov",
-    "phone": "+36-30-497-3210",
-    "password": "ElqOW6C81lS",
+    "phone": "+36304973210",
     "workDays": [
       1,
       4,
@@ -1703,7 +1631,7 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 5
+    "rating": 7.6
   },
   {
     "first_name": "Tades",
@@ -1718,8 +1646,7 @@
     "age": 28,
     "gender": "Férfi",
     "email": "tnorthedge20@g.co",
-    "phone": "+36-70-263-7019",
-    "password": "Fhj120GM8ZmU",
+    "phone": "+36702637019",
     "workDays": [
       1,
       2,
@@ -1728,7 +1655,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 6.3
   },
   {
     "first_name": "Gianna",
@@ -1743,8 +1670,7 @@
     "age": 36,
     "gender": "Nő",
     "email": "greddick21@nytimes.com",
-    "phone": "+36-30-160-7225",
-    "password": "6PwOC0Fzz8iu",
+    "phone": "+36301607225",
     "workDays": [
       1,
       2,
@@ -1754,7 +1680,7 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 5
+    "rating": 6.5
   },
   {
     "first_name": "Alica",
@@ -1769,8 +1695,7 @@
     "age": 26,
     "gender": "Nő",
     "email": "apetrol22@hp.com",
-    "phone": "+36-70-975-6230",
-    "password": "oJpDQP",
+    "phone": "+36709756230",
     "workDays": [
       1,
       3,
@@ -1778,7 +1703,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 5.4
   },
   {
     "first_name": "Micheil",
@@ -1793,8 +1718,7 @@
     "age": 24,
     "gender": "Férfi",
     "email": "moldershaw23@squidoo.com",
-    "phone": "+36-70-842-8775",
-    "password": "KmKp2ZJ",
+    "phone": "+36708428775",
     "workDays": [
       0,
       3,
@@ -1802,7 +1726,7 @@
     ],
     "availableFrom": "8:00",
     "availableTill": "16:00",
-    "rating": 5
+    "rating": 8
   },
   {
     "first_name": "Elaina",
@@ -1817,8 +1741,7 @@
     "age": 56,
     "gender": "Nő",
     "email": "ebantock24@netlog.com",
-    "phone": "+36-30-585-1980",
-    "password": "8W9OqO",
+    "phone": "+36305851980",
     "workDays": [
       1,
       2,
@@ -1826,7 +1749,7 @@
     ],
     "availableFrom": "7:15",
     "availableTill": "15:15",
-    "rating": 5
+    "rating": 6.7
   },
   {
     "first_name": "Alric",
@@ -1841,8 +1764,7 @@
     "age": 69,
     "gender": "Férfi",
     "email": "ascorthorne25@bbc.co.uk",
-    "phone": "+36-30-787-0828",
-    "password": "ZwGGMY",
+    "phone": "+36307870828",
     "workDays": [
       0,
       1,
@@ -1850,7 +1772,7 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 5
+    "rating": 3.9
   },
   {
     "first_name": "Lorene",
@@ -1865,14 +1787,13 @@
     "age": 40,
     "gender": "Nő",
     "email": "lelement26@flavors.me",
-    "phone": "+36-70-809-9093",
-    "password": "hkA6Olcy",
+    "phone": "+36708099093",
     "workDays": [
       4
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5
+    "rating": 5.6
   },
   {
     "first_name": "Junia",
@@ -1887,8 +1808,7 @@
     "age": 29,
     "gender": "Nő",
     "email": "jbrunotti27@baidu.com",
-    "phone": "+36-30-717-1721",
-    "password": "GFqHl6",
+    "phone": "+36307171721",
     "workDays": [
       2
     ],
@@ -1909,15 +1829,14 @@
     "age": 47,
     "gender": "Nő",
     "email": "cpomroy28@vkontakte.ru",
-    "phone": "+36-30-730-2459",
-    "password": "sHpgHFULQKYa",
+    "phone": "+36307302459",
     "workDays": [
       4,
       6
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 5
+    "rating": 7.6
   },
   {
     "first_name": "Kliment",
@@ -1932,8 +1851,7 @@
     "age": 24,
     "gender": "Férfi",
     "email": "klacroix29@cbsnews.com",
-    "phone": "+36-30-689-7688",
-    "password": "RaQtvKVC70p",
+    "phone": "+36306897688",
     "workDays": [
       2,
       3,
@@ -1943,7 +1861,7 @@
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 5
+    "rating": 7.3
   },
   {
     "first_name": "Kaylil",
@@ -1958,8 +1876,7 @@
     "age": 42,
     "gender": "Nő",
     "email": "khanna2a@google.ca",
-    "phone": "+36-30-658-9417",
-    "password": "v9mhqeAT6",
+    "phone": "+36306589417",
     "workDays": [
       1,
       3,
@@ -1969,7 +1886,7 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 5
+    "rating": 3.8
   },
   {
     "first_name": "Pauletta",
@@ -1984,8 +1901,7 @@
     "age": 58,
     "gender": "Nő",
     "email": "pbanasiak2b@quantcast.com",
-    "phone": "+36-20-957-4910",
-    "password": "a5JKNzCeSj",
+    "phone": "+36209574910",
     "workDays": [
       2,
       3,
@@ -1994,7 +1910,7 @@
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 5
+    "rating": 5.7
   },
   {
     "first_name": "Myrah",
@@ -2009,15 +1925,14 @@
     "age": 26,
     "gender": "Nő",
     "email": "melvin2c@photobucket.com",
-    "phone": "+36-20-602-5353",
-    "password": "6RTYoo3JMA",
+    "phone": "+36206025353",
     "workDays": [
       1,
       5
     ],
     "availableFrom": "9:45",
     "availableTill": "17:45",
-    "rating": 5
+    "rating": 8.6
   },
   {
     "first_name": "Ailina",
@@ -2032,8 +1947,7 @@
     "age": 44,
     "gender": "Nő",
     "email": "aberrick2d@statcounter.com",
-    "phone": "+36-30-342-5961",
-    "password": "SM326twK",
+    "phone": "+36303425961",
     "workDays": [
       1,
       4,
@@ -2041,7 +1955,7 @@
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 5
+    "rating": 6.1
   },
   {
     "first_name": "Sheila-kathryn",
@@ -2056,8 +1970,7 @@
     "age": 56,
     "gender": "Nő",
     "email": "sdumbellow2e@techcrunch.com",
-    "phone": "+36-70-307-1388",
-    "password": "yeSjL04",
+    "phone": "+36703071388",
     "workDays": [
       1,
       2,
@@ -2067,7 +1980,7 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 7.1
   },
   {
     "first_name": "Carla",
@@ -2082,8 +1995,7 @@
     "age": 43,
     "gender": "Nő",
     "email": "cstead2f@istockphoto.com",
-    "phone": "+36-30-339-1284",
-    "password": "awGfIofiAQxt",
+    "phone": "+36303391284",
     "workDays": [
       0,
       2,
@@ -2091,7 +2003,7 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 5
+    "rating": 6.3
   },
   {
     "first_name": "Helge",
@@ -2106,15 +2018,14 @@
     "age": 43,
     "gender": "Nő",
     "email": "hdaintith2g@stumbleupon.com",
-    "phone": "+36-30-970-0880",
-    "password": "vW0Seb5K",
+    "phone": "+36309700880",
     "workDays": [
       0,
       5
     ],
     "availableFrom": "7:15",
     "availableTill": "15:15",
-    "rating": 5
+    "rating": 8.3
   },
   {
     "first_name": "Ashla",
@@ -2129,8 +2040,7 @@
     "age": 20,
     "gender": "Nő",
     "email": "agiblett2h@hatena.ne.jp",
-    "phone": "+36-20-861-3427",
-    "password": "uSXCzT846sh",
+    "phone": "+36208613427",
     "workDays": [
       1,
       3,
@@ -2138,7 +2048,7 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 5
+    "rating": 8
   },
   {
     "first_name": "Dasha",
@@ -2153,15 +2063,14 @@
     "age": 52,
     "gender": "Nő",
     "email": "dcheetham2i@nydailynews.com",
-    "phone": "+36-30-661-1103",
-    "password": "nsAfKxvvMRE",
+    "phone": "+36306611103",
     "workDays": [
       3,
       4
     ],
     "availableFrom": "7:15",
     "availableTill": "15:15",
-    "rating": 5
+    "rating": 7.9
   },
   {
     "first_name": "Savina",
@@ -2176,8 +2085,7 @@
     "age": 30,
     "gender": "Nő",
     "email": "swrightam2j@gmpg.org",
-    "phone": "+36-70-609-2284",
-    "password": "YOtZoZwFkEpS",
+    "phone": "+36706092284",
     "workDays": [
       1,
       2,
@@ -2186,7 +2094,7 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 4.3
   },
   {
     "first_name": "Todd",
@@ -2201,8 +2109,7 @@
     "age": 47,
     "gender": "Férfi",
     "email": "ttatters2k@webeden.co.uk",
-    "phone": "+36-30-151-4322",
-    "password": "DV3oRvX",
+    "phone": "+36301514322",
     "workDays": [
       1,
       3,
@@ -2210,7 +2117,7 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5
+    "rating": 4.9
   },
   {
     "first_name": "Gloria",
@@ -2225,14 +2132,13 @@
     "age": 46,
     "gender": "Nő",
     "email": "gpitcock2l@bizjournals.com",
-    "phone": "+36-30-903-5664",
-    "password": "HRzSSeOH1J",
+    "phone": "+36309035664",
     "workDays": [
       1
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5
+    "rating": 9.4
   },
   {
     "first_name": "Clair",
@@ -2247,14 +2153,13 @@
     "age": 18,
     "gender": "Férfi",
     "email": "cglantz2m@gravatar.com",
-    "phone": "+36-70-833-7428",
-    "password": "nJ71zeIQhar",
+    "phone": "+36708337428",
     "workDays": [
       1
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 7
   },
   {
     "first_name": "Eugen",
@@ -2269,8 +2174,7 @@
     "age": 26,
     "gender": "Férfi",
     "email": "emacian2n@cdbaby.com",
-    "phone": "+36-70-968-0904",
-    "password": "YafIVIm",
+    "phone": "+36709680904",
     "workDays": [
       1,
       2,
@@ -2281,7 +2185,7 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5
+    "rating": 4.9
   },
   {
     "first_name": "Mirilla",
@@ -2296,8 +2200,7 @@
     "age": 44,
     "gender": "Nő",
     "email": "mfransemai2o@fema.gov",
-    "phone": "+36-30-224-9953",
-    "password": "TBGktY5XK9",
+    "phone": "+36302249953",
     "workDays": [
       1,
       3,
@@ -2305,7 +2208,7 @@
     ],
     "availableFrom": "9:15",
     "availableTill": "17:15",
-    "rating": 5
+    "rating": 4.1
   },
   {
     "first_name": "Loy",
@@ -2320,8 +2223,7 @@
     "age": 36,
     "gender": "Férfi",
     "email": "lwhannel2p@storify.com",
-    "phone": "+36-30-648-5602",
-    "password": "0smBT1",
+    "phone": "+36306485602",
     "workDays": [
       1,
       4,
@@ -2329,7 +2231,7 @@
     ],
     "availableFrom": "11:15",
     "availableTill": "19:15",
-    "rating": 5
+    "rating": 8.9
   },
   {
     "first_name": "Darlleen",
@@ -2344,8 +2246,7 @@
     "age": 34,
     "gender": "Nő",
     "email": "dregglar2q@tuttocitta.it",
-    "phone": "+36-20-662-1954",
-    "password": "UtA9okJ",
+    "phone": "+36206621954",
     "workDays": [
       0,
       2,
@@ -2353,7 +2254,7 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5
+    "rating": 9.1
   },
   {
     "first_name": "Deane",
@@ -2368,8 +2269,7 @@
     "age": 26,
     "gender": "Nő",
     "email": "dgodsmark2r@bbc.co.uk",
-    "phone": "+36-30-313-9050",
-    "password": "aiQvD5",
+    "phone": "+36303139050",
     "workDays": [
       0,
       1,
@@ -2379,6 +2279,6 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 5
+    "rating": 4
   }
 ]
