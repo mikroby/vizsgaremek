@@ -68,7 +68,7 @@ import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.compone
 import { HomeLayoutComponent } from './layout/home-layout/home-layout.component';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { SelectCategoryComponent } from './page/select-category/select-category.component';
-import { CardComponent } from './common/card/card.component';
+import { ProfileComponent } from './page/profile/profile.component';
 
 
 @NgModule({
@@ -91,8 +91,8 @@ import { CardComponent } from './common/card/card.component';
     SearchComponent,
     ForbiddenComponent,
     SelectCategoryComponent,
-    // CardComponent,
-           
+    ProfileComponent,
+               
   ],
   imports: [
     BrowserModule,

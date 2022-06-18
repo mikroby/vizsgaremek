@@ -16,6 +16,7 @@ import { SelectCategoryComponent } from './page/select-category/select-category.
 import { SearchComponent } from './page/search/search.component';
 import { RoleGuardService } from './service/role-guard.service';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
+import { ProfileComponent } from './page/profile/profile.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,14 @@ const routes: Routes = [
         component: ForbiddenComponent,
         data: {
           title: ''
+        }
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent,
+        canActivate: [RoleGuardService],
+        data: {
+          title: 'Profil'
         }
       },
     ]    

@@ -35,42 +35,7 @@ export const navItems: INavData[] = [
     url: '/admin/invoice',
     iconComponent: { name: 'cilNotes' }
   },
-  {
-    name: 'Tester',
-    url: '/admin',
-    iconComponent: { name: 'cilLibrary' }
-  },
-  {
-    name: 'Tester',
-    url: '/admin',
-    iconComponent: { name: 'cilAddressBook' }
-  },
-  {
-    name: 'Tester',
-    url: '/admin',
-    iconComponent: { name: 'cilStorage' }
-  },
-  {
-    name: 'Tester',
-    url: '/admin',
-    iconComponent: { name: 'cilFeaturedPlaylist' }
-  },
-  {
-    name: 'Tester',
-    url: '/admin',
-    iconComponent: { name: 'cilChevronRight' }
-  },
-  {
-    name: 'Tester',
-    url: '/admin',
-    iconComponent: { name: 'cilChevronCircleRightAlt' }
-  },
-  {
-    name: 'Tester',
-    url: '/admin',
-    iconComponent: { name: 'cilArrowCircleRight' }
-  },
-
+  
 ];
 
 // other useful options:

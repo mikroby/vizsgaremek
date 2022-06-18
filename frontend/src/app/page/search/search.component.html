@@ -1,9 +1,24 @@
-<base-table *ngIf="list$ | async as list"
+<div class="row mb-2">
+  <div class="col-12">
+    <div class="btn-group col-2 offset-5">
+      <button (click)="display='list'"class="btn btn-sm btn-outline-secondary">
+        lista
+      </button>
+      <button (click)="display='card'"class="btn btn-sm btn-outline-secondary">
+        kártya
+      </button>      
+    </div>
+  </div>
+</div>
+
+<ng-container *ngIf="display==='list'">
+  <base-table *ngIf="list$ | async as list"
   [tableName]="'expert'" [list]="list"
   [allowedButtons]="{ edit: false, delete: false }">
 </base-table>
+</ng-container>
 
-<app-card-table
+<app-card-table *ngIf="display==='card'"
   [cardList]="cardList"
   [listTitle]="listTitle">
 </app-card-table>

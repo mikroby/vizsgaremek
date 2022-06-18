@@ -4,7 +4,7 @@
     <h6 *ngIf="card.title" class="card-title text-center text-dark mb-0">{{card.title}}</h6>
     <hr *ngIf="card.title">
     <div *ngIf="card.description?.length && !card.tooltip" class="mb-3">
-      <small class="card-text text-light d-block" *ngFor="let text of card.description">{{text}}</small>
+      <small class="card-text text-light d-block mb-1" *ngFor="let text of card.description">{{text}}</small>
     </div>
     <div *ngIf="card.link && card.btnText" class="mt-auto text-center">
       <a [routerLink]="card.link" class="btn btn-sm btn-dark rounded-pill shadow px-3 shadow">
@@ -19,5 +19,9 @@
   <ng-container *ngIf="card.tooltip; else empty">
     <small>{{tooltip}}</small>
   </ng-container>
-  <ng-template #empty></ng-template>
+  <ng-template #empty>
+    részletekért<br>
+    váltson<br>
+    lista nézetre
+  </ng-template>
 </ng-template>

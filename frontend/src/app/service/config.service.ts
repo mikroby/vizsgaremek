@@ -49,7 +49,6 @@ export class ConfigService {
     { key: 'categoryID', title: 'Kategória', visible: true },
     { key: 'price', title: 'Óradíj', visible: true, pipe: 'curr' },
     { key: 'age', title: 'Életkor', visible: true },
-    { key: 'gender', title: 'Nem', visible: true },
     { key: 'email', title: 'E-mail', visible: true },
     { key: 'phone', title: 'Telefon', visible: true },
     { key: 'workDays', title: 'Munkanapok', visible: true, pipe: 'day' },

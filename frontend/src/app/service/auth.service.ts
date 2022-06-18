@@ -64,11 +64,7 @@ export class AuthService {
           // this.router.navigate(['/'])
 
         } else {
-          if (user.role === 3) {
-            this.router.navigate(['/', 'admin'])
-          } else {
-            this.router.navigate(['/'])
-          }
+          this.navigateByRole(user.role)
         }
       }
     })
@@ -103,13 +99,28 @@ export class AuthService {
   signup(signupData: User): void {
     this.http.post(this.signupUrl, signupData).subscribe({
       next: (response) => {
-        this.router.navigate(['/', 'login'])
+        // this.router.navigate(['/', 'login'])
+        const { email, password } = signupData
+        this.login({ email, password })
       },
       error: (error) => {
         // console.error(error)
         this.signUpFailed$.next(true)
       }
     })
+  }
+
+  navigateByRole(role: number): void {
+    switch (role) {
+      case 3:
+        this.router.navigate(['/', 'admin'])
+        break
+      case 2:
+        this.router.navigate(['/', 'profile'])
+        break
+      default:
+        this.router.navigate(['/'])
+    }
   }
 
 }

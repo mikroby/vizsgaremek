@@ -1,3 +1,4 @@
+import { ConfigService } from 'src/app/service/config.service';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { ExpertService } from 'src/app/service/expert.service';
@@ -23,32 +24,38 @@ export class SearchComponent implements OnInit {
 
   listTitle: string = ''
 
+  display: string = 'card' || 'list'
+
   constructor(
     private expertService: ExpertService,
-    private ar: ActivatedRoute
+    private ar: ActivatedRoute,
+    private config: ConfigService
   ) { }
 
   ngOnInit(): void {
-    this.ar.params.subscribe(
-      params => {
-        this.categoryID = Number(params['id'])
-        this.listTitle = params['category']
+    // set invisible the unnecessary category column
+    const index = this.config.expertTableColumns.findIndex(item => item.key === 'categoryID')
+    this.config.expertTableColumns[index].visible = false
 
-        this.list$ = this.expertService.getAll()
-          .pipe(map(experts => experts.filter(row => row.categoryID.includes(this.categoryID))))
+    this.ar.params.subscribe(params => {
+      this.categoryID = Number(params['id'])
 
-        this.list$.subscribe(
-          {
-            next: response => {
-              this.cardList = this.mapper(response)
-            },
-            error: error => {
-              console.log(error);
-            }
+      this.listTitle =`Találatok - ${params['category']}`
+
+      this.list$ = this.expertService.getAll()
+        .pipe(map(experts => experts.filter(row => row.categoryID.includes(this.categoryID))))
+
+      this.list$.subscribe(
+        {
+          next: response => {
+            this.cardList = this.mapper(response)
+          },
+          error: error => {
+            console.log(error);
           }
-        )
-      }
-    )
+        }
+      )
+    })
   }
 
   // map from list to card datas
@@ -56,7 +63,11 @@ export class SearchComponent implements OnInit {
     return response.map(item => {
       const image = `${this.apiUrl}avatars/${item.avatar}`
       const description = [
-        item.last_name, item.first_name, item.job, item.price, item.phone, item.rating
+        `${item.last_name} ${item.first_name}`,
+        item.job,
+        `${item.price} Ft/óra`,
+        `tel: ${item.phone}`,
+        `értékelés: ${item.rating}`
       ]
       const tooltip = false
       return { image, description, tooltip } as ICard

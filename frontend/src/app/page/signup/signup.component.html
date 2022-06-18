@@ -18,7 +18,14 @@
         placeholder="E-mail" (focus)="onFocus()">
       <input type="password" id="password" class="fadeIn third" [(ngModel)]="signupData.password" name="password"
         placeholder="Jelszó" (focus)="onFocus()">
+
+      <!-- message if SignUp failed -->
+      <div *ngIf="(signUpFailed$ | async)" class="text-center mt-2 mb-0 h5">
+        Sikertelen regisztráció!
+      </div>
+
       <input type="submit" id="submit" class="fadeIn fourth" value="Regisztráció" [disabled]="signUpForm.invalid">
+
     </form>
 
     <!-- link to login -->
@@ -29,10 +36,4 @@
     </div>
 
   </div>
-
-  <!-- message if SignUp failed -->
-  <div *ngIf="(signUpFailed$ | async)" class="text-center mt-5 h5">
-    Sikertelen regisztráció!
-  </div>
-
 </div>

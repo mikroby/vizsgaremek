@@ -4,7 +4,6 @@ const createError = require('http-errors')
 
 
 module.exports = async (req, res, next) => {
-
   const { email, password } = req.body
   const user = await User.findOne({ email })
 

@@ -58,7 +58,7 @@
         </a>
       </li>
       <li>
-        <a routerLink="./" cDropdownItem>
+        <a routerLink="./" cDropdownItem [disabled]="true">
           <svg cIcon class="me-2" name="cilEnvelopeOpen"></svg>
           Üzenetek
           <c-badge class="ms-2 float-end" color="success">
@@ -68,7 +68,7 @@
       </li>
 
       <li>
-        <a routerLink="./" cDropdownItem>
+        <a routerLink="./" cDropdownItem [disabled]="true">
           <svg cIcon class="me-2" name='cilCommentSquare'></svg>
           Bejegyzések
           <c-badge class="ms-auto" color="warning">
@@ -81,13 +81,13 @@
         <h6 cDropdownHeader class="bg-light fw-semibold py-2">Egyebek</h6>
       </li>
       <li>
-        <a routerLink="./" cDropdownItem>
+        <a routerLink="/profile" cDropdownItem>
           <svg cIcon class="me-2" name="cilUser"></svg>
           Profil
         </a>
       </li>
       <li>
-        <a routerLink="./" cDropdownItem>
+        <a routerLink="./" cDropdownItem [disabled]="true">
           <svg cIcon class="me-2" name="cilSettings"></svg>
           Beállítások
         </a>
