@@ -11,7 +11,6 @@ const { join } = require('path')
 const { host, user, pass } = config.get('database')
 const logger = require('./module/logger')
 const authencticateJwt = require('./module/auth/authenticate')
-const Expert = require('./model/expert')
 // const swaggerDocument = YAML.load('./docs/swagger.yaml')
 
 const app = express()
@@ -24,9 +23,6 @@ mongoose.connect(`mongodb+srv://${host}`, {
   logger.info('DataBase Connection successfully established!')
   // SEEDER:
   // require('./seed/seeder')
-
-  // Expert.updateMany({}, { $unset: { gender: "" } })
-  // process.exit()
 })
   .catch(err => {
     throw new Error(err.message)
@@ -51,7 +47,7 @@ app.post('/signup', require('./module/auth/signup'))
 // Category
 app.use('/category', require('./controller/category/router'))
 // Customer
-app.use('/customer', authencticateJwt, require('./controller/customer/router'))
+app.use('/user', authencticateJwt, require('./controller/user/router'))
 // Expert
 app.use('/expert', require('./controller/expert/router'))
 // Invoice

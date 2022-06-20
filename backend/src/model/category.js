@@ -17,6 +17,10 @@ const CategorySchema = mongoose.Schema({
   job: {
     type: Array,
     required: true,
+  },
+  logo: {
+    type: String,
+    required: true,
   }
 });
 

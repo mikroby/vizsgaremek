@@ -5,7 +5,11 @@ const InvoiceSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  expertID: {
+  expert: {
+    type: String,
+    required: true,
+  },
+  customer: {
     type: String,
     required: true,
   },

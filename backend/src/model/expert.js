@@ -47,6 +47,10 @@ const ExpertSchema = mongoose.Schema({
     max: 10,
     type: Number,
     required: true
+  },
+  avatar: {
+    type: String,
+    required: true
   }
 });
 

@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
 
 const OrderSchema = mongoose.Schema({
-  customerID: {
+  customer: {
     type: String,
     required: true,
   },
-  expertID: {
+  expert: {
     type: String,
     required: true,
   },

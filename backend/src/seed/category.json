@@ -11,7 +11,8 @@
       "Telepítés",
       "Üzemeltetés",
       "Weblap készítés és tervezés"
-    ]
+    ],
+    "logo": "it.png"
   },
   {
     "categoryID": 2,
@@ -37,11 +38,12 @@
       "Tartószerkezet tervező",
       "Villanyszerelő",
       "Víz-gáz-fűtés szerelő"
-    ]
+    ],
+    "logo": "epito.png"
   },
   {
     "categoryID": 3,
-    "name": "Háztartás / kert",
+    "name": "Háztartás - kert",
     "job": [
       "Bevásárlás",
       "Fakivágás",
@@ -51,7 +53,8 @@
       "Javítás-karbantartás",
       "Kertrendezés",
       "Takarítás"
-    ]
+    ],
+    "logo": "haztartas.png"
   },
   {
     "categoryID": 4,
@@ -63,7 +66,8 @@
       "Gumiszerelés",
       "Karosszéria javítás",
       "Kerékpár javítás"
-    ]
+    ],
+    "logo": "jarmu.png"
   },
   {
     "categoryID": 5,
@@ -77,7 +81,8 @@
       "Masszőr",
       "Pszichológus",
       "Yoga-oktató"
-    ]
+    ],
+    "logo": "egeszseg.png"
   },
   {
     "categoryID": 6,
@@ -88,7 +93,8 @@
       "Manikűrös",
       "Műkörömépítő",
       "Pedikűrös"
-    ]
+    ],
+    "logo": "szepseg.png"
   },
   {
     "categoryID": 7,
@@ -100,7 +106,8 @@
       "Pénzügyi tanácsadó",
       "Személyi edző",
       "Ügyvéd"
-    ]
+    ],
+    "logo": "tanacsadas.png"
   },
   {
     "categoryID": 8,
@@ -126,11 +133,12 @@
       "Színjátszás",
       "Társastánc oktatás",
       "Zongora tanár"
-    ]
+    ],
+    "logo": "oktatas.png"
   },
   {
     "categoryID": 9,
-    "name": "1000 Apró",
+    "name": "Egyéb",
     "job": [
       "Árufuvarozás",
       "Bútorasztalos",
@@ -146,11 +154,12 @@
       "Szakács",
       "Személyszállítás",
       "Üveges"
-    ]
+    ],
+    "logo": "egyeb.png"
   },
   {
     "categoryID": 10,
-    "name": "Szórakoztatás / rendezvény",
+    "name": "Szórakoztatás - rendezvény",
     "job": [
       "Arcfestés",
       "Bábelőadás",
@@ -161,6 +170,7 @@
       "Táncos",
       "Télapó",
       "Zenész"
-    ]
+    ],
+    "logo": "szorakoztatas.png"
   }
 ]
