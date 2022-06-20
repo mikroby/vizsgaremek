@@ -2,8 +2,8 @@ const express = require('express')
 const baseService = require('./service')
 const createError = require('http-errors')
 
-module.exports = (model) => {
-  const service = baseService(model)
+module.exports = (model, populateList = []) => {
+  const service = baseService(model, populateList)
   return {
     
     // create

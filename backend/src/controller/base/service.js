@@ -1,4 +1,4 @@
-module.exports = (model) => {
+module.exports = (model, populateList = []) => {
   return {
 
     createOne: (entity) => {
@@ -7,9 +7,9 @@ module.exports = (model) => {
       return newEntry.save()
     },
 
-    findAll: () => model.find({}),
+    findAll: () => model.find({}).populate(...populateList),
 
-    findOne: (id) => model.findById(id),
+    findOne: (id) => model.findById(id).populate(...populateList),
 
     updateOne: async (id, entity) => {
       const newEntity = new model(entity)
