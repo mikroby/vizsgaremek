@@ -1,4 +1,13 @@
-<app-card-table
+<app-card-table *ngIf="list"
   [cardList]="list"
   [listTitle]="listTitle"
+  [triggers]="'click'"
 ></app-card-table>
+
+<div class="row">
+  <div class="col-10 offset-1">
+    <p class="text-center mt-3">
+      A kategóriába tartozó tevékenységek megtekintéséhez kattintson a kártyára!
+    </p>
+  </div>
+</div>

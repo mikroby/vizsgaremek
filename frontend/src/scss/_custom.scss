@@ -2,6 +2,7 @@
 
 $delete-button-color: $danger;
 $edit-button-color: $info;
+$new-button-color: $info;
 
 * {
   user-select: none;
@@ -68,6 +69,14 @@ $edit-button-color: $info;
   &:hover,
   &:active {
     color: $edit-button-color;
+  }
+}
+
+.new_btn {
+  color: $new-button-color;
+  &:hover,
+  &:active {
+    color: $new-button-color;
   }
 }
 

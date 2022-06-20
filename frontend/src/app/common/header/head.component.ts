@@ -39,16 +39,14 @@ export class HeadComponent extends HeaderComponent implements OnInit {
     this.showDateTime()
     const id = setInterval(this.showDateTime, 1000)
 
-    this.ar.data.subscribe(params => {
-      this.layout = params['title']
-    })
+    this.getLayout()
   }
 
   showDateTime = () => {
     const currentDate = new Date()
     const dateString = currentDate.toLocaleDateString('hu')
       .replace(' ', '').replace(' ', '')
-    const day = this.config.days[currentDate.getDay() - 1]
+    const day = this.config.weekDays[currentDate.getDay()]
     const timeString = currentDate.toLocaleTimeString('hu').padStart(8, '0')
     this.chronometer = `${dateString} - ${day} - ${timeString}`
   }
@@ -67,6 +65,12 @@ export class HeadComponent extends HeaderComponent implements OnInit {
 
   getAvatar(): string {
     return this.auth.currentAvatarUrl
+  }
+
+  getLayout(): void {
+    this.ar.data.subscribe(params => {
+      this.layout = params['title']
+    })
   }
 
 }

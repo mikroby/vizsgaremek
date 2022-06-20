@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Triggers } from '@coreui/angular';
 import { ICard } from 'src/app/common/card/card.component';
 
 @Component({
@@ -10,6 +11,7 @@ export class CardTableComponent implements OnInit {
 
   @Input() cardList: ICard[] | null = null
   @Input() listTitle: string = ''
+  @Input() triggers: Triggers[] | Triggers = 'hover'
 
   constructor() { }
 

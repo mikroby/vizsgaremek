@@ -12,6 +12,7 @@ export interface ITableColumn {
 export interface IAllowedButtons {
   edit: boolean
   delete: boolean
+  new: boolean
 }
 
 @Component({
@@ -24,9 +25,9 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   @Input() list: T[] = []
   // @Input() columns: ITableColumn[] = []
   @Input() tableName: string = ''
-  @Input() allowedButtons: IAllowedButtons = { edit: true, delete: true }
+  @Input() allowedButtons: IAllowedButtons = { edit: true, delete: true, new: true }
 
-  tableTitle: string = ''  
+  tableTitle: string = ''
   columns: ITableColumn[] = []
   displayedColumns: ITableColumn[] = []
   filterKey: string = ''
@@ -36,6 +37,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   direction: number = 1
 
   optionIconSize: string = this.config.optionIconSize
+  newIconSize: string = this.config.newIconSize
 
   paginatorIconSize: string = this.config.paginatorIconSize
   pageSize: number = 0
@@ -118,7 +120,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     })
     this.ar.params.subscribe(
       params => {
-        this.tableTitle += params['category'] ? ` - ${params['category']}` : ''        
+        this.tableTitle += params['category'] ? ` - ${params['category']}` : ''
       }
     )
   }

@@ -59,7 +59,7 @@ import { DashboardComponent } from './page/dashboard/dashboard.component'
 import { ExpertComponent } from './page/expert/expert.component'
 import { CategoryComponent } from './page/category/category.component';
 import { InvoiceComponent } from './page/invoice/invoice.component';
-import { CustomerComponent } from './page/customer/customer.component';
+import { UserComponent } from './page/user/user.component';
 import { OrderComponent } from './page/order/order.component';
 import { LoginComponent } from './page/login/login.component';
 import { SignupComponent } from './page/signup/signup.component';
@@ -82,7 +82,7 @@ import { ProfileComponent } from './page/profile/profile.component';
     ExpertComponent,
     CategoryComponent,
     InvoiceComponent,
-    CustomerComponent,
+    UserComponent,
     OrderComponent,
     LoginComponent,
     SignupComponent,

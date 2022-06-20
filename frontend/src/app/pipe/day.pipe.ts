@@ -21,7 +21,7 @@ export class DayPipe<T extends { [key: string]: any }> implements PipeTransform 
     if (!key) return value
 
     return value.map(row => {
-      const days = row[key].map((day: number) => this.config.days[day])
+      const days = row[key].map((day: number) => this.config.weekDays[day])
       return { ...row, [key]: days }
     })
   }

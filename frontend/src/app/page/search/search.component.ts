@@ -24,7 +24,9 @@ export class SearchComponent implements OnInit {
 
   listTitle: string = ''
 
-  display: string = 'card' || 'list'
+  toggleIconSize = this.config.displayToggleIconSize
+
+  display: string = this.config.startDisplayWith
 
   constructor(
     private expertService: ExpertService,
@@ -61,7 +63,7 @@ export class SearchComponent implements OnInit {
   // map from list to card datas
   mapper(response: Expert[]): ICard[] {
     return response.map(item => {
-      const image = `${this.apiUrl}avatars/${item.avatar}`
+      const image = `${this.apiUrl}avatar/${item.avatar}`
       const description = [
         `${item.last_name} ${item.first_name}`,
         item.job,

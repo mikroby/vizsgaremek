@@ -2,7 +2,7 @@
   <c-container [fluid]="true">
 
     <!-- sideBar toggler -->
-    <button *ngIf="layout" (click)="changeSidebar()" toggle="visible" cHeaderToggler
+    <button *ngIf="layout==='Admin'" (click)="changeSidebar()" toggle="visible" cHeaderToggler
       [cSidebarToggle]="sidebarId" class="ps-1">
       <svg cIcon name="cilMenu" size="lg"></svg>
     </button>
@@ -51,7 +51,7 @@
       <li>
         <h6 cDropdownHeader class="bg-light fw-semibold py-2">Lehetőségek</h6>
       </li>
-      <li>
+      <li *ngIf="user$?.value?.role===3">
         <a routerLink="/admin" cDropdownItem>
           <svg cIcon class="me-2" name="cil-speedometer"></svg>
           Vezérlőpult
@@ -80,7 +80,7 @@
       <li>
         <h6 cDropdownHeader class="bg-light fw-semibold py-2">Egyebek</h6>
       </li>
-      <li>
+      <li *ngIf="user$?.value?.role!==3">
         <a routerLink="/profile" cDropdownItem>
           <svg cIcon class="me-2" name="cilUser"></svg>
           Profil

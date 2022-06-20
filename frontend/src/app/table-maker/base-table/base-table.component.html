@@ -1,6 +1,9 @@
 <!-- header block -->
 <div class="d-flex flex-row flex-column-md my-0">
   <div class="h3 text-muted ">{{tableTitle}}</div>
+  <button class="btn grow-30 new_btn" type="button" *ngIf="allowedButtons.new">    
+    <svg cIcon name="cilLibraryAdd" [size]="newIconSize"></svg>
+  </button>
 
   <!-- data operations -->
   <div *ngIf="list.length" class="btn-toolbar ms-auto align-self-center">
@@ -70,10 +73,10 @@
           </td>
           <td *ngIf="allowedButtons.edit || allowedButtons.delete">
             <div class="btn-group btn-group-sm">
-              <button class="btn btn-outline grow-50 edit_btn" [disabled]="!allowedButtons.edit">
+              <button class="btn grow-50 edit_btn" type="button" [disabled]="!allowedButtons.edit">
                 <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
               </button>
-              <button class="btn btn-outline grow-50 delete_btn" [disabled]="!allowedButtons.delete">
+              <button class="btn grow-50 delete_btn" type="button" [disabled]="!allowedButtons.delete">
                 <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>
               </button>
             </div>

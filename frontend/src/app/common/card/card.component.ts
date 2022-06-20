@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Triggers } from '@coreui/angular';
 
 export interface ICard {
   image?: string
@@ -17,8 +18,10 @@ export interface ICard {
 export class CardComponent implements OnInit {
 
   @Input() card!: ICard
+  @Input() triggers: Triggers[] | Triggers = 'hover'
 
   tooltip?: string
+
 
   constructor() { }
 

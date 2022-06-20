@@ -21,6 +21,7 @@ export class SignupComponent implements OnInit {
 
   ngOnInit(): void {
     // this.auth.logout();
+    this.auth.signUpFailed$.next(false)
   }
 
   trySignUp(): void {

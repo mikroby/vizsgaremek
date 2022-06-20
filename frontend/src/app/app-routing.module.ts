@@ -5,7 +5,7 @@ import { HomeComponent } from './page/home/home.component';
 import { DashboardComponent } from './page/dashboard/dashboard.component';
 import { ExpertComponent } from './page/expert/expert.component';
 import { CategoryComponent } from './page/category/category.component';
-import { CustomerComponent } from './page/customer/customer.component';
+import { UserComponent } from './page/user/user.component';
 import { OrderComponent } from './page/order/order.component';
 import { InvoiceComponent } from './page/invoice/invoice.component';
 import { LoginComponent } from './page/login/login.component';
@@ -106,8 +106,8 @@ const routes: Routes = [
         }
       },
       {
-        path: 'customer',
-        component: CustomerComponent,
+        path: 'user',
+        component: UserComponent,
         data: {
           title: 'Felhasználók'
         }

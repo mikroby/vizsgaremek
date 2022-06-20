@@ -1,4 +1,4 @@
-<div class="card shadow h-100 grow-5" [cTooltip]="tooltipContent">
+<div class="card shadow h-100 grow-5" [cTooltip]="tooltipContent" [cTooltipTrigger]="triggers">
   <img *ngIf="card.image" [src]="card.image" alt="logo" class="card-img-top bg-light bg-gradient px-2 pt-2">
   <div class="card-body d-flex flex-column bg-secondary bg-gradient">
     <h6 *ngIf="card.title" class="card-title text-center text-dark mb-0">{{card.title}}</h6>
@@ -7,7 +7,8 @@
       <small class="card-text text-light d-block mb-1" *ngFor="let text of card.description">{{text}}</small>
     </div>
     <div *ngIf="card.link && card.btnText" class="mt-auto text-center">
-      <a [routerLink]="card.link" class="btn btn-sm btn-dark rounded-pill shadow px-3 shadow">
+      <a [routerLink]="card.link" role="button"
+        class="btn btn-sm btn-dark rounded-pill shadow px-sm-3 shadow">
         {{card.btnText}}
       </a>
     </div>

@@ -1,5 +1,6 @@
 export class User {
-  _id?: string = ''
+  //  [key: string]: any
+  _id: string = ''
   email: string = ''
   lastName: string = ''
   firstName: string = ''

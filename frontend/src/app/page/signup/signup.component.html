@@ -10,9 +10,9 @@
 
     <!-- SignUp Form -->
     <form #signUpForm="ngForm" (ngSubmit)="trySignUp()">
-      <input type="text" id="lastName" class="fadeIn second" [(ngModel)]="signupData.lastName" name="lastName"
+      <input type="text" id="Last_NAME" class="fadeIn second" [(ngModel)]="signupData.lastName" name="lastName"
         placeholder="Vezetéknév" (focus)="onFocus()">
-      <input type="text" id="firstName" class="fadeIn second" [(ngModel)]="signupData.firstName" name="firstName"
+      <input type="text" id="First_NAME" class="fadeIn second" [(ngModel)]="signupData.firstName" name="firstName"
         placeholder="Keresztnév" (focus)="onFocus()">
       <input type="email" id="e-mail" class="fadeIn third" [(ngModel)]="signupData.email" name="email"
         placeholder="E-mail" (focus)="onFocus()">

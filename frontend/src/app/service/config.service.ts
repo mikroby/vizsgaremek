@@ -21,24 +21,29 @@ export class ConfigService {
   // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
   paginatorIconSize = 'xl'
   optionIconSize = 'sm'
+  newIconSize = 'lg'
+  displayToggleIconSize = 'lg'
 
-  days = ['H', 'K', 'Sze', 'CS', 'P', 'Szo', 'V']
+  startDisplayWith = 'card'
+
+  weekDays = ['V', 'H', 'K', 'Sze', 'CS', 'P', 'Szo']
 
   categoryTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
     { key: 'categoryID', title: 'Kategória száma', visible: true },
     { key: 'name', title: 'Kategória neve', visible: true },
     { key: 'job', title: 'Munka neve', visible: true },
+    { key: 'logo', title: 'Logo', visible: true },
   ]
 
-  customerTableColumns: ITableColumn[] = [
+  userTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'last_name', title: 'Vezetéknév', visible: true },
-    { key: 'first_name', title: 'Keresztnév', visible: true },
     { key: 'email', title: 'E-mail', visible: true },
-    { key: 'phone', title: 'Telefon', visible: true },
-    { key: 'address', title: 'Lakcím', visible: true },
-    { key: 'active', title: 'Aktív', visible: true },
+    { key: 'lastName', title: 'Vezetéknév', visible: true },
+    { key: 'firstName', title: 'Keresztnév', visible: true },
+    { key: 'password', title: 'Jelszó', visible: false },
+    { key: 'role', title: 'Szerep', visible: true },
+    { key: 'avatar', title: 'Avatar', visible: true },
   ]
 
   expertTableColumns: ITableColumn[] = [
@@ -60,8 +65,8 @@ export class ConfigService {
   invoiceTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
     { key: 'orderID', title: 'Rendelés száma', visible: true },
-    { key: 'expertID', title: 'Mester (ID)', visible: true },
-    { key: 'categoryID', title: 'Kategória (ID)', visible: true },
+    { key: 'expert', title: 'Mester', visible: true },
+    { key: 'customer', title: 'Megrendelő', visible: true },
     { key: 'job', title: 'Munka', visible: true },
     { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'curr' },
     { key: 'status', title: 'Állapot', visible: true },
@@ -69,8 +74,8 @@ export class ConfigService {
 
   orderTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'customerID', title: 'Megrendelő (ID)', visible: true },
-    { key: 'expertID', title: 'Mester (ID)', visible: true },
+    { key: 'customer', title: 'Megrendelő', visible: true },
+    { key: 'expert', title: 'Mester', visible: true },
     { key: 'job', title: 'Munka', visible: true },
     { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'curr' },
     { key: 'status', title: 'Állapot', visible: true },
