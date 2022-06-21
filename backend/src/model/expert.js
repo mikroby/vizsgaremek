@@ -1,13 +1,15 @@
 const mongoose = require('mongoose')
 
 const ExpertSchema = mongoose.Schema({
-  first_name: {
-    type: String,
-    required: true,
+  firstName: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
   },
-  last_name: {
-    type: String,
-    required: true,
+  lastName: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
   },
   job: {
     type: Array,
@@ -21,15 +23,16 @@ const ExpertSchema = mongoose.Schema({
     type: Number,
     required: true,
   },
-  age: Number,  
+  age: Number,
   email: {
-    type: String,
-    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
   },
   phone: {
     type: String,
     required: true,
-  },  
+  },
   workDays: {
     type: Array,
     required: true,
@@ -49,7 +52,8 @@ const ExpertSchema = mongoose.Schema({
     required: true
   },
   avatar: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
     required: true
   }
 });

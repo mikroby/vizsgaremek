@@ -1,8 +1,8 @@
 export class Expert {
   [key: string]: any
   _id: string = ''
-  first_name: string = ''
-  last_name: string = ''
+  firstName: string = ''
+  lastName: string = ''
   job: number[] = []
   categoryID: number[] = []
   price: number = 0

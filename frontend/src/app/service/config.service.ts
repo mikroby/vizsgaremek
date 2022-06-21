@@ -48,8 +48,8 @@ export class ConfigService {
 
   expertTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'last_name', title: 'Vezetéknév', visible: true },
-    { key: 'first_name', title: 'Keresztnév', visible: true },
+    { key: 'lastName', title: 'Vezetéknév', visible: true },
+    { key: 'firstName', title: 'Keresztnév', visible: true },
     { key: 'job', title: 'Munka', visible: true },
     { key: 'categoryID', title: 'Kategória', visible: true },
     { key: 'price', title: 'Óradíj', visible: true, pipe: 'curr' },

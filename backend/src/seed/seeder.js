@@ -4,6 +4,7 @@ const { readFile } = require('fs').promises
 const { join } = require('path')
 
 // data files to be seeded:
+const modelName = ['user'];
 // const modelName = ['expert'];
 // const modelName = ['category', 'customer', 'expert', 'invoice', 'order'];
 
@@ -11,7 +12,7 @@ const { join } = require('path')
   modelName.forEach(async (model) => {
     const rawJson = await readFile(join(__dirname, `${model}.json`), 'utf8')
     const entity = JSON.parse(rawJson)
-    return await require(`../model/${model}.js`).insertMany(entity)
+    return await require(`../model/${model}.js`).save(entity)
   })
   console.log('Data is seeded!')  
 })()

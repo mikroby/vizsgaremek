@@ -65,7 +65,7 @@ export class SearchComponent implements OnInit {
     return response.map(item => {
       const image = `${this.apiUrl}avatar/${item.avatar}`
       const description = [
-        `${item.last_name} ${item.first_name}`,
+        `${item.lastName} ${item.firstName}`,
         item.job,
         `${item.price} Ft/óra`,
         `tel: ${item.phone}`,
