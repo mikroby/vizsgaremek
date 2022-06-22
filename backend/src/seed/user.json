@@ -1,9 +1,26 @@
 [
   {
+    "firstName": "Andrea",
+    "lastName": "Admin",
+    "email": "a@a.hu",
+    "avatar": "8.jpg",
+    "password": "012",
+    "role": 3
+  },
+  {
+    "firstName": "Ede",
+    "lastName": "Expert",
+    "email": "x@x.hu",
+    "avatar": "2.jpg",
+    "password": "012",
+    "role": 2
+  }, 
+  {
     "firstName": "Vania",
     "lastName": "Tythacott",
     "email": "vtythacott0@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -11,6 +28,7 @@
     "lastName": "Cundict",
     "email": "mcundict1@hotmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -18,6 +36,7 @@
     "lastName": "Hiland",
     "email": "ehiland2@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -25,6 +44,7 @@
     "lastName": "Kristufek",
     "email": "bkristufek3@hotmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -32,6 +52,7 @@
     "lastName": "Barnhart",
     "email": "dbarnhart4@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -39,6 +60,7 @@
     "lastName": "Sarrell",
     "email": "hsarrell5@github.io",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -46,6 +68,7 @@
     "lastName": "Ellph",
     "email": "lellph6@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -53,6 +76,7 @@
     "lastName": "Iacovo",
     "email": "siacovo7@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -60,6 +84,7 @@
     "lastName": "Bartul",
     "email": "sbartul8@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -67,6 +92,7 @@
     "lastName": "Kenner",
     "email": "hkenner9@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -74,6 +100,7 @@
     "lastName": "McReidy",
     "email": "smcreidya@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -81,6 +108,7 @@
     "lastName": "Blincowe",
     "email": "bblincoweb@hotmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -88,6 +116,7 @@
     "lastName": "Griffen",
     "email": "cgriffenc@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -95,6 +124,7 @@
     "lastName": "Jerdon",
     "email": "jjerdond@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -102,6 +132,7 @@
     "lastName": "Huband",
     "email": "ihubande@hotmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -109,6 +140,7 @@
     "lastName": "Chable",
     "email": "ochablef@hotmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -116,6 +148,7 @@
     "lastName": "Salway",
     "email": "bsalwayg@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -123,6 +156,7 @@
     "lastName": "Duinkerk",
     "email": "dduinkerkh@gmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -130,6 +164,7 @@
     "lastName": "Fishe",
     "email": "sfishei@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -137,6 +172,7 @@
     "lastName": "Vlasin",
     "email": "avlasinj@hotmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -144,6 +180,7 @@
     "lastName": "Oleshunin",
     "email": "loleshunink@hotmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -151,6 +188,7 @@
     "lastName": "Viveash",
     "email": "hviveashl@gmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -158,6 +196,7 @@
     "lastName": "Vick",
     "email": "rvickm@hotmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -165,6 +204,7 @@
     "lastName": "Dundon",
     "email": "sdundonn@hotmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -172,6 +212,7 @@
     "lastName": "Seneschal",
     "email": "cseneschalo@hotmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -179,6 +220,7 @@
     "lastName": "Kerrigan",
     "email": "lkerriganp@hotmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -186,6 +228,7 @@
     "lastName": "Gaiter",
     "email": "cgaiterq@hotmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -193,6 +236,7 @@
     "lastName": "Preuvost",
     "email": "spreuvostr@hotmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -200,6 +244,7 @@
     "lastName": "Franzonetti",
     "email": "bfranzonettis@hotmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -207,6 +252,7 @@
     "lastName": "Whight",
     "email": "rwhightt@hotmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -214,6 +260,7 @@
     "lastName": "MacAskill",
     "email": "kmacaskillu@hotmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -221,6 +268,7 @@
     "lastName": "Balfre",
     "email": "rbalfrev@hotmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -228,6 +276,7 @@
     "lastName": "Matanin",
     "email": "tmataninw@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -235,6 +284,7 @@
     "lastName": "Brandsma",
     "email": "mbrandsmax@gmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -242,6 +292,7 @@
     "lastName": "Toler",
     "email": "stolery@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -249,6 +300,7 @@
     "lastName": "Caffin",
     "email": "bcaffinz@gmail.com",
     "avatar": "default.png",
+    "password": "abc",
     "role": 2
   },
   {
@@ -256,6 +308,7 @@
     "lastName": "Becks",
     "email": "rbecks10@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -263,6 +316,7 @@
     "lastName": "Latehouse",
     "email": "clatehouse11@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -270,6 +324,7 @@
     "lastName": "Pollitt",
     "email": "kpollitt12@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -277,6 +332,7 @@
     "lastName": "Aingel",
     "email": "aaingel13@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -284,6 +340,7 @@
     "lastName": "Sichardt",
     "email": "csichardt14@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -291,6 +348,7 @@
     "lastName": "Mordecai",
     "email": "amordecai15@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -298,6 +356,7 @@
     "lastName": "Gimber",
     "email": "mgimber16@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -305,6 +364,7 @@
     "lastName": "Allberry",
     "email": "fallberry17@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -312,6 +372,7 @@
     "lastName": "Brinkley",
     "email": "vbrinkley18@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -319,6 +380,7 @@
     "lastName": "Cornillot",
     "email": "ccornillot19@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -326,6 +388,7 @@
     "lastName": "Cavolini",
     "email": "acavolini1a@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -333,6 +396,7 @@
     "lastName": "Grigson",
     "email": "agrigson1b@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -340,6 +404,7 @@
     "lastName": "Gamwell",
     "email": "tgamwell1c@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -347,6 +412,7 @@
     "lastName": "Sherrock",
     "email": "csherrock1d@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -354,6 +420,7 @@
     "lastName": "Embleton",
     "email": "membleton1e@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -361,6 +428,7 @@
     "lastName": "Praill",
     "email": "mpraill1f@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -368,6 +436,7 @@
     "lastName": "Andrews",
     "email": "landrews1g@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -375,6 +444,7 @@
     "lastName": "Stanex",
     "email": "bstanex1h@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -382,6 +452,7 @@
     "lastName": "Kerfut",
     "email": "akerfut1i@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -389,6 +460,7 @@
     "lastName": "Booth",
     "email": "lbooth1j@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -396,6 +468,7 @@
     "lastName": "Macourek",
     "email": "jmacourek1k@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -403,6 +476,7 @@
     "lastName": "Dalgliesh",
     "email": "rdalgliesh1l@gmail.com",
     "avatar": "default.png",
+    "password": "qwe",
     "role": 2
   },
   {
@@ -410,6 +484,7 @@
     "lastName": "Busain",
     "email": "fbusain1m@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -417,6 +492,7 @@
     "lastName": "Bonifazio",
     "email": "cbonifazio1n@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -424,6 +500,7 @@
     "lastName": "Kondrat",
     "email": "tkondrat1o@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -431,6 +508,7 @@
     "lastName": "Heild",
     "email": "bheild1p@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -438,6 +516,7 @@
     "lastName": "Wilkenson",
     "email": "gwilkenson1q@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -445,6 +524,7 @@
     "lastName": "Flowitt",
     "email": "aflowitt1r@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -452,6 +532,7 @@
     "lastName": "Lensch",
     "email": "nlensch1s@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -459,6 +540,7 @@
     "lastName": "Yanez",
     "email": "cyanez1t@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -466,6 +548,7 @@
     "lastName": "Kiddey",
     "email": "bkiddey1u@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -473,6 +556,7 @@
     "lastName": "Shutler",
     "email": "rshutler1v@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -480,6 +564,7 @@
     "lastName": "Foote",
     "email": "gfoote1w@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -487,6 +572,7 @@
     "lastName": "Allchorn",
     "email": "hallchorn1x@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -494,6 +580,7 @@
     "lastName": "Mc Gee",
     "email": "dmcgee1y@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -501,6 +588,7 @@
     "lastName": "Tripcony",
     "email": "btripcony1z@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -508,6 +596,7 @@
     "lastName": "Northedge",
     "email": "tnorthedge20@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -515,6 +604,7 @@
     "lastName": "Reddick",
     "email": "greddick21@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -522,6 +612,7 @@
     "lastName": "Petrol",
     "email": "apetrol22@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -529,6 +620,7 @@
     "lastName": "Oldershaw",
     "email": "moldershaw23@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -536,6 +628,7 @@
     "lastName": "Bantock",
     "email": "ebantock24@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -543,6 +636,7 @@
     "lastName": "Scorthorne",
     "email": "ascorthorne25@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -550,6 +644,7 @@
     "lastName": "Element",
     "email": "lelement26@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -557,6 +652,7 @@
     "lastName": "Brunotti",
     "email": "jbrunotti27@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -564,6 +660,7 @@
     "lastName": "Pomroy",
     "email": "cpomroy28@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -571,6 +668,7 @@
     "lastName": "Lacroix",
     "email": "klacroix29@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -578,6 +676,7 @@
     "lastName": "Hanna",
     "email": "khanna2a@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -585,6 +684,7 @@
     "lastName": "Banasiak",
     "email": "pbanasiak2b@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -592,6 +692,7 @@
     "lastName": "Elvin",
     "email": "melvin2c@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -599,6 +700,7 @@
     "lastName": "Berrick",
     "email": "aberrick2d@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -606,6 +708,7 @@
     "lastName": "Dumbellow",
     "email": "sdumbellow2e@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -613,6 +716,7 @@
     "lastName": "Stead",
     "email": "cstead2f@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -620,6 +724,7 @@
     "lastName": "Daintith",
     "email": "hdaintith2g@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -627,6 +732,7 @@
     "lastName": "Giblett",
     "email": "agiblett2h@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -634,6 +740,7 @@
     "lastName": "Cheetham",
     "email": "dcheetham2i@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -641,6 +748,7 @@
     "lastName": "Wrightam",
     "email": "swrightam2j@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -648,6 +756,7 @@
     "lastName": "Tatters",
     "email": "ttatters2k@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -655,6 +764,7 @@
     "lastName": "Pitcock",
     "email": "gpitcock2l@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -662,6 +772,7 @@
     "lastName": "Glantz",
     "email": "cglantz2m@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -669,6 +780,7 @@
     "lastName": "MacIan",
     "email": "emacian2n@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -676,6 +788,7 @@
     "lastName": "Fransemai",
     "email": "mfransemai2o@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -683,6 +796,7 @@
     "lastName": "Whannel",
     "email": "lwhannel2p@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   },
   {
@@ -690,6 +804,7 @@
     "lastName": "Regglar",
     "email": "dregglar2q@gmail.com",
     "avatar": "default.png",
+    "password": "012",
     "role": 2
   },
   {
@@ -697,6 +812,7 @@
     "lastName": "Godsmark",
     "email": "dgodsmark2r@gmail.com",
     "avatar": "default.png",
+    "password": "asd",
     "role": 2
   }
 ]
