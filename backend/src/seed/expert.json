@@ -1,16 +1,10 @@
 [
   {
-    "firstName": "62b254eba2b4863b1cddf641",
-    "lastName": "62b254eba2b4863b1cddf641",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf641",
+    "job": 5,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 5600,
     "age": 27,
-    "email": "62b254eba2b4863b1cddf641",
     "phone": "+36202669771",
     "workDays": [
       2,
@@ -19,21 +13,14 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 9.8,
-    "avatar":"62b254eba2b4863b1cddf641"
+    "rating": 9.8
   },
   {
-    "firstName": "62b254eba2b4863b1cddf644",
-    "lastName": "62b254eba2b4863b1cddf644",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf644",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 9400,
     "age": 18,
-    "email": "62b254eba2b4863b1cddf644",
     "phone": "+36206374631",
     "workDays": [
       1,
@@ -42,21 +29,14 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 6.4,
-    "avatar":"62b254eba2b4863b1cddf644"
+    "rating": 6.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf643",
-    "lastName": "62b254eba2b4863b1cddf643",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf643",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 4100,
     "age": 18,
-    "email": "62b254eba2b4863b1cddf643",
     "phone": "+36701832501",
     "workDays": [
       1,
@@ -66,21 +46,14 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 7.4,
-    "avatar":"62b254eba2b4863b1cddf643"
+    "rating": 7.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf645",
-    "lastName": "62b254eba2b4863b1cddf645",
-    "job": [
-      12
-    ],
-    "categoryID": [
-      2
-    ],
+    "user": "62b254eba2b4863b1cddf645",
+    "job": 12,
+    "category":"629b9c5ef5de31042ab06344",
     "price": 9900,
     "age": 46,
-    "email": "62b254eba2b4863b1cddf645",
     "phone": "+36702623033",
     "workDays": [
       3,
@@ -89,42 +62,28 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 9.4,
-    "avatar":"62b254eba2b4863b1cddf645"
+    "rating": 9.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf646",
-    "lastName": "62b254eba2b4863b1cddf646",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      7
-    ],
+    "user": "62b254eba2b4863b1cddf646",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06349",
     "price": 4200,
     "age": 66,
-    "email": "62b254eba2b4863b1cddf646",
     "phone": "+36307558051",
     "workDays": [
       2
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5.7,
-    "avatar":"62b254eba2b4863b1cddf646"
+    "rating": 5.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf642",
-    "lastName": "62b254eba2b4863b1cddf642",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      6
-    ],
+    "user": "62b254eba2b4863b1cddf642",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab06348",
     "price": 8500,
     "age": 31,
-    "email": "62b254eba2b4863b1cddf642",
     "phone": "+36707125306",
     "workDays": [
       2,
@@ -132,42 +91,28 @@
     ],
     "availableFrom": "6:15",
     "availableTill": "14:15",
-    "rating": 7.5,
-    "avatar":"62b254eba2b4863b1cddf642"
+    "rating": 7.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf649",
-    "lastName": "62b254eba2b4863b1cddf649",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      7
-    ],
+    "user": "62b254eba2b4863b1cddf649",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab06349",
     "price": 7300,
     "age": 55,
-    "email": "62b254eba2b4863b1cddf649",
     "phone": "+36704017565",
     "workDays": [
       2
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 6.4,
-    "avatar":"62b254eba2b4863b1cddf649"
+    "rating": 6.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf64b",
-    "lastName": "62b254eba2b4863b1cddf64b",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf64b",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 7300,
     "age": 19,
-    "email": "62b254eba2b4863b1cddf64b",
     "phone": "+36206307840",
     "workDays": [
       1,
@@ -176,21 +121,14 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5.9,
-    "avatar":"62b254eba2b4863b1cddf64b"
+    "rating": 5.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf64a",
-    "lastName": "62b254eba2b4863b1cddf64a",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf64a",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 5000,
     "age": 32,
-    "email": "62b254eba2b4863b1cddf64a",
     "phone": "+36304548655",
     "workDays": [
       1,
@@ -199,21 +137,14 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 4.9,
-    "avatar":"62b254eba2b4863b1cddf64a"
+    "rating": 4.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf64c",
-    "lastName": "62b254eba2b4863b1cddf64c",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf64c",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 3900,
     "age": 38,
-    "email": "62b254eba2b4863b1cddf64c",
     "phone": "+36307904825",
     "workDays": [
       3,
@@ -223,21 +154,14 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 6.4,
-    "avatar":"62b254eba2b4863b1cddf64c"
+    "rating": 6.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf647",
-    "lastName": "62b254eba2b4863b1cddf647",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf647",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 5900,
     "age": 48,
-    "email": "62b254eba2b4863b1cddf647",
     "phone": "+36209373755",
     "workDays": [
       3,
@@ -245,21 +169,14 @@
     ],
     "availableFrom": "8:15",
     "availableTill": "16:15",
-    "rating": 4.3,
-    "avatar":"62b254eba2b4863b1cddf647"
+    "rating": 4.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf64e",
-    "lastName": "62b254eba2b4863b1cddf64e",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf64e",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 2600,
     "age": 63,
-    "email": "62b254eba2b4863b1cddf64e",
     "phone": "+36208075636",
     "workDays": [
       2,
@@ -268,42 +185,28 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 8.3,
-    "avatar":"62b254eba2b4863b1cddf64e"
+    "rating": 8.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf64f",
-    "lastName": "62b254eba2b4863b1cddf64f",
-    "job": [
-      6
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf64f",
+    "job": 6,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 3300,
     "age": 70,
-    "email": "62b254eba2b4863b1cddf64f",
     "phone": "+36707260110",
     "workDays": [
       3
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 4.4,
-    "avatar":"62b254eba2b4863b1cddf64f"
+    "rating": 4.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf650",
-    "lastName": "62b254eba2b4863b1cddf650",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf650",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 9000,
     "age": 67,
-    "email": "62b254eba2b4863b1cddf650",
     "phone": "+36301110340",
     "workDays": [
       1,
@@ -311,21 +214,14 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 3.7,
-    "avatar":"62b254eba2b4863b1cddf650"
+    "rating": 3.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf651",
-    "lastName": "62b254eba2b4863b1cddf651",
-    "job": [
-      9
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf651",
+    "job": 9,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 5200,
     "age": 32,
-    "email": "62b254eba2b4863b1cddf651",
     "phone": "+36708531190",
     "workDays": [
       1,
@@ -334,21 +230,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 8.6,
-    "avatar":"62b254eba2b4863b1cddf651"
+    "rating": 8.6
   },
   {
-    "firstName": "62b254eba2b4863b1cddf652",
-    "lastName": "62b254eba2b4863b1cddf652",
-    "job": [
-      16
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf652",
+    "job": 16,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 9700,
     "age": 59,
-    "email": "62b254eba2b4863b1cddf652",
     "phone": "+36709997916",
     "workDays": [
       2,
@@ -356,21 +245,14 @@
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 8.3,
-    "avatar":"62b254eba2b4863b1cddf652"
+    "rating": 8.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf653",
-    "lastName": "62b254eba2b4863b1cddf653",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf653",
+    "job": 3,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 8900,
     "age": 72,
-    "email": "62b254eba2b4863b1cddf653",
     "phone": "+36302084388",
     "workDays": [
       1,
@@ -378,21 +260,14 @@
     ],
     "availableFrom": "6:15",
     "availableTill": "14:15",
-    "rating": 4.1,
-    "avatar":"62b254eba2b4863b1cddf653"
+    "rating": 4.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf64d",
-    "lastName": "62b254eba2b4863b1cddf64d",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      7
-    ],
+    "user": "62b254eba2b4863b1cddf64d",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06349",
     "price": 2900,
     "age": 74,
-    "email": "62b254eba2b4863b1cddf64d",
     "phone": "+36309778490",
     "workDays": [
       2,
@@ -403,21 +278,14 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 3,
-    "avatar":"62b254eba2b4863b1cddf64d"
+    "rating": 3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf655",
-    "lastName": "62b254eba2b4863b1cddf655",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf655",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 5400,
     "age": 44,
-    "email": "62b254eba2b4863b1cddf655",
     "phone": "+36701811570",
     "workDays": [
       4,
@@ -425,21 +293,14 @@
     ],
     "availableFrom": "11:30",
     "availableTill": "19:30",
-    "rating": 9.4,
-    "avatar":"62b254eba2b4863b1cddf655"
+    "rating": 9.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf658",
-    "lastName": "62b254eba2b4863b1cddf658",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf658",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 5900,
     "age": 54,
-    "email": "62b254eba2b4863b1cddf658",
     "phone": "+36705353246",
     "workDays": [
       1,
@@ -449,21 +310,14 @@
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 7.2,
-    "avatar":"62b254eba2b4863b1cddf658"
+    "rating": 7.2
   },
   {
-    "firstName": "62b254eba2b4863b1cddf659",
-    "lastName": "62b254eba2b4863b1cddf659",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf659",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 4900,
     "age": 67,
-    "email": "62b254eba2b4863b1cddf659",
     "phone": "+36304136099",
     "workDays": [
       1,
@@ -472,21 +326,14 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 3.1,
-    "avatar":"62b254eba2b4863b1cddf659"
+    "rating": 3.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf65a",
-    "lastName": "62b254eba2b4863b1cddf65a",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      2
-    ],
+    "user": "62b254eba2b4863b1cddf65a",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06344",
     "price": 3300,
     "age": 70,
-    "email": "62b254eba2b4863b1cddf65a",
     "phone": "+36704947831",
     "workDays": [
       1,
@@ -494,42 +341,28 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 8.7,
-    "avatar":"62b254eba2b4863b1cddf65a"
+    "rating": 8.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf65b",
-    "lastName": "62b254eba2b4863b1cddf65b",
-    "job": [
-      7
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf65b",
+    "job": 7,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 8100,
     "age": 65,
-    "email": "62b254eba2b4863b1cddf65b",
     "phone": "+36302761955",
     "workDays": [
       3
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 4.7,
-    "avatar":"62b254eba2b4863b1cddf65b"
+    "rating": 4.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf65d",
-    "lastName": "62b254eba2b4863b1cddf65d",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf65d",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 9800,
     "age": 55,
-    "email": "62b254eba2b4863b1cddf65d",
     "phone": "+36704047022",
     "workDays": [
       1,
@@ -539,21 +372,14 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 5,
-    "avatar":"62b254eba2b4863b1cddf65d"
+    "rating": 5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf65c",
-    "lastName": "62b254eba2b4863b1cddf65c",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf65c",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 7000,
     "age": 38,
-    "email": "62b254eba2b4863b1cddf65c",
     "phone": "+36302884918",
     "workDays": [
       1,
@@ -564,21 +390,14 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 9.1,
-    "avatar":"62b254eba2b4863b1cddf65c"
+    "rating": 9.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf654",
-    "lastName": "62b254eba2b4863b1cddf654",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf654",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 7000,
     "age": 41,
-    "email": "62b254eba2b4863b1cddf654",
     "phone": "+36302737192",
     "workDays": [
       3,
@@ -586,21 +405,14 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 6.3,
-    "avatar":"62b254eba2b4863b1cddf654"
+    "rating": 6.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf65f",
-    "lastName": "62b254eba2b4863b1cddf65f",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf65f",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 7500,
     "age": 41,
-    "email": "62b254eba2b4863b1cddf65f",
     "phone": "+36308039230",
     "workDays": [
       1,
@@ -610,21 +422,14 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 4.4,
-    "avatar":"62b254eba2b4863b1cddf65f"
+    "rating": 4.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf660",
-    "lastName": "62b254eba2b4863b1cddf660",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf660",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 4900,
     "age": 29,
-    "email": "62b254eba2b4863b1cddf660",
     "phone": "+36202083167",
     "workDays": [
       1,
@@ -633,21 +438,14 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 3.6,
-    "avatar":"62b254eba2b4863b1cddf660"
+    "rating": 3.6
   },
   {
-    "firstName": "62b254eba2b4863b1cddf661",
-    "lastName": "62b254eba2b4863b1cddf661",
-    "job": [
-      13
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf661",
+    "job": 13,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 4900,
     "age": 23,
-    "email": "62b254eba2b4863b1cddf661",
     "phone": "+36206196601",
     "workDays": [
       2,
@@ -655,21 +453,14 @@
     ],
     "availableFrom": "6:15",
     "availableTill": "14:15",
-    "rating": 6.3,
-    "avatar":"62b254eba2b4863b1cddf661"
+    "rating": 6.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf662",
-    "lastName": "62b254eba2b4863b1cddf662",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf662",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 2200,
     "age": 50,
-    "email": "62b254eba2b4863b1cddf662",
     "phone": "+36306536687",
     "workDays": [
       1,
@@ -677,21 +468,14 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 3.5,
-    "avatar":"62b254eba2b4863b1cddf662"
+    "rating": 3.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf663",
-    "lastName": "62b254eba2b4863b1cddf663",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf663",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 7000,
     "age": 27,
-    "email": "62b254eba2b4863b1cddf663",
     "phone": "+36205719107",
     "workDays": [
       1,
@@ -700,21 +484,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 9.7,
-    "avatar":"62b254eba2b4863b1cddf663"
+    "rating": 9.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf664",
-    "lastName": "62b254eba2b4863b1cddf664",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf664",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 4400,
     "age": 54,
-    "email": "62b254eba2b4863b1cddf664",
     "phone": "+36704033506",
     "workDays": [
       1,
@@ -723,21 +500,14 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 4.7,
-    "avatar":"62b254eba2b4863b1cddf664"
+    "rating": 4.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf665",
-    "lastName": "62b254eba2b4863b1cddf665",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf665",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 7500,
     "age": 73,
-    "email": "62b254eba2b4863b1cddf665",
     "phone": "+36307818273",
     "workDays": [
       1,
@@ -747,21 +517,14 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 5.7,
-    "avatar":"62b254eba2b4863b1cddf665"
+    "rating": 5.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf666",
-    "lastName": "62b254eba2b4863b1cddf666",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      2
-    ],
+    "user": "62b254eba2b4863b1cddf666",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06344",
     "price": 3800,
     "age": 70,
-    "email": "62b254eba2b4863b1cddf666",
     "phone": "+36304618087",
     "workDays": [
       2,
@@ -770,21 +533,14 @@
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 6.4,
-    "avatar":"62b254eba2b4863b1cddf666"
+    "rating": 6.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf65e",
-    "lastName": "62b254eba2b4863b1cddf65e",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf65e",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 4900,
     "age": 62,
-    "email": "62b254eba2b4863b1cddf65e",
     "phone": "+36207029793",
     "workDays": [
       1,
@@ -793,42 +549,28 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 3.5,
-    "avatar":"62b254eba2b4863b1cddf65e"
+    "rating": 3.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf668",
-    "lastName": "62b254eba2b4863b1cddf668",
-    "job": [
-      6
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf668",
+    "job": 6,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 4700,
     "age": 51,
-    "email": "62b254eba2b4863b1cddf668",
     "phone": "+36204240626",
     "workDays": [
       5
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 3.4,
-    "avatar":"62b254eba2b4863b1cddf668"
+    "rating": 3.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf669",
-    "lastName": "62b254eba2b4863b1cddf669",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      6
-    ],
+    "user": "62b254eba2b4863b1cddf669",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab06348",
     "price": 6200,
     "age": 44,
-    "email": "62b254eba2b4863b1cddf669",
     "phone": "+36209675109",
     "workDays": [
       1,
@@ -839,21 +581,14 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 7.1,
-    "avatar":"62b254eba2b4863b1cddf669"
+    "rating": 7.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf66a",
-    "lastName": "62b254eba2b4863b1cddf66a",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      6
-    ],
+    "user": "62b254eba2b4863b1cddf66a",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab06348",
     "price": 6000,
     "age": 59,
-    "email": "62b254eba2b4863b1cddf66a",
     "phone": "+36302051841",
     "workDays": [
       2,
@@ -861,21 +596,14 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 8.3,
-    "avatar":"62b254eba2b4863b1cddf66a"
+    "rating": 8.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf66b",
-    "lastName": "62b254eba2b4863b1cddf66b",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf66b",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 7800,
     "age": 47,
-    "email": "62b254eba2b4863b1cddf66b",
     "phone": "+36708544529",
     "workDays": [
       3,
@@ -883,21 +611,14 @@
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 9.2,
-    "avatar":"62b254eba2b4863b1cddf66b"
+    "rating": 9.2
   },
   {
-    "firstName": "62b254eba2b4863b1cddf66c",
-    "lastName": "62b254eba2b4863b1cddf66c",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      7
-    ],
+    "user": "62b254eba2b4863b1cddf66c",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab06349",
     "price": 5500,
     "age": 31,
-    "email": "62b254eba2b4863b1cddf66c",
     "phone": "+36204216360",
     "workDays": [
       1,
@@ -905,21 +626,14 @@
     ],
     "availableFrom": "8:15",
     "availableTill": "16:15",
-    "rating": 3.6,
-    "avatar":"62b254eba2b4863b1cddf66c"
+    "rating": 3.6
   },
   {
-    "firstName": "62b254eba2b4863b1cddf66d",
-    "lastName": "62b254eba2b4863b1cddf66d",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf66d",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 3100,
     "age": 19,
-    "email": "62b254eba2b4863b1cddf66d",
     "phone": "+36706620057",
     "workDays": [
       1,
@@ -927,21 +641,14 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 6.7,
-    "avatar":"62b254eba2b4863b1cddf66d"
+    "rating": 6.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf66e",
-    "lastName": "62b254eba2b4863b1cddf66e",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf66e",
+    "job": 1,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 5600,
     "age": 45,
-    "email": "62b254eba2b4863b1cddf66e",
     "phone": "+36708867560",
     "workDays": [
       2,
@@ -950,21 +657,14 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 6.5,
-    "avatar":"62b254eba2b4863b1cddf66e"
+    "rating": 6.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf66f",
-    "lastName": "62b254eba2b4863b1cddf66f",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf66f",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 7900,
     "age": 22,
-    "email": "62b254eba2b4863b1cddf66f",
     "phone": "+36207741142",
     "workDays": [
       1,
@@ -974,21 +674,14 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5.1,
-    "avatar":"62b254eba2b4863b1cddf66f"
+    "rating": 5.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf670",
-    "lastName": "62b254eba2b4863b1cddf670",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf670",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 7700,
     "age": 48,
-    "email": "62b254eba2b4863b1cddf670",
     "phone": "+36208546004",
     "workDays": [
       3,
@@ -996,21 +689,14 @@
     ],
     "availableFrom": "9:45",
     "availableTill": "17:45",
-    "rating": 9.1,
-    "avatar":"62b254eba2b4863b1cddf670"
+    "rating": 9.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf667",
-    "lastName": "62b254eba2b4863b1cddf667",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf667",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 8600,
     "age": 33,
-    "email": "62b254eba2b4863b1cddf667",
     "phone": "+36209472727",
     "workDays": [
       2,
@@ -1018,21 +704,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 6.5,
-    "avatar":"62b254eba2b4863b1cddf667"
+    "rating": 6.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf672",
-    "lastName": "62b254eba2b4863b1cddf672",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf672",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 9100,
     "age": 21,
-    "email": "62b254eba2b4863b1cddf672",
     "phone": "+36703454304",
     "workDays": [
       2,
@@ -1040,21 +719,14 @@
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 9.3,
-    "avatar":"62b254eba2b4863b1cddf672"
+    "rating": 9.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf673",
-    "lastName": "62b254eba2b4863b1cddf673",
-    "job": [
-      19
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf673",
+    "job": 19,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 8500,
     "age": 63,
-    "email": "62b254eba2b4863b1cddf673",
     "phone": "+36209530330",
     "workDays": [
       2,
@@ -1063,42 +735,28 @@
     ],
     "availableFrom": "11:45",
     "availableTill": "19:45",
-    "rating": 7,
-    "avatar":"62b254eba2b4863b1cddf673"
+    "rating": 7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf674",
-    "lastName": "62b254eba2b4863b1cddf674",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf674",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 2700,
     "age": 19,
-    "email": "62b254eba2b4863b1cddf674",
     "phone": "+36305234577",
     "workDays": [
       2
     ],
     "availableFrom": "9:45",
     "availableTill": "17:45",
-    "rating": 8.8,
-    "avatar":"62b254eba2b4863b1cddf674"
+    "rating": 8.8
   },
   {
-    "firstName": "62b254eba2b4863b1cddf675",
-    "lastName": "62b254eba2b4863b1cddf675",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf675",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 8300,
     "age": 36,
-    "email": "62b254eba2b4863b1cddf675",
     "phone": "+36307572974",
     "workDays": [
       1,
@@ -1109,21 +767,14 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 5.2,
-    "avatar":"62b254eba2b4863b1cddf675"
+    "rating": 5.2
   },
   {
-    "firstName": "62b254eba2b4863b1cddf677",
-    "lastName": "62b254eba2b4863b1cddf677",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      7
-    ],
+    "user": "62b254eba2b4863b1cddf677",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab06349",
     "price": 2400,
     "age": 73,
-    "email": "62b254eba2b4863b1cddf677",
     "phone": "+36302799831",
     "workDays": [
       1,
@@ -1132,21 +783,14 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 7.2,
-    "avatar":"62b254eba2b4863b1cddf677"
+    "rating": 7.2
   },
   {
-    "firstName": "62b254eba2b4863b1cddf676",
-    "lastName": "62b254eba2b4863b1cddf676",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf676",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 3600,
     "age": 51,
-    "email": "62b254eba2b4863b1cddf676",
     "phone": "+36201095096",
     "workDays": [
       1,
@@ -1157,42 +801,28 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 9.9,
-    "avatar":"62b254eba2b4863b1cddf676"
+    "rating": 9.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf679",
-    "lastName": "62b254eba2b4863b1cddf679",
-    "job": [
-      8
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf679",
+    "job": 8,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 9600,
     "age": 51,
-    "email": "62b254eba2b4863b1cddf679",
     "phone": "+36204040802",
     "workDays": [
       3
     ],
     "availableFrom": "9:00",
     "availableTill": "17:00",
-    "rating": 8.5,
-    "avatar":"62b254eba2b4863b1cddf679"
+    "rating": 8.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf678",
-    "lastName": "62b254eba2b4863b1cddf678",
-    "job": [
-      8
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf678",
+    "job": 8,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 3600,
     "age": 53,
-    "email": "62b254eba2b4863b1cddf678",
     "phone": "+36208105349",
     "workDays": [
       1,
@@ -1202,21 +832,14 @@
     ],
     "availableFrom": "9:15",
     "availableTill": "17:15",
-    "rating": 3.2,
-    "avatar":"62b254eba2b4863b1cddf678"
+    "rating": 3.2
   },
   {
-    "firstName": "62b254eba2b4863b1cddf67a",
-    "lastName": "62b254eba2b4863b1cddf67a",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf67a",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 2600,
     "age": 35,
-    "email": "62b254eba2b4863b1cddf67a",
     "phone": "+36308954046",
     "workDays": [
       1,
@@ -1225,21 +848,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 3.1,
-    "avatar":"62b254eba2b4863b1cddf67a"
+    "rating": 3.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf67b",
-    "lastName": "62b254eba2b4863b1cddf67b",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf67b",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 5200,
     "age": 70,
-    "email": "62b254eba2b4863b1cddf67b",
     "phone": "+36209698662",
     "workDays": [
       1,
@@ -1249,42 +865,28 @@
     ],
     "availableFrom": "8:00",
     "availableTill": "16:00",
-    "rating": 4.4,
-    "avatar":"62b254eba2b4863b1cddf67b"
+    "rating": 4.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf671",
-    "lastName": "62b254eba2b4863b1cddf671",
-    "job": [
-      7
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf671",
+    "job": 7,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 9000,
     "age": 39,
-    "email": "62b254eba2b4863b1cddf671",
     "phone": "+36305238895",
     "workDays": [
       2
     ],
     "availableFrom": "6:50",
     "availableTill": "14:50",
-    "rating": 7.7,
-    "avatar":"62b254eba2b4863b1cddf671"
+    "rating": 7.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf67d",
-    "lastName": "62b254eba2b4863b1cddf67d",
-    "job": [
-      6
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf67d",
+    "job": 6,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 6600,
     "age": 39,
-    "email": "62b254eba2b4863b1cddf67d",
     "phone": "+36301065992",
     "workDays": [
       2,
@@ -1292,21 +894,14 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 8,
-    "avatar":"62b254eba2b4863b1cddf67d"
+    "rating": 8
   },
   {
-    "firstName": "62b254eba2b4863b1cddf67e",
-    "lastName": "62b254eba2b4863b1cddf67e",
-    "job": [
-      6
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf67e",
+    "job": 6,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 4400,
     "age": 55,
-    "email": "62b254eba2b4863b1cddf67e",
     "phone": "+36309418018",
     "workDays": [
       3,
@@ -1314,21 +909,14 @@
     ],
     "availableFrom": "8:15",
     "availableTill": "16:15",
-    "rating": 4.4,
-    "avatar":"62b254eba2b4863b1cddf67e"
+    "rating": 4.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf67f",
-    "lastName": "62b254eba2b4863b1cddf67f",
-    "job": [
-      13
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf67f",
+    "job": 13,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 5400,
     "age": 59,
-    "email": "62b254eba2b4863b1cddf67f",
     "phone": "+36709851279",
     "workDays": [
       4,
@@ -1336,21 +924,14 @@
     ],
     "availableFrom": "7:30",
     "availableTill": "15:30",
-    "rating": 8.7,
-    "avatar":"62b254eba2b4863b1cddf67f"
+    "rating": 8.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf680",
-    "lastName": "62b254eba2b4863b1cddf680",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf680",
+    "job": 5,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 5900,
     "age": 66,
-    "email": "62b254eba2b4863b1cddf680",
     "phone": "+36308779514",
     "workDays": [
       1,
@@ -1358,21 +939,14 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 4.1,
-    "avatar":"62b254eba2b4863b1cddf680"
+    "rating": 4.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf682",
-    "lastName": "62b254eba2b4863b1cddf682",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf682",
+    "job": 0,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 8300,
     "age": 24,
-    "email": "62b254eba2b4863b1cddf682",
     "phone": "+36302438389",
     "workDays": [
       2,
@@ -1381,21 +955,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 8.5,
-    "avatar":"62b254eba2b4863b1cddf682"
+    "rating": 8.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf681",
-    "lastName": "62b254eba2b4863b1cddf681",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf681",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 8600,
     "age": 39,
-    "email": "62b254eba2b4863b1cddf681",
     "phone": "+36709725699",
     "workDays": [
       1,
@@ -1405,21 +972,14 @@
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 4,
-    "avatar":"62b254eba2b4863b1cddf681"
+    "rating": 4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf683",
-    "lastName": "62b254eba2b4863b1cddf683",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      6
-    ],
+    "user": "62b254eba2b4863b1cddf683",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06348",
     "price": 7500,
     "age": 40,
-    "email": "62b254eba2b4863b1cddf683",
     "phone": "+36306648343",
     "workDays": [
       1,
@@ -1427,21 +987,14 @@
     ],
     "availableFrom": "8:45",
     "availableTill": "16:45",
-    "rating": 4.9,
-    "avatar":"62b254eba2b4863b1cddf683"
+    "rating": 4.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf684",
-    "lastName": "62b254eba2b4863b1cddf684",
-    "job": [
-      14
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf684",
+    "job": 14,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 3400,
     "age": 28,
-    "email": "62b254eba2b4863b1cddf684",
     "phone": "+36306190822",
     "workDays": [
       1,
@@ -1449,42 +1002,28 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 4.7,
-    "avatar":"62b254eba2b4863b1cddf684"
+    "rating": 4.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf685",
-    "lastName": "62b254eba2b4863b1cddf685",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf685",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 6000,
     "age": 46,
-    "email": "62b254eba2b4863b1cddf685",
     "phone": "+36305485898",
     "workDays": [
       6
     ],
     "availableFrom": "8:45",
     "availableTill": "16:45",
-    "rating": 8.3,
-    "avatar":"62b254eba2b4863b1cddf685"
+    "rating": 8.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf67c",
-    "lastName": "62b254eba2b4863b1cddf67c",
-    "job": [
-      6
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf67c",
+    "job": 6,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 4100,
     "age": 36,
-    "email": "62b254eba2b4863b1cddf67c",
     "phone": "+36301975431",
     "workDays": [
       3,
@@ -1492,21 +1031,14 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 3.3,
-    "avatar":"62b254eba2b4863b1cddf67c"
+    "rating": 3.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf686",
-    "lastName": "62b254eba2b4863b1cddf686",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      6
-    ],
+    "user": "62b254eba2b4863b1cddf686",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab06348",
     "price": 3500,
     "age": 60,
-    "email": "62b254eba2b4863b1cddf686",
     "phone": "+36303398278",
     "workDays": [
       1,
@@ -1515,21 +1047,14 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 6.8,
-    "avatar":"62b254eba2b4863b1cddf686"
+    "rating": 6.8
   },
   {
-    "firstName": "62b254eba2b4863b1cddf687",
-    "lastName": "62b254eba2b4863b1cddf687",
-    "job": [
-      10
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf687",
+    "job": 10,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 6400,
     "age": 22,
-    "email": "62b254eba2b4863b1cddf687",
     "phone": "+36706572838",
     "workDays": [
       1,
@@ -1538,21 +1063,14 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 8.1,
-    "avatar":"62b254eba2b4863b1cddf687"
+    "rating": 8.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf68a",
-    "lastName": "62b254eba2b4863b1cddf68a",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf68a",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 3400,
     "age": 24,
-    "email": "62b254eba2b4863b1cddf68a",
     "phone": "+36202840887",
     "workDays": [
       1,
@@ -1561,21 +1079,14 @@
     ],
     "availableFrom": "8:00",
     "availableTill": "16:00",
-    "rating": 6.7,
-    "avatar":"62b254eba2b4863b1cddf68a"
+    "rating": 6.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf689",
-    "lastName": "62b254eba2b4863b1cddf689",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf689",
+    "job": 2,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 6100,
     "age": 58,
-    "email": "62b254eba2b4863b1cddf689",
     "phone": "+36304751662",
     "workDays": [
       1,
@@ -1583,21 +1094,14 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 4.9,
-    "avatar":"62b254eba2b4863b1cddf689"
+    "rating": 4.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf68b",
-    "lastName": "62b254eba2b4863b1cddf68b",
-    "job": [
-      12
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf68b",
+    "job": 12,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 6900,
     "age": 48,
-    "email": "62b254eba2b4863b1cddf68b",
     "phone": "+36706161204",
     "workDays": [
       1,
@@ -1605,21 +1109,14 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 3.7,
-    "avatar":"62b254eba2b4863b1cddf68b"
+    "rating": 3.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf68c",
-    "lastName": "62b254eba2b4863b1cddf68c",
-    "job": [
-      12
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf68c",
+    "job": 12,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 4800,
     "age": 68,
-    "email": "62b254eba2b4863b1cddf68c",
     "phone": "+36304973210",
     "workDays": [
       1,
@@ -1628,21 +1125,14 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 7.6,
-    "avatar":"62b254eba2b4863b1cddf68c"
+    "rating": 7.6
   },
   {
-    "firstName": "62b254eba2b4863b1cddf68d",
-    "lastName": "62b254eba2b4863b1cddf68d",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf68d",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 3000,
     "age": 28,
-    "email": "62b254eba2b4863b1cddf68d",
     "phone": "+36702637019",
     "workDays": [
       1,
@@ -1652,21 +1142,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 6.3,
-    "avatar":"62b254eba2b4863b1cddf68d"
+    "rating": 6.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf68e",
-    "lastName": "62b254eba2b4863b1cddf68e",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf68e",
+    "job": 4,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 9900,
     "age": 36,
-    "email": "62b254eba2b4863b1cddf68e",
     "phone": "+36301607225",
     "workDays": [
       1,
@@ -1677,21 +1160,14 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 6.5,
-    "avatar":"62b254eba2b4863b1cddf68e"
+    "rating": 6.5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf68f",
-    "lastName": "62b254eba2b4863b1cddf68f",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      7
-    ],
+    "user": "62b254eba2b4863b1cddf68f",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab06349",
     "price": 7200,
     "age": 26,
-    "email": "62b254eba2b4863b1cddf68f",
     "phone": "+36709756230",
     "workDays": [
       1,
@@ -1700,21 +1176,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 5.4,
-    "avatar":"62b254eba2b4863b1cddf68f"
+    "rating": 5.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf688",
-    "lastName": "62b254eba2b4863b1cddf688",
-    "job": [
-      7
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf688",
+    "job": 7,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 8400,
     "age": 24,
-    "email": "62b254eba2b4863b1cddf688",
     "phone": "+36708428775",
     "workDays": [
       1,
@@ -1723,21 +1192,14 @@
     ],
     "availableFrom": "8:00",
     "availableTill": "16:00",
-    "rating": 8,
-    "avatar":"62b254eba2b4863b1cddf688"
+    "rating": 8
   },
   {
-    "firstName": "62b254eba2b4863b1cddf690",
-    "lastName": "62b254eba2b4863b1cddf690",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      7
-    ],
+    "user": "62b254eba2b4863b1cddf690",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab06349",
     "price": 9200,
     "age": 56,
-    "email": "62b254eba2b4863b1cddf690",
     "phone": "+36305851980",
     "workDays": [
       1,
@@ -1746,21 +1208,14 @@
     ],
     "availableFrom": "7:15",
     "availableTill": "15:15",
-    "rating": 6.7,
-    "avatar":"62b254eba2b4863b1cddf690"
+    "rating": 6.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf691",
-    "lastName": "62b254eba2b4863b1cddf691",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf691",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 9200,
     "age": 69,
-    "email": "62b254eba2b4863b1cddf691",
     "phone": "+36307870828",
     "workDays": [
       1,
@@ -1769,63 +1224,42 @@
     ],
     "availableFrom": "10:30",
     "availableTill": "18:30",
-    "rating": 3.9,
-    "avatar":"62b254eba2b4863b1cddf691"
+    "rating": 3.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf692",
-    "lastName": "62b254eba2b4863b1cddf692",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf692",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 7100,
     "age": 40,
-    "email": "62b254eba2b4863b1cddf692",
     "phone": "+36708099093",
     "workDays": [
       4
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 5.6,
-    "avatar":"62b254eba2b4863b1cddf692"
+    "rating": 5.6
   },
   {
-    "firstName": "62b254eba2b4863b1cddf693",
-    "lastName": "62b254eba2b4863b1cddf693",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf693",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 9400,
     "age": 29,
-    "email": "62b254eba2b4863b1cddf693",
     "phone": "+36307171721",
     "workDays": [
       2
     ],
     "availableFrom": "9:45",
     "availableTill": "17:45",
-    "rating": 5,
-    "avatar":"62b254eba2b4863b1cddf693"
+    "rating": 5
   },
   {
-    "firstName": "62b254eba2b4863b1cddf694",
-    "lastName": "62b254eba2b4863b1cddf694",
-    "job": [
-      6
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf694",
+    "job": 6,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 8200,
     "age": 47,
-    "email": "62b254eba2b4863b1cddf694",
     "phone": "+36307302459",
     "workDays": [
       4,
@@ -1833,21 +1267,14 @@
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 7.6,
-    "avatar":"62b254eba2b4863b1cddf694"
+    "rating": 7.6
   },
   {
-    "firstName": "62b254eba2b4863b1cddf696",
-    "lastName": "62b254eba2b4863b1cddf696",
-    "job": [
-      19
-    ],
-    "categoryID": [
-      2
-    ],
+    "user": "62b254eba2b4863b1cddf696",
+    "job": 19,
+    "category":"629b9c5ef5de31042ab06344",
     "price": 2600,
     "age": 24,
-    "email": "62b254eba2b4863b1cddf696",
     "phone": "+36306897688",
     "workDays": [
       2,
@@ -1858,21 +1285,14 @@
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 7.3,
-    "avatar":"62b254eba2b4863b1cddf696"
+    "rating": 7.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf697",
-    "lastName": "62b254eba2b4863b1cddf697",
-    "job": [
-      7
-    ],
-    "categoryID": [
-      5
-    ],
+    "user": "62b254eba2b4863b1cddf697",
+    "job": 7,
+    "category":"629b9c5ef5de31042ab06347",
     "price": 7300,
     "age": 42,
-    "email": "62b254eba2b4863b1cddf697",
     "phone": "+36306589417",
     "workDays": [
       1,
@@ -1883,21 +1303,14 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 3.8,
-    "avatar":"62b254eba2b4863b1cddf697"
+    "rating": 3.8
   },
   {
-    "firstName": "62b254eba2b4863b1cddf698",
-    "lastName": "62b254eba2b4863b1cddf698",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      6
-    ],
+    "user": "62b254eba2b4863b1cddf698",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab06348",
     "price": 5600,
     "age": 58,
-    "email": "62b254eba2b4863b1cddf698",
     "phone": "+36209574910",
     "workDays": [
       2,
@@ -1907,21 +1320,14 @@
     ],
     "availableFrom": "10:00",
     "availableTill": "18:00",
-    "rating": 5.7,
-    "avatar":"62b254eba2b4863b1cddf698"
+    "rating": 5.7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf699",
-    "lastName": "62b254eba2b4863b1cddf699",
-    "job": [
-      14
-    ],
-    "categoryID": [
-      2
-    ],
+    "user": "62b254eba2b4863b1cddf699",
+    "job": 14,
+    "category":"629b9c5ef5de31042ab06344",
     "price": 2300,
     "age": 26,
-    "email": "62b254eba2b4863b1cddf699",
     "phone": "+36206025353",
     "workDays": [
       1,
@@ -1929,21 +1335,14 @@
     ],
     "availableFrom": "9:45",
     "availableTill": "17:45",
-    "rating": 8.6,
-    "avatar":"62b254eba2b4863b1cddf699"
+    "rating": 8.6
   },
   {
-    "firstName": "62b254eba2b4863b1cddf69c",
-    "lastName": "62b254eba2b4863b1cddf69c",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf69c",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 6300,
     "age": 44,
-    "email": "62b254eba2b4863b1cddf69c",
     "phone": "+36303425961",
     "workDays": [
       1,
@@ -1952,21 +1351,14 @@
     ],
     "availableFrom": "9:30",
     "availableTill": "17:30",
-    "rating": 6.1,
-    "avatar":"62b254eba2b4863b1cddf69c"
+    "rating": 6.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf69b",
-    "lastName": "62b254eba2b4863b1cddf69b",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf69b",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 8100,
     "age": 56,
-    "email": "62b254eba2b4863b1cddf69b",
     "phone": "+36703071388",
     "workDays": [
       1,
@@ -1977,21 +1369,14 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 7.1,
-    "avatar":"62b254eba2b4863b1cddf69b"
+    "rating": 7.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf69a",
-    "lastName": "62b254eba2b4863b1cddf69a",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      3
-    ],
+    "user": "62b254eba2b4863b1cddf69a",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab06345",
     "price": 9700,
     "age": 43,
-    "email": "62b254eba2b4863b1cddf69a",
     "phone": "+36303391284",
     "workDays": [
       1,
@@ -2000,21 +1385,14 @@
     ],
     "availableFrom": "7:45",
     "availableTill": "15:45",
-    "rating": 6.3,
-    "avatar":"62b254eba2b4863b1cddf69a"
+    "rating": 6.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf69d",
-    "lastName": "62b254eba2b4863b1cddf69d",
-    "job": [
-      10
-    ],
-    "categoryID": [
-      2
-    ],
+    "user": "62b254eba2b4863b1cddf69d",
+    "job": 10,
+    "category":"629b9c5ef5de31042ab06344",
     "price": 2200,
     "age": 43,
-    "email": "62b254eba2b4863b1cddf69d",
     "phone": "+36309700880",
     "workDays": [
       1,
@@ -2022,21 +1400,14 @@
     ],
     "availableFrom": "7:15",
     "availableTill": "15:15",
-    "rating": 8.3,
-    "avatar":"62b254eba2b4863b1cddf69d"
+    "rating": 8.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf69e",
-    "lastName": "62b254eba2b4863b1cddf69e",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf69e",
+    "job": 5,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 3000,
     "age": 20,
-    "email": "62b254eba2b4863b1cddf69e",
     "phone": "+36208613427",
     "workDays": [
       1,
@@ -2045,21 +1416,14 @@
     ],
     "availableFrom": "8:30",
     "availableTill": "16:30",
-    "rating": 8,
-    "avatar":"62b254eba2b4863b1cddf69e"
+    "rating": 8
   },
   {
-    "firstName": "62b254eba2b4863b1cddf69f",
-    "lastName": "62b254eba2b4863b1cddf69f",
-    "job": [
-      3
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf69f",
+    "job": 3,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 8600,
     "age": 52,
-    "email": "62b254eba2b4863b1cddf69f",
     "phone": "+36306611103",
     "workDays": [
       3,
@@ -2067,21 +1431,14 @@
     ],
     "availableFrom": "7:15",
     "availableTill": "15:15",
-    "rating": 7.9,
-    "avatar":"62b254eba2b4863b1cddf69f"
+    "rating": 7.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf695",
-    "lastName": "62b254eba2b4863b1cddf695",
-    "job": [
-      15
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf695",
+    "job": 15,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 4200,
     "age": 30,
-    "email": "62b254eba2b4863b1cddf695",
     "phone": "+36706092284",
     "workDays": [
       1,
@@ -2091,21 +1448,14 @@
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 4.3,
-    "avatar":"62b254eba2b4863b1cddf695"
+    "rating": 4.3
   },
   {
-    "firstName": "62b254eba2b4863b1cddf6a0",
-    "lastName": "62b254eba2b4863b1cddf6a0",
-    "job": [
-      18
-    ],
-    "categoryID": [
-      8
-    ],
+    "user": "62b254eba2b4863b1cddf6a0",
+    "job": 18,
+    "category":"629b9c5ef5de31042ab0634a",
     "price": 1600,
     "age": 47,
-    "email": "62b254eba2b4863b1cddf6a0",
     "phone": "+36301514322",
     "workDays": [
       1,
@@ -2114,63 +1464,42 @@
     ],
     "availableFrom": "10:15",
     "availableTill": "18:15",
-    "rating": 4.9,
-    "avatar":"62b254eba2b4863b1cddf6a0"
+    "rating": 4.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf6a2",
-    "lastName": "62b254eba2b4863b1cddf6a2",
-    "job": [
-      0
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf6a2",
+    "job": 0,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 1800,
     "age": 46,
-    "email": "62b254eba2b4863b1cddf6a2",
     "phone": "+36309035664",
     "workDays": [
       1
     ],
     "availableFrom": "7:00",
     "availableTill": "15:00",
-    "rating": 9.4,
-    "avatar":"62b254eba2b4863b1cddf6a2"
+    "rating": 9.4
   },
   {
-    "firstName": "62b254eba2b4863b1cddf6a1",
-    "lastName": "62b254eba2b4863b1cddf6a1",
-    "job": [
-      1
-    ],
-    "categoryID": [
-      6
-    ],
+    "user": "62b254eba2b4863b1cddf6a1",
+    "job": 1,
+    "category":"629b9c5ef5de31042ab06348",
     "price": 3000,
     "age": 18,
-    "email": "62b254eba2b4863b1cddf6a1",
     "phone": "+36708337428",
     "workDays": [
       1
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 7,
-    "avatar":"62b254eba2b4863b1cddf6a1"
+    "rating": 7
   },
   {
-    "firstName": "62b254eba2b4863b1cddf6a4",
-    "lastName": "62b254eba2b4863b1cddf6a4",
-    "job": [
-      4
-    ],
-    "categoryID": [
-      9
-    ],
+    "user": "62b254eba2b4863b1cddf6a4",
+    "job": 4,
+    "category":"629b9c5ef5de31042ab0634b",
     "price": 7700,
     "age": 26,
-    "email": "62b254eba2b4863b1cddf6a4",
     "phone": "+36709680904",
     "workDays": [
       1,
@@ -2182,21 +1511,14 @@
     ],
     "availableFrom": "6:45",
     "availableTill": "14:45",
-    "rating": 4.9,
-    "avatar":"62b254eba2b4863b1cddf6a4"
+    "rating": 4.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf656",
-    "lastName": "62b254eba2b4863b1cddf656",
-    "job": [
-      7
-    ],
-    "categoryID": [
-      1
-    ],
+    "user": "62b254eba2b4863b1cddf656",
+    "job": 7,
+    "category": "629b9c5ef5de31042ab06343",
     "price": 8300,
     "age": 44,
-    "email": "62b254eba2b4863b1cddf656",
     "phone": "+36302249953",
     "workDays": [
       1,
@@ -2205,21 +1527,14 @@
     ],
     "availableFrom": "9:15",
     "availableTill": "17:15",
-    "rating": 4.1,
-    "avatar":"62b254eba2b4863b1cddf656"
+    "rating": 4.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf657",
-    "lastName": "62b254eba2b4863b1cddf657",
-    "job": [
-      2
-    ],
-    "categoryID": [
-      4
-    ],
+    "user": "62b254eba2b4863b1cddf657",
+    "job": 2,
+    "category":"629b9c5ef5de31042ab06346",
     "price": 8900,
     "age": 36,
-    "email": "62b254eba2b4863b1cddf657",
     "phone": "+36306485602",
     "workDays": [
       1,
@@ -2228,21 +1543,14 @@
     ],
     "availableFrom": "11:15",
     "availableTill": "19:15",
-    "rating": 8.9,
-    "avatar":"62b254eba2b4863b1cddf657"
+    "rating": 8.9
   },
   {
-    "firstName": "62b254eba2b4863b1cddf6a3",
-    "lastName": "62b254eba2b4863b1cddf6a3",
-    "job": [
-      7
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf6a3",
+    "job": 7,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 2800,
     "age": 34,
-    "email": "62b254eba2b4863b1cddf6a3",
     "phone": "+36206621954",
     "workDays": [
       1,
@@ -2251,21 +1559,14 @@
     ],
     "availableFrom": "6:30",
     "availableTill": "14:30",
-    "rating": 9.1,
-    "avatar":"62b254eba2b4863b1cddf6a3"
+    "rating": 9.1
   },
   {
-    "firstName": "62b254eba2b4863b1cddf648",
-    "lastName": "62b254eba2b4863b1cddf648",
-    "job": [
-      5
-    ],
-    "categoryID": [
-      10
-    ],
+    "user": "62b254eba2b4863b1cddf648",
+    "job": 5,
+    "category":"629b9c5ef5de31042ab0634c",
     "price": 4100,
     "age": 26,
-    "email": "62b254eba2b4863b1cddf648",
     "phone": "+36303139050",
     "workDays": [
       1,
@@ -2275,7 +1576,6 @@
     ],
     "availableFrom": "6:00",
     "availableTill": "14:00",
-    "rating": 4,
-    "avatar":"62b254eba2b4863b1cddf648"
+    "rating": 4
   }
 ]

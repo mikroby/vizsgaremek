@@ -11,7 +11,7 @@ module.exports = (model, populateList = []) => {
       throw new Error(error)
     },
 
-    findAll: () => model.find({}).populate(...populateList).exec(),
+    findAll: () => model.find({}).populate(...populateList),
 
     findOne: (id) => model.findById(id).populate(...populateList),
 
