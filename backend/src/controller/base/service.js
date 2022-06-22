@@ -1,10 +1,14 @@
 module.exports = (model, populateList = []) => {
   return {
 
-    createOne: (entity) => {
-      model.insertOne(entity)
+    createOne: async (entity) => {
       const newEntry = new model(entity)
-      return newEntry.save()
+      const error = newEntity.validateSync()
+      if (!error) {
+        const savedEntity = await newEntry.save()
+        return model.findById(savedEntity._id)
+      }
+      throw new Error(error)
     },
 
     findAll: () => model.find({}).populate(...populateList),

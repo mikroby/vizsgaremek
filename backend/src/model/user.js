@@ -31,6 +31,6 @@ const UserSchema = mongoose.Schema({
 
 UserSchema.plugin(require('mongoose-bcrypt'));
 
-// UserSchema.plugin(idValidator)
+UserSchema.plugin(idValidator)
 
 module.exports = mongoose.model('User', UserSchema);

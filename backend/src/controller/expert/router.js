@@ -1,6 +1,6 @@
 const express = require('express')
 const Expert = require('../../model/expert')
-const controller = require('../base/controller')(Expert, ['Category', 'User'])
+const controller = require('../base/controller')(Expert, ['User'])
 const authencticateJwt = require('../../module/auth/authenticate')
 
 const router = express.Router()
