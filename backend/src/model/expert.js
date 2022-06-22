@@ -1,12 +1,7 @@
 const mongoose = require('mongoose')
 
 const ExpertSchema = mongoose.Schema({
-  firstName: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
-  },
-  lastName: {
+  user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true
@@ -15,20 +10,16 @@ const ExpertSchema = mongoose.Schema({
     type: Array,
     required: true,
   },
-  categoryID: {
-    type: Array,
-    required: true,
+  category: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Category',
+    required: true
   },
   price: {
     type: Number,
     required: true,
   },
   age: Number,
-  email: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
-  },
   phone: {
     type: String,
     required: true,
@@ -51,11 +42,6 @@ const ExpertSchema = mongoose.Schema({
     type: Number,
     required: true
   },
-  avatar: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    required: true
-  }
 });
 
 module.exports = mongoose.model('Expert', ExpertSchema)

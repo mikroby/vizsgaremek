@@ -2,11 +2,6 @@ const mongoose = require('mongoose')
 const idValidator = require('mongoose-id-validator')
 
 const CategorySchema = mongoose.Schema({
-  categoryID: {
-    type: Number,
-    min: 1,
-    required: true,
-  },
   name: {
     type: String,
     required: true,
@@ -26,6 +21,6 @@ const CategorySchema = mongoose.Schema({
   }
 });
 
-// CategorySchema.plugin(idValidator)
+CategorySchema.plugin(idValidator)
 
 module.exports = mongoose.model('Category', CategorySchema)
