@@ -120,7 +120,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     })
     this.ar.params.subscribe(
       params => {
-        this.tableTitle += params['name'] ? ` - ${params['name']}` : ''
+        this.tableTitle += params['category'] ? ` - ${params['category']}` : ''
       }
     )
   }

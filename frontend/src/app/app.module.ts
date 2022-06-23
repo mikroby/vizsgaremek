@@ -45,6 +45,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 // Developer Created modules
 import { TableMakerModule } from './table-maker/table-maker.module';
+import { EditorModule } from './editor/editor.module';
 
 // Developer Created Services Interceptors
 import { JwtInterceptor } from './service/jwt.interceptor'
@@ -69,7 +70,6 @@ import { HomeLayoutComponent } from './layout/home-layout/home-layout.component'
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { SelectCategoryComponent } from './page/select-category/select-category.component';
 import { ProfileComponent } from './page/profile/profile.component';
-import { EditorComponent } from './page/editor/editor.component';
 
 
 @NgModule({
@@ -92,8 +92,7 @@ import { EditorComponent } from './page/editor/editor.component';
     SearchComponent,
     ForbiddenComponent,
     SelectCategoryComponent,
-    ProfileComponent,
-    EditorComponent,
+    ProfileComponent,    
                
   ],
   imports: [
@@ -128,7 +127,8 @@ import { EditorComponent } from './page/editor/editor.component';
     CardModule,
     TableModule,
 
-    TableMakerModule
+    TableMakerModule,
+    EditorModule,
   ],
   providers: [
     {

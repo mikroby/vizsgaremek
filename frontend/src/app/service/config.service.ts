@@ -23,6 +23,7 @@ export class ConfigService {
   optionIconSize = 'sm'
   newIconSize = 'lg'
   displayToggleIconSize = 'lg'
+  editorIconSize = 'lg'
 
   startDisplayWith = 'card'
 
@@ -91,6 +92,13 @@ export class ConfigService {
     { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'curr' },
     { key: 'status', title: 'Állapot', visible: true },
   ]
+
+  // categoryEditor: IField[] = [
+  //   { key: '_id', type: 'hidden', title: '', required: false, validator: ''},
+  //   { key: 'name', type: 'text', title: 'Kategória neve', required: true, validator: '' },
+  //   { key: 'job', type:'number', title: 'Munka neve', required: true, validator: '' },
+  //   { key: 'logo', type: 'text', title: 'Logo', required: true, validator: '', upload: true },
+  // ]
 
   constructor() { }
 

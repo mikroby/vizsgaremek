@@ -38,12 +38,12 @@ export class SearchComponent implements OnInit {
     this.config.expertTableColumns[index].visible = false
 
     this.ar.params.subscribe(params => {
-      this.listTitle = `Találatok - ${params['name']}`
+      this.listTitle = `Találatok - ${params['category']}`
 
       this.list$ = this.expertService.getAll().pipe(map(experts =>
         experts.filter(row => {
           if (typeof row.category === 'string') { return false }
-          return row.category?.name === params['name']
+          return row.category?.name === params['category']
         }
         )))
 

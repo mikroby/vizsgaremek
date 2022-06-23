@@ -17,7 +17,7 @@ import { SearchComponent } from './page/search/search.component';
 import { RoleGuardService } from './service/role-guard.service';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { ProfileComponent } from './page/profile/profile.component';
-import { EditorComponent } from './page/editor/editor.component';
+import { FrameComponent } from './editor/frame/frame.component';
 
 const routes: Routes = [
   {
@@ -46,7 +46,7 @@ const routes: Routes = [
         }
       },
       {
-        path: 'search/:name',
+        path: 'search/:category',
         component: SearchComponent,
         data: {
           title: 'Keresés'
@@ -128,8 +128,8 @@ const routes: Routes = [
         }
       },
       {
-        path: 'editor/:tableName/:id',
-        component: EditorComponent,
+        path: 'editor/:name/:entity/:id',
+        component: FrameComponent,
         data: {
           title: 'Szerkesztés'
         }

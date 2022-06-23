@@ -20,7 +20,9 @@ import {
   cilPenAlt,
   cilTrash,
   cilChevronCircleLeftAlt,
-  cilChevronCircleRightAlt,  
+  cilChevronCircleRightAlt,
+  cilSave,
+  cilReload
 } from '@coreui/icons';
 
 export const iconSubset = {
@@ -46,6 +48,8 @@ export const iconSubset = {
   cilTrash,
   cilChevronCircleLeftAlt,
   cilChevronCircleRightAlt,
+  cilSave,
+  cilReload
 };
 
 export enum IconSubset {
