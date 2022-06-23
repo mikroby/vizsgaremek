@@ -18,6 +18,9 @@ export class SpreadPipe<T extends { [key: string]: any }> implements PipeTransfo
     return value.map(row => {
       let obj = { ...row }
       keys.forEach(key => {
+        if (!row[key]) {
+          return
+        }
         const spread = Object.values(row[key]).flat(Infinity).join(', ')
         obj = { ...obj, [key]: spread }
       })

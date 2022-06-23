@@ -17,6 +17,7 @@ import { SearchComponent } from './page/search/search.component';
 import { RoleGuardService } from './service/role-guard.service';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { ProfileComponent } from './page/profile/profile.component';
+import { EditorComponent } from './page/editor/editor.component';
 
 const routes: Routes = [
   {
@@ -45,7 +46,7 @@ const routes: Routes = [
         }
       },
       {
-        path: 'search/:id/:category',
+        path: 'search/:name',
         component: SearchComponent,
         data: {
           title: 'Keresés'
@@ -124,6 +125,13 @@ const routes: Routes = [
         component: InvoiceComponent,
         data: {
           title: 'Számlák'
+        }
+      },
+      {
+        path: 'editor/:tableName/:id',
+        component: EditorComponent,
+        data: {
+          title: 'Szerkesztés'
         }
       },
     ]

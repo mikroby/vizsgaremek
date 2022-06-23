@@ -8,13 +8,14 @@ import { BadgeModule, GridModule, TooltipModule } from '@coreui/angular';
 
 import { BaseTableComponent } from './base-table/base-table.component';
 import { CardTableComponent } from './card-table/card-table.component';
-import { CardComponent } from './../common/card/card.component';
-import { FilterPipe } from '../pipe/filter.pipe';
-import { SorterPipe } from '../pipe/sorter.pipe';
-import { SpreadPipe } from '../pipe/spread.pipe';
-import { DayPipe } from './../pipe/day.pipe';
-import { CurrPipe } from './../pipe/curr.pipe';
-import { VisiblePipe } from './../pipe/visible.pipe';
+import { CardComponent } from './card/card.component';
+import { CurrPipe } from './pipe/curr.pipe';
+import { DayPipe } from './pipe/day.pipe';
+import { FilterPipe } from './pipe/filter.pipe';
+import { JobPipe } from './pipe/job.pipe';
+import { ProjectPipe } from './pipe/project.pipe';
+import { SorterPipe } from './pipe/sorter.pipe';
+import { SpreadPipe } from './pipe/spread.pipe';
 
 
 @NgModule({
@@ -25,8 +26,9 @@ import { VisiblePipe } from './../pipe/visible.pipe';
     FilterPipe,
     SpreadPipe,
     DayPipe,
-    CurrPipe,
-    VisiblePipe,
+    JobPipe,
+    CurrPipe,   
+    ProjectPipe,
     CardComponent,
 
   ],

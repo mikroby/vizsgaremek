@@ -1,7 +1,7 @@
 <!-- header block -->
 <div class="d-flex flex-row flex-column-md my-0">
   <div class="h3 text-muted ">{{tableTitle}}</div>
-  <button class="btn grow-30 new_btn" type="button" *ngIf="allowedButtons.new">    
+  <button class="btn grow-30 new_btn" type="button" *ngIf="allowedButtons.new">
     <svg cIcon name="cilLibraryAdd" [size]="newIconSize"></svg>
   </button>
 
@@ -47,7 +47,8 @@
           <th *ngFor="let col of displayedColumns" scope="col">
             <span class="position-relative pointer" [id]="col.key" (click)="toggleSortDirection($event)">
               {{ col.title }}
-              <div class="badge transparent text-primary position-absolute rounded-pill start-100 top-0 translate-middle"
+              <div
+                class="badge transparent text-primary position-absolute rounded-pill start-100 top-0 translate-middle"
                 *ngIf="col.key===sortBy">
                 <svg *ngIf="direction===1" cIcon name="cilSortAscending" size="sm"></svg>
                 <svg *ngIf="direction===-1" cIcon name="cilSortDescending" size="sm"></svg>
@@ -61,10 +62,10 @@
       </thead>
       <tbody>
         <tr
-          *ngFor="let row of list | visible:displayedColumns | day:displayedColumns | spread | filter:phrase:filterKey | slice:rowStart:rowEnd | sorter:sortBy:direction">
+          *ngFor="let row of list | project:columns | day:columns | job:columns | spread | filter:phrase:filterKey:displayedColumns | slice:rowStart:rowEnd | sorter:sortBy:direction">
           <td *ngFor="let col of displayedColumns">
             <ng-container *ngIf="!isBoolean(row[col.key]); else boolData">
-              {{ row[col.key] | curr:col }}             
+              {{ row[col.key] | curr:col }}
             </ng-container>
             <ng-template #boolData>
               <svg *ngIf="row[col.key]" cIcon name="cilCheckCircle" [size]="optionIconSize"></svg>
@@ -73,7 +74,8 @@
           </td>
           <td *ngIf="allowedButtons.edit || allowedButtons.delete">
             <div class="btn-group btn-group-sm">
-              <button class="btn grow-50 edit_btn" type="button" [disabled]="!allowedButtons.edit">
+              <button class="btn grow-50 edit_btn" type="button" [disabled]="!allowedButtons.edit"
+                [routerLink]="['/', 'admin','editor', tableName, row._id]">
                 <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
               </button>
               <button class="btn grow-50 delete_btn" type="button" [disabled]="!allowedButtons.delete">
@@ -123,6 +125,6 @@
 <!-- if no data this message appears -->
 <ng-template #no_list_message>
   <div class="noDataListMessage">
-    <p class="h5 ms-1 mt-3">Nincs megjeleníthető adat a listában...</p>
+    <p class="h5 mt-3">Nincs megjeleníthető adat a listában...</p>
   </div>
 </ng-template>

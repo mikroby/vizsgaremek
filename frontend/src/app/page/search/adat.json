@@ -1,0 +1,44 @@
+{
+  "_id": "62b33baf803ef95fb23fd546",
+  "user": {
+    "_id": "62b254eba2b4863b1cddf641",
+    "email": "vtythacott0@gmail.com",
+    "lastName": "Tythacott",
+    "firstName": "Vania",
+    "role": 2,
+    "avatar": "default.png",
+    "password": "$2a$10$MLCsyjv79kvpIz/B8kB0eOcehXo8XEmpFn4LfeGLv/UTX2cV2y8Vi",
+    "__v": 0
+  },
+  "job": [
+    5
+  ],
+  "category": {
+    "_id": "629b9c5ef5de31042ab06343",
+    "name": "Informatika",
+    "job": [
+      "Adatmentés",
+      "Alkalmazás készítés és tervezés",
+      "Karbantartás",
+      "PC hardware",
+      "Rendszer optimalizálás",
+      "Telepítés",
+      "Üzemeltetés",
+      "Weblap készítés és tervezés"
+    ],
+    "__v": 0,
+    "logo": "it.png"
+  },
+  "price": 5600,
+  "age": 27,
+  "phone": "+36202669771",
+  "workDays": [
+    2,
+    4,
+    5
+  ],
+  "availableFrom": "9:00",
+  "availableTill": "17:00",
+  "rating": 9.8,
+  "__v": 0
+}

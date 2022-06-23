@@ -26,11 +26,14 @@ export class ConfigService {
 
   startDisplayWith = 'card'
 
-  weekDays = ['V', 'H', 'K', 'Sze', 'CS', 'P', 'Szo']
+  static sWeekDays = ['V', 'H', 'K', 'Sze', 'CS', 'P', 'Szo']
+
+  get weekDays(): string[] {
+    return ConfigService.sWeekDays;
+  }
 
   categoryTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'categoryID', title: 'Kategória száma', visible: true },
     { key: 'name', title: 'Kategória neve', visible: true },
     { key: 'job', title: 'Munka neve', visible: true },
     { key: 'logo', title: 'Logo', visible: true },
@@ -38,25 +41,33 @@ export class ConfigService {
 
   userTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'email', title: 'E-mail', visible: true },
     { key: 'lastName', title: 'Vezetéknév', visible: true },
     { key: 'firstName', title: 'Keresztnév', visible: true },
+    { key: 'email', title: 'E-mail', visible: true },
     { key: 'password', title: 'Jelszó', visible: false },
-    { key: 'role', title: 'Szerep', visible: true },
-    { key: 'avatar', title: 'Avatar', visible: true },
+    { key: 'role', title: 'Jogosultság', visible: true },
+    { key: 'avatar', title: 'Kép/logo', visible: true },
   ]
 
   expertTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'lastName', title: 'Vezetéknév', visible: true },
-    { key: 'firstName', title: 'Keresztnév', visible: true },
-    { key: 'job', title: 'Munka', visible: true },
-    { key: 'categoryID', title: 'Kategória', visible: true },
+    { key: 'lastName', title: 'Vezetéknév', visible: true,
+      projector: (row: any) => row.lastName = row.user?.lastName || '-'
+    },
+    { key: 'firstName', title: 'Keresztnév', visible: true,
+      projector: (row: any) => row.firstName = row.user?.firstName || '-'
+    },
+    { key: 'job', title: 'Munka', visible: true, pipe: 'job' },
+    { key: 'categoryName', title: 'Kategória', visible: true,
+      projector: (row: any) => row.categoryName = row.category?.name || '-'
+    },
     { key: 'price', title: 'Óradíj', visible: true, pipe: 'curr' },
     { key: 'age', title: 'Életkor', visible: true },
-    { key: 'email', title: 'E-mail', visible: true },
+    { key: 'email', title: 'E-mail', visible: true,
+      projector: (row: any) => row.email = row.user?.email || '-'
+    },
     { key: 'phone', title: 'Telefon', visible: true },
-    { key: 'workDays', title: 'Munkanapok', visible: true, pipe: 'day' },
+    { key: 'workDays', title: 'Munkanapok', visible: true, pipe:'day' },
     { key: 'availableFrom', title: 'Kezdés', visible: true },
     { key: 'availableTill', title: 'Befejezés', visible: true },
     { key: 'rating', title: 'Értékelés', visible: true },

@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { ExpertService } from 'src/app/service/expert.service';
 import { Expert } from 'src/app/model/expert';
 import { Observable, map } from 'rxjs';
-import { ICard } from 'src/app/common/card/card.component';
+import { ICard } from 'src/app/table-maker/card/card.component';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -15,8 +15,6 @@ import { environment } from 'src/environments/environment';
 export class SearchComponent implements OnInit {
 
   apiUrl: string = environment.apiUrl
-
-  categoryID: number = 0
 
   list$!: Observable<Expert[]>
 
@@ -35,41 +33,41 @@ export class SearchComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // set invisible the unnecessary category column
-    const index = this.config.expertTableColumns.findIndex(item => item.key === 'categoryID')
+    // sets visible:false to the unnecessary category column here
+    const index = this.config.expertTableColumns.findIndex(item => item.key === 'categoryName')
     this.config.expertTableColumns[index].visible = false
 
     this.ar.params.subscribe(params => {
-      this.categoryID = Number(params['id'])
+      this.listTitle = `Találatok - ${params['name']}`
 
-      this.listTitle =`Találatok - ${params['category']}`
-
-      this.list$ = this.expertService.getAll()
-        .pipe(map(experts => experts.filter(row => row.categoryID.includes(this.categoryID))))
+      this.list$ = this.expertService.getAll().pipe(map(experts =>
+        experts.filter(row => {
+          if (typeof row.category === 'string') { return false }
+          return row.category?.name === params['name']
+        }
+        )))
 
       this.list$.subscribe(
-        {
-          next: response => {
-            this.cardList = this.mapper(response)
-          },
-          error: error => {
-            console.log(error);
-          }
-        }
+        response => this.cardList = this.mapper(response)
       )
     })
   }
 
-  // map from list to card datas
-  mapper(response: Expert[]): ICard[] {
-    return response.map(item => {
-      const image = `${this.apiUrl}avatar/${item.avatar}`
+  // map from list to ICard datas
+  mapper(response: Expert[]): ICard[] | null {
+    return response.map(row => {
+
+      if (typeof row.user !== 'object') { return {} as ICard }
+
+      const image = `${this.apiUrl}avatar/${row.user.avatar}`
       const description = [
-        `${item.lastName} ${item.firstName}`,
-        item.job,
-        `${item.price} Ft/óra`,
-        `tel: ${item.phone}`,
-        `értékelés: ${item.rating}`
+        `${row.user.lastName} ${row.user.firstName}`,
+        row.job.map((index: number) => {
+          if (typeof row.category === 'object') row.category.job[index]
+        }),
+        `${row.price} Ft/óra`,
+        `tel: ${row.phone}`,
+        `értékelés: ${row.rating}`
       ]
       const tooltip = false
       return { image, description, tooltip } as ICard

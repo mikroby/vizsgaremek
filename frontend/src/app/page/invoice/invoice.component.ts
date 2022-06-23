@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigService } from 'src/app/service/config.service';
 import { InvoiceService } from 'src/app/service/invoice.service';
 
 @Component({
@@ -9,12 +8,9 @@ import { InvoiceService } from 'src/app/service/invoice.service';
 })
 export class InvoiceComponent implements OnInit {
 
-  // columns = this.config.invoiceTableColumns
-
   list$ = this.invoiceService.getAll()
 
   constructor(
-    // private config: ConfigService,
     private invoiceService: InvoiceService,
   ) { }
 

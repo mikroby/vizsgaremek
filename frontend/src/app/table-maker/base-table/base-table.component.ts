@@ -3,10 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { ConfigService } from 'src/app/service/config.service'
 
 export interface ITableColumn {
-  title: string
   key: string
+  title: string
   visible: boolean
   pipe?: string
+  projector?: Function
 }
 
 export interface IAllowedButtons {
@@ -23,7 +24,6 @@ export interface IAllowedButtons {
 export class BaseTableComponent<T extends { [x: string]: any }> implements OnInit {
 
   @Input() list: T[] = []
-  // @Input() columns: ITableColumn[] = []
   @Input() tableName: string = ''
   @Input() allowedButtons: IAllowedButtons = { edit: true, delete: true, new: true }
 
@@ -93,7 +93,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     const checkbox = event.target
     const index = checkbox.value
 
-    // ensures that one box must be checked to show data!
+    // ensures that one box must be checked to show some data!
     if (!checkbox.checked && this.displayedColumns.length === 1) {
       this.reload()
       return
@@ -120,7 +120,7 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     })
     this.ar.params.subscribe(
       params => {
-        this.tableTitle += params['category'] ? ` - ${params['category']}` : ''
+        this.tableTitle += params['name'] ? ` - ${params['name']}` : ''
       }
     )
   }
@@ -129,11 +129,6 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   isBoolean(value: any): boolean {
     return (typeof value === 'boolean');
   }
-
-  // isNestedObject(value: any): boolean {
-  //   return (typeof value === 'object');
-  // }
-
 
   // törlés gombhoz kell majd, a záróprojekt material-ból:
   // onRemove(id: number): void {

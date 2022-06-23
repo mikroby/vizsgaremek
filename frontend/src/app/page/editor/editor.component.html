@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-6 offset-3 mt-3">
+    <form *ngIf="list.length" #editorForm="ngForm" (ngSubmit)="onSubmit(editorForm)">
+      
+      <!-- <input name="_id" type="hidden" [(ngModel)]="_id"> -->
+
+      <div *ngFor="let field of list; index as index" class="form-group">
+        <label for="field-{{index}}">{{ field.title }}</label>
+        <input class="form-control"
+          [(ngModel)]="field.name"
+          [name]="field.name"
+          [type]="field.type"
+          id="field-{{index}}"
+          [required]="field.required"
+          [pattern]="field.validator"
+          >
+      </div>
+ 
+      <div class="btn-group mt-3 col-4 offset-4">
+        <button type="submit" [disabled]="editorForm.invalid" class="btn btn-info mb-3">
+          Update the Car
+        </button>
+        <button type="button" (click)="onCancel()" class="btn btn-dark mb-3">
+          Visszalépés
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

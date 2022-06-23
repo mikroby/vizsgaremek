@@ -4,7 +4,7 @@
     <h6 *ngIf="card.title" class="card-title text-center text-dark mb-0">{{card.title}}</h6>
     <hr *ngIf="card.title">
     <div *ngIf="card.description?.length && !card.tooltip" class="mb-3">
-      <small class="card-text text-light d-block mb-1" *ngFor="let text of card.description">{{text}}</small>
+      <small class="card-text text-light d-block mb-1 fw-bold" *ngFor="let text of card.description">{{text}}</small>
     </div>
     <div *ngIf="card.link && card.btnText" class="mt-auto text-center">
       <a [routerLink]="card.link" role="button"

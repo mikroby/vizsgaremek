@@ -26,7 +26,7 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.tooltip = this.card.tooltip ? this.card.description?.join(', ') : ''
+    this.tooltip = this.card.tooltip ? this.card.description?.flat(Infinity).join(', ') : ''
   }
 
 }

@@ -69,6 +69,7 @@ import { HomeLayoutComponent } from './layout/home-layout/home-layout.component'
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { SelectCategoryComponent } from './page/select-category/select-category.component';
 import { ProfileComponent } from './page/profile/profile.component';
+import { EditorComponent } from './page/editor/editor.component';
 
 
 @NgModule({
@@ -92,6 +93,7 @@ import { ProfileComponent } from './page/profile/profile.component';
     ForbiddenComponent,
     SelectCategoryComponent,
     ProfileComponent,
+    EditorComponent,
                
   ],
   imports: [

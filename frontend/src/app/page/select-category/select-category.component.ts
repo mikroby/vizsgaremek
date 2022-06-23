@@ -1,5 +1,5 @@
 import { ActivatedRoute } from '@angular/router';
-import { ICard } from './../../common/card/card.component';
+import { ICard } from '../../table-maker/card/card.component';
 import { CategoryService } from 'src/app/service/category.service';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
@@ -25,14 +25,7 @@ export class SelectCategoryComponent implements OnInit {
 
   ngOnInit(): void {
     this.categoryService.getAll().subscribe(
-      {
-        next: response => {
-          this.list = this.mapper(response)
-        },
-        error: error => {
-          console.log(error);
-        }
-      }
+      response => this.list = this.mapper(response)
     )
 
     this.getRouteData()
@@ -48,7 +41,7 @@ export class SelectCategoryComponent implements OnInit {
   mapper(response: Category[]): ICard[] {
     return response.map(item => {
       const image = `${this.apiUrl}category/${item.logo}`
-      const link = `/search/${item.categoryID}/${item.name}`
+      const link = `/search/${item.name}`
       const btnText = item.name
       const description = item.job
       const tooltip = true

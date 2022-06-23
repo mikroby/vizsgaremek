@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Triggers } from '@coreui/angular';
-import { ICard } from 'src/app/common/card/card.component';
+import { ICard } from 'src/app/table-maker/card/card.component';
 
 @Component({
   selector: 'app-card-table',

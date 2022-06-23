@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigService } from 'src/app/service/config.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
@@ -9,12 +8,9 @@ import { UserService } from 'src/app/service/user.service';
 })
 export class UserComponent implements OnInit {
 
-  // columns = this.config.customerTableColumns
-
   list$ = this.userService.getAll()
 
   constructor(
-    // private config: ConfigService,
     private userService: UserService,
   ) { }
 

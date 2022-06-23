@@ -22,7 +22,8 @@
 
 <ng-container *ngIf="display==='list'">
   <base-table *ngIf="list$ | async as list"
-    [tableName]="'expert'" [list]="list"
+    [tableName]="'expert'"
+    [list]="list"
     [allowedButtons]="{ edit: false, delete: false, new: false }">
   </base-table>
 </ng-container>

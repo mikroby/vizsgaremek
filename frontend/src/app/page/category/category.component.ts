@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ConfigService } from 'src/app/service/config.service';
 import { CategoryService } from 'src/app/service/category.service';
 
 @Component({
@@ -9,12 +8,9 @@ import { CategoryService } from 'src/app/service/category.service';
 })
 export class CategoryComponent implements OnInit {
 
-  // columns = this.config.categoryTableColumns
-
   list$ = this.categoryService.getAll()
 
   constructor(
-    // private config: ConfigService,
     private categoryService: CategoryService,
   ) { }
 

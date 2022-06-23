@@ -47,9 +47,7 @@ app.post('/signup', require('./module/auth/signup'))
 // Category
 app.use('/category', require('./controller/category/router'))
 // User
-// ez ideiglenesen nem kér autentikációt a populate teszteléshez
-app.use('/user', require('./controller/user/router'))
-// app.use('/user', authencticateJwt, require('./controller/user/router'))
+app.use('/user', authencticateJwt, require('./controller/user/router'))
 // Expert
 app.use('/expert', require('./controller/expert/router'))
 // Invoice

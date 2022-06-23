@@ -5,6 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HeaderComponent } from '@coreui/angular';
 import { AuthService } from 'src/app/service/auth.service';
 import { environment } from 'src/environments/environment';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -37,7 +38,9 @@ export class HeadComponent extends HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.showDateTime()
-    const id = setInterval(this.showDateTime, 1000)
+    interval(1000).subscribe(
+      () => this.showDateTime()
+    )
 
     this.getLayout()
   }
