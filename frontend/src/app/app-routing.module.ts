@@ -17,7 +17,7 @@ import { SearchComponent } from './page/search/search.component';
 import { RoleGuardService } from './service/role-guard.service';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { ProfileComponent } from './page/profile/profile.component';
-import { FrameComponent } from './editor/frame/frame.component';
+import { CategoryEditorComponent } from './editor/category-editor/category-editor.component';
 
 const routes: Routes = [
   {
@@ -96,43 +96,40 @@ const routes: Routes = [
         path: 'expert',
         component: ExpertComponent,
         data: {
-          title: 'Szakemberek'
+          title: 'Szakember'
         }
       },
       {
         path: 'category',
         component: CategoryComponent,
         data: {
-          title: 'Kategóriák'
+          title: 'Kategória'
         }
       },
       {
         path: 'user',
         component: UserComponent,
         data: {
-          title: 'Felhasználók'
+          title: 'Felhasználó'
         }
       },
       {
         path: 'order',
         component: OrderComponent,
         data: {
-          title: 'Rendelések'
+          title: 'Rendelés'
         }
       },
       {
         path: 'invoice',
         component: InvoiceComponent,
         data: {
-          title: 'Számlák'
+          title: 'Számla'
         }
       },
       {
-        path: 'editor/:name/:entity/:id',
-        component: FrameComponent,
-        data: {
-          title: 'Szerkesztés'
-        }
+        path: 'editor/category/:name/:id',
+        component: CategoryEditorComponent,        
       },
     ]
   },

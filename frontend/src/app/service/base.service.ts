@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class BaseService<T extends { _id: string, [key: string]: any }> {
+export class BaseService<T extends { _id?: string, [key: string]: any }> {
 
   apiUrl: string = environment.apiUrl;
   

@@ -9,7 +9,10 @@ const CategorySchema = mongoose.Schema({
       validator: function (value) {
         return /^[A-Ű][a-űA-Ű \-]{2}/.test(value);
       }
-    }
+    },
+    index: {
+      unique: true,
+    },
   },
   job: {
     type: Array,

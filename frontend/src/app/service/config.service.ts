@@ -16,7 +16,7 @@ export class ConfigService {
   defaultPageSize = 50
   minPageSize = 10
   defaultStartPage = 1
-  defaultStep = 5
+  defaultStep = 10
 
   // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
   paginatorIconSize = 'xl'
@@ -68,7 +68,7 @@ export class ConfigService {
       projector: (row: any) => row.email = row.user?.email || '-'
     },
     { key: 'phone', title: 'Telefon', visible: true },
-    { key: 'workDays', title: 'Munkanapok', visible: true, pipe:'day' },
+    { key: 'workDays', title: 'Munkanapok', visible: true, pipe: 'day' },
     { key: 'availableFrom', title: 'Kezdés', visible: true },
     { key: 'availableTill', title: 'Befejezés', visible: true },
     { key: 'rating', title: 'Értékelés', visible: true },
@@ -93,13 +93,7 @@ export class ConfigService {
     { key: 'status', title: 'Állapot', visible: true },
   ]
 
-  // categoryEditor: IField[] = [
-  //   { key: '_id', type: 'hidden', title: '', required: false, validator: ''},
-  //   { key: 'name', type: 'text', title: 'Kategória neve', required: true, validator: '' },
-  //   { key: 'job', type:'number', title: 'Munka neve', required: true, validator: '' },
-  //   { key: 'logo', type: 'text', title: 'Logo', required: true, validator: '', upload: true },
-  // ]
-
-  constructor() { }
+  constructor(
+  ) { }
 
 }

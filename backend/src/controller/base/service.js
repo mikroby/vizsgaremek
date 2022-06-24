@@ -2,10 +2,10 @@ module.exports = (model, populateList = []) => {
   return {
 
     createOne: async (entity) => {
-      const newEntry = new model(entity)
+      const newEntity = new model(entity)
       const error = newEntity.validateSync()
       if (!error) {
-        const savedEntity = await newEntry.save()
+        const savedEntity = await newEntity.save()
         return model.findById(savedEntity._id)
       }
       throw new Error(error)

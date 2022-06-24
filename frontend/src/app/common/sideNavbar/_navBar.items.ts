@@ -11,27 +11,27 @@ export const navItems: INavData[] = [
     }
   },
   {
-    name: 'Szakemberek',
+    name: 'Szakember',
     url: '/admin/expert',
     iconComponent: { name: 'cil-people' }
   },
   {
-    name: 'Kategóriák',
+    name: 'Kategória',
     url: '/admin/category',
     iconComponent: { name: 'cilLayers' }
   },
   {
-    name: 'Felhasználók',
+    name: 'Felhasználó',
     url: '/admin/user',
     iconComponent: { name: 'cilUser' }
   },
   {
-    name: 'Rendelések',
+    name: 'Rendelés',
     url: '/admin/order',
     iconComponent: { name: 'cilList' }
   },
   {
-    name: 'Számlák',
+    name: 'Számla',
     url: '/admin/invoice',
     iconComponent: { name: 'cilNotes' }
   },

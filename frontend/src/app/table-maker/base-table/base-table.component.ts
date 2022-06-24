@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core'
 import { ActivatedRoute } from '@angular/router';
 import { ConfigService } from 'src/app/service/config.service'
 
@@ -26,6 +26,8 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   @Input() list: T[] = []
   @Input() tableName: string = ''
   @Input() allowedButtons: IAllowedButtons = { edit: true, delete: true, new: true }
+
+  @Output() removeById: EventEmitter<string> = new EventEmitter();
 
   tableTitle: string = ''
   columns: ITableColumn[] = []
@@ -128,6 +130,10 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   // data boolean type-check for nicer display
   isBoolean(value: any): boolean {
     return (typeof value === 'boolean');
+  }
+
+  onRemove(_id: string): void {
+    this.removeById.emit(_id)
   }
 
   // törlés gombhoz kell majd, a záróprojekt material-ból:

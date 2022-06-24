@@ -4,7 +4,7 @@
   <button
     *ngIf="allowedButtons.new"
     class="btn grow-30 new_btn" type="button"
-    [routerLink]="['/', 'admin','editor',tableTitle, tableName, '']"
+    [routerLink]="['/', 'admin','editor', tableName, tableTitle, '']"
     cTooltip="Új létrehozása">
     <svg cIcon name="cilLibraryAdd" [size]="newIconSize"></svg>
   </button>
@@ -80,11 +80,12 @@
             <div class="btn-group btn-group-sm" role="group">
               <button class="btn grow-50 edit_btn" type="button"
                 [disabled]="!allowedButtons.edit"
-                [routerLink]="['/', 'admin','editor',tableTitle, tableName, row._id]"
+                [routerLink]="['/', 'admin','editor', tableName, tableTitle, row._id]"
                 cTooltip="Szerkesztés">
                 <svg cIcon name="cilPenAlt" [size]="optionIconSize"></svg>
               </button>
               <button class="btn grow-50 delete_btn" type="button"
+                (click)="onRemove(row._id)"
                 [disabled]="!allowedButtons.delete"
                 cTooltip="Törlés">
                 <svg cIcon name="cilTrash" [size]="optionIconSize"></svg>

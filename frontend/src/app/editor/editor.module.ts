@@ -6,12 +6,12 @@ import { AppRoutingModule } from '../app-routing.module';
 import { BadgeModule, GridModule, TooltipModule } from '@coreui/angular';
 import { IconModule } from '@coreui/icons-angular';
 
-import { FrameComponent } from './frame/frame.component';
+import { CategoryEditorComponent } from './category-editor/category-editor.component';
 
 
 @NgModule({
-  declarations: [
-    FrameComponent
+  declarations: [   
+    CategoryEditorComponent
   ],
   imports: [
     CommonModule,
@@ -19,12 +19,11 @@ import { FrameComponent } from './frame/frame.component';
     AppRoutingModule,
 
     IconModule,
-    BadgeModule,
-    GridModule,
+    // BadgeModule,
+    // GridModule,
     TooltipModule
   ],
   exports: [
-    FrameComponent,
   ],
 })
 export class EditorModule { }

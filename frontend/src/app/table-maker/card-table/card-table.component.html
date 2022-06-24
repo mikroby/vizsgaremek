@@ -2,7 +2,7 @@
     <div class="h3 text-muted">{{listTitle}}</div>
   </div>
 
-  <div *ngIf="cardList" class="mb-3">
+  <div *ngIf="cardList; else no_list_message" class="mb-3">
     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4">
       <app-card *ngFor="let card of cardList"
         [card]="card"
@@ -10,3 +10,10 @@
       ></app-card>
     </div>
   </div>
+
+  <!-- if no data this message appears -->
+  <ng-template #no_list_message>
+    <div class="noDataListMessage">
+      <p class="h5 mt-3">Nincs megjeleníthető adat a listában...</p>
+    </div>
+  </ng-template>

@@ -48,7 +48,11 @@ export class SearchComponent implements OnInit {
         )))
 
       this.list$.subscribe(
-        response => this.cardList = this.mapper(response)
+        response => {
+          if (response.length) {
+            this.cardList = this.mapper(response)
+          } else this.cardList = null
+        }
       )
     })
   }

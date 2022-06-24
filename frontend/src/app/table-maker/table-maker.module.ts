@@ -38,8 +38,8 @@ import { SpreadPipe } from './pipe/spread.pipe';
     AppRoutingModule,
 
     IconModule,
-    BadgeModule,
-    GridModule,
+    // BadgeModule,
+    // GridModule,
     TooltipModule
   ],
   exports: [

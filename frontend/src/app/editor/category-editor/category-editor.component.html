@@ -1,0 +1,59 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-3">
+    <div class="h3 text-muted mb-4">{{ title }}</div>
+
+    <form *ngIf="category" #editorForm="ngForm" (ngSubmit)="onSubmit(category)">
+
+      <input [(ngModel)]="category._id" name="_id" type="hidden">
+
+      <div class="form-floating mb-2">
+        <input class="form-control shadow"
+          [(ngModel)]="category.name"
+          name="name"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-name">
+        <label for="field-name">Kategória neve</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <textarea class="form-control shadow"
+          [(ngModel)]="textarea"
+          name="job"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-job"
+          [rows]="category.job.length">
+        </textarea>
+        <label for="field-job">Munkák</label>
+      </div>
+
+      <div class="form-floating mb-2">
+        <input class="form-control shadow"
+          [(ngModel)]="category.logo"
+          name="logo"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-logo">
+        <label for="field-logo">Logo (200x200px)</label>
+      </div>
+
+      <div class="btn-group mt-5 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+        <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
+          <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
+        </button>
+        <div class="vr"></div>
+        <button type="button" (click)="onCancel()" class="btn delete_btn grow-30" cTooltip="Mégsem">
+          <svg cIcon name="cilReload" [size]="editorIconSize"></svg>
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
