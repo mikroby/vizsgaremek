@@ -1,1 +1,208 @@
-<p>expert-editor works!</p>
+<div class="row" *ngIf="!warning; else warning">
+  <div class="col-md-6 offset-md-3 mt-3">
+    <div class="h3 text-muted mb-4">{{ title }}</div>
+
+    <form *ngIf="expert" #editorForm="ngForm" (ngSubmit)="onSubmit(expert)">
+
+      <input [(ngModel)]="expert._id" name="_id" type="hidden">
+      <!-- <input [(ngModel)]="expert.user" name="user" type="hidden">
+      <input [(ngModel)]="expert.category" name="category" type="hidden"> -->
+            
+      <div class="form-floating mb-editorItems">
+          <input class="form-control shadow"
+          disabled
+          [(ngModel)]="expert.lastName"
+          name="lastName"
+          type="text"
+          placeholder="any"         
+          id="field-lastName">
+        <label for="field-lastName">Vezetéknév</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          disabled
+          [(ngModel)]="expert.firstName"
+          name="firstName"
+          type="text"
+          placeholder="any"         
+          id="field-firstName">
+        <label for="field-firstName">Keresztnév</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          disabled
+          [(ngModel)]="expert.email"
+          name="email"
+          type="text"
+          placeholder="any"         
+          id="field-email">
+        <label for="field-email">E-mail</label>
+      </div>
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          disabled
+          [(ngModel)]="expert.avatar"
+          name="avatar"
+          type="text"
+          placeholder="any"          
+          id="field-avatar">
+        <label for="field-avatar">Avatar (max.200x200px)</label>
+      </div>
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"        
+          [(ngModel)]="expert.age"
+          name="age"
+          type="number"
+          max="100"
+          min="0"
+          placeholder="any"
+          pattern=""
+          id="field-age">
+        <label for="field-age">Életkor</label>
+      </div>
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"        
+          [(ngModel)]="expert.price"
+          name="price"
+          type="number"
+          step="100"
+          min="0"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-price">
+        <label for="field-price">Óradíj</label>
+      </div>
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"        
+          [(ngModel)]="expert.phone"
+          name="phone"
+          type="text"        
+          placeholder="any"
+          required
+          pattern=""
+          id="field-phone">
+        <label for="field-phone">Telefon</label>
+      </div>
+
+      <!-- <div class="form-floating mb-editorItems">
+        <select class="form-select form-select-sm shadow"
+        [(ngModel)]="expert.workDays"
+        name="workDays"
+        required
+        id="field-workDays">
+            <option *ngFor="let days of weekDays; index as index"
+              [value]="index">
+              {{days}}
+            </option>
+        </select>
+        <label for="field-workDays">Munkanapok</label>
+      </div> -->
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"        
+          [(ngModel)]="expert.availableFrom"
+          name="availableFrom"
+          type="text"        
+          placeholder="any"
+          required
+          pattern=""
+          id="field-availableFrom">
+        <label for="field-availableFrom">Munka kezdés</label>
+      </div>
+    
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"        
+          [(ngModel)]="expert.availableTill"
+          name="availableTill"
+          type="text"        
+          placeholder="any"
+          required
+          pattern=""
+          id="field-availableTill">
+        <label for="field-availableTill">Munka vége</label>
+      </div>
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"        
+          [(ngModel)]="expert.rating"
+          name="rating"
+          type="number"
+          step="0.1"
+          min="0"
+          max="10"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-rating">
+        <label for="field-rating">Értékelés</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <select class="form-select form-select-sm shadow"
+          [(ngModel)]="selectedCategory"
+          name="selectedCategory"
+          required
+          id="field-selectedCategory">
+              <option *ngFor="let category of categories$ | async"
+                [value]="category._id">
+                {{category.name | titlecase}}
+              </option>
+        </select>
+        <label for="field-selectedCategory">Kategória</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <select class="form-select form-select-sm shadow"
+          [(ngModel)]="expert.job"
+          name="role"
+          required
+          id="field-role">
+              <option *ngFor="let job of jobs;index as index"
+                [value]="index">
+                {{job | titlecase}}
+              </option>
+        </select>
+        <label for="field-role">Munka megnevezése</label>
+      </div>      
+
+      <div class="btn-group mt-5 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+          <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
+            <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
+          </button>
+          <div class="vr"></div>
+          <button type="button" (click)="onCancel()" class="btn delete_btn grow-30" cTooltip="Mégsem">
+            <svg cIcon name="cilReload" [size]="editorIconSize"></svg>
+          </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<ng-template #warning>
+  <div class="row">
+    <div class="col-md-5 mx-auto mt-3">
+      <p class="h5 text-dark mb-4 text-center">
+          Új szakember nem hozható létre.<br>
+          Hozzon létre először egy felhasználót "szakember" jogosultsággal,
+          majd módosítsa azt ebben a listában!
+      </p>
+    
+      <div class="mt-5 col-2 mx-auto bg-light border border-secondary rounded-pill shadow text-center">
+        <button type="button" (click)="onCancel()"
+          class="btn delete_btn grow-30"
+          cTooltip="Vissza">
+          <svg cIcon name="cilReload" [size]="editorIconSize"></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-template>
