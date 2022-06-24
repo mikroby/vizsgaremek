@@ -1,4 +1,4 @@
-<div class="row" *ngIf="!warning; else warning">
+<div class="row" *ngIf="!warning; else warningMessage">
   <div class="col-md-6 offset-md-3 mt-3">
     <div class="h3 text-muted mb-4">{{ title }}</div>
 
@@ -187,7 +187,7 @@
   </div>
 </div>
 
-<ng-template #warning>
+<ng-template #warningMessage>
   <div class="row">
     <div class="col-md-5 mx-auto mt-3">
       <p class="h5 text-dark mb-4 text-center">
@@ -196,7 +196,7 @@
           majd módosítsa azt ebben a listában!
       </p>
     
-      <div class="mt-5 col-2 mx-auto bg-light border border-secondary rounded-pill shadow text-center">
+      <div class="mt-5 col-3 mx-auto bg-light border border-secondary rounded-pill shadow text-center">
         <button type="button" (click)="onCancel()"
           class="btn delete_btn grow-30"
           cTooltip="Vissza">
