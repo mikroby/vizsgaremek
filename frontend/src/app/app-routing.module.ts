@@ -18,6 +18,10 @@ import { RoleGuardService } from './service/role-guard.service';
 import { ForbiddenComponent } from './page/forbidden/forbidden.component';
 import { ProfileComponent } from './page/profile/profile.component';
 import { CategoryEditorComponent } from './editor/category-editor/category-editor.component';
+import { UserEditorComponent } from './editor/user-editor/user-editor.component';
+import { ExpertEditorComponent } from './editor/expert-editor/expert-editor.component';
+import { OrderEditorComponent } from './editor/order-editor/order-editor.component';
+import { InvoiceEditorComponent } from './editor/invoice-editor/invoice-editor.component';
 
 const routes: Routes = [
   {
@@ -130,6 +134,22 @@ const routes: Routes = [
       {
         path: 'editor/category/:name/:id',
         component: CategoryEditorComponent,        
+      },
+      {
+        path: 'editor/user/:name/:id',
+        component: UserEditorComponent,        
+      },
+      {
+        path: 'editor/expert/:name/:id',
+        component: ExpertEditorComponent,        
+      },
+      {
+        path: 'editor/order/:name/:id',
+        component: OrderEditorComponent,        
+      },
+      {
+        path: 'editor/invoice/:name/:id',
+        component: InvoiceEditorComponent,        
       },
     ]
   },

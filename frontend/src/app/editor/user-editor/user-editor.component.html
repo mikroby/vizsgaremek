@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-3">
+    <div class="h3 text-muted mb-4">{{ title }}</div>
+
+    <form *ngIf="user" #editorForm="ngForm" (ngSubmit)="onSubmit(user)">
+
+      <input [(ngModel)]="user._id" name="_id" type="hidden">
+      <input [(ngModel)]="user.password" name="password" type="hidden">
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="user.lastName"
+          name="lastName"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-lastName">
+        <label for="field-lastName">Vezetéknév</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="user.firstName"
+          name="firstName"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-firstName">
+        <label for="field-firstName">Keresztnév</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="user.email"
+          name="email"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-email">
+        <label for="field-email">E-mail</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <select class="form-select form-select-sm shadow"
+        [(ngModel)]="user.role"
+        name="role"
+        required
+        id="field-role">
+            <option *ngFor="let role of roles"
+              [value]="role.value">
+              {{role.title | titlecase}}
+            </option>
+        </select>
+        <label for="field-role">Jogosultság</label>
+      </div>
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="user.avatar"
+          name="avatar"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-avatar">
+        <label for="field-avatar">Avatar (max.200x200px)</label>
+      </div>
+
+      <div class="btn-group mt-5 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+        <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
+          <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
+        </button>
+        <div class="vr"></div>
+        <button type="button" (click)="onCancel()" class="btn delete_btn grow-30" cTooltip="Mégsem">
+          <svg cIcon name="cilReload" [size]="editorIconSize"></svg>
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+

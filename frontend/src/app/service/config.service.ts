@@ -18,6 +18,12 @@ export class ConfigService {
   defaultStartPage = 1
   defaultStep = 10
 
+  roles=[
+    {title:'látogató', value:1},
+    {title:'szakember', value:2},
+    {title:'admin', value:3},
+  ]
+
   // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
   paginatorIconSize = 'xl'
   optionIconSize = 'sm'

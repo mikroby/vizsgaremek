@@ -3,7 +3,7 @@ import { User } from "./user"
 
 export class Expert {
   [key: string]: any
-  _id: string = ''
+  _id?: string = ''
   firstName: string = ''
   lastName: string = ''
   job: number[] = []

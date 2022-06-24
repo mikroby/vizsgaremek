@@ -67,7 +67,6 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
     this.pageSize = this.config.defaultPageSize > this.list.length ?
       this.list.length : this.config.defaultPageSize
     this.calculateRows()
-    // this.sortBy = this.displayedColumns[0].key
   }
 
   jumpToPage(pageTo: number): void {
@@ -133,22 +132,8 @@ export class BaseTableComponent<T extends { [x: string]: any }> implements OnIni
   }
 
   onRemove(_id: string): void {
+    if (!confirm('Biztosan törölni szeretné?')) return
     this.removeById.emit(_id)
   }
-
-  // törlés gombhoz kell majd, a záróprojekt material-ból:
-  // onRemove(id: number): void {
-  //   const confirmDialog = this.dialog.open(ConfirmDialogComponent, {
-  //     data: {
-  //       title: 'Megerősítés',
-  //       message: 'Biztos vagy benne, hogy törölni szeretnéd?'
-  //     }
-  //   });
-  //   confirmDialog.afterClosed().subscribe(result => {
-  //     if (result) {
-  //       this.removeById.emit(id);
-  //     }
-  //   });
-  // }
-
+ 
 }

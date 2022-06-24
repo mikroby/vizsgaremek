@@ -29,7 +29,7 @@ import { SpreadPipe } from './pipe/spread.pipe';
     JobPipe,
     CurrPipe,   
     ProjectPipe,
-    CardComponent,
+    CardComponent,    
 
   ],
   imports: [
@@ -40,7 +40,8 @@ import { SpreadPipe } from './pipe/spread.pipe';
     IconModule,
     // BadgeModule,
     // GridModule,
-    TooltipModule
+    TooltipModule,
+        
   ],
   exports: [
     BaseTableComponent,

@@ -1,6 +1,6 @@
 export class Invoice {
   // [key: string]: any;
-  _id: string = ''
+  _id?: string = ''
   orderID: string = ''
   expert: string = ''
   customer: string = ''

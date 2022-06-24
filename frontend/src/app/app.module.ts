@@ -30,7 +30,8 @@ import {
   SidebarModule,
   TableModule,
   TabsModule,
-  UtilitiesModule
+  UtilitiesModule,
+  
 } from '@coreui/angular'
 import {
   PerfectScrollbarModule,
@@ -92,8 +93,8 @@ import { ProfileComponent } from './page/profile/profile.component';
     SearchComponent,
     ForbiddenComponent,
     SelectCategoryComponent,
-    ProfileComponent,    
-               
+    ProfileComponent,
+                   
   ],
   imports: [
     BrowserModule,
@@ -125,7 +126,7 @@ import { ProfileComponent } from './page/profile/profile.component';
     BadgeModule,
     ListGroupModule,
     CardModule,
-    TableModule,
+    TableModule,    
 
     TableMakerModule,
     EditorModule,
