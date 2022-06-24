@@ -5,9 +5,7 @@
     <form *ngIf="expert" #editorForm="ngForm" (ngSubmit)="onSubmit(expert)">
 
       <input [(ngModel)]="expert._id" name="_id" type="hidden">
-      <!-- <input [(ngModel)]="expert.user" name="user" type="hidden">
-      <input [(ngModel)]="expert.category" name="category" type="hidden"> -->
-            
+      
       <div class="form-floating mb-editorItems">
           <input class="form-control shadow"
           disabled
@@ -58,7 +56,7 @@
           name="age"
           type="number"
           max="100"
-          min="0"
+          min="18"
           placeholder="any"
           pattern=""
           id="field-age">
@@ -91,19 +89,17 @@
         <label for="field-phone">Telefon</label>
       </div>
 
-      <!-- <div class="form-floating mb-editorItems">
-        <select class="form-select form-select-sm shadow"
-        [(ngModel)]="expert.workDays"
-        name="workDays"
-        required
-        id="field-workDays">
-            <option *ngFor="let days of weekDays; index as index"
-              [value]="index">
-              {{days}}
-            </option>
-        </select>
+      <div class="form-floating mb-editorItems">
+        <textarea class="form-control shadow"
+          [(ngModel)]="textarea"
+          name="workDays"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-workDays">
+        </textarea>
         <label for="field-workDays">Munkanapok</label>
-      </div> -->
+      </div>
 
       <div class="form-floating mb-editorItems">
         <input class="form-control shadow"        
@@ -146,6 +142,7 @@
       
       <div class="form-floating mb-editorItems">
         <select class="form-select form-select-sm shadow"
+          (change)="onChange()"
           [(ngModel)]="selectedCategory"
           name="selectedCategory"
           required
@@ -172,7 +169,7 @@
         <label for="field-role">Munka megnevezése</label>
       </div>      
 
-      <div class="btn-group mt-5 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
           <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
             <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
           </button>
@@ -191,9 +188,9 @@
   <div class="row">
     <div class="col-md-5 mx-auto mt-3">
       <p class="h5 text-dark mb-4 text-center">
-          Új szakember nem hozható létre.<br>
-          Hozzon létre először egy felhasználót "szakember" jogosultsággal,
-          majd módosítsa azt ebben a listában!
+        Új szakember nem hozható létre.<br>
+        Regisztráljon először egy szakembert<br>
+        majd módosítsa azt ebben a listában!
       </p>
     
       <div class="mt-5 col-3 mx-auto bg-light border border-secondary rounded-pill shadow text-center">

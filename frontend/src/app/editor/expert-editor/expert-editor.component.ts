@@ -26,10 +26,9 @@ export class ExpertEditorComponent implements OnInit {
   weekDays = this.configService.weekDays
 
   categories$ = this.categoryService.getAll()
-
-  selectedCategory: string = ''
-
   jobs: string[] = []
+  selectedCategory: string = ''
+  textarea: string = ''
 
   constructor(
     private expertService: ExpertService,
@@ -52,7 +51,7 @@ export class ExpertEditorComponent implements OnInit {
       this.expertService.getOne(this.id)
         .subscribe(data => {
           this.expert = data
-          
+
           this.expert.category = this.expert.category as Category
           this.selectedCategory = this.expert.category._id || ''
           this.jobs = this.expert.category.job
@@ -62,20 +61,32 @@ export class ExpertEditorComponent implements OnInit {
           this.expert.lastName = this.expert.user.lastName
           this.expert.email = this.expert.user.email
           this.expert.avatar = this.expert.user.avatar
+
+          this.textarea = this.expert.workDays.map(day => this.weekDays[day]).join(', ')
         })
     })
 
   }
 
   onSubmit(expert: Expert): void {
-  //  itt még átalakítások kellenek az expert objektumon mielőtt elküldjük
-      this.expertService.update(expert).subscribe(() => history.back())
-    
+    expert.category = this.selectedCategory
+    expert.user = expert.user as User
+    expert.user = expert.user._id
+    expert.workDays = this.textarea.split(',')
+      .map(item => item.trim()).map(day => this.weekDays.indexOf(day))
+      
+    this.expertService.update(expert).subscribe(() => history.back())
   }
 
   onCancel(): void {
     this.warning = false
     history.back()
+  }
+
+  onChange(): void {
+    this.categoryService.getOne(this.selectedCategory).subscribe(
+      category => this.jobs = category.job
+    )
   }
 
 }

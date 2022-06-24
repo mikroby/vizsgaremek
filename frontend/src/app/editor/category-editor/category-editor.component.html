@@ -25,8 +25,7 @@
           placeholder="any"
           required
           pattern=""
-          id="field-job"
-          [rows]="category.job.length">
+          id="field-job">
         </textarea>
         <label for="field-job">Munkák</label>
       </div>
@@ -43,7 +42,7 @@
         <label for="field-logo">Logo (max.200x200px)</label>
       </div>
 
-      <div class="btn-group mt-5 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
         <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
           <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
         </button>
