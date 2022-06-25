@@ -8,7 +8,7 @@ const { join } = require('path')
 // const modelName = ['user'];
 // const modelName = ['expert'];
 // const modelName = ['order'];
-const modelName = ['invoice'];
+// const modelName = ['invoice'];
 // const modelName = ['category', 'customer', 'expert', 'invoice', 'order'];
 
 (async () => {

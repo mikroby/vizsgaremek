@@ -91,7 +91,15 @@ export class ConfigService {
 
   invoiceTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'detail', title: 'Rendelés adatai', visible: true },
+    { key: 'orderDate', title: 'Rendelés ideje', visible: true, 
+      projector: (row: any) => row.orderDate = row.order?.date || ''
+    },
+    { key: 'expert', title: 'Szakember', visible: true, 
+      projector: (row: any) => row.expert = row.order?.expert || ''
+    },
+    { key: 'customer', title: 'Megrendelő', visible: true, 
+      projector: (row: any) => row.customer = row.order?.customer || ''
+    },
     { key: 'charge', title: 'Fizetendő', visible: true, pipe: 'curr' },
     { key: 'date', title: 'Teljesítés', visible: true },
     { key: 'paid', title: 'Fizetve', visible: true },
