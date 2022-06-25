@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../app-routing.module';
 
 import { IconModule } from '@coreui/icons-angular'
-import { BadgeModule, GridModule, TooltipModule } from '@coreui/angular';
+import { TooltipModule } from '@coreui/angular';
 
 import { BaseTableComponent } from './base-table/base-table.component';
 import { CardTableComponent } from './card-table/card-table.component';
@@ -16,6 +16,7 @@ import { JobPipe } from './pipe/job.pipe';
 import { ProjectPipe } from './pipe/project.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { SpreadPipe } from './pipe/spread.pipe';
+import { CustomDatePipe } from './pipe/custom-date.pipe';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SpreadPipe } from './pipe/spread.pipe';
     JobPipe,
     CurrPipe,   
     ProjectPipe,
-    CardComponent,    
+    CustomDatePipe,
+    CardComponent,
 
   ],
   imports: [
@@ -37,9 +39,7 @@ import { SpreadPipe } from './pipe/spread.pipe';
     FormsModule,
     AppRoutingModule,
 
-    IconModule,
-    // BadgeModule,
-    // GridModule,
+    IconModule,    
     TooltipModule,
         
   ],

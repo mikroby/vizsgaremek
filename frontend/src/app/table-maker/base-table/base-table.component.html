@@ -69,11 +69,19 @@
           *ngFor="let row of list | project:columns | day:columns | job:columns | spread | filter:phrase:filterKey:displayedColumns | slice:rowStart:rowEnd | sorter:sortBy:direction">
           <td *ngFor="let col of displayedColumns">
             <ng-container *ngIf="!isBoolean(row[col.key]); else boolData">
-              {{ row[col.key] | curr:col }}
+              {{ row[col.key] | curr:col | customDate:col }}
             </ng-container>
             <ng-template #boolData>
-              <svg *ngIf="row[col.key]" cIcon name="cilCheckCircle" [size]="optionIconSize"></svg>
-              <svg *ngIf="!row[col.key]" cIcon name="cilXCircle" [size]="optionIconSize"></svg>
+              <svg *ngIf="row[col.key]"
+                cIcon name="cilCheckCircle"
+                [size]="optionIconSize"
+                class="edit_btn">
+              </svg>
+              <svg *ngIf="!row[col.key]"
+                cIcon name="cilXCircle"
+                [size]="optionIconSize"
+                class="delete_btn">
+              </svg>
             </ng-template>
           </td>
           <td *ngIf="allowedButtons.edit || allowedButtons.delete">

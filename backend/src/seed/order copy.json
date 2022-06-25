@@ -1,7 +1,7 @@
 [
   {
-    "_id": "62b6da4d2d5a3d98675304bc",
-    "date": "2021.09.21.",
+    "_id": "62b6f4a5a4367478037888da",
+    "date": "2021-09-21",
     "expert": "Barnhart Dex",
     "job": "Költségvetés készítés",
     "customer": "mboni0",
@@ -9,8 +9,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304bd",
-    "date": "2022.06.19.",
+    "_id": "62b6f4a5a4367478037888db",
+    "date": "2022-06-19",
     "expert": "Bartul Siward",
     "job": "Pénzügyi tanácsadás",
     "customer": "troberto1",
@@ -18,8 +18,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304be",
-    "date": "2021.08.18.",
+    "_id": "62b6f4a5a4367478037888dc",
+    "date": "2021-08-18",
     "expert": "Blincowe Buddie",
     "job": "Felügyelet",
     "customer": "jburkin2",
@@ -27,8 +27,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304bf",
-    "date": "2021.04.11.",
+    "_id": "62b6f4a5a4367478037888dd",
+    "date": "2021-04-11",
     "expert": "Griffen Charles",
     "job": "Tanácsadás",
     "customer": "rledingham3",
@@ -36,8 +36,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c0",
-    "date": "2022.04.25.",
+    "_id": "62b6f4a5a4367478037888de",
+    "date": "2022-04-25",
     "expert": "Salway Becka",
     "job": "Zenetanítás",
     "customer": "babatelli4",
@@ -45,8 +45,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c1",
-    "date": "2021.10.17.",
+    "_id": "62b6f4a5a4367478037888df",
+    "date": "2021-10-17",
     "expert": "Fishe Scotti",
     "job": "PC hardware csere",
     "customer": "rcrang5",
@@ -54,8 +54,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c2",
-    "date": "2021.09.13.",
+    "_id": "62b6f4a5a4367478037888e0",
+    "date": "2021-09-13",
     "expert": "Vlasin Almira",
     "job": "Zenetanítás hangképzés",
     "customer": "irizzelli6",
@@ -63,8 +63,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c3",
-    "date": "2021.04.26.",
+    "_id": "62b6f4a5a4367478037888e1",
+    "date": "2021-04-26",
     "expert": "Vick Robinet",
     "job": "Gumicsere, centírozás",
     "customer": "hgarrattley7",
@@ -72,8 +72,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c4",
-    "date": "2021.05.19.",
+    "_id": "62b6f4a5a4367478037888e2",
+    "date": "2021-05-19",
     "expert": "Dundon Swen",
     "job": "Arcfestés",
     "customer": "cdenisyev8",
@@ -81,8 +81,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c5",
-    "date": "2021.12.13.",
+    "_id": "62b6f4a5a4367478037888e3",
+    "date": "2021-12-13",
     "expert": "Seneschal Clementine",
     "job": "Szélvédő javítás",
     "customer": "mpolkinghorne9",
@@ -90,8 +90,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c6",
-    "date": "2021.12.15.",
+    "_id": "62b6f4a5a4367478037888e4",
+    "date": "2021-12-15",
     "expert": "Kerrigan Lexie",
     "job": "Hidegburkolás",
     "customer": "jblasika",
@@ -99,8 +99,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c7",
-    "date": "2022.06.02.",
+    "_id": "62b6f4a5a4367478037888e5",
+    "date": "2022-06-02",
     "expert": "Franzonetti Bernarr",
     "job": "Tetoválás",
     "customer": "nkeelerb",
@@ -108,8 +108,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c8",
-    "date": "2021.07.05.",
+    "_id": "62b6f4a5a4367478037888e6",
+    "date": "2021-07-05",
     "expert": "Whight Reiko",
     "job": "Fékcsere",
     "customer": "saizikowitzc",
@@ -117,8 +117,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304c9",
-    "date": "2021.12.21.",
+    "_id": "62b6f4a5a4367478037888e7",
+    "date": "2021-12-21",
     "expert": "MacAskill Karlen",
     "job": "Előadói tevékenység",
     "customer": "eslimmd",
@@ -126,8 +126,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304ca",
-    "date": "2021.04.14.",
+    "_id": "62b6f4a5a4367478037888e8",
+    "date": "2021-04-14",
     "expert": "Balfre Robbi",
     "job": "Felülvizsgálat",
     "customer": "fhatchettee",
@@ -135,8 +135,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304cb",
-    "date": "2022.02.07.",
+    "_id": "62b6f4a5a4367478037888e9",
+    "date": "2022-02-07",
     "expert": "Brandsma Marisa",
     "job": "Előadói tevékenység",
     "customer": "mwharltonf",
@@ -144,8 +144,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304cc",
-    "date": "2022.01.10.",
+    "_id": "62b6f4a5a4367478037888ea",
+    "date": "2022-01-10",
     "expert": "Caffin Bessie",
     "job": "Idősgondozás",
     "customer": "epadking",
@@ -153,8 +153,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304cd",
-    "date": "2022.04.30.",
+    "_id": "62b6f4a5a4367478037888eb",
+    "date": "2022-04-30",
     "expert": "Becks Raimund",
     "job": "Nyelvoktatás",
     "customer": "lpetrichath",
@@ -162,8 +162,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304ce",
-    "date": "2022.04.30.",
+    "_id": "62b6f4a5a4367478037888ec",
+    "date": "2022-04-30",
     "expert": "Aingel Annelise",
     "job": "Szerver frissítés",
     "customer": "ncrewsi",
@@ -171,8 +171,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304cf",
-    "date": "2022.05.16.",
+    "_id": "62b6f4a5a4367478037888ed",
+    "date": "2022-05-16",
     "expert": "Mordecai Ardath",
     "job": "Műköröm építés",
     "customer": "aesselj",
@@ -180,8 +180,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304d0",
-    "date": "2022.02.27.",
+    "_id": "62b6f4a5a4367478037888ee",
+    "date": "2022-02-27",
     "expert": "Gimber Morgun",
     "job": "Zenetanítás hangképzés",
     "customer": "kdinwoodiek",
@@ -189,8 +189,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304d1",
-    "date": "2022.06.02.",
+    "_id": "62b6f4a5a4367478037888ef",
+    "date": "2022-06-02",
     "expert": "Allberry Fredericka",
     "job": "Weblap készítése",
     "customer": "mcolkettl",
@@ -198,8 +198,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304d2",
-    "date": "2021.11.24.",
+    "_id": "62b6f4a5a4367478037888f0",
+    "date": "2021-11-24",
     "expert": "Brinkley Valery",
     "job": "Előadói tevékenység",
     "customer": "ppietsmam",
@@ -207,8 +207,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304d3",
-    "date": "2022.03.29.",
+    "_id": "62b6f4a5a4367478037888f1",
+    "date": "2022-03-29",
     "expert": "Cornillot Corby",
     "job": "Applikáció készítése",
     "customer": "fwilcen",
@@ -216,8 +216,8 @@
     "__v": 0
   },
   {
-    "_id": "62b6da4d2d5a3d98675304d4",
-    "date": "2022.03.04.",
+    "_id": "62b6f4a5a4367478037888f2",
+    "date": "2022-03-04",
     "expert": "Grigson Aida",
     "job": "Veszélyes fa kivágása",
     "customer": "pstroddero",

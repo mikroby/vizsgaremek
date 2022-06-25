@@ -82,16 +82,16 @@ export class ConfigService {
   
   orderTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'date', title: 'Rendelés leadása', visible: true },
+    { key: 'date', title: 'Megrendelés dátuma', visible: true, pipe: 'customDate' },
     { key: 'expert', title: 'Szakember', visible: true },
     { key: 'job', title: 'Megrendelt munka', visible: true },
-    { key: 'customer', title: 'Megrendelő', visible: true },
+    { key: 'customer', title: 'Megrendelő neve', visible: true },
     { key: 'accepted', title: 'Elfogadott', visible: true },
   ]
 
   invoiceTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'orderDate', title: 'Rendelés ideje', visible: true, 
+    { key: 'orderDate', title: 'Megrendelés', visible: true, pipe: 'customDate',
       projector: (row: any) => row.orderDate = row.order?.date || ''
     },
     { key: 'expert', title: 'Szakember', visible: true, 
@@ -101,7 +101,7 @@ export class ConfigService {
       projector: (row: any) => row.customer = row.order?.customer || ''
     },
     { key: 'charge', title: 'Fizetendő', visible: true, pipe: 'curr' },
-    { key: 'date', title: 'Teljesítés', visible: true },
+    { key: 'date', title: 'Teljesítés', visible: true, pipe: 'customDate' },
     { key: 'paid', title: 'Fizetve', visible: true },
   ]
 

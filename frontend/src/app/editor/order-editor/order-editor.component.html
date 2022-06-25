@@ -1,1 +1,81 @@
-<p>order-editor works!</p>
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-3">
+    <div class="h3 text-muted mb-4">{{ title }}</div>
+
+    <form *ngIf="order" #editorForm="ngForm" (ngSubmit)="onSubmit(order)">
+
+      <input [(ngModel)]="order._id" name="_id" type="hidden">
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="order.date"
+          name="date"
+          type="date"
+          placeholder="any"
+          required
+          id="field-date">
+        <label for="field-date">Megrendelés dátuma</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="order.expert"
+          name="expert"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-expert">
+        <label for="field-expert">Szakember</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="order.job"
+          name="job"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-job">
+        <label for="field-job">Megrendelt munka</label>
+      </div>
+      
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="order.customer"
+          name="customer"
+          type="text"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-customer">
+        <label for="field-customer">Megrendelő</label>
+      </div>
+
+      <div class="form-check mb-editorItems">
+        <input class="form-check-input"
+          [(ngModel)]="order.accepted"
+          [checked]="order.accepted"
+          name="accepted"
+          type="checkbox"
+          id="checkbox-accepted">
+        <label class="form-check-label" for="checkbox-accepted">Megrendelés elfogadása</label>
+      </div>
+     
+      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+        <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
+          <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
+        </button>
+        <div class="vr"></div>
+        <button type="button" (click)="onCancel()" class="btn delete_btn grow-30" cTooltip="Mégsem">
+          <svg cIcon name="cilReload" [size]="editorIconSize"></svg>
+        </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+
