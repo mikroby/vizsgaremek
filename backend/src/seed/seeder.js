@@ -6,7 +6,9 @@ const { join } = require('path')
 
 // data files to be seeded:
 // const modelName = ['user'];
-const modelName = ['expert'];
+// const modelName = ['expert'];
+// const modelName = ['order'];
+const modelName = ['invoice'];
 // const modelName = ['category', 'customer', 'expert', 'invoice', 'order'];
 
 (async () => {

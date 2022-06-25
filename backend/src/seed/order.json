@@ -1,0 +1,177 @@
+[
+  {
+    "date": "2021.09.21.",
+    "expert": "Barnhart Dex",
+    "job": "Költségvetés készítés",
+    "customer": "mboni0",
+    "accepted": false
+  },
+  {
+    "date": "2022.06.19.",
+    "expert": "Bartul Siward",
+    "job": "Pénzügyi tanácsadás",
+    "customer": "troberto1",
+    "accepted": true
+  },
+  {
+    "date": "2021.08.18.",
+    "expert": "Blincowe Buddie",
+    "job": "Felügyelet",
+    "customer": "jburkin2",
+    "accepted": true
+  },
+  {
+    "date": "2021.04.11.",
+    "expert": "Griffen Charles",
+    "job": "Tanácsadás",
+    "customer": "rledingham3",
+    "accepted": true
+  },
+  {
+    "date": "2022.04.25.",
+    "expert": "Salway Becka",
+    "job": "Zenetanítás",
+    "customer": "babatelli4",
+    "accepted": false
+  },
+  {
+    "date": "2021.10.17.",
+    "expert": "Fishe Scotti",
+    "job": "PC hardware csere",
+    "customer": "rcrang5",
+    "accepted": false
+  },
+  {
+    "date": "2021.09.13.",
+    "expert": "Vlasin Almira",
+    "job": "Zenetanítás hangképzés",
+    "customer": "irizzelli6",
+    "accepted": false
+  },
+  {
+    "date": "2021.04.26.",
+    "expert": "Vick Robinet",
+    "job": "Gumicsere, centírozás",
+    "customer": "hgarrattley7",
+    "accepted": true
+  },
+  {
+    "date": "2021.05.19.",
+    "expert": "Dundon Swen",
+    "job": "Arcfestés",
+    "customer": "cdenisyev8",
+    "accepted": false
+  },
+  {
+    "date": "2021.12.13.",
+    "expert": "Seneschal Clementine",
+    "job": "Szélvédő javítás",
+    "customer": "mpolkinghorne9",
+    "accepted": true
+  },
+  {
+    "date": "2021.12.15.",
+    "expert": "Kerrigan Lexie",
+    "job": "Hidegburkolás",
+    "customer": "jblasika",
+    "accepted": false
+  },
+  {
+    "date": "2022.06.02.",
+    "expert": "Franzonetti Bernarr",
+    "job": "Tetoválás",
+    "customer": "nkeelerb",
+    "accepted": true
+  },
+  {
+    "date": "2021.07.05.",
+    "expert": "Whight Reiko",
+    "job": "Fékcsere",
+    "customer": "saizikowitzc",
+    "accepted": true
+  },
+  {
+    "date": "2021.12.21.",
+    "expert": "MacAskill Karlen",
+    "job": "Előadói tevékenység",
+    "customer": "eslimmd",
+    "accepted": true
+  },
+  {
+    "date": "2021.04.14.",
+    "expert": "Balfre Robbi",
+    "job": "Felülvizsgálat",
+    "customer": "fhatchettee",
+    "accepted": true
+  },
+  {
+    "date": "2022.02.07.",
+    "expert": "Brandsma Marisa",
+    "job": "Előadói tevékenység",
+    "customer": "mwharltonf",
+    "accepted": false
+  },
+  {
+    "date": "2022.01.10.",
+    "expert": "Caffin Bessie",
+    "job": "Idősgondozás",
+    "customer": "epadking",
+    "accepted": true
+  },
+  {
+    "date": "2022.04.30.",
+    "expert": "Becks Raimund",
+    "job": "Nyelvoktatás",
+    "customer": "lpetrichath",
+    "accepted": true
+  },
+  {
+    "date": "2022.04.30.",
+    "expert": "Aingel Annelise",
+    "job": "Szerver frissítés",
+    "customer": "ncrewsi",
+    "accepted": false
+  },
+  {
+    "date": "2022.05.16.",
+    "expert": "Mordecai Ardath",
+    "job": "Műköröm építés",
+    "customer": "aesselj",
+    "accepted": true
+  },
+  {
+    "date": "2022.02.27.",
+    "expert": "Gimber Morgun",
+    "job": "Zenetanítás hangképzés",
+    "customer": "kdinwoodiek",
+    "accepted": false
+  },
+  {
+    "date": "2022.06.02.",
+    "expert": "Allberry Fredericka",
+    "job": "Weblap készítése",
+    "customer": "mcolkettl",
+    "accepted": true
+  },
+  {
+    "date": "2021.11.24.",
+    "expert": "Brinkley Valery",
+    "job": "Előadói tevékenység",
+    "customer": "ppietsmam",
+    "accepted": true
+  },
+  {
+    "date": "2022.03.29.",
+    "expert": "Cornillot Corby",
+    "job": "Applikáció készítése",
+    "customer": "fwilcen",
+    "accepted": true
+  },
+  {
+    "date": "2022.03.04.",
+    "expert": "Grigson Aida",
+    "job": "Veszélyes fa kivágása",
+    "customer": "pstroddero",
+    "accepted": false
+  }
+]

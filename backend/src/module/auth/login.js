@@ -21,7 +21,7 @@ module.exports = async (req, res, next) => {
       email: user.email,
       role: user.role,
     }, `${process.env.ACCES_TOKEN_SECRET}`, {
-      expiresIn: process.env.TOKEN_EXPIRY,
+      expiresIn: `${process.env.TOKEN_EXPIRY}`,
     })
     // send access_token and user datas to frontend
     res.json({

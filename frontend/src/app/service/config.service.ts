@@ -13,7 +13,7 @@ export class ConfigService {
   sideBarWidth_full = '16rem'
   sideBarWidth_narrow = '4rem'
 
-  defaultPageSize = 50
+  defaultPageSize = 20
   minPageSize = 10
   defaultStartPage = 1
   defaultStep = 10
@@ -79,24 +79,22 @@ export class ConfigService {
     { key: 'availableTill', title: 'Befejezés', visible: true },
     { key: 'rating', title: 'Értékelés', visible: true },
   ]
+  
+  orderTableColumns: ITableColumn[] = [
+    { key: '_id', title: '#', visible: false },
+    { key: 'date', title: 'Rendelés leadása', visible: true },
+    { key: 'expert', title: 'Szakember', visible: true },
+    { key: 'job', title: 'Megrendelt munka', visible: true },
+    { key: 'customer', title: 'Megrendelő', visible: true },
+    { key: 'accepted', title: 'Elfogadott', visible: true },
+  ]
 
   invoiceTableColumns: ITableColumn[] = [
     { key: '_id', title: '#', visible: false },
-    { key: 'orderID', title: 'Rendelés száma', visible: true },
-    { key: 'expert', title: 'Mester', visible: true },
-    { key: 'customer', title: 'Megrendelő', visible: true },
-    { key: 'job', title: 'Munka', visible: true },
-    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'curr' },
-    { key: 'status', title: 'Állapot', visible: true },
-  ]
-
-  orderTableColumns: ITableColumn[] = [
-    { key: '_id', title: '#', visible: false },
-    { key: 'customer', title: 'Megrendelő', visible: true },
-    { key: 'expert', title: 'Mester', visible: true },
-    { key: 'job', title: 'Munka', visible: true },
-    { key: 'amount', title: 'Rendelt mennyiség', visible: true, pipe: 'curr' },
-    { key: 'status', title: 'Állapot', visible: true },
+    { key: 'detail', title: 'Rendelés adatai', visible: true },
+    { key: 'charge', title: 'Fizetendő', visible: true, pipe: 'curr' },
+    { key: 'date', title: 'Teljesítés', visible: true },
+    { key: 'paid', title: 'Fizetve', visible: true },
   ]
 
   constructor(
