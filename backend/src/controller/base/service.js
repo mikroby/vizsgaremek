@@ -28,5 +28,3 @@ module.exports = (model, populateList = []) => {
   }
 
 }
-
-// jók így ezek a metódusok? a visszatérési értékek?

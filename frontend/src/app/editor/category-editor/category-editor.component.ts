@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 export class CategoryEditorComponent implements OnInit {
 
   title: string = ''
-  editorIconSize = this.configService.editorIconSize
+  editorIconSize = this.config.editorIconSize
 
   category: Category | null = null
   textarea: string = ''
@@ -20,7 +20,7 @@ export class CategoryEditorComponent implements OnInit {
 
   constructor(
     private categoryService: CategoryService,
-    private configService: ConfigService,
+    private config: ConfigService,
     private ar: ActivatedRoute,
   ) { }
 

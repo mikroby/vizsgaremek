@@ -12,15 +12,15 @@ import { UserService } from 'src/app/service/user.service';
 export class UserEditorComponent implements OnInit {
 
   title: string = ''
-  editorIconSize = this.configService.editorIconSize
-  roles = this.configService.roles
+  editorIconSize = this.config.editorIconSize
+  roles = this.config.roles
 
   user: User | null = null
   id: string = ''
 
   constructor(
     private userService: UserService,
-    private configService: ConfigService,
+    private config: ConfigService,
     private ar: ActivatedRoute,
   ) { }
 

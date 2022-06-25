@@ -15,15 +15,15 @@ import { User } from 'src/app/model/user';
 export class ExpertEditorComponent implements OnInit {
 
   title: string = ''
-  editorIconSize = this.configService.editorIconSize
-  roles = this.configService.roles
+  editorIconSize = this.config.editorIconSize
+  roles = this.config.roles
 
   warning: boolean = false
 
   expert: Expert | null = null
   id: string = ''
 
-  weekDays = this.configService.weekDays
+  weekDays = this.config.weekDays
 
   categories$ = this.categoryService.getAll()
   jobs: string[] = []
@@ -33,7 +33,7 @@ export class ExpertEditorComponent implements OnInit {
   constructor(
     private expertService: ExpertService,
     private categoryService: CategoryService,
-    private configService: ConfigService,
+    private config: ConfigService,
     private ar: ActivatedRoute,
   ) { }
 

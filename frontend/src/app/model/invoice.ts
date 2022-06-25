@@ -1,10 +1,10 @@
+import { Order } from "./order"
+
 export class Invoice {
-  // [key: string]: any;
+  [key: string]: any;
   _id?: string = ''
-  orderID: string = ''
-  expert: string = ''
-  customer: string = ''
-  job: number = 0
-  amount: number = 0
-  status: string = 'várakozó' || 'fizetve'
+  order?: Order | string = new Order()
+  charge: number = 0
+  date: string = ''
+  paid: boolean = false
 }

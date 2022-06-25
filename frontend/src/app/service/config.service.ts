@@ -24,7 +24,7 @@ export class ConfigService {
     {title:'admin', value:3},
   ]
 
-  // values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
+  // possible values: sm | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl | 7xl | 8xl | 9xl
   paginatorIconSize = 'xl'
   optionIconSize = 'sm'
   newIconSize = 'lg'

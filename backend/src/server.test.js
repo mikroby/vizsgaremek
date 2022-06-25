@@ -2,7 +2,6 @@ const app = require('./server')
 const mongoose = require('mongoose')
 const supertest = require('supertest')
 const config = require('config')
-const Category = require('./model/category')
 const { response } = require('jest-mock-req-res')
 const { Test } = require('supertest')
 
@@ -14,6 +13,10 @@ describe('REST API integration tests', () => {
       pass,
     }).then(connection => {
       console.log('Database Connection successfully established!')
+
+      // autentikáció ide:
+      
+
       done()
     })
       .catch(err => {
@@ -32,7 +35,37 @@ describe('REST API integration tests', () => {
         done()
       })
   })
+  
+  test('GET /expert', done => {
+    supertest(app).get('/expert').expect(200)
+      .then(response => {
+        expect(Array.isArray(response.body)).toBeTruthy()
+        done()
+      })
+  })
+  
+  test('GET /user', done => {
+    supertest(app).get('/user').expect(200)
+      .then(response => {
+        expect(Array.isArray(response.body)).toBeTruthy()
+        done()
+      })
+  })
+
+  test('GET /invoice', done => {
+    supertest(app).get('/invoice').expect(200)
+      .then(response => {
+        expect(Array.isArray(response.body)).toBeTruthy()
+        done()
+      })
+  })
+  
+  test('GET /order', done => {
+    supertest(app).get('/order').expect(200)
+      .then(response => {
+        expect(Array.isArray(response.body)).toBeTruthy()
+        done()
+      })
+  })
+
 })
-
-
-// ez még nem biztos, hogy jó!

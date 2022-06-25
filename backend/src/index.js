@@ -10,7 +10,6 @@ if (!config.has('database')) {
   process.exit()
 }
 
-// start listening on port
 app.listen(port, () => {
   console.log(`API Server is listening at http://localhost:${port}`)
 })

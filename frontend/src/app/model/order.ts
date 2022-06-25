@@ -1,9 +1,9 @@
 export class Order {
-  // [key: string]: any
+  [key: string]: any
   _id?: string = ''
-  customer: string = ''
+  date: string = ''
   expert: string = ''
-  job: number = 0
-  amount: number = 0
-  status: string = 'várakozó' || 'elvégzett'
+  job: string = ''
+  customer: string = ''
+  accepted: boolean = false
 }
