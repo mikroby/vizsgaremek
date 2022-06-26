@@ -63,6 +63,7 @@ A megadott Docker container indítása és inicializálása:
   npm run compose
   ```
 - A Docker Desktop-ban láthatónak kell lenni a konténernek és futó állapotúnak kell lennie.
+  Ekkor az alkalmazás a http://localhost:3000/ url-en érhető el alapértékű konfiguráció esetén.
 
 
 - Ha Docker Desktop nélkül szeretné indítani az alkalmazást:
@@ -74,7 +75,7 @@ A megadott Docker container indítása és inicializálása:
   ```
   npm run server  *(vagy nodemon nélkül)* npm start
   ```
-  - ekkor a frontend a localhost:4200-es portján, mígy a backend a 3000-es porton érhető el a böngészőben.
+  - ekkor a frontend a http://localhost:4200/ url-en, mígy a backend a http://localhost:3000/ -en érhető el a böngészőben.
 
 
 - Az alkalmazás bizonyos részeihez jogosultságot kell igazolni. pl.:
