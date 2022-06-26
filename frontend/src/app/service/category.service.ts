@@ -12,7 +12,7 @@ export class CategoryService extends BaseService<Category> {
     public override http: HttpClient,
   ) {
     super(http);
-    this.entityName = 'category';
+    this.entityName = 'category/';
   }
 
 }

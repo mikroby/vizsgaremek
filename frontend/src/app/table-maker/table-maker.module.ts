@@ -17,6 +17,7 @@ import { ProjectPipe } from './pipe/project.pipe';
 import { SorterPipe } from './pipe/sorter.pipe';
 import { SpreadPipe } from './pipe/spread.pipe';
 import { CustomDatePipe } from './pipe/custom-date.pipe';
+import { PagerPipe } from './pipe/pager.pipe';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { CustomDatePipe } from './pipe/custom-date.pipe';
     ProjectPipe,
     CustomDatePipe,
     CardComponent,
+    PagerPipe,
 
   ],
   imports: [

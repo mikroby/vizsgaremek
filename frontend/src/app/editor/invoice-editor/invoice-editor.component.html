@@ -1,1 +1,105 @@
-<p>invoice-editor works!</p>
+<div class="row">
+  <div class="col-md-6 offset-md-3 mt-3">
+    <div class="h3 text-muted mb-4">{{ title }}</div>
+
+    <form *ngIf="invoice" #editorForm="ngForm" (ngSubmit)="onSubmit(invoice)">
+
+      <input [(ngModel)]="invoice._id" name="_id" type="hidden">
+      
+      <div *ngIf="!invoice._id; else existingInvoice" class="form-floating mb-editorItems">
+        <select class="form-select form-select-sm shadow"          
+          [(ngModel)]="selectedOrder"
+          name="selectedOrder"
+          required
+          id="field-selectedOrder">
+          <ng-container *ngFor="let order of orders$ | async">
+            <option *ngIf="order.accepted"
+              [value]="order._id">
+              {{order.date}} {{order.expert}}, {{order.job}}: {{order.customer}}
+            </option>
+          </ng-container>
+        </select>
+        <label for="field-selectedOrder">Elfogadott megrendelés kiválasztása</label>
+      </div>
+
+      <ng-template #existingInvoice>
+        <div class="form-floating mb-editorItems">
+          <input class="form-control shadow"
+            [value]="invoice.orderDate"
+            type="date"
+            placeholder="any"
+            disabled
+            id="field-orderDate">
+          <label for="field-orderDate">Megrendelés dátuma</label>
+        </div>
+        
+        <div class="form-floating mb-editorItems">
+          <input class="form-control shadow"
+            [value]="invoice.expert"
+            type="text"
+            placeholder="any"
+            disabled            
+            id="field-expert">
+          <label for="field-expert">Szakember</label>
+        </div>
+        
+        <div class="form-floating mb-editorItems">
+          <input class="form-control shadow"
+            [value]="invoice.customer"
+            type="text"
+            placeholder="any"
+            disabled            
+            id="field-customer">
+          <label for="field-customer">Megrendelő</label>
+        </div>
+      </ng-template>
+
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"        
+          [(ngModel)]="invoice.charge"
+          name="charge"
+          type="number"
+          step="100"
+          min="0"
+          placeholder="any"
+          required
+          pattern=""
+          id="field-charge">
+        <label for="field-charge">Fizetendő</label>
+      </div> 
+     
+      <div class="form-floating mb-editorItems">
+        <input class="form-control shadow"
+          [(ngModel)]="invoice.date"
+          name="date"
+          type="date"
+          placeholder="any"
+          required
+          id="field-date">
+        <label for="field-date">Teljesítés dátuma</label>
+      </div>
+
+      <div class="form-check mb-editorItems">
+        <input class="form-check-input"
+          [(ngModel)]="invoice.paid"
+          [checked]="invoice.paid"
+          name="paid"
+          type="checkbox"
+          id="checkbox-paid">
+        <label class="form-check-label" for="checkbox-paid">Fizetve</label>
+      </div>
+
+      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+          <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
+            <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
+          </button>
+          <div class="vr"></div>
+          <button type="button" (click)="onCancel()" class="btn delete_btn grow-30" cTooltip="Mégsem">
+            <svg cIcon name="cilReload" [size]="editorIconSize"></svg>
+          </button>
+      </div>
+
+    </form>
+
+  </div>
+</div>

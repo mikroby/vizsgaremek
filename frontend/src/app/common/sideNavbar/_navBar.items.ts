@@ -37,15 +37,3 @@ export const navItems: INavData[] = [
   },
   
 ];
-
-// other useful options:
-// {
-//   name: 'Typography',
-//     url: '/theme/typography',
-//       linkProps: { fragment: 'someAnchor' },
-//   iconComponent: { name: 'cil-pencil' }
-// },
-// {
-//   title: true,
-//     name: 'Extras'
-// }, 

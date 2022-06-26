@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms'
 // import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common'
 
 // CoreUI modules
@@ -102,7 +102,6 @@ import { ProfileComponent } from './page/profile/profile.component';
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    // ReactiveFormsModule,
 
     AvatarModule,
     TooltipModule,
@@ -146,11 +145,6 @@ import { ProfileComponent } from './page/profile/profile.component';
     },
     IconSetService,
     Title,
-        
-    // {
-    //   provide: LocationStrategy,
-    //   useClass: HashLocationStrategy,
-    // },
   ],
   bootstrap: [AppComponent]
 })

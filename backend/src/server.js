@@ -20,7 +20,7 @@ mongoose.connect(`mongodb+srv://${host}`, {
   pass,
 }).then(connection => {
   logger.info('DataBase Connection successfully established!')
-  require('./seed/seeder')
+  // require('./seed/seeder')
 })
   .catch(err => {
     throw new Error(err.message)

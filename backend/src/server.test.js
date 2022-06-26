@@ -37,7 +37,7 @@ describe('REST API integration tests', () => {
   })
 
   test('GET /category', done => {
-    supertest(app).get('/category')
+    supertest(app).get('/category/')
       .set('Authorization', `Bearer ${token}`)
       .expect(200)
       .then(response => {

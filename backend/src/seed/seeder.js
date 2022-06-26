@@ -5,11 +5,12 @@ const { readFile } = require('fs').promises
 const { join } = require('path')
 
 // data files to be seeded:
+// const modelName = ['category'];
 // const modelName = ['user'];
 // const modelName = ['expert'];
-const modelName = ['invoice'];
+// const modelName = ['order'];
 // const modelName = ['invoice'];
-// const modelName = ['category', 'customer', 'expert', 'invoice', 'order'];
+// const modelName = ['category', 'user', 'expert', 'invoice', 'order'];
 
 (async () => {
   modelName.forEach(async (model) => {

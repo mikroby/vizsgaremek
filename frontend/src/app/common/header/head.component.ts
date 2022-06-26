@@ -65,11 +65,7 @@ export class HeadComponent extends HeaderComponent implements OnInit {
         this.sideBar_narrow : this.sideBar_full
     }
   }
-
-  getAvatar(): string {
-    return this.auth.currentAvatarUrl
-  }
-
+ 
   getLayout(): void {
     this.ar.data.subscribe(params => {
       this.layout = params['title']

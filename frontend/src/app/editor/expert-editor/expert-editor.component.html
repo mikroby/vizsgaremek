@@ -2,53 +2,71 @@
   <div class="col-md-6 offset-md-3 mt-3">
     <div class="h3 text-muted mb-4">{{ title }}</div>
 
-    <form *ngIf="expert" #editorForm="ngForm" (ngSubmit)="onSubmit(expert)">
+    <form *ngIf="renderForm" #editorForm="ngForm" (ngSubmit)="onSubmit(expert)">
 
       <input [(ngModel)]="expert._id" name="_id" type="hidden">
       
-      <div class="form-floating mb-editorItems">
-          <input class="form-control shadow"
-          disabled
-          [(ngModel)]="expert.lastName"
-          name="lastName"
-          type="text"
-          placeholder="any"         
-          id="field-lastName">
-        <label for="field-lastName">Vezetéknév</label>
-      </div>
-      
-      <div class="form-floating mb-editorItems">
-        <input class="form-control shadow"
-          disabled
-          [(ngModel)]="expert.firstName"
-          name="firstName"
-          type="text"
-          placeholder="any"         
-          id="field-firstName">
-        <label for="field-firstName">Keresztnév</label>
-      </div>
-      
-      <div class="form-floating mb-editorItems">
-        <input class="form-control shadow"
-          disabled
-          [(ngModel)]="expert.email"
-          name="email"
-          type="text"
-          placeholder="any"         
-          id="field-email">
-        <label for="field-email">E-mail</label>
+      <div *ngIf="freeUsers.length" class="form-floating mb-editorItems">
+        <select class="form-select form-select-sm shadow"
+          (change)="onChangeUser()"
+          [(ngModel)]="selectedUser"
+          name="selectedUser"
+          required
+          id="field-selectedUser">
+            <option *ngFor="let freeUser of freeUsers"
+              [value]="freeUser._id">
+              {{freeUser.lastName | titlecase}} {{freeUser.firstName | titlecase}} {{freeUser.email}}
+            </option>
+        </select>
+        <label for="field-selectedCategory">Regisztrált felhasználó kiválasztása</label>
       </div>
 
-      <div class="form-floating mb-editorItems">
-        <input class="form-control shadow"
+
+      <ng-container *ngIf="expertID">        
+        <div class="form-floating mb-editorItems">
+            <input class="form-control shadow"
+            disabled
+            [(ngModel)]="expert.lastName"
+            name="lastName"
+            type="text"
+            placeholder="any"         
+            id="field-lastName">
+          <label for="field-lastName">Vezetéknév</label>
+        </div>
+      
+        <div class="form-floating mb-editorItems">
+          <input class="form-control shadow"
+            disabled
+            [(ngModel)]="expert.firstName"
+            name="firstName"
+            type="text"
+            placeholder="any"         
+            id="field-firstName">
+          <label for="field-firstName">Keresztnév</label>
+        </div>
+      
+        <div class="form-floating mb-editorItems">
+          <input class="form-control shadow"
+            disabled
+            [(ngModel)]="expert.email"
+            name="email"
+            type="text"
+            placeholder="any"         
+            id="field-email">
+          <label for="field-email">E-mail</label>
+        </div>
+      
+        <div class="form-floating mb-editorItems">
+          <input class="form-control shadow"
           disabled
           [(ngModel)]="expert.avatar"
           name="avatar"
           type="text"
           placeholder="any"          
           id="field-avatar">
-        <label for="field-avatar">Avatar (max.200x200px)</label>
-      </div>
+          <label for="field-avatar">Avatar (max.200x200px)</label>
+        </div>
+      </ng-container>
 
       <div class="form-floating mb-editorItems">
         <input class="form-control shadow"        
@@ -142,7 +160,7 @@
       
       <div class="form-floating mb-editorItems">
         <select class="form-select form-select-sm shadow"
-          (change)="onChange()"
+          (change)="onChangeCategory()"
           [(ngModel)]="selectedCategory"
           name="selectedCategory"
           required
@@ -158,15 +176,15 @@
       <div class="form-floating mb-editorItems">
         <select class="form-select form-select-sm shadow"
           [(ngModel)]="expert.job"
-          name="role"
+          name="job"
           required
-          id="field-role">
+          id="field-job">
               <option *ngFor="let job of jobs;index as index"
                 [value]="index">
                 {{job | titlecase}}
               </option>
         </select>
-        <label for="field-role">Munka megnevezése</label>
+        <label for="field-job">Munka megnevezése</label>
       </div>      
 
       <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
@@ -189,8 +207,9 @@
     <div class="col-md-5 mx-auto mt-3">
       <p class="h5 text-dark mb-4 text-center">
         Új szakember nem hozható létre.<br>
-        Regisztráljon először egy szakembert<br>
-        majd módosítsa azt ebben a listában!
+        Először hozzon létre egy felhasználót<br>
+        "szakember" jogsultsággal,<br>
+        majd térjen vissza ehhez laphoz!
       </p>
     
       <div class="mt-5 col-3 mx-auto bg-light border border-secondary rounded-pill shadow text-center">

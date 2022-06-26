@@ -41,10 +41,8 @@ export class SearchComponent implements OnInit {
       this.listTitle = `Találatok - ${params['category']}`
 
       this.list$ = this.expertService.getAll().pipe(map(experts =>
-        experts.filter(row => {
-          if (typeof row.category === 'string') { return false }
-          return row.category?.name === params['category']
-        }
+        experts.filter((row: any) =>
+          row.category?.name === params['category']
         )))
 
       this.list$.subscribe(
@@ -58,17 +56,13 @@ export class SearchComponent implements OnInit {
   }
 
   // map from list to ICard datas
-  mapper(response: Expert[]): ICard[] | null {
-    return response.map(row => {
-
-      if (typeof row.user !== 'object') { return {} as ICard }
+  mapper(response: Expert[]): ICard[] {
+    return response.map((row: any) => {
 
       const image = `${this.apiUrl}avatar/${row.user.avatar}`
       const description = [
         `${row.user.lastName} ${row.user.firstName}`,
-        row.job.map((index: number) => {
-          if (typeof row.category === 'object') row.category.job[index]
-        }),
+        `${row.job.map((index: number) => row.category.job[index])}`,
         `${row.price} Ft/óra`,
         `tel: ${row.phone}`,
         `értékelés: ${row.rating}`

@@ -3,7 +3,7 @@ import { Order } from "./order"
 export class Invoice {
   [key: string]: any;
   _id?: string = ''
-  order?: Order | string = new Order()
+  order: Order | string = new Order()
   orderDate: string = ''
   expert: string = ''
   customer: string = ''

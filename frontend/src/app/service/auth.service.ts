@@ -74,10 +74,6 @@ export class AuthService {
     return this.user$.value
   }
 
-  get currentAvatarUrl(): string {
-    return `${this.apiUrl}avatar/${this.currentUser?.avatar}`
-  }
-
   login(loginData: ILoginData): void {
     this.http.post<IAuthModel>(this.loginUrl, loginData).subscribe({
       next: (response: IAuthModel) => {
@@ -86,7 +82,6 @@ export class AuthService {
         sessionStorage.setItem(this.storageKey, JSON.stringify(response))
       },
       error: (error) => {
-        // console.error(error)
         this.loginFailed$.next(true)
       }
     })
@@ -104,7 +99,6 @@ export class AuthService {
         this.login({ email, password })
       },
       error: (error) => {
-        // console.error(error)
         this.signUpFailed$.next(true)
       }
     })
@@ -116,7 +110,7 @@ export class AuthService {
         this.router.navigate(['/', 'admin'])
         break
       case 2:
-        this.router.navigate(['/', 'profile'])
+        this.router.navigate(['/', 'profile', this.user$.value?._id])
         break
       default:
         this.router.navigate(['/'])
