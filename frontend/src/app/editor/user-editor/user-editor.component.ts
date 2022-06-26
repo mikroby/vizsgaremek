@@ -17,6 +17,7 @@ export class UserEditorComponent implements OnInit {
 
   user: User | null = null
   id: string = ''
+  pwd: string = ''
 
   constructor(
     private userService: UserService,
@@ -34,6 +35,7 @@ export class UserEditorComponent implements OnInit {
         this.userService.getOne(this.id)
           .subscribe(data => {
             this.user = data
+            this.pwd = data.password || ''
           })
       } else {
         this.user = new User()
@@ -44,6 +46,9 @@ export class UserEditorComponent implements OnInit {
 
   onSubmit(user: User): void {
     if (this.id) {
+      if (this.pwd === user.password) {
+        delete user.password
+      }
       this.userService.update(user).subscribe(() => history.back())
     } else {
       delete user._id

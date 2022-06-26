@@ -31,6 +31,10 @@ export class ProfileComponent implements OnInit {
   message: string = ''
 
   avatar: string = ''
+  pwd: string = ''
+  lastName: string = ''
+  firstName: string = ''
+  email: string = ''
 
   weekDays = this.config.weekDays
 
@@ -55,8 +59,7 @@ export class ProfileComponent implements OnInit {
 
       this.userService.getOne(this._id).subscribe(
         data => {
-          this.user = data
-          this.avatar = data.avatar
+          this.storeStartData(data)
 
           this.expertService.getAll().subscribe(
             data => {
@@ -84,8 +87,13 @@ export class ProfileComponent implements OnInit {
       .map(item => item.trim()).map(day => this.weekDays.indexOf(day))
     expert.category = this.selectedCategory
 
-    if (this.avatar !== user.avatar) {
+    if (this.avatar !== user.avatar || this.pwd !== user.password ||
+      this.firstName !== user.firstName || this.lastName !== user.lastName
+      || this.email !== user.email) {
       this.user$.next(user)
+      if (this.pwd === user.password) {
+        delete user.password
+      }
       this.userService.update(user).subscribe()
     }
 
@@ -109,6 +117,15 @@ export class ProfileComponent implements OnInit {
     this.categoryService.getOne(this.selectedCategory).subscribe(
       category => this.jobs = category.job
     )
+  }
+
+  storeStartData(data: User): void {
+    this.user = data
+    this.avatar = data.avatar
+    this.pwd = data.password || ''
+    this.lastName = data.lastName
+    this.firstName = data.firstName
+    this.email = data.email
   }
 
 }
