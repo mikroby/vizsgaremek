@@ -2,6 +2,8 @@
   <div class="col-md-6 offset-md-3 mt-3">
     <div class="h3 text-muted mb-4">{{ title }}</div>
 
+    <div class="h3 text-dark mb-4">{{message}}</div>
+
     <form *ngIf="category" #editorForm="ngForm" (ngSubmit)="onSubmit(category)">
 
       <input [(ngModel)]="category._id" name="_id" type="hidden">
@@ -31,15 +33,19 @@
       </div>
 
       <div class="form-floating mb-editorItems">
-        <input class="form-control shadow"
-          [(ngModel)]="category.logo"
-          name="logo"
-          type="text"
-          placeholder="any"
-          required
-          pattern=""
-          id="field-logo">
-        <label for="field-logo">Logo (max.200x200px)</label>
+        <div class="input-group shadow">
+          <span class="input-group-text">
+            <img [src]="getImageSrc()"
+              alt="logo"
+              class="image--preview">
+          </span>
+          <app-img-uploader
+            (focus)="message=''"
+            class="form-control"
+            [type]="'logo'"
+            (uploaded)="uploadSuccess($event)">
+          </app-img-uploader>        
+        </div>
       </div>
 
       <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">

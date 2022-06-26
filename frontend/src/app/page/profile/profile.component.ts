@@ -8,6 +8,8 @@ import { ConfigService } from 'src/app/service/config.service';
 import { ExpertService } from 'src/app/service/expert.service';
 import { UserService } from 'src/app/service/user.service';
 import { Category } from 'src/app/model/category';
+import { IFileUploadResponse } from 'src/app/common/img-uploader/img-uploader.component';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-profile',
@@ -29,6 +31,8 @@ export class ProfileComponent implements OnInit {
   editorIconSize = this.config.editorIconSize
 
   message: string = ''
+
+  uploadedFilePath: string = '';
 
   avatar: string = ''
   pwd: string = ''
@@ -87,6 +91,10 @@ export class ProfileComponent implements OnInit {
       .map(item => item.trim()).map(day => this.weekDays.indexOf(day))
     expert.category = this.selectedCategory
 
+    if (this.uploadedFilePath) {
+      user.avatar = this.uploadedFilePath;
+    }
+
     if (this.avatar !== user.avatar || this.pwd !== user.password ||
       this.firstName !== user.firstName || this.lastName !== user.lastName
       || this.email !== user.email) {
@@ -122,10 +130,23 @@ export class ProfileComponent implements OnInit {
   storeStartData(data: User): void {
     this.user = data
     this.avatar = data.avatar
+    this.uploadedFilePath = this.avatar
     this.pwd = data.password || ''
     this.lastName = data.lastName
     this.firstName = data.firstName
     this.email = data.email
+  }
+
+  uploadSuccess(event: IFileUploadResponse): void {
+    if (event.success) {
+      this.uploadedFilePath = event.path
+      return
+    }
+    this.message = 'Képfeltöltési hiba.'
+  }
+
+  getImageSrc(): string {
+    return `${environment.apiUrl}avatar/${this.uploadedFilePath}`
   }
 
 }

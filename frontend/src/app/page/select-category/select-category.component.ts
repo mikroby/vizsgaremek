@@ -40,7 +40,7 @@ export class SelectCategoryComponent implements OnInit {
   // map from list to card datas
   mapper(response: Category[]): ICard[] {
     return response.map(item => {
-      const image = `${this.apiUrl}category/${item.logo}`
+      const image = `${this.apiUrl}catLogo/${item.logo}`
       const link = `/search/${item.name}`
       const btnText = item.name
       const description = item.job

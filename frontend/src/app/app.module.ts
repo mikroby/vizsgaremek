@@ -145,7 +145,7 @@ import { ProfileComponent } from './page/profile/profile.component';
     },
     IconSetService,
     Title,
-  ],
+  ],  
   bootstrap: [AppComponent]
 })
 export class AppModule { }

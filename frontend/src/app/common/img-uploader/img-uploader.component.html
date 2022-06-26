@@ -1,0 +1,10 @@
+<input type="button"
+  (click)="fileUpload.click()"
+  [value]="fileName"
+  class="form-control"
+  id="field-upload">
+
+<input #fileUpload
+  type="file"
+  class="file-input"
+  (change)="onFileSelected($event)">

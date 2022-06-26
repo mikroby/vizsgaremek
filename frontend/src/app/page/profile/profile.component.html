@@ -15,6 +15,7 @@
           type="text"
           placeholder="any"         
           required
+          (focus)="message=''"
           id="field-lastName">
         <label for="field-lastName">Vezetéknév</label>
       </div>
@@ -25,7 +26,8 @@
           name="firstName"
           type="text"
           placeholder="any"   
-          required     
+          required
+          (focus)="message=''" 
           id="field-firstName">
         <label for="field-firstName">Keresztnév</label>
       </div>
@@ -36,6 +38,7 @@
           name="email"
           type="text"
           required
+          (focus)="message=''"
           placeholder="any"         
           id="field-email">
         <label for="field-email">E-mail</label>
@@ -46,20 +49,26 @@
           [(ngModel)]="user.password"
           name="password"
           type="password"
-          placeholder="any"         
+          placeholder="any"
+          (focus)="message=''"      
           id="field-password">
         <label for="field-password">Jelszó</label>
       </div>
       
       <div class="form-floating mb-editorItems">
-        <input class="form-control shadow"
-          [(ngModel)]="user.avatar"
-          name="avatar"
-          type="text"
-          placeholder="any"
-          required        
-          id="field-avatar">
-        <label for="field-avatar">Avatar (max.200x200px)</label>
+          <div class="input-group shadow">
+            <span class="input-group-text">
+              <img [src]="getImageSrc()"
+                alt="avatar"
+                class="image--preview">
+            </span>
+            <app-img-uploader
+              (focus)="message=''"
+              class="form-control"
+              [type]="'avatar'"
+              (uploaded)="uploadSuccess($event)">
+          </app-img-uploader>        
+        </div>
       </div>
 
       <div class="form-floating mb-editorItems">
@@ -71,6 +80,7 @@
           min="18"
           placeholder="any"
           pattern=""
+          (focus)="message=''"
           id="field-age">
         <label for="field-age">Életkor</label>
       </div>
@@ -84,6 +94,7 @@
           min="0"
           placeholder="any"
           required
+          (focus)="message=''"
           pattern=""
           id="field-price">
         <label for="field-price">Óradíj</label>
@@ -96,6 +107,7 @@
           type="text"        
           placeholder="any"
           required
+          (focus)="message=''"
           pattern=""
           id="field-phone">
         <label for="field-phone">Telefon</label>
@@ -107,6 +119,7 @@
           name="workDays"
           placeholder="any"
           required
+          (focus)="message=''"
           pattern=""
           id="field-workDays">
         </textarea>
@@ -120,6 +133,7 @@
           type="text"        
           placeholder="any"
           required
+          (focus)="message=''"
           pattern=""
           id="field-availableFrom">
         <label for="field-availableFrom">Munka kezdés</label>
@@ -132,6 +146,7 @@
           type="text"        
           placeholder="any"
           required
+          (focus)="message=''"
           pattern=""
           id="field-availableTill">
         <label for="field-availableTill">Munka vége</label>
@@ -143,6 +158,7 @@
           [(ngModel)]="selectedCategory"
           name="selectedCategory"
           required
+          (focus)="message=''"
           id="field-selectedCategory">
           <option *ngFor="let category of categories$ | async"
           [value]="category._id">
@@ -157,6 +173,7 @@
           [(ngModel)]="expert.job"
           name="job"
           required
+          (focus)="message=''"
           id="field-job">
           <option *ngFor="let job of jobs;index as index"
               [value]="index">

@@ -5,6 +5,7 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const { join } = require('path')
+const fileUpload = require('express-fileupload')
 // const swaggerUi = require('swagger-ui-express')
 // const YAML = require('yamljs')
 
@@ -34,15 +35,19 @@ app.use(express.static('public'))
 
 app.use(bodyParser.json())
 
+app.use(fileUpload())
+app.post('/upload/avatar', authencticateJwt, require('./controller/avatar/avatar') )
+app.post('/upload/logo', authencticateJwt, require('./controller/logo/logo') )
+
 app.post('/login', require('./module/auth/login'))
 
 app.post('/signup', require('./module/auth/signup'))
 
+// find authentication in the routers
 app.use('/category', require('./controller/category/router'))
+app.use('/expert', require('./controller/expert/router'))
 
 app.use('/user', authencticateJwt, require('./controller/user/router'))
-
-app.use('/expert', require('./controller/expert/router'))
 
 app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
 
