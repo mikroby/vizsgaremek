@@ -1,55 +1,101 @@
+## MESTEREMBER Applikáció - Szakember kereső adatbázis
+
 ## **1. Az alkalmazás célja**
 
-Pl.:
-- Az alkalmazás feladata, hogy a ... adatait nyilvántartsa és kezelje.
+- Az alkalmazás feladata, hogy platformot biztosítson lakossági megrendelők és szakemberek közti
+  kapcsolat létrejöttéhez, illetve az ehhez szükséges adatbázist kezelje.
 
+
+----------------------------------------
 ## **2. Az alkalmazás telepítése**
 
-Pl.:
-- Forkolni kell az adott GitHub repository tartalmát: (ide jöhet, hogy honnan)   
-- A célgépre le kell klónozni az adott GitHub repository tartalmát: (milyen módon, milyen paranccsal)   
-- Telepíteni kell az alkalmazás függőségeit: (backend és frontend, hová kell belépni, milyen parancsot kell kiadni)   
-- Ha még nincsen fenn a célgépen, akkor telepíteni kell az Angular keretrendszert az `npm i -g @angular/cli` paranccsal (ha kell)   
-- A terminálban ki kell adni az `ng build` parancsot   
-- A /frontend/dist/frontend mappa tartalmát be kell másolni a /backend/public mappába   
-- A terminálon be kell lépni a /backend mappába és futtatni az `npm run build` parancsot 
 
+- Előfeltételek: Chrome böngésző, Angular keretrendszer, NodeJS futtató-környezet, Git verziókezelő, Docker Desktop konténer-management alkalmazás.
+- Forkolni szükséges ennek a GitHub repository-nak a tartalmát: https://github.com/mikroby/vizsgaremek   
+- A célgépre le kell klónozni ugyanezt a repository-t a VSCode terminál ablakában a kívánt mappában állva:
+  ```
+  git clone https://github.com/mikroby/vizsgaremek.git
+  ```
+- Telepíteni kell az alkalmazások függőségeit:
+  * backend: (terminálban a /backend mappában állva)
+    ```
+    npm i
+    ```
+  * frontend: (terminálban a /frontend mappában állva)
+    ```
+    npm i
+    ```
+- Amennyiben még nincsen telepítve a célgépre az Angular keretrendszer, terminál ablakban ki kell adni:
+    ```
+    npm i -g @angular/cli
+    ```
+- Amennyiben nem az alap konfigurációval szeretné futtatni az alkalmazást, végezze el a konfigurálást a 3.sz pont alapján.
+
+- A /frontend mappában állva a terminálban ki kell adni:
+    ```
+    ng build
+    ```   
+- A '/frontend/dist/mesterember' mappa teljes tartalmát be kell másolni a /backend/public mappába (amennyiben nincsenek még ott ezek a file-ok a klónozás után)
+
+- A külön mellékelt file-okat be kell másolni:
+  - .env file-t a /backend mappába
+  - default.json és test.json file-okat a /backend/config almappába
+
+Az alkalmazás indításra kész.
+
+
+----------------------------------------
 ## **3. Az alkalmazás konfigurálása**
 
-Pl.:
-A /frontend/environments mappában be kell állítani az API-végpont elérési útvonalát: (ha szükséges)
-  - _environment.ts_ állomány: http://127.0.0.1:3000/  
-  - _environment.prod.ts_ állomány: http://localhost:3000/ 
+- A /frontend/environments mappában be  lehet állítani az API-végpont elérési útvonalát: (alapértékek)
+  - _environment.ts_ állomány: http://localhost:3000/  
+  - _environment.prod.ts_ állomány: http://localhost:3000/
+- A /backend/.env file-ban megadható az API portszáma.
 
+
+----------------------------------------
 ## **4. Az alkalmazás indítása**
 
-Pl.:
 A megadott Docker container indítása és inicializálása:
-- El kell indítani a Docker Desktop alkalmazást
-- A /backend mappába belépve a terminálban ki kell adni az `npm run dev` parancsot  
-- Ha szükséges, a /frontend mappába belépve a terminálban az `npm start` paranccsal indítható a frontend
+- El kell indítani a Docker Desktop alkalmazást (előzőleg telepítendő) és megvárni, amíg a motor futásra kész állapotba kerül.
+- A /backend mappába belépve a terminálban ki kell adni:
+  ```
+  npm run compose
+  ```
+- A Docker Desktop-ban láthatónak kell lenni a konténernek és futó állapotúnak kell lennie.
 
-_Megjegyzés_:  
-A belépéshez egy érvényes e-mail-cím és jelszó páros (példa):  
 
-E-mail | Jelszó
------------- | -------------
-jmottinelli2d@reuters.com | $2a$10$u7hjgNaac3
+- Ha Docker Desktop nélkül szeretné indítani az alkalmazást:
+  - /frontend mappába belépve a terminálban:
+  ```
+  npm start
+  ```
+  - /backend mappába belépve terminálban:
+  ```
+  npm run server  *(vagy nodemon nélkül)* npm start
+  ```
+  - ekkor a frontend a localhost:4200-es portján, mígy a backend a 3000-es porton érhető el a böngészőben.
 
+
+- Az alkalmazás bizonyos részeihez jogosultságot kell igazolni. pl.:
+  - adminisztrátori jogosultság:
+    - email: a@a.hu
+    - jelszó: 012
+  - szakemberi jogosultság:
+    - email: x@x.hu
+    - jelszó: 012
+- Az alkalmazásban létrehozható illetve szerkeszthető több ugyanilyen jogosultság is.
+
+
+----------------------------------------
 ## **5. A végpontok dokumentációja**
 
-Pl.:
-Swagger 
-- Az alábbi URL-t kell beírni a böngészőbe: https://localhost:3000/api-docs
+- Swagger UI:
+  - Az alábbi URL-en érhető el a böngészőben: https://localhost:3000/api-docs
+  - vagy: https://localhost:3000/welcome oldalon linkről is elérhető.
 
----
----
 
+----------------------------------------
 ## **Linkek:**  
 
-Pl.:
-- a User Story-ra mutató link
-
-
-
-
+- Az alkalmazás a következő User Story alapján készült :https://github.com/mikroby/vizsgaremek/blob/main/README.md
