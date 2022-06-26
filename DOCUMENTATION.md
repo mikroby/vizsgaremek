@@ -56,7 +56,7 @@ Az alkalmazás indításra kész.
 ----------------------------------------
 ## **4. Az alkalmazás indítása**
 
-A megadott Docker container indítása és inicializálása:
+A file-okban konfigurált Docker konténer indítása és inicializálása:
 - El kell indítani a Docker Desktop alkalmazást (előzőleg telepítendő) és megvárni, amíg a motor futásra kész állapotba kerül.
 - A /backend mappába belépve a terminálban ki kell adni:
   ```
@@ -67,15 +67,17 @@ A megadott Docker container indítása és inicializálása:
 
 
 - Ha Docker Desktop nélkül szeretné indítani az alkalmazást:
-  - /frontend mappába belépve a terminálban:
-  ```
-  npm start
-  ```
+  (előfeltétel, hogy az ng build már lefutott és a /frontend/dist/mesterember mappa tartalma bemásolva a fentiek alapján)
+
   - /backend mappába belépve terminálban:
-  ```
-  npm run server  *(vagy nodemon nélkül)* npm start
-  ```
-  - ekkor a frontend a http://localhost:4200/ url-en, mígy a backend a http://localhost:3000/ -en érhető el a böngészőben.
+    ```
+    npm run server
+    ```
+    _vagy nodemon nélkül:_
+    ```
+    npm start
+    ```
+  - ekkor az alkalmazás a http://localhost:3000/ url-en érhető el a böngészőben.
 
 
 - Az alkalmazás bizonyos részeihez jogosultságot kell igazolni. pl.:

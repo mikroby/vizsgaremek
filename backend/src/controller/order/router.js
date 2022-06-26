@@ -12,7 +12,6 @@ router.get('/', (req, res, next) => {
   return controller.getAll(req, res, next)
 })
 
-// read
 router.get('/:id', (req, res, next) => {
   return controller.getOne(req, res, next)
 })

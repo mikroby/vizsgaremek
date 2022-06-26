@@ -43,15 +43,9 @@ export class ImgUploaderComponent implements OnInit {
       ).subscribe({
         next: (response: IFileUploadResponse) => {
           this.uploaded.emit(response)
-
-          console.log(response)
-
         },
         error: (error: IFileUploadResponse) => {
           this.uploaded.emit(error)
-
-          console.log(error)
-
         },
       })
     }
