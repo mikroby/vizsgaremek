@@ -5,12 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PagerPipe<T extends { [key: string]: any }> implements PipeTransform {
 
-  transform(value: T[] | null, start: number, end: number): T[] | null {
+  transform(value: T[] | null): T[] | null {
 
-    if (!Array.isArray(value) || !value.length || !start || !end) return value
-
-    return value.filter((row, index) => index >= start - 1 && index <= end - 1)
+    return value
   }
-
 
 }
