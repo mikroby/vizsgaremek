@@ -7,7 +7,6 @@ services:
             context: .
         volumes:
           - .:/app
-          - ./node_modules:/app/node_modules
-          - ../frontend/dist/mesterember/:/app/public
+          - ./node_modules:/app/node_modules          
         ports:
           - 3000:3000

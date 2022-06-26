@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "node ./src/index.js",
     "server": "nodemon ./src/index.js",
-    "deploy": "cd ../frontend && ng build && cd ../backend && docker-compose up"
+    "deploy": "docker-compose up"
   },
   "keywords": [],
   "author": "",

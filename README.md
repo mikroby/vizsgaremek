@@ -22,9 +22,11 @@
 **Elfogadási kritérium:**
 
 A fejléc szerkezete:
-+ a főcím megjelenítése középen, egyben "Home" link-ként minden esetben erre a főoldalra navigál.
-+ bal szélen az aktuális dátum és időpont, a hét napjának rövidítésével, mely folyamatosan frissül
-+ jobb szélen a "bejelentkezés" felirat látható, melyre kattintva a beléptető oldara navigál.
++ "MesterEmber" főcím megjelenítése vastagabb betűvel, amely egyben "Home" link-ként minden esetben erre a főoldalra navigál.
++ bal szélén az aktuális dátum és időpont, a hét napjának rövidítésével, mely folyamatosan frissül.
++ jobb szélen a "Bejelentkezés" felirat látható, melyre kattintva a beléptető oldara navigál.
++ tőle balra a "Regisztráció" felirat olvasható, mely az újonnan érkező szakembereket a regisztrációhoz továbbítja.
++ tőle balra a "Keresés" link található, leendő megrendelők számára. Rákattintva a kereső oldalra navigál.
 
 **3. User Story:**
 
@@ -32,9 +34,9 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Belépés / Regisztráció gombok: a jelentkező szakemberek számára, gombcsoportba foglalva
++ Regisztráció gombok: a képernyő középső részén a jelentkező szakemberek számára.
 + Keresés gomb: a potenciális lakossági megrendelőket a kereső oldalra navigálja
-+ Adminisztrátor gomb: Az oldal adminisztrátora a navigációs fejlécben tud belépni a megfelelő ikonra kattintva
++ Adminisztrátor: Az oldal adminisztrátora(i) a bejelentkezés gombot használhatják a fejlécben.
 
 
 ---------------------------------------------------------
@@ -48,7 +50,10 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Középre igazított raszterhálóban megjelennek az adatbázis kategóriái ikonokkal, amelyekre kattintva a kategória szerinti kereső-listázó aloldalra navigálják a felhasználót.
++ Középre igazított raszterhálóban megjelennek az adatbázis kategóriái kártyái ikonokkal/logókkal,
+  amelyekre kattintva a kategóriába tartozó tevékenységek listája jelenik meg.
+  Minden logó alatt található egy gomb, a kategória nevével. Erre a gombra kattintva juthat el a kategórián belüli
+  kereső-listázó aloldalra a felhasználó.
 
 
 ---------------------------------------------------------
@@ -63,6 +68,7 @@ A fejléc szerkezete:
 **Elfogadási kritérium:**
 
 + Reszponzív lista megjelenítése a kategóriához tartozó szakemberek adatbázisban tárolt publikus adataival.
++ Kétféle megjelenítés lehetséges: kártya nézet és lista nézet. (lsd.: 6.sz. user story-nál.)
 
 **2. User Story:**
 
@@ -70,7 +76,10 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Szabadszavas - beíráskor folyamatosan frissülő - keresőmező megjelenítése és a lista szűrése a találatok alapján. 
++ Lista nézet kiválasztása után táblázatos formában megjelenik a szűkíthető lista.
++ Szabadszavas - beíráskor folyamatosan frissülő - keresőmező megjelenítése és a lista szűrése a találatok alapján.
++ Ehhez keresőmező, szűrést kiválasztó legördülő menü és a megjelenő oszlopok testreszabhatóságát megoldó legördülő
+  menü jelenik meg.
 
 **3. User Story:**
 
@@ -86,7 +95,8 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Beviteli mező legördülő menü formájában, ahol több mezőt kiválasztva a lista megfelelő fejlécei jelennek meg. Ilyenkor a szűkítés csak a megjelenített mezők alapján lehetséges.
++ Beviteli mező legördülő menü formájában, ahol több mezőt kiválasztva a lista megfelelő fejlécei jelennek meg.
+  Ilyenkor a szűkítés és keresés csak a megjelenített mezők alapján lehetséges.
 
 **5. User Story:**
 
@@ -98,33 +108,19 @@ A fejléc szerkezete:
 
 **6. User Story:**
 
-> _A felhasználó tetszőlegesen átrendezheti a táblázat oszlopainak sorrendjét._
+> _A felhasználó egyszerűen válaszhat táblázat vagy kártyás megjelenés között._
 
 **Elfogadási kritérium:**
 
-+ Az oszlopok sorrendje "drag & drop" technikával átrendezhető.
-
-**7. User Story:**
-
-> _A felhasználó a kiválasztott sorra kattintva megkapja a szakember részletes adatait, elérhetőségét felkeresés, további egyeztetés céljából._
-
-**Elfogadási kritérium:**
-
-+ A sorok kattinthatóak, külön ablakban (vagy kártyán) megjelenik a kiválasztott szakember összes publikus adata, ha van, a feltöltött kép is.
-
-**8. User Story:**
-
-> _A felhasználó válaszhat táblázat vagy kártyás megjelenés között._
-
-**Elfogadási kritérium:**
-
-+ Megjelenő ikon a lista vagy kártyás megjelenés kiválasztásához. A kártyás megjelenítés hasonlóan történik a fentiekhez (kivéve az oszlopok áthelyezhetőségét)
++ A két megjelenés között osztott gombbal lehet váltani, a könnyebb átláthatóság miatt ikonok jelzik a funkciót.
++ Kártyás nézetben csak a legfontosabb adatok jelennek meg, a gyorsabb keresés, könnyebb átláthatóság céljából.
++ A kártyákon a regisztrált szakemberek által feltöltött képecskék jelennek meg.
 
 
 ---------------------------------------------------------
 ## 4. Beléptető oldal
 
-#### ( szakemberek és az adminisztrátor számára )
+#### ( szakemberek és adminisztrátorok számára )
 
 **1. User Story:**
 
@@ -133,7 +129,9 @@ A fejléc szerkezete:
 **Elfogadási kritérium:**
 
 + Középen megjelenő ablak beviteli mezőiben meg kell adni a felhasználó nevet és a jelszót.
-+ Ha a beléptetés elvégezhető innen a megfelelő oldalra navigál. Adminisztrátor esetében az "admin" oldalra, szakember esetében a "szerkesztő" oldalra.
++ A hitelesítés egyedi email-címet feltételez minden felhasználóhoz.
++ Ha a beléptetés elvégezhető innen a megfelelő oldalra navigál. Adminisztrátor esetében az "Vezérlőpult" oldalra, szakember esetében a
+  "Profil" oldalra.
 + Ha a megadott azonosító adatok nem megfelelőek, hibaüzenet jelenik meg. Újrapróbálkozás lehetséges.
 
 **2. User Story:**
@@ -142,10 +140,12 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Jogosultság alapján szervezett elérési út rendszer.
++ Jogosultság alapján szervezett elérési út-rendszer.
 + JWT autentikáció használata.
-+ Back-end felől beszerzett adatok alapján session-storage-ba mentett bejelentkezési adatok, melyek onnan bármikor kinyerhetők az alkalmazás számára.
-+ Ezen adatok: felhasználó neve, e-mail címe, jogköre, access_token, belépés sikerességét jelző logikai érték.
++ Back-end felől beszerzett adatok alapján session-storage-ba mentett bejelentkezési adatok, melyek onnan bármikor kinyerhetők az
+  alkalmazás számára.
++ Ezen adatok: felhasználó vezeték- és keresztneve, avatar file-név, e-mail címe, jogköre, access_token, belépés sikerességét jelző
+  logikai érték.
 
 **3. User Story:**
 
@@ -154,6 +154,17 @@ A fejléc szerkezete:
 **Elfogadási kritérium:**
 
 + Szöveges tájékoztató oldal a hiba okáról a bejelentkezésre lehetőséget biztosító, kattintható gomb megjelenítésével.
++ Mellette a főoldalra navigáló gomb is helyet kap.
+
+**4. User Story:**
+
+> _Belépés után, a bejelentkezés időtartama alatt ikon vagy kép jelzi a személyt._
+
+**Elfogadási kritérium:**
+
++ Jobb felső sarokban a fejlécben megjelenő kép. Erre kattintva legördülő menüből választhat a jogköréhez tartozó funkciókat.
++ Kijelentkezés után a jogkör megszűnik, a kép eltűnik, jelezve, hogy nem érhetőek el a jogosult oldalak.
+
 
 ---------------------------------------------------------
 ## 5. Regisztrációs oldal
@@ -166,15 +177,35 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Középen megjelenő ablak beviteli mezőiben meg kell adni a felhasználó nevet és a jelszót és a többi adatbázisba kerülő adatot (űrlap).
-+ Ha a regisztráció elvégezhető (validáció sikeres) üzenet jelenik meg. Innen a kategórián belüli listára navigál.
- (ua. mint "3. Kereső-listázó aloldal" kritériumai)
++ Középen megjelenő ablak beviteli mezőiben meg kell adni a vezeték- és keresztnevet az email-címet és a választott jelszót.
++ "Regisztráció" goombbal indíthatja a regisztráció menetét.
++ Elállás esetén a fejlécben elérhető linkek bármelyikére kattintva elnavigálhat.
++ Ha a regisztráció elvégezhető (validáció sikeres) üzenet jelenik meg.
 + Ha a megadott adatok nem megfelelőek, hibaüzenet jelenik meg. Újrapróbálkozás szükséges.
-+ Elállás a regisztrációtól "mégsem" gombbal. Ilyenkor a főoldalra navigál.
++ Sikeres regisztráció után a "Profil" oldalra irányítja a szakembert.
 
 
 ---------------------------------------------------------
-## 6. Admin oldal
+## 6. Profil oldal
+
+#### ( szakemberek számára )
+
+**1. User Story:**
+
+> _A hiányzó adatok megadása, mely ahhoz szükséges, hogy regisztrált felhasználóként szakemberi minőségben kereshetővé váljon._
+
+**Elfogadási kritérium:**
+
++ Középen megjelenő ablak beviteli mezőkkel.
++ A korábban megadott regisztrációs adatok is szerkeszthetőek.
++ Újabb adatok felvitele: avatar kép feltöltése, életkor (opcionális), óradíj, telefonszám, munkavégézés gyakorisága és ideje,
+  kategória kiválasztása és azon belül a tevékenység megadása szükséges.
++ Az űrlap kitöltése egy mentés gombbal zárható le. Ezután válik kereshetővé egy adott szakember.
++ Bármikor kijelentkezés valósítható meg a fejléc sarkában található "Kijelentkezés" linkkel.
+
+
+---------------------------------------------------------
+## 7. Admin főoldal (Vezérlőpult)
 
 #### ( adminisztrátor számára )
 
@@ -189,25 +220,33 @@ A fejléc szerkezete:
 
 **2. User Story:**
 
-> _Az adminisztrátor áttekintő-összegző adatokat kap az adatbázist alkotó elemekről._
+> _Az adminisztrátor áttekintő-összegző adato(ka)t kap az adatbázist alkotó elemekről._
 
 **Elfogadási kritérium:**
 
-+ Infografikával áttekintő kimutatások jelennek meg az adatbázisról a Dashboard főoldalán.
++ Infografikával (pl:oszlopgrafikon) áttekintő kimutatás jelenik meg az adatbázisról. Későbbiekben igény szerint fejleszthető.
+
+**3. User Story:**
+
+> _Az adminisztrátori jogkör kijelentkezés után megszűnik._
+
+**Elfogadási kritérium:**
+
++ Kijelentkezés gombra kattintva a belépő oldalra navigál, megszűnik az adminisztrátori autentikáció, eltűnik a jelző-kép.
 
 
 ---------------------------------------------------------
-## 7. Admin aloldalak
+## 7. Admin aloldalak (jelenleg 5db)
 
-#### ( adminisztrátor számára )
+#### ( adminisztrátorok számára )
 
 **1. User Story:**
 
-> _Az adminisztrátor számára a kiválasztott entitások részletes adatai jelennek meg lista formában._
+> _Az adminisztrátor számára a kiválasztott entitás részletes adatai jelennek meg lista formában._
 
 **Elfogadási kritérium:**
 
-+ A kiválasztott entitás listája megjelenik. A lista jellege megegyezik a 3. Kereső-listázó aloldalnál megadottakkal, kiegészülve "szerkesztő" és "törlő" gombbal (egy-egy ikon megjelenésével).
++ A kiválasztott entitás listája megjelenik. A lista jellege megegyezik a 3. Kereső-listázó aloldalnál megadottakkal, kiegészülve "Szerkesztés" és "Törlés" gombbal (egy-egy ikon megjelenésével).
 
 **2. User Story:**
 
@@ -215,7 +254,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ A "szerkesztés" gombra kattintva aloldalon megjelenő űrlapon módosíthatók az adatok.
++ A "Szerkesztés" gombra kattintva aloldalon megjelenő űrlapon módosíthatók az adatok.
 + Validáció után az adatbázisban átvezetésre kerülnek az új adatok.
 + Az űrlap bezáródik és a korábbi lista jelenik meg a frissített adatokkal.
 
@@ -225,7 +264,7 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ Törlés csak a megerősítő kérdés elfogadása után történik meg.
++ A "Törlés" gomb megnyomása után felugró ablakban megerősítést kérő gomb megnyomása után történik meg a művelet.
 
 **4. User Story:**
 
@@ -233,9 +272,26 @@ A fejléc szerkezete:
 
 **Elfogadási kritérium:**
 
-+ "Új létrehozás" gomb jelenik meg, melyre kattintva aloldalon megjelenő űrlapon megadhatók az adatok.
++ "Új létrehozása" gomb, melyre kattintva aloldalon megjelenő űrlapon megadhatók az adatok.
 + Validáció után az adatbázisban átvezetésre kerülnek az új adatok.
-+ Az űrlap bezáródik és a korábbi lista jelenik meg a frissített adatokkal.
++ "Mentés" gomb megnyomása után az űrlap bezáródik és a korábbi lista jelenik meg a frissített adatokkal.
+
+**5. User Story:**
+
+> _Legyen lehetőség visszalépésre a szerkesztéskor._
+
+**Elfogadási kritérium:**
+
++ Mind új sor létrehozásako, illetve szerkesztéskor a menté gomb mellett megjelenik a "Mégsem" gomb, melyre kattintva
+  visszalépünk a listához.
+
+**6. User Story:**
+
+> _A lista rendezhető, szűrhető, testreszabható._
+
+**Elfogadási kritérium:**
+
++ Részletesen megtalálható a 3.sz. Kereső-listázó oldalnál.
 
 
 ---------------------------------------------------------
@@ -247,16 +303,15 @@ A fejléc szerkezete:
 
 **Továbbfejlesztési lehetőségek:**
 
-+ Megrendelői regisztráció lehetősége
-+ Megrendelői menedzsment-felület létrehozása
-+ Szakember-értékelés lehetősége az elvégzett munkára
-+ Szakemberek számára menedzsment-felület létrehozása 
++ Megrendelői regisztráció lehetősége.
++ Megrendelői menedzsment-felület létrehozása.
++ Szakember-értékelés lehetősége az elvégzett munkára.
++ Szakemberek számára menedzsment-felület létrehozása, pl.: számlázás, megrendelések követése.
 + Közvetlen üzenetküldés lehetősége az oldalon (mindhárom szerepkör között)
-+ Adminisztrátor számára autentikáció-menedzsment felület létrehozása
++ A táblázat oszlopainak sorrendje "drag & drop" technikával legyen átrendezhető.
 + Akadálymentesítés
 
 ---------------------------------------------------------
 ## Linkek:
 
-+ Dokumentáció elérhetősége:
-+ Kiegészítő anyagok elérhetősége:
++ Dokumentáció elérhetősége: https://github.com/mikroby/vizsgaremek/blob/main/DOCUMENTATION.md
