@@ -6,7 +6,7 @@ module.exports = async (req, res, next) => {
   const { email, password, lastName, firstName, role, avatar } = req.body
 
   if (!email || !password || !lastName || !firstName || !role) {
-    return next(new createError.BadRequest('Missing signup datas.'))
+    return next(new createError.BadRequest('Missing some credentials.'))
   }
 
   const newUser = new User({

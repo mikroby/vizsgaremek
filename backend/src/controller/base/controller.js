@@ -1,4 +1,3 @@
-const express = require('express')
 const baseService = require('./service')
 const createError = require('http-errors')
 

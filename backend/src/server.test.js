@@ -36,7 +36,7 @@ describe('REST API integration tests', () => {
     mongoose.connection.close(() => done())
   })
 
-  test('GET /category', done => {
+  test('GET /category/', done => {
     supertest(app).get('/category/')
       .set('Authorization', `Bearer ${token}`)
       .expect(200)

@@ -1,4 +1,5 @@
-const jwt = require('jsonwebtoken');
+const jwt = require('jsonwebtoken')
+const createError = require('http-errors')
 
 module.exports = (req, res, next) => {
   const authHeader = req.headers.authorization;
@@ -9,7 +10,7 @@ module.exports = (req, res, next) => {
     jwt.verify(token, `${process.env.ACCES_TOKEN_SECRET}`, (err, user) => {
       if (err) {
         // got bad token
-        return res.sendStatus(403);
+        return next(new createError.Forbidden('Forbidden: authorization needed.'))
       }
 
       req.user = user;
@@ -17,6 +18,6 @@ module.exports = (req, res, next) => {
     });
   } else {
     // got no token
-    res.sendStatus(401);
+    next(new createError.Unauthorized('Authorization process failed.'))
   }
 };

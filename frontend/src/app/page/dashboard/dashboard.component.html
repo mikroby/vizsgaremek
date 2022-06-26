@@ -1,1 +1,9 @@
-<p>dashboard works!</p>
+<div class="row">
+  <div class="col-12 mt-3 h3 text-muted mb-4 text-center">Üdvözöljük az admin-felületen!</div>
+
+  <div class="col-md-11 mx-auto">
+    <c-chart *ngIf="render" [data]="data" type="bar"></c-chart>
+  </div>
+
+  <div class="col-12 mt-3 h5 text-dark mt-4 text-center">Összes szakember: {{total}}</div>
+</div>

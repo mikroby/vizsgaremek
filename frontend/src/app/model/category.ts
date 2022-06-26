@@ -3,5 +3,5 @@ export class Category {
   _id?: string = ''  
   name: string = ''
   job: string[] = []
-  logo: string=''
+  logo: string='default.png'
 }

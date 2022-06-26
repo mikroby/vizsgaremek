@@ -15,7 +15,7 @@ export interface IFileUploadResponse {
 })
 export class ImgUploaderComponent implements OnInit {
 
-  fileName: string = 'Új kép feltöltése (max:200x200px)'
+  fileName: string = 'Kép feltöltése (opt.:200x200px)'
   
   @Input() type: string = ''
 

@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms'
 // import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common'
 
 // CoreUI modules
+import { ChartjsModule } from '@coreui/angular-chartjs';
 import { IconModule, IconSetService } from '@coreui/icons-angular'
 import {
   AvatarModule,
@@ -125,7 +126,8 @@ import { ProfileComponent } from './page/profile/profile.component';
     BadgeModule,
     ListGroupModule,
     CardModule,
-    TableModule,    
+    TableModule,
+    ChartjsModule,  
 
     TableMakerModule,
     EditorModule,

@@ -53,7 +53,7 @@ export class UserEditorComponent implements OnInit {
   }
 
   onSubmit(user: User): void {
-    user.avatar = this.uploadedFilePath;
+    user.avatar = this.uploadedFilePath
 
     if (this.id) {
       if (this.pwd === user.password) {

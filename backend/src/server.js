@@ -40,29 +40,25 @@ app.post('/upload/avatar', authencticateJwt, require('./controller/avatar/avatar
 app.post('/upload/logo', authencticateJwt, require('./controller/logo/logo') )
 
 app.post('/login', require('./module/auth/login'))
-
 app.post('/signup', require('./module/auth/signup'))
 
-// find authentication in the routers
+// find authentication in the routers.
 app.use('/category', require('./controller/category/router'))
 app.use('/expert', require('./controller/expert/router'))
 
 app.use('/user', authencticateJwt, require('./controller/user/router'))
-
 app.use('/invoice', authencticateJwt, require('./controller/invoice/router'))
-
 app.use('/order', authencticateJwt, require('./controller/order/router'))
 
 // app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
-
 app.use('/api-docs', (req, res,) => { res.sendStatus(404) })
 
-app.get('/welcome', (req, res, next) => {
+app.get('/welcome', (req, res) => {
   console.log(req.url)
   res.sendFile('index.html', { root: '/welcome' })
 })
 
-// Error Handling.
+// Error handling.
 app.use((err, req, res, next) => {
   res.status(err.statusCode)
   res.json({
