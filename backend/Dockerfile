@@ -1,6 +1,6 @@
 FROM node:latest
 WORKDIR /app
-COPY . .
+COPY package.json .
 COPY ../frontend/dist/mesterember/ ./public
 RUN npm i
 CMD [ "npm", "start" ]
