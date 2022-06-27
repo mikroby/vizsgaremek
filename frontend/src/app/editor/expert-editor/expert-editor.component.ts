@@ -63,7 +63,8 @@ export class ExpertEditorComponent implements OnInit {
     expert.category = this.selectedCategory
     expert.user = this.selectedUser
     expert.workDays = this.textarea.split(',')
-      .map(item => item.trim()).map(day => this.weekDays.indexOf(day))
+      .map(item => item.trim()).map(item => item.charAt(0).toUpperCase() + item.slice(1))
+      .map(day => this.weekDays.indexOf(day))
 
     if (this.expertID) {
 

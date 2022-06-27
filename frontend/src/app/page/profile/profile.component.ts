@@ -88,7 +88,8 @@ export class ProfileComponent implements OnInit {
   onSubmit(expert: Expert, user: User): void {
     expert.user = user._id
     expert.workDays = this.textarea.split(',')
-      .map(item => item.trim()).map(day => this.weekDays.indexOf(day))
+      .map(item => item.trim()).map(item => item.charAt(0).toUpperCase() + item.slice(1))
+      .map(day => this.weekDays.indexOf(day))
     expert.category = this.selectedCategory
 
     if (this.uploadedFilePath) {

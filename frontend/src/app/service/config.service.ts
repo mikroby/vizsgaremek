@@ -33,7 +33,7 @@ export class ConfigService {
 
   startDisplayWith = 'card'
 
-  static sWeekDays = ['V', 'H', 'K', 'Sze', 'CS', 'P', 'Szo']
+  static sWeekDays = ['V', 'H', 'K', 'Sze', 'Cs', 'P', 'Szo']
 
   get weekDays(): string[] {
     return ConfigService.sWeekDays;
