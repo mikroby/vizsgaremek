@@ -62,8 +62,7 @@
           step="100"
           min="0"
           placeholder="any"
-          required
-          pattern=""
+          required          
           id="field-charge">
         <label for="field-charge">Fizetendő</label>
       </div> 
@@ -89,7 +88,20 @@
         <label class="form-check-label" for="checkbox-paid">Fizetve</label>
       </div>
 
-      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+      <!-- invalid form messages -->
+      <div class="text-dark fw-bold text-center">
+        <div *ngIf="!invoice._id" [hidden]="editorForm.controls['selectedOrder']?.valid">
+          A megrendelést ki kell választani.
+        </div>
+        <div [hidden]="editorForm.controls['charge']?.valid">
+          A min. fizetendő érték 0 lehet, 100-as növekménnyel.
+        </div>
+        <div [hidden]="editorForm.controls['date']?.valid">
+          A teljesítés időpontját ki kell választani.
+        </div>
+      </div>
+
+      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-white border border-secondary rounded-pill shadow" role="group">
           <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
             <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
           </button>

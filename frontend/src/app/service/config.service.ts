@@ -105,6 +105,15 @@ export class ConfigService {
     { key: 'paid', title: 'Fizetve', visible: true },
   ]
 
+  validator={
+    name: '^[A-ZÁÉÍÚÓÜŰÖŐ][a-űA-Ű .,0-9\-]{2,}',
+    email: '^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}(\.[a-z]{2,})*$',
+    pwd: '^[a-űA-Ű0-9]{3,}',
+    day: '[hksecpzov, HKSCPZV]+',
+    phone: '^[+][0-9]{11}$',
+    available:'^[0-9]{1,2}[:][0-9]{1,2}$',
+  }
+
   constructor(
   ) { }
 

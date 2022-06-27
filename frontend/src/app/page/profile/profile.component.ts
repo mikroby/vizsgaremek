@@ -48,6 +48,8 @@ export class ProfileComponent implements OnInit {
 
   user$ = this.auth.user$
 
+  validator = this.config.validator
+  
   constructor(
     private userService: UserService,
     private expertService: ExpertService,

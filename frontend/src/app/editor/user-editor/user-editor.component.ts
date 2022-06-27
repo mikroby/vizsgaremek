@@ -25,6 +25,8 @@ export class UserEditorComponent implements OnInit {
 
   message: string = ''
 
+  validator = this.config.validator
+
   constructor(
     private userService: UserService,
     private config: ConfigService,

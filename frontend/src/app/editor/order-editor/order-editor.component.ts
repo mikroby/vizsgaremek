@@ -18,6 +18,8 @@ export class OrderEditorComponent implements OnInit {
   order: Order | null = null
   id: string = ''
 
+  validator = this.config.validator
+
   constructor(
     private orderService: OrderService,
     private config: ConfigService,

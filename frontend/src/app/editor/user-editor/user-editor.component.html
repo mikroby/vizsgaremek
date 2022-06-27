@@ -5,7 +5,7 @@
     <div class="h3 text-dark mb-4">{{message}}</div>
 
     <form *ngIf="user" #editorForm="ngForm" (ngSubmit)="onSubmit(user)">
-
+      
       <input [(ngModel)]="user._id" name="_id" type="hidden">
       <input [(ngModel)]="user.password" name="password" type="hidden">
       
@@ -16,7 +16,7 @@
           type="text"
           placeholder="any"
           required
-          pattern=""
+          [pattern]="validator.name"
           id="field-lastName">
         <label for="field-lastName">Vezetéknév</label>
       </div>
@@ -28,7 +28,7 @@
           type="text"
           placeholder="any"
           required
-          pattern=""
+          [pattern]="validator.name"
           id="field-firstName">
         <label for="field-firstName">Keresztnév</label>
       </div>
@@ -40,19 +40,26 @@
           type="text"
           placeholder="any"
           required
-          pattern=""
+          [pattern]="validator.email"
           id="field-email">
         <label for="field-email">E-mail</label>
       </div>
       
       <div class="form-floating mb-editorItems">
-        <input class="form-control shadow"
+        <input *ngIf="!id" class="form-control shadow"
           [(ngModel)]="user.password"
           name="password"
           type="password"
           placeholder="any"
           required
-          pattern=""          
+          [pattern]="validator.pwd"         
+          id="field-password">
+
+        <input *ngIf="id" class="form-control shadow"
+          [(ngModel)]="user.password"
+          name="password"
+          type="password"
+          placeholder="any"
           id="field-password">
         <label for="field-password">Jelszó</label>
       </div>
@@ -82,12 +89,32 @@
             (focus)="message=''"
             class="form-control"
             [type]="'avatar'"
+            required
             (uploaded)="uploadSuccess($event)">
           </app-img-uploader>        
         </div>
       </div>
 
-      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+      <!-- invalid form messages -->
+      <div class="text-dark fw-bold text-center">
+        <div [hidden]="editorForm.controls['firstName']?.valid || editorForm.controls['firstName']?.pristine">
+          A név min. 3 karakter hosszú legyen és nagybetűvel kezdődjön.
+        </div>
+        <div [hidden]="editorForm.controls['lastName']?.valid || editorForm.controls['lastName']?.pristine">
+          A név min. 3 karakter hosszú legyen és nagybetűvel kezdődjön.
+        </div>
+        <div [hidden]="editorForm.controls['email']?.valid || editorForm.controls['email']?.pristine">
+          Az e-mail cím min.: a@a.aa
+        </div>
+        <div [hidden]="editorForm.controls['password']?.valid || editorForm.controls['password']?.pristine">
+          A jelszó legalább 3 karakter legyen.
+        </div>
+        <div [hidden]="editorForm.controls['role']?.valid || editorForm.controls['role']?.pristine">
+          A jogosultságot ki kell választani.
+        </div>        
+      </div>
+
+      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-white border border-secondary rounded-pill shadow" role="group">
         <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
           <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
         </button>

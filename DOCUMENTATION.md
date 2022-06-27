@@ -29,11 +29,11 @@
     ```
     npm i -g @angular/cli
     ```
-- Amennyiben nem az alap konfigurációval szeretné futtatni az alkalmazást, végezze el a konfigurálást a 3.sz pont alapján.
+- Amennyiben nem az alap konfigurációval szeretné futtatni az alkalmazást, végezze el a konfigurálást a 3.sz pont alapján, majd térjen az alábbi pontra.
 
 - A /frontend mappában állva a terminálban ki kell adni:
     ```
-    ng build
+    npm run build
     ```   
 - A '/frontend/dist/mesterember' mappa teljes tartalmát be kell másolni a /backend/public mappába (amennyiben nincsenek még ott ezek a file-ok a klónozás után)
 
@@ -67,7 +67,7 @@ A file-okban konfigurált Docker konténer indítása és inicializálása:
 
 
 - Ha Docker Desktop nélkül szeretné indítani az alkalmazást:
-  (előfeltétel, hogy az ng build már lefutott és a /frontend/dist/mesterember mappa tartalma bemásolva a fentiek alapján)
+  (előfeltétel, hogy az ng build már lefutott és utána a /frontend/dist/mesterember mappa tartalma bemásolva a fentiek alapján)
 
   - /backend mappába belépve terminálban:
     ```

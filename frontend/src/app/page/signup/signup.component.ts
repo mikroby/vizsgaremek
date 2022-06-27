@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { User } from 'src/app/model/user';
-import { AuthService } from 'src/app/service/auth.service';
+import { Component, OnInit } from '@angular/core'
+import { User } from 'src/app/model/user'
+import { AuthService } from 'src/app/service/auth.service'
+import { ConfigService } from 'src/app/service/config.service'
 
 @Component({
   selector: 'app-signup',
@@ -13,14 +14,16 @@ export class SignupComponent implements OnInit {
 
   signupData: User = new User()
 
-  user$ = this.auth.user$;
+  user$ = this.auth.user$
+
+  validator = this.config.validator
 
   constructor(
     private auth: AuthService,
+    private config: ConfigService
   ) { }
 
   ngOnInit(): void {
-    // this.auth.logout();
     this.auth.signUpFailed$.next(false)
   }
 

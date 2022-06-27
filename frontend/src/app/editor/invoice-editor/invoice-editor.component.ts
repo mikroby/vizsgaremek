@@ -23,6 +23,8 @@ export class InvoiceEditorComponent implements OnInit {
   orders$ = this.orderService.getAll()
   selectedOrder: string = ''
 
+  validator = this.config.validator
+
   constructor(
     private invoiceService: InvoiceService,
     private orderService: OrderService,

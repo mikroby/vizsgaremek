@@ -36,6 +36,8 @@ export class ExpertEditorComponent implements OnInit {
   selectedCategory: string = ''
   textarea: string = ''
 
+  validator = this.config.validator
+
   constructor(
     private userService: UserService,
     private expertService: ExpertService,

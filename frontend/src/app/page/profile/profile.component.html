@@ -5,7 +5,7 @@
     <div class="h3 text-dark mb-4">{{message}}</div>
 
     <form *ngIf="user && expert" #editorForm="ngForm" (ngSubmit)="onSubmit(expert, user)">
-        
+      
       <input [(ngModel)]="user._id" name="_id" type="hidden">
 
       <div class="form-floating mb-editorItems">
@@ -15,6 +15,7 @@
           type="text"
           placeholder="any"         
           required
+          [pattern]="validator.name"
           (focus)="message=''"
           id="field-lastName">
         <label for="field-lastName">Vezetéknév</label>
@@ -27,6 +28,7 @@
           type="text"
           placeholder="any"   
           required
+          [pattern]="validator.name"
           (focus)="message=''" 
           id="field-firstName">
         <label for="field-firstName">Keresztnév</label>
@@ -38,6 +40,7 @@
           name="email"
           type="text"
           required
+          [pattern]="validator.email"
           (focus)="message=''"
           placeholder="any"         
           id="field-email">
@@ -49,7 +52,7 @@
           [(ngModel)]="user.password"
           name="password"
           type="password"
-          placeholder="any"
+          placeholder="any"          
           (focus)="message=''"      
           id="field-password">
         <label for="field-password">Jelszó</label>
@@ -78,8 +81,7 @@
           type="number"
           max="100"
           min="18"
-          placeholder="any"
-          pattern=""
+          placeholder="any"          
           (focus)="message=''"
           id="field-age">
         <label for="field-age">Életkor</label>
@@ -91,11 +93,10 @@
           name="price"
           type="number"
           step="100"
-          min="0"
+          min="100"
           placeholder="any"
           required
-          (focus)="message=''"
-          pattern=""
+          (focus)="message=''"          
           id="field-price">
         <label for="field-price">Óradíj</label>
       </div>
@@ -107,8 +108,8 @@
           type="text"        
           placeholder="any"
           required
-          (focus)="message=''"
-          pattern=""
+          [pattern]="validator.phone"
+          (focus)="message=''"          
           id="field-phone">
         <label for="field-phone">Telefon</label>
       </div>
@@ -120,7 +121,7 @@
           placeholder="any"
           required
           (focus)="message=''"
-          pattern=""
+          [pattern]="validator.day"
           id="field-workDays">
         </textarea>
         <label for="field-workDays">Munkanapok</label>
@@ -134,7 +135,7 @@
           placeholder="any"
           required
           (focus)="message=''"
-          pattern=""
+          [pattern]="validator.available"
           id="field-availableFrom">
         <label for="field-availableFrom">Munka kezdés</label>
       </div>
@@ -147,7 +148,7 @@
           placeholder="any"
           required
           (focus)="message=''"
-          pattern=""
+          [pattern]="validator.available"
           id="field-availableTill">
         <label for="field-availableTill">Munka vége</label>
       </div>
@@ -182,13 +183,45 @@
         </select>
         <label for="field-job">Munka megnevezése</label>
       </div>
+
+      <!-- invalid form messages -->
+      <div class="text-dark fw-bold text-center">
+        <div [hidden]="editorForm.controls['firstName']?.valid || editorForm.controls['firstName']?.pristine">
+            A név min. 3 karakter hosszú legyen és nagybetűvel kezdődjön.
+        </div>
+        <div [hidden]="editorForm.controls['lastName']?.valid || editorForm.controls['lastName']?.pristine">
+          A név min. 3 karakter hosszú legyen és nagybetűvel kezdődjön.
+        </div>
+        <div [hidden]="editorForm.controls['email']?.valid || editorForm.controls['email']?.pristine">
+          Az e-mail cím min.: a@a.aa
+        </div>
+        
+        <div [hidden]="editorForm.controls['age']?.valid">
+          Az életkor min.18 lehet.
+        </div>
+        <div [hidden]="editorForm.controls['price']?.valid">
+          Az óradíj min.100 Ft és 100-as növekménnyel adható meg.
+        </div>
+        <div [hidden]="editorForm.controls['phone']?.valid || editorForm.controls['phone']?.pristine">
+          A telefonszám formátuma: +36201234567
+        </div>
+        <div [hidden]="editorForm.controls['workDays']?.valid || editorForm.controls['workDays']?.pristine">
+          A munkanapok: h, k, sze, cs, p, szo,v vagy H,K,Sze,Cs,P,Szo,V lehet.
+        </div>
+        <div [hidden]="editorForm.controls['availableFrom']?.valid || editorForm.controls['availableFrom']?.pristine">
+          Az időpontmegadás formátuma: 9:00 vagy 09:00 lehet.
+        </div>
+        <div [hidden]="editorForm.controls['availableTill']?.valid || editorForm.controls['availableTill']?.pristine">
+          Az időpontmegadás formátuma: 9:00 vagy 09:00 lehet.
+        </div>
+      </div>
       
-      <div class="btn-group mt-4 mb-5 col-2 offset-5 bg-light border border-secondary rounded-pill shadow" role="group">
+      <div class="btn-group mt-4 mb-5 col-2 offset-5 bg-white border border-secondary rounded-pill shadow" role="group">
         <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
           <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
         </button>         
       </div>
-
+      
     </form>
   </div>
 </div>

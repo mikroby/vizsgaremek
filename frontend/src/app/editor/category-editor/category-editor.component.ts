@@ -24,6 +24,8 @@ export class CategoryEditorComponent implements OnInit {
 
   message: string = ''
 
+  validator = this.config.validator
+
   constructor(
     private categoryService: CategoryService,
     private config: ConfigService,

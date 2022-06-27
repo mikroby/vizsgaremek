@@ -24,7 +24,7 @@
           type="text"
           placeholder="any"
           required
-          pattern=""
+          [pattern]="validator.name"
           id="field-expert">
         <label for="field-expert">Szakember</label>
       </div>
@@ -36,7 +36,7 @@
           type="text"
           placeholder="any"
           required
-          pattern=""
+          [pattern]="validator.name"
           id="field-job">
         <label for="field-job">Megrendelt munka</label>
       </div>
@@ -48,7 +48,7 @@
           type="text"
           placeholder="any"
           required
-          pattern=""
+          [pattern]="validator.name"
           id="field-customer">
         <label for="field-customer">Megrendelő</label>
       </div>
@@ -62,8 +62,24 @@
           id="checkbox-accepted">
         <label class="form-check-label" for="checkbox-accepted">Megrendelés elfogadása</label>
       </div>
+
+      <!-- invalid form messages -->
+      <div class="text-dark fw-bold text-center">
+        <div [hidden]="editorForm.controls['date']?.valid">
+          A megrendelés időpontját meg kell adni.
+        </div>
+        <div [hidden]="editorForm.controls['expert']?.valid || editorForm.controls['expert']?.pristine">
+          A szakember neve min. 3 karakter hosszú legyen és nagybetűvel kezdődjön.
+        </div>
+        <div [hidden]="editorForm.controls['job']?.valid || editorForm.controls['job']?.pristine">
+          A munka megnevezése min. 3 karakter hosszú legyen és nagybetűvel kezdődjön.
+        </div>
+        <div [hidden]="editorForm.controls['customer']?.valid || editorForm.controls['customer']?.pristine">
+          A megrendelő neve min. 3 karakter hosszú legyen és nagybetűvel kezdődjön.
+        </div>       
+      </div>
      
-      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-light border border-secondary rounded-pill shadow" role="group">
+      <div class="btn-group mt-5 mb-3 col-4 offset-4 bg-white border border-secondary rounded-pill shadow" role="group">
         <button type="submit" [disabled]="editorForm.invalid" class="btn edit_btn grow-30" cTooltip="Mentés">
           <svg cIcon name="cilSave" [size]="editorIconSize"></svg>
         </button>
