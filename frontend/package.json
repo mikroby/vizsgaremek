@@ -1,6 +1,8 @@
 {
   "name": "mesterember",
   "version": "0.0.0",
+  "description": "app for finding experts.",
+  "author": "rtamas",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

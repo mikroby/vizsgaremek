@@ -1,7 +1,7 @@
 {
   "name": "mesterember_backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "provides API server for the specified frontend app.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -10,7 +10,7 @@
     "compose": "docker-compose up"
   },
   "keywords": [],
-  "author": "",
+  "author": "rtamas",
   "license": "ISC",
   "dependencies": {
     

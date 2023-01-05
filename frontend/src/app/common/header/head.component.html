@@ -41,7 +41,7 @@
 
     <button cButton color="" [caret]="false" cDropdownToggle class="py-0">
       <c-avatar cTextColor="primary" shape="rounded-1" size="md"
-        [src]="apiUrl+'avatar/'+user$?.value?.avatar" status="success">
+        [src]="apiUrl+'avatar/'+user$.value?.avatar" status="success">
       </c-avatar>
     </button>
 
@@ -79,7 +79,7 @@
         <h6 cDropdownHeader class="bg-light fw-semibold py-2">Egyebek</h6>
       </li>
       <li *ngIf="user$?.value?.role!==3">
-        <a [routerLink]="['/profile',user$?.value?._id]" cDropdownItem>
+        <a [routerLink]="['/profile',user$.value?._id]" cDropdownItem>
           <svg cIcon class="me-2" name="cilUser"></svg>
           Profil
         </a>
